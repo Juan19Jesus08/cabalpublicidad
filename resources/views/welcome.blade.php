@@ -157,15 +157,14 @@ Skip to content</a>
   <div class="header_meta">
     <div class="container">
     <div class="row">
-           <p class="site-description col-xs-12 col-sm-6" >
-       The Most Complete Education Solution      </p>
+           
           
       <nav class="meta-login">
         <ul>
-                  <li class="call"><i class="lnr lnr-smartphone"></i>Call Us  +731 234 5678</li>
+                 
            
-                               <li><a href="http://www.demos.themecycle.com/educationpress/courses-signup/">Signup</a></li>
-             <li><a href="http://www.demos.themecycle.com/educationpress/student-login/">Login</a></li>
+                               <li><a href="http://www.demos.themecycle.com/educationpress/courses-signup/">Registrarse</a></li>
+             <li><a href="http://www.demos.themecycle.com/educationpress/student-login/">Iniciar sesion</a></li>
               		                  </ul>
       </nav>
       
