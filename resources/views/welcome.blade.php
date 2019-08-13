@@ -311,25 +311,8 @@ dictum sapien in augue consequat.                    </p>
             </form><!-- #search-form #end  -->
                                     <div class="courses-count">
             
-            	            	<div class="col-sm-7 col-md-3 wow bounceInLeft">
-                <h3>
-               <span class="sow-icon-linearicons" data-sow-icon="&#xe821;" ></span>				Over 5 Million Students Enrolled                </h3> 
-                </div>
-                                
-                				<div class="col-sm-7 col-md-3 wow bounceInDown">
-                <h3>
-                <span class="sow-icon-linearicons" data-sow-icon="&#xe828;" ></span>				More than 25,000 Online Available Courses                </h3>
-                </div>
-                                
-                				<div class="col-sm-7 col-md-3 wow bounceInUp">
-                <h3>
-                <span class="sow-icon-linearicons" data-sow-icon="&#xe83d;" ></span>				Learn skills on any Devices anytime                </h3>
-                </div>
-                                
-                				<div class="col-sm-7 col-md-3 wow bounceInRight">
-                <h3>
-               <span class="sow-icon-linearicons" data-sow-icon="&#xe82b;" ></span>				More than 5,000 Instructors Registered                </h3>
-                </div>
+            	            	
+
                                 
             </div>
 			              </div> <!-- row #end -->
@@ -752,146 +735,25 @@ printer took a galley of type.</p>
                      </div>  <!-- row #end  -->
               </div><!-- container #end  -->
         </section>
-</div></div><div class="so-panel widget widget_home-one-what-people-say panel-last-child" id="panel-2-0-0-7" data-index="7"><div class="so-widget-home-one-what-people-say so-widget-home-one-what-people-say-default-d75171398898"><div id="testimonials" class="carousel slide testimonials_outer" >
-         <div class="container text-center">
-        <h2>What People Say</h2>
-    </div>
-     		 
-		<!-- Wrapper for slides -->
-        		<div class="carousel-inner" role="listbox">
-			
-			<!-- First slide -->
-           			<div class="item active">
-          		<div class="container">
-                	<div class="row">
-                 				<div class="col-xs-12 col-sm-6 col-lg-6">
-                	<blockquote class="testimonial">
-                    	<p>Nunc varius sed dolor sed sagittis. Morbi quis eros lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-ornare, rhoncus lorem a, efficitur erat. Morbi efficitur est at urna tincidunt, et eleifend orci pretium. </p>
-                        <footer>
-                        <a href="http://www.demos.themecycle.com/educationpress/">
-                        	<img width="70" height="70" src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/teacher_list_img2-150x150.jpg" class="attachment-70x70 size-70x70 wp-post-image" alt="teacher_list_img2" />                            </a>
-                            <span>Lee Brown</span>
-                            <cite>Teacher</cite>
-                        </footer>
-                    </blockquote>
-                </div> <!-- col 1 #end -->
+</div></div>
                                 
-                <div class="col-xs-12 col-sm-6 col-rg-6">
-                	<blockquote class="testimonial">
-                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius sed dolor sed sagittis. Morbi quis eros 
-ornare, rhoncus lorem a, efficitur erat. Morbi efficitur est at urna tincidunt, et eleifend orci pretium. </p>
-                        <footer>
-                         <a href="http://www.demos.themecycle.com/educationpress/">
-                        	<img width="70" height="70" src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/teacher_img3-150x150.jpg" class="attachment-70x70 size-70x70 wp-post-image" alt="teacher_img3" />                            </a>
-                            <span>Rose marry</span>
-                           <cite>Designer</cite>
-                        </footer>
-                    </blockquote>
-                </div>  <!-- col 2 #end -->
+               
                                 	 
-                     </div> <!-- row #end -->
-                </div> <!-- container #end -->
-			</div> <!-- First slide -->
-            			<div class="item ">
-          		<div class="container">
-                	<div class="row">
-                 				<div class="col-xs-12 col-sm-6 col-lg-6">
-                	<blockquote class="testimonial">
-                    	<p>Consectetur adipiscing elit. Nunc varius sed dolor sed sagittis. Morbi quis eros lorem ipsum dolor sit amet, 
-ornare, rhoncus lorem a, efficitur erat. Morbi efficitur est at urna tincidunt, et eleifend orci pretium. </p>
-                        <footer>
-                        <a href="http://www.demos.themecycle.com/educationpress/">
-                        	<img width="70" height="70" src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/instructor_img-150x150.png" class="attachment-70x70 size-70x70 wp-post-image" alt="instructor_img" />                            </a>
-                            <span>Roy Rodik</span>
-                            <cite>Director</cite>
-                        </footer>
-                    </blockquote>
-                </div> <!-- col 1 #end -->
+                   
                                 
-                <div class="col-xs-12 col-sm-6 col-rg-6">
-                	<blockquote class="testimonial">
-                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius sed dolor sed sagittis. Morbi quis eros 
-ornare, rhoncus lorem a, efficitur erat. Morbi efficitur est at urna tincidunt, et eleifend orci pretium. </p>
-                        <footer>
-                         <a href="http://www.demos.themecycle.com/educationpress/">
-                        	<img width="70" height="70" src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/post_author.jpg" class="attachment-70x70 size-70x70 wp-post-image" alt="post_author" />                            </a>
-                            <span>Johnathan Doe</span>
-                           <cite>Web Developer</cite>
-                        </footer>
-                    </blockquote>
-                </div>  <!-- col 2 #end -->
-                                	 
-                     </div> <!-- row #end -->
-                </div> <!-- container #end -->
-			</div> <!-- First slide -->
+          
                         
           
             
-		</div><!-- /.carousel-inner -->
 		
-		 <!-- Indicators -->
-         
-		<ol class="carousel-indicators">
-           			<li data-target="#testimonials" data-slide-to="0" class="active"></li>
-            			<li data-target="#testimonials" data-slide-to="1" ></li>
-            		</ol>
-	</div>
     
- </div></div></div></div><div class="panel-grid" id="pg-2-1" ><div class="panel-row-style-container container panel-row-style" ><div class="panel-grid-cell" id="pgc-2-1-0" ><div class="so-panel widget widget_home-one-upcoming-event panel-first-child panel-last-child" id="panel-2-1-0-0" data-index="8"><div class="so-widget-home-one-upcoming-event so-widget-home-one-upcoming-event-default-d75171398898">
-                	<div class="col-xs-12 upcoming-event">
-                                         <h2 class="head-border-default">Upcoming Event</h2>
-                                        	                        <a class="event-thumbnail" href="http://www.demos.themecycle.com/educationpress/events/the-complete-android-java-developer-build-21-android-apps/"><img width="800" height="600" src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/12.jpg" class="attachment-full size-full wp-post-image" alt="12" srcset="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/12.jpg 800w, http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/12-360x270.jpg 360w" sizes="(max-width: 800px) 100vw, 800px" /></a>
-                        <h4><a href="http://www.demos.themecycle.com/educationpress/events/the-complete-android-java-developer-build-21-android-apps/"> The Complete Android &#038; Java Developer: Build 21 Android-Apps </a></h4>
-                        <p class="meta">on: <strong>March 18, 2016</strong>. at: <strong>Great Russell Street London WC1B 3DG UK</strong></p>
-                        
-                        <a href="http://www.demos.themecycle.com/educationpress/events/the-complete-android-java-developer-build-21-android-apps/" class="more">Read More <i class="lnr lnr-arrow-right"></i></a>
-						                    </div>
-</div></div></div><div class="panel-grid-cell" id="pgc-2-1-1" ><div class="so-panel widget widget_home-one-instructor-week panel-first-child panel-last-child" id="panel-2-1-1-0" data-index="9"><div class="so-widget-home-one-instructor-week so-widget-home-one-instructor-week-default-d75171398898">                  	<div class="col-xs-12 instructor-week">
-                                         	<h2 class="head-border-default">Instructor of the Week</h2>
-                                                   
-                    </div>
- </div></div></div><div class="panel-grid-cell" id="pgc-2-1-2" ><div class="so-panel widget widget_home-one-free-course-week panel-first-child panel-last-child" id="panel-2-1-2-0" data-index="10"><div class="so-widget-home-one-free-course-week so-widget-home-one-free-course-week-default-d75171398898">                  	<div class="col-xs-12 free-course-week">
-                                        <h2 class="head-border-default">Free Course of the Week</h2>
-                                         	  
-                    </div>
+ 
+
+
  </div></div></div></div></div></div>					
 </div>
 <!-- #content -->
- <div class="signup-newsletter 
-">
-	<div class="container">
-    	<div class="row">
-            <div class="col-xs-12 col-sm-6">
-             <span class="i-email-subscribe">
-				<i class="icon-envelope-letter icons"></i>
-			</span>
-                          <h3>Signup for Newsletter</h3>
-                                       <p>Lorem Ipsum is simply dummy text of the printing content and typesetting industry.</p>
-                           </div>
-             
-			            <div class="col-xs-12 col-sm-6">
-            <script type="text/javascript">(function() {
-	if (!window.mc4wp) {
-		window.mc4wp = {
-			listeners: [],
-			forms    : {
-				on: function (event, callback) {
-					window.mc4wp.listeners.push({
-						event   : event,
-						callback: callback
-					});
-				}
-			}
-		}
-	}
-})();
-</script><!-- MailChimp for WordPress v4.0.9 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-55 form-inline" method="post" data-id="55" data-name="Sign up Form" ><div class="mc4wp-form-fields"><input type="email" name="EMAIL" class="form-control" placeholder="Your email address" required />
-<button type="submit" value="Sign up" class="btn btn-orange btn-medium">Signup <i class="lnr lnr-arrow-right"></i></button><div style="display: none;"><input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></div><input type="hidden" name="_mc4wp_timestamp" value="1565668936" /><input type="hidden" name="_mc4wp_form_id" value="55" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /></div><div class="mc4wp-response"></div></form><!-- / MailChimp for WordPress Plugin -->            </div>
-                        
-        </div> 
-    </div>
-</div> <!-- #signup_newsletter End -->
+
 
 <footer id="colophon" class="site-footer">
   <div class="container">
