@@ -215,7 +215,7 @@ Skip to content</a>
                 	                
                 
                                  
-                	                
+                	      @yield('contenido')          
                 
                 	                
                 
