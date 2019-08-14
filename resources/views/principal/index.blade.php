@@ -1,4 +1,5 @@
-
+@extends('welcome')
+@section('contenido')
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -832,3 +833,4 @@ var mc4wp_forms_config = [];
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.0.9'></script>
 <![endif]-->
 </body></html>
+@stop

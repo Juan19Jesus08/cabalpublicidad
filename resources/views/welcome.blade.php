@@ -209,7 +209,7 @@ Skip to content</a>
   </div>
   <!--container #end--> 
 </header>
-                    
+  @yield('contenido')                  
                                    
                 
                 	                
