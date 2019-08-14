@@ -354,7 +354,7 @@ color:#262c38;
                  <!-- course start End-->
                 
                                 <div class="btn-group text-center col-xs-12">
-                <a href="http://www.demos.themecycle.com/educationpress/courses" class="btn btn-orange btn-medium">Browse all Courses<i class="lnr lnr-arrow-right"></i></a>
+                <a href="/cursos" class="btn btn-orange btn-medium">Ir a todos los cursos<i class="lnr lnr-arrow-right"></i></a>
                 </div>
                                  
                </div>   <!-- #course_list #end  -->
