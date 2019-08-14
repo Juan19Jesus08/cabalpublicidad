@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-@extends('welcome')
-@section('contenido')
-=======
->>>>>>> 2e630259ffc15478ec0b41a0031aa824d1d5a450
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -787,7 +782,3 @@ var mc4wp_forms_config = [];
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.0.9'></script>
 <![endif]-->
 </body></html>
-<<<<<<< HEAD
-@stop
-=======
->>>>>>> 2e630259ffc15478ec0b41a0031aa824d1d5a450
