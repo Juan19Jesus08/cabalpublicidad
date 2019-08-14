@@ -194,38 +194,12 @@ Skip to content</a>
         <span class="icon-bar"></span>
         </button>
 		</div>
-      <div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-visitor-menu" class="nav navbar-nav"><li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-145 dropdown active"><a title="Home" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Home <span class="caret"></span></a>
-<ul role="menu" class=" dropdown-menu">
-	<li id="menu-item-749" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-749 active"><a title="Home Page 1" href="http://www.demos.themecycle.com/educationpress/">Home Page 1</a></li>
-	<li id="menu-item-725" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-725"><a title="Home Page 2" href="http://www.demos.themecycle.com/educationpress/home-page-2/">Home Page 2</a></li>
-	<li id="menu-item-726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-726"><a title="Home Page 3" href="http://www.demos.themecycle.com/educationpress/home-page-3/">Home Page 3</a></li>
-	<li id="menu-item-1410" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1410"><a title="Home 1 Sticky Header" href="http://www.demos.themecycle.com/educationpress/?sticky-header=yes">Home 1 Sticky Header</a></li>
-	<li id="menu-item-1411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1411"><a title="Home 2 Sticky Header" href="http://www.demos.themecycle.com/educationpress/home-page-2/?sticky-header=yes">Home 2 Sticky Header</a></li>
-</ul>
-</li>
-<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-148 dropdown"><a title="Courses" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Courses <span class="caret"></span></a>
-<ul role="menu" class=" dropdown-menu">
-	<li id="menu-item-871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871"><a title="All Courses" href="http://www.demos.themecycle.com/educationpress/all-courses/">All Courses</a></li>
-	<li id="menu-item-870" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-870"><a title="Courses Grid 2 Column" href="http://www.demos.themecycle.com/educationpress/courses-grid-2-column/">Courses Grid 2 Column</a></li>
-	<li id="menu-item-869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-869"><a title="Courses Grid 3 Column" href="http://www.demos.themecycle.com/educationpress/courses-grid-3-column/">Courses Grid 3 Column</a></li>
-	<li id="menu-item-868" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-868"><a title="Courses List Mode" href="http://www.demos.themecycle.com/educationpress/courses-list-mode/">Courses List Mode</a></li>
-	<li id="menu-item-876" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-876"><a title="Course Detail With Tabs" href="http://www.demos.themecycle.com/educationpress/courses/javascript-understanding-the-weird-parts/?tab=yes">Course Detail With Tabs</a></li>
-	<li id="menu-item-877" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-877"><a title="Course Detail Without Tabs" href="http://www.demos.themecycle.com/educationpress/courses/javascript-understanding-the-weird-parts/?tab=no">Course Detail Without Tabs</a></li>
-</ul>
-</li>
-<li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a title="Events" href="http://www.demos.themecycle.com/educationpress/all-events/">Events</a></li>
-<li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-153 dropdown"><a title="Pages" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Pages <span class="caret"></span></a>
-<ul role="menu" class=" dropdown-menu">
-	<li id="menu-item-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146"><a title="About Us" href="http://www.demos.themecycle.com/educationpress/about-us/">About Us</a></li>
-	<li id="menu-item-806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-806"><a title="Our Instructors" href="http://www.demos.themecycle.com/educationpress/our-instructors/">Our Instructors</a></li>
-	<li id="menu-item-661" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-661"><a title="Gallery" href="http://www.demos.themecycle.com/educationpress/gallery/">Gallery</a></li>
-	<li id="menu-item-709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-709"><a title="Plans and Pricing" href="http://www.demos.themecycle.com/educationpress/plans-and-pricing/">Plans and Pricing</a></li>
-	<li id="menu-item-152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152"><a title="Shortcodes" href="http://www.demos.themecycle.com/educationpress/shortcodes/">Shortcodes</a></li>
-	<li id="menu-item-708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-708"><a title="FAQ" href="http://www.demos.themecycle.com/educationpress/frequently-asked-questions/">FAQ</a></li>
-</ul>
-</li>
-<li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a title="Blog" href="http://www.demos.themecycle.com/educationpress/blog/">Blog</a></li>
-<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a title="Contact Us" href="http://www.demos.themecycle.com/educationpress/contact-us/">Contact Us</a></li>
+      <div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-visitor-menu" class="nav navbar-nav">
+
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a title="Contact Us" href="http://www.demos.themecycle.com/educationpress/contact-us/">Inicio</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a title="Contact Us" href="http://www.demos.themecycle.com/educationpress/contact-us/">Cursos</a></li>
+<li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a title="Events" href="http://www.demos.themecycle.com/educationpress/all-events/">Acerca de Nosotros</a></li>
+
 <li class="pull-right"><a class="woo-menu-cart" href="http://www.demos.themecycle.com/educationpress/store/cart/" title="View your cart"><i class="lnr lnr-cart"></i> <span>0</span></a></li></ul></div>    </nav>
 </div>
     <!-- #site-navigation  #end--> 
@@ -295,76 +269,11 @@ dictum sapien in augue consequat.                    </p>
 		
 		</div><!-- /.flexslider -->	 </div></div><div class="so-panel widget widget_home-one-search-form" id="panel-2-0-0-1" data-index="1"><div class="so-widget-home-one-search-form so-widget-home-one-search-form-default-d75171398898"><section class="search-form">
    		<div class="container">
-        	<div class="row">
-                     	<h2 class="text-center"> Emerge yourself by learning new Skills</h2>
-                         <form action="http://www.demos.themecycle.com/educationpress/" method="get" class="form-inline">
-                <fieldset>
-                    <div class="input-group">
-                        <input type="text" name="s" autocomplete="off" id="s" placeholder="What do you want to learn today?" value="" class="form-control" />
-                        <input type="hidden" value="course" name="post_type" id="post_type" />
-                        <span class="input-group-btn">
-                            <button type="submit" class="btn btn-orange btn-medium"><i class="lnr lnr-magnifier"></i>Search</button>
-                        </span>
-                    </div>
-                </fieldset>
-            </form><!-- #search-form #end  -->
-                                    <div class="courses-count">
-            
-            	            	
-
-                                
-            </div>
-			              </div> <!-- row #end -->
+        	
  		</div><!-- #container #end -->
        </section>
-</div></div><div class="so-panel widget widget_home-one-sepretor" id="panel-2-0-0-2" data-index="2"><div class="so-widget-home-one-sepretor so-widget-home-one-sepretor-default-d75171398898"><div class="sepretor clear text-center"><span>OR</span></div> </div></div><div class="so-panel widget widget_home-one-search-by-category" id="panel-2-0-0-3" data-index="3"><div class="so-widget-home-one-search-by-category so-widget-home-one-search-by-category-default-d75171398898"><section class="search-category">
-       		<div class="container">
-            <div class="row">
-			            <h2 class="text-center">Search By Category</h2>
-                        <div class="col-xs-12 col-sm-6" >
-                            	<div class="cat cat_first" style="background-image: url(http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/food.png);background-color:#673ab7;">
-                	<h3><a href="http://www.demos.themecycle.com/educationpress/course_category/food-recipe/">Food Recipe</a></h3>
-                   					 <p>Aliquam varius magna vel ipsum dictum pulvinar. Sed eleifend dui sapien. Aliquam porttitor lectus ex, in ultricies est feugiat nec. Phasellus eget nibh erat. Etiam rhoncus eget ipsum et scelerisque. Sed mauris mauris, dignissim quis sagittis et, rutrum sit amet ipsum. </p>
-                                    </div> <!-- cat first #end -->
-                                                <div class="cat cat_second" style="background-image: url(http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/fronted.png);background-color:#009688;">
-                	<h3><a href="http://www.demos.themecycle.com/educationpress/course_category/frontend/">Frontend</a></h3>
-                                        <p>
-                    Make a type specimen book.                     </p>
-                                  </div>  <!-- cat second #end -->
-                            </div> <!-- col 1 #end -->
-                        
-                        <div class="col-xs-12 col-sm-6" >
-                         	 <div class="cat cat_third" style="background-image: url(http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/language.png);background-color:#ff5722;">
-                	<h3><a href="http://www.demos.themecycle.com/educationpress/course_category/multi-language/">Multi Language</a></h3>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                     </div>  <!-- cat third #end -->
-                                                 <div class="cat cat_forth" style="background-image: url(http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/music.png);background-color:#4caf50;">
-                	<h3><a href="http://www.demos.themecycle.com/educationpress/course_category/music/">Music</a></h3>
-                                        <p>Make a type specimen book.</p>
-                                     </div>  <!-- cat forth #end -->
-                                                  <div class="cat cat_fifth" style="background-image: url(http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/sports.png);background-color:#e91e63;">
-                	<h3><a href="http://www.demos.themecycle.com/educationpress/course_category/sports/">Sports</a></h3>
-                                         <p>Lorem Ipsum is simply dummy text of the printing and...</p>
-                                     </div>  <!-- cat fifth #end -->
-                                                 <div class="cat cat_sixth" style="background-image: url(http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/web-development.png);background-color:#03a9f4;">
-                	<h3><a href="http://www.demos.themecycle.com/educationpress/course_category/web-development/">Web Development</a></h3>
-                                        <p>Maecenas cursus mauris libero, a imperdiet enim pellentesque id. Aliquam erat volutpat Lorem Ipsum is simply dummy.</p>
-                                     </div>  <!-- cat sixth #end -->
-                            </div> <!-- col 2 #end -->
-                        	
-                 </div> <!-- row #end -->
-                 
-                 
-			            	
-               
-            
-			            	
-             
-                 
-                 
-            </div> <!-- #container #end -->
-       </section>
-</div></div><div class="so-panel widget widget_home-one-popular-courses" id="panel-2-0-0-4" data-index="4"><div class="so-widget-home-one-popular-courses so-widget-home-one-popular-courses-default-d75171398898"><section class="popular-courses">
+</div></div>
+<div class="so-panel widget widget_home-one-popular-courses" id="panel-2-0-0-4" data-index="4"><div class="so-widget-home-one-popular-courses so-widget-home-one-popular-courses-default-d75171398898"><section class="popular-courses">
        		<div class="container">
             	<div class="row">
             	<div class="course_list">
@@ -644,13 +553,7 @@ printer took a galley of type.</p>
                                                   
                         
                         
-				 <div class="btn-group col-xs-12">
-
-                 
-                <a href="#" class="btn btn-blue">Buy Theme</a> 
-				                 
-                <a href="#" class="btn btn-default">Take a Tour</a> 
-				                </div>
+				
 	
                     </div>  <!-- row #end  -->
                 </div> <!-- container #end  -->
