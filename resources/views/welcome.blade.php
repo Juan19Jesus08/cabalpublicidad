@@ -154,8 +154,8 @@ Skip to content</a>
         <ul>
                  
            
-                               <li><a href="http://www.demos.themecycle.com/educationpress/courses-signup/">Registrarse</a></li>
-             <li><a href="http://www.demos.themecycle.com/educationpress/student-login/">Iniciar sesion</a></li>
+                               <li><a href="/registrar/">Registrarse</a></li>
+             <li><a href="/iniciar_sesion/">Iniciar sesion</a></li>
               		                  </ul>
       </nav>
       

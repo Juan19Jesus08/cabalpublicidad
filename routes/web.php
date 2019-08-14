@@ -31,3 +31,11 @@ Route::get('/login', function () {
 Route::get('/acerca_de', function () {
     return view('/principal/acerca_de');
 });
+
+Route::get('/iniciar_sesion', function () {
+    return view('/principal/iniciar_sesion');
+});
+
+Route::get('/registrar', function () {
+    return view('/principal/registrar');
+});
