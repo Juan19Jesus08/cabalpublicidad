@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 @extends('welcome')
 @section('contenido')
+=======
+>>>>>>> 2e630259ffc15478ec0b41a0031aa824d1d5a450
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -159,61 +162,12 @@ color:#262c38;
 
 
 
-				<div id="pl-2"><div class="panel-grid" id="pg-2-0" ><div class="panel-grid-cell" id="pgc-2-0-0" ><div class="so-panel widget widget_home-one-slider panel-first-child" id="panel-2-0-0-0" data-index="0"><div class="so-widget-home-one-slider so-widget-home-one-slider-default-d75171398898"><style type="text/css">.flexslider .btn-default {color:#ffffff !important; background:; border-color:;}.flexslider .btn-default:hover { color:#ffffff !important; background:#0583e4;border-color:#0583e4; }</style>
 
 
-		 <div class="flexslider" data-slider_order="false"
- data-slider_animation="fade"  data-slider_direction="horizontal"  data-slider_show_speed="7000"     data-slider_animation_speed="600" data-slider_slide_show="1"
-         >
-          <ul class="slides">
- 		  			<!-- #item start -->
-			<li style="background:#ffffff url(http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/banner_img1.jpg) no-repeat center; background-size:cover;">
-            	
-             	 <div class="container">
-                 	<div class="row">
-                    	<div class="slide-caption">
-                                    	<span class="btn btn-bg" data-animation="animated bounceInDown" 
-                    style="color:#ffffff; background:#0583e4;border-color:#0583e4;">One Stop Solution for</span>
-                                         					<h2 data-animation="animated bounceInLeft" style="color:#ffffff;">
-						Education Needs Complete Solution					</h2>
-                                        					<p data-animation="animated bounceInUp"  style="color:#ffffff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
-dictum sapien in augue consequat.                    </p>
-                                                              
-                     
-                     <a class="btn btn-medium btn-default" data-animation="animated zoomInUp"  href="#">View Courses <i class="lnr lnr-arrow-right"></i></a>
-                                            
-                          </div>
-                      </div>
-                   </div>  
-			</li> <!-- #item end -->
-           			<!-- #item start -->
-			<li style="background:#ffffff url(http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/banner_img2.jpg) no-repeat center; background-size:cover;">
-            	
-             	 <div class="container">
-                 	<div class="row">
-                    	<div class="slide-caption">
-                                    	<span class="btn btn-bg" data-animation="animated bounceInDown" 
-                    style="color:#ffffff; background:#0583e4;border-color:#0583e4;">E Learning Solution</span>
-                                         					<h2 data-animation="animated bounceInLeft" style="color:#ffffff;">
-						Complete Solution For You Education Needs					</h2>
-                                        					<p data-animation="animated bounceInUp"  style="color:#ffffff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
-dictum sapien in augue consequat.                    </p>
-                                                              
-                     
-                     <a class="btn btn-medium btn-default" data-animation="animated zoomInUp"  href="#">View Courses <i class="lnr lnr-arrow-right"></i></a>
-                                            
-                          </div>
-                      </div>
-                   </div>  
-			</li> <!-- #item end -->
-                       </ul>
-		
-		</div><!-- /.flexslider -->	 </div></div><div class="so-panel widget widget_home-one-search-form" id="panel-2-0-0-1" data-index="1"><div class="so-widget-home-one-search-form so-widget-home-one-search-form-default-d75171398898"><section class="search-form">
-   		<div class="container">
-        	
- 		</div><!-- #container #end -->
-       </section>
-</div></div>
+
+
+
+
 <div class="so-panel widget widget_home-one-popular-courses" id="panel-2-0-0-4" data-index="4"><div class="so-widget-home-one-popular-courses so-widget-home-one-popular-courses-default-d75171398898"><section class="popular-courses">
        		<div class="container">
             	<div class="row">
@@ -833,4 +787,7 @@ var mc4wp_forms_config = [];
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.0.9'></script>
 <![endif]-->
 </body></html>
+<<<<<<< HEAD
 @stop
+=======
+>>>>>>> 2e630259ffc15478ec0b41a0031aa824d1d5a450
