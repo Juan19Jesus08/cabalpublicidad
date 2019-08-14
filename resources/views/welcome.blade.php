@@ -277,7 +277,7 @@ dictum sapien in augue consequat.                    </p>
        		<div class="container">
             	<div class="row">
             	<div class="course_list">
-                            	<h2 class="text-center head-border-default">Most Popular Online Courses</h2>
+                            	<h2 class="text-center head-border-default">Cursos mas populares</h2>
                                  <!-- course start-->
 				                
                 <div class="col-xs-12 col-sm-4 zoom">
@@ -561,7 +561,7 @@ printer took a galley of type.</p>
         </section></div></div><div class="so-panel widget widget_home-one-latest-news-updates" id="panel-2-0-0-6" data-index="6"><div class="so-widget-home-one-latest-news-updates so-widget-home-one-latest-news-updates-default-d75171398898"><section class="latest-news-updates">
            <div class="container text-align-center">
            		<div class="row">
-                                          <h2 class="text-center head-border-default">Latest News &amp; Updates</h2>
+                                          <h2 class="text-center head-border-default">Cursos recientes</h2>
                                                 
                         <div class="articel-list">
 							                            
