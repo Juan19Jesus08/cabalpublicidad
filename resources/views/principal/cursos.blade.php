@@ -3,9 +3,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Courses Grid 3 Column &#8211; EducationPress</title>
+<meta name='robots' content='noindex,follow' />
                 <!-- favicon -->
                 <link rel="shortcut icon" href="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/favicon.png"/>
                 		<script type="text/javascript">
@@ -27,6 +29,12 @@ img.emoji {
 }
 </style>
 <link rel='stylesheet' id='educationpress-globalcss-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/global.css?ver=1.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='educationpress-style-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/style.css?ver=1.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/animate.css?ver=4.6.14' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/fancybox/css/fancybox.css?ver=4.6.14' type='text/css' media='all' />
+<link rel='stylesheet' id='educationpress-parent-custom-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/custom.css?ver=1.4.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var cp_vars = {"admin_ajax_url":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-admin\/admin-ajax.php","message_all_fields_are_required":"All fields are required.","message_username_minimum_length":"Username must be at least 4 characters in length","message_username_exists":"Username already exists or invalid. Please choose another one.","message_email_exists":"E-mail already exists or invalid. Please choose another one.","message_emails_dont_match":"E-mails mismatch.","message_passwords_dont_match":"Passwords mismatch.","message_password_minimum_length":"Password must be at least 6 characters in length.","minimum_password_lenght":"6","message_login_error":"Username and\/or password is not valid.","message_passcode_invalid":"Passcode is not valid.","message_tos_invalid":"You must agree to the Terms of Service in order to signup.","debug":"0"};
@@ -38,37 +46,63 @@ var cp_vars = {"admin_ajax_url":"http:\/\/www.demos.themecycle.com\/educationpre
 var front_vars = {"withdraw_alert":"Please confirm that you want to withdraw from the course. If you withdraw, you will no longer be able to see your records for this course.","units_archive_url":"http:\/\/www.demos.themecycle.com\/educationpress\/courses-grid-3-column\/units\/"};
 /* ]]> */
 </script>
-
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/js/coursepress-front.js?ver=1.3.4.3'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/js/coursepress-calendar.js?ver=1.3.4.3'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/js/coursepress-front-elements.js?ver=1.3.4.3'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/ajaxq.min.js?ver=3.1.1'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/jquery.colorbox-min.js?ver=3.1.1'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/jquery.validate.min.js?ver=3.1.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var mp_cart_i18n = {"ajaxurl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-admin\/admin-ajax.php","ajax_loader":"<span class=\"mp_ajax_loader\"><img src=\"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/plugins\/marketpress\/ui\/images\/ajax-loader.gif\" alt=\"\"> Adding...<\/span>","cart_updated_error_limit":"Cart update notice: this item has a limit per order or you have reached the stock limit.","is_cart_page":""};
 /* ]]> */
 </script>
-
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/mp-cart.js?ver=3.1.1'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/ui/tooltip.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/hoverintent.min.js?ver=3.1.1'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/select2/select2.min.js?ver=3.1.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var mp_i18n = {"ajaxurl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-admin\/admin-ajax.php","loadingImage":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/plugins\/marketpress\/ui\/images\/loading.gif","productsURL":"http:\/\/www.demos.themecycle.com\/educationpress\/store\/products\/","productCats":[]};
 /* ]]> */
 </script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/frontend.js?ver=3.1.1'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/rich-reviews/js/rich-reviews.min.js?ver=4.6.14'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/js/jquery.mmenu.min.all.js?ver=4.6.14'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/js/bootstrap.min.js?ver=4.6.14'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/js/bootstrap-tabcollapse.js?ver=4.6.14'></script>
 <script type='text/javascript'>
 jQuery( document ).ready(function() { jQuery('#tab_list').tabCollapse(); })
 </script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var educationpress_vars = {"appTaxTag":"course_category","ajaxurl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-admin\/admin-ajax.php","ajax_url":"\/educationpress\/wp-admin\/admin-ajax.php","nonce":"f941d1c958","loadgif":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/themes\/EducationPress\/images\/heart-load.gif","already_unliked_message":"You have already deleted this course from wishlist.","unliked_message":"Deleted","error_message":"Sorry, there was a problem processing your request."};
+var educationpress_vars = {"appTaxTag":"course_category","ajaxurl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-admin\/admin-ajax.php","ajax_url":"\/educationpress\/wp-admin\/admin-ajax.php","nonce":"2a08a9380a","loadgif":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/themes\/EducationPress\/images\/heart-load.gif","already_unliked_message":"You have already deleted this course from wishlist.","unliked_message":"Deleted","error_message":"Sorry, there was a problem processing your request."};
 /* ]]> */
 </script>
-
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/js/functions.js?ver=4.6.14'></script>
 <!--[if lt IE 9]>
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/js/html5shiv.min.js?ver=3.7.2'></script>
 <![endif]-->
 <!--[if lt IE 9]>
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/js/respond.min.js?ver=3.7.2'></script>
 <![endif]-->
-
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/fancybox/js/jquery.fancybox.js?ver=4.6.14'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/fancybox/js/custom.fancybox.js?ver=4.6.14'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/js/wow.min.js?ver=4.6.14'></script>
 <script type='text/javascript'>
 new WOW().init();
 </script>
+<link rel='https://api.w.org/' href='http://www.demos.themecycle.com/educationpress/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.demos.themecycle.com/educationpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.demos.themecycle.com/educationpress/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.14" />
+<link rel="canonical" href="http://www.demos.themecycle.com/educationpress/courses-grid-3-column/" />
+<link rel='shortlink' href='http://www.demos.themecycle.com/educationpress/?p=861' />
+<link rel="alternate" type="application/json+oembed" href="http://www.demos.themecycle.com/educationpress/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses-grid-3-column%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.demos.themecycle.com/educationpress/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses-grid-3-column%2F&#038;format=xml" />
 				<meta name="generator" content="CoursePress Pro 1.3.4.3"/>
 						<script type="text/javascript">
 			    var moreText = "Read More";
@@ -101,7 +135,6 @@ Skip to content</a>
 
 <!-- #site-navigation #start --> 
          <!-- #site-navigation  #end--> 
-
 
 
 <div class="page-spacer clearfix">
@@ -774,9 +807,7 @@ GRADUATE PHARMACY APTITUDE TEST (GPAT) is a national level entrance exam conduct
 </div><!-- page-spacer -->
 </div>
 <!-- #content -->
-
-
-<!-- #colophon -->
+ <!-- #colophon -->
 </div>
 <!-- #page -->
 
