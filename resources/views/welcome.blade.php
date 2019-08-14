@@ -47,8 +47,13 @@ img.emoji {
 <link rel='stylesheet' id='animate-css'  href='../css/animate.css?ver=4.6.14' type='text/css' media='all' />
 <link rel='stylesheet' id='fancybox-css'  href='../css/fancybox.css?ver=4.6.14' type='text/css' media='all' />
 <link rel='stylesheet' id='educationpress-parent-custom-css'  href='../css/custom.css?ver=1.4.1' type='text/css' media='all' />
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script type='text/javascript' src='../js/jquery.js?ver=1.12.4'></script>
 <script type='text/javascript' src='../js/jquery-migrate.min.js?ver=1.4.1'></script>
+<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var cp_vars = {"admin_ajax_url":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-admin\/admin-ajax.php","message_all_fields_are_required":"All fields are required.","message_username_minimum_length":"Username must be at least 4 characters in length","message_username_exists":"Username already exists or invalid. Please choose another one.","message_email_exists":"E-mail already exists or invalid. Please choose another one.","message_emails_dont_match":"E-mails mismatch.","message_passwords_dont_match":"Passwords mismatch.","message_password_minimum_length":"Password must be at least 6 characters in length.","minimum_password_lenght":"6","message_login_error":"Username and\/or password is not valid.","message_passcode_invalid":"Passcode is not valid.","message_tos_invalid":"You must agree to the Terms of Service in order to signup.","debug":"0"};
@@ -107,6 +112,7 @@ var educationpress_vars = {"appTaxTag":"course_category","ajaxurl":"http:\/\/www
 <script type='text/javascript' src='../js/custom.fancybox.js?ver=4.6.14'></script>
 <script type='text/javascript' src='../js/wow.min.js?ver=4.6.14'></script>
 <script type='text/javascript'>
+
 new WOW().init();
 </script>
 
