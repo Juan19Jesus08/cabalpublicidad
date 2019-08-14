@@ -1,5 +1,3 @@
-@extends('welcome')
-@section('contenido')
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -156,19 +154,6 @@ color:#262c38;
          <!-- #site-navigation  #end--> 
 
 <div id="content" class="site-content" >
-
-
-
-				<div id="pl-2"><div class="panel-grid" id="pg-2-0" ><div class="panel-grid-cell" id="pgc-2-0-0" ><div class="so-panel widget widget_home-one-slider panel-first-child" id="panel-2-0-0-0" data-index="0"><div class="so-widget-home-one-slider so-widget-home-one-slider-default-d75171398898"><style type="text/css">.flexslider .btn-default {color:#ffffff !important; background:; border-color:;}.flexslider .btn-default:hover { color:#ffffff !important; background:#0583e4;border-color:#0583e4; }</style>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -797,5 +782,3 @@ var mc4wp_forms_config = [];
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.0.9'></script>
 <![endif]-->
 </body></html>
-@stop
-
