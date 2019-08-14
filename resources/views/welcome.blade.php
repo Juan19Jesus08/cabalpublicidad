@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<base href="http://www.demos.themecycle.com/educationpress/">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="http://www.demos.themecycle.com/educationpress/xmlrpc.php">
 <title>EducationPress &#8211; The Most Complete Education Solution</title>
 <meta name='robots' content='noindex,follow' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="EducationPress &raquo; Feed" href="http://www.demos.themecycle.com/educationpress/feed/" />
-<link rel="alternate" type="application/rss+xml" title="EducationPress &raquo; Comments Feed" href="http://www.demos.themecycle.com/educationpress/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="EducationPress &raquo; Home Page 1 Comments Feed" href="http://www.demos.themecycle.com/educationpress/home-page-1/feed/" />
                 <!-- favicon -->
                 <link rel="shortcut icon" href="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/favicon.png"/>
                 		<script type="text/javascript">
@@ -116,15 +109,7 @@ var educationpress_vars = {"appTaxTag":"course_category","ajaxurl":"http:\/\/www
 <script type='text/javascript'>
 new WOW().init();
 </script>
-<link rel='https://api.w.org/' href='http://www.demos.themecycle.com/educationpress/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.demos.themecycle.com/educationpress/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.demos.themecycle.com/educationpress/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.6.14" />
-<link rel="canonical" href="http://www.demos.themecycle.com/educationpress/" />
-<link rel='shortlink' href='http://www.demos.themecycle.com/educationpress/' />
-<link rel="alternate" type="application/json+oembed" href="http://www.demos.themecycle.com/educationpress/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://www.demos.themecycle.com/educationpress/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2F&#038;format=xml" />
-				<meta name="generator" content="CoursePress Pro 1.3.4.3"/>
+
 						<script type="text/javascript">
 			    var moreText = "Read More";
 			    var lessText = "Show Less";
