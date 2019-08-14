@@ -563,7 +563,7 @@ printer took a galley of type.</p>
        		<div class="container">
             	<div class="row">
             	<div class="course_list">
-                            	<h2 class="text-center head-border-default">Cursos mas populares</h2>
+                            	<h2 class="text-center head-border-default">Cursos recientes</h2>
                                  <!-- course start-->
 				                
                 <div class="col-xs-12 col-sm-4 zoom">
