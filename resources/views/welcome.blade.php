@@ -25,69 +25,69 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='stylesheet' id='educationpress-bootstrap-checkbox-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/build.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='siteorigin-panels-front-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/siteorigin-panels/css/front.css?ver=2.4.19' type='text/css' media='all' />
-<link rel='stylesheet' id='contact-form-7-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.5.1' type='text/css' media='all' />
-<link rel='stylesheet' id='font_awesome-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/css/font-awesome.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='front_general-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/css/front_general.css?ver=1.3.4.3' type='text/css' media='all' />
-<link rel='stylesheet' id='front_enrollment_process-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/css/front-enrollment-process.css?ver=1.3.4.3' type='text/css' media='all' />
-<link rel='stylesheet' id='flexslider-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/flexslider.css?ver=1.7.2' type='text/css' media='all' />
-<link rel='stylesheet' id='colorbox-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/css/colorbox.css?ver=3.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='jquery-ui-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/css/jquery-ui.min.css?ver=3.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='mp-select2-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/select2/select2.css?ver=3.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='mp-base-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/css/marketpress.css?ver=3.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='mp-theme-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/themes/default.css?ver=3.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='rich-reviews-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/rich-reviews/css/rich-reviews.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='mmenu-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/jquery.mmenu.all.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='bootstrap-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/bootstrap.min.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/font-awesome.min.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='simple-line-icons-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/simple-line-icons.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='educationpress-globalcss-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/global.css?ver=1.4.1' type='text/css' media='all' />
-<link rel='stylesheet' id='educationpress-style-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/style.css?ver=1.4.1' type='text/css' media='all' />
-<link rel='stylesheet' id='animate-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/animate.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='fancybox-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/fancybox/css/fancybox.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='educationpress-parent-custom-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/custom.css?ver=1.4.1' type='text/css' media='all' />
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='stylesheet' id='educationpress-bootstrap-checkbox-css'  href='../css/build.css?ver=4.6.14' type='text/css' media='all' />
+<link rel='stylesheet' id='siteorigin-panels-front-css'  href='../css/front.css?ver=2.4.19' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='../css/styles.css?ver=4.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font_awesome-css'  href='../css/font-awesome.css?ver=4.6.14' type='text/css' media='all' />
+<link rel='stylesheet' id='front_general-css'  href='../css/front_general.css?ver=1.3.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='front_enrollment_process-css'  href='../css/front-enrollment-process.css?ver=1.3.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='flexslider-css'  href='../css/flexslider.css?ver=1.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='colorbox-css'  href='../css/colorbox.css?ver=3.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-css'  href='../css/jquery-ui.min.css?ver=3.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='mp-select2-css'  href='../css/select2.css?ver=3.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='mp-base-css'  href='../css/marketpress.css?ver=3.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='mp-theme-css'  href='../css/default.css?ver=3.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='rich-reviews-css'  href='../css/rich-reviews.css?ver=4.6.14' type='text/css' media='all' />
+<link rel='stylesheet' id='mmenu-css'  href='../css/jquery.mmenu.all.css?ver=4.6.14' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='../css/bootstrap.min.css?ver=4.6.14' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='../css/font-awesome.min.css?ver=4.6.14' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-line-icons-css'  href='../css/simple-line-icons.css?ver=4.6.14' type='text/css' media='all' />
+<link rel='stylesheet' id='educationpress-globalcss-css'  href='../css/global.css?ver=1.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='educationpress-style-css'  href='../css/style.css?ver=1.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css'  href='../css/animate.css?ver=4.6.14' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='../css/fancybox.css?ver=4.6.14' type='text/css' media='all' />
+<link rel='stylesheet' id='educationpress-parent-custom-css'  href='../css/custom.css?ver=1.4.1' type='text/css' media='all' />
+<script type='text/javascript' src='../js/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='../js/jquery-migrate.min.js?ver=1.4.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var cp_vars = {"admin_ajax_url":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-admin\/admin-ajax.php","message_all_fields_are_required":"All fields are required.","message_username_minimum_length":"Username must be at least 4 characters in length","message_username_exists":"Username already exists or invalid. Please choose another one.","message_email_exists":"E-mail already exists or invalid. Please choose another one.","message_emails_dont_match":"E-mails mismatch.","message_passwords_dont_match":"Passwords mismatch.","message_password_minimum_length":"Password must be at least 6 characters in length.","minimum_password_lenght":"6","message_login_error":"Username and\/or password is not valid.","message_passcode_invalid":"Passcode is not valid.","message_tos_invalid":"You must agree to the Terms of Service in order to signup.","debug":"0"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/js/front-enrollment-process.js?ver=1.3.4.3'></script>
+<script type='text/javascript' src='../js/front-enrollment-process.js?ver=1.3.4.3'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var front_vars = {"withdraw_alert":"Please confirm that you want to withdraw from the course. If you withdraw, you will no longer be able to see your records for this course.","units_archive_url":"http:\/\/www.demos.themecycle.com\/educationpress\/units\/"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/js/coursepress-front.js?ver=1.3.4.3'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/js/coursepress-calendar.js?ver=1.3.4.3'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/js/coursepress-front-elements.js?ver=1.3.4.3'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/ajaxq.min.js?ver=3.1.1'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/jquery.colorbox-min.js?ver=3.1.1'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/jquery.validate.min.js?ver=3.1.1'></script>
+<script type='text/javascript' src='../js/coursepress-front.js?ver=1.3.4.3'></script>
+<script type='text/javascript' src='../js/coursepress-calendar.js?ver=1.3.4.3'></script>
+<script type='text/javascript' src='../js/coursepress-front-elements.js?ver=1.3.4.3'></script>
+<script type='text/javascript' src='../js/ajaxq.min.js?ver=3.1.1'></script>
+<script type='text/javascript' src='../js/jquery.colorbox-min.js?ver=3.1.1'></script>
+<script type='text/javascript' src='../js/jquery.validate.min.js?ver=3.1.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var mp_cart_i18n = {"ajaxurl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-admin\/admin-ajax.php","ajax_loader":"<span class=\"mp_ajax_loader\"><img src=\"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/plugins\/marketpress\/ui\/images\/ajax-loader.gif\" alt=\"\"> Adding...<\/span>","cart_updated_error_limit":"Cart update notice: this item has a limit per order or you have reached the stock limit.","is_cart_page":""};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/mp-cart.js?ver=3.1.1'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/ui/tooltip.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/hoverintent.min.js?ver=3.1.1'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/select2/select2.min.js?ver=3.1.1'></script>
+<script type='text/javascript' src='../js/mp-cart.js?ver=3.1.1'></script>
+<script type='text/javascript' src='../js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../js/jquery/ui/tooltip.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../js/hoverintent.min.js?ver=3.1.1'></script>
+<script type='text/javascript' src='../select2/select2.min.js?ver=3.1.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var mp_i18n = {"ajaxurl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-admin\/admin-ajax.php","loadingImage":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/plugins\/marketpress\/ui\/images\/loading.gif","productsURL":"http:\/\/www.demos.themecycle.com\/educationpress\/store\/products\/","productCats":[]};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/frontend.js?ver=3.1.1'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/rich-reviews/js/rich-reviews.min.js?ver=4.6.14'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/js/jquery.mmenu.min.all.js?ver=4.6.14'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/js/bootstrap.min.js?ver=4.6.14'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/js/bootstrap-tabcollapse.js?ver=4.6.14'></script>
+<script type='text/javascript' src='../js/frontend.js?ver=3.1.1'></script>
+<script type='text/javascript' src='../js/rich-reviews.min.js?ver=4.6.14'></script>
+<script type='text/javascript' src='../js/jquery.mmenu.min.all.js?ver=4.6.14'></script>
+<script type='text/javascript' src='../js/bootstrap.min.js?ver=4.6.14'></script>
+<script type='text/javascript' src='../js/bootstrap-tabcollapse.js?ver=4.6.14'></script>
 <script type='text/javascript'>
 jQuery( document ).ready(function() { jQuery('#tab_list').tabCollapse(); })
 </script>
@@ -96,16 +96,16 @@ jQuery( document ).ready(function() { jQuery('#tab_list').tabCollapse(); })
 var educationpress_vars = {"appTaxTag":"course_category","ajaxurl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-admin\/admin-ajax.php","ajax_url":"\/educationpress\/wp-admin\/admin-ajax.php","nonce":"334080f0ae","loadgif":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/themes\/EducationPress\/images\/heart-load.gif","already_unliked_message":"You have already deleted this course from wishlist.","unliked_message":"Deleted","error_message":"Sorry, there was a problem processing your request."};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/js/functions.js?ver=4.6.14'></script>
+<script type='text/javascript' src='../js/functions.js?ver=4.6.14'></script>
 <!--[if lt IE 9]>
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/js/html5shiv.min.js?ver=3.7.2'></script>
 <![endif]-->
 <!--[if lt IE 9]>
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/js/respond.min.js?ver=3.7.2'></script>
 <![endif]-->
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/fancybox/js/jquery.fancybox.js?ver=4.6.14'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/fancybox/js/custom.fancybox.js?ver=4.6.14'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/js/wow.min.js?ver=4.6.14'></script>
+<script type='text/javascript' src='../js/jquery.fancybox.js?ver=4.6.14'></script>
+<script type='text/javascript' src='../js/custom.fancybox.js?ver=4.6.14'></script>
+<script type='text/javascript' src='../js/wow.min.js?ver=4.6.14'></script>
 <script type='text/javascript'>
 new WOW().init();
 </script>
@@ -355,31 +355,31 @@ if( testInput.type !== 'date') {
 	}
 }
 
-})();</script><link rel='stylesheet' id='siteorigin-widget-icon-font-linearicons-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/linearicons-admin.css?ver=4.6.14' type='text/css' media='all' />
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+})();</script><link rel='stylesheet' id='siteorigin-widget-icon-font-linearicons-css'  href='../css/linearicons-admin.css?ver=4.6.14' type='text/css' media='all' />
+<script type='text/javascript' src='../js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var _wpcf7 = {"loaderUrl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5.1'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/js/jquery.knob.js?ver=1.3.4.3'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/js/jquery.flexslider-min.js?ver=1.7.2'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/ui/menu.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/wp-a11y.min.js?ver=4.6.14'></script>
+<script type='text/javascript' src='../js/scripts.js?ver=4.5.1'></script>
+<script type='text/javascript' src='../js/jquery.knob.js?ver=1.3.4.3'></script>
+<script type='text/javascript' src='../js/jquery.flexslider-min.js?ver=1.7.2'></script>
+<script type='text/javascript' src='../js/jquery/ui/menu.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../js/wp-a11y.min.js?ver=4.6.14'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var uiAutocompleteL10n = {"noResults":"No search results.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate."};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/wp-embed.min.js?ver=4.6.14'></script>
+<script type='text/javascript' src='../js/autocomplete.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='../js/wp-embed.min.js?ver=4.6.14'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var mc4wp_forms_config = [];
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.min.js?ver=4.0.9'></script>
+<script type='text/javascript' src='../js/forms-api.min.js?ver=4.0.9'></script>
 <!--[if lte IE 9]>
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.0.9'></script>
 <![endif]-->
