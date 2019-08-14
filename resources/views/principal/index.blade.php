@@ -82,15 +82,12 @@ new WOW().init();
 			    var excerptLength = 150;
 			</script>
 		<style type='text/css' id='educationpress-dynamic-css'>
-
 .breadcrumb-section{
 background:#e4e8ee;;
 }
-
 .breadcrumb-section h1{
 color:#262c38;
 }
-
 </style>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 		<style type="text/css" media="all" id="siteorigin-panels-grids-wp_head">/* Layout 2 */ #pg-2-0 , #pl-2 .panel-grid-cell .so-panel { margin-bottom:30px } #pg-2-0 .panel-grid-cell { float:none } #pgc-2-1-0 , #pgc-2-1-1 , #pgc-2-1-2 { width:33.333% } #pg-2-1 .panel-grid-cell { float:left } #pl-2 .panel-grid-cell .so-panel:last-child { margin-bottom:0px } #pg-2-0 , #pg-2-1 { margin-left:-15px;margin-right:-15px } #pg-2-0 .panel-grid-cell , #pg-2-1 .panel-grid-cell { padding-left:15px;padding-right:15px } @media (max-width:780px){ #pg-2-0 .panel-grid-cell , #pg-2-1 .panel-grid-cell { float:none;width:auto } #pgc-2-1-0 , #pgc-2-1-1 { margin-bottom:30px } #pl-2 .panel-grid , #pl-2 .panel-grid-cell {  } #pl-2 .panel-grid .panel-grid-cell-empty { display:none } #pl-2 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  } </style><style type="text/css" title="dynamic-css" class="options-output">h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{color:#262c38;}body{color:#657184;}blockquote,blockquote p{color:#657184;}a,p a{color:#263238;}a:hover,p a:hover{color:#ff5722;}a:active,p a:active{color:#263238;}.course .meta a, .course a, h2 a, h4 a, a.more, .entry-meta a, #secondary .widget a{color:#263238;}.course .meta a:hover, .course a:hover, h2 a:hover, h4 a:hover, a.more:hover, .entry-meta a:hover, #secondary .widget a:hover{color:#ff5722;}.course .meta a:active, .course a:active, h2 a:active, h4 a:active, a.more:active, .entry-meta a:active, #secondary .widget a:active{color:#263238;}.btn-orange, a.btn-orange, .btn-orange:active, .btn-orange:focus,
 								.btn-blue, button, input[type="button"], input[type="submit"],
@@ -681,7 +678,6 @@ printer took a galley of type.</p>
 		this.value = "http://" + this.value;
 	}
 }
-
 var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
 if( urlFields && urlFields.length > 0 ) {
 	for( var j=0; j < urlFields.length; j++ ) {
@@ -691,7 +687,6 @@ if( urlFields && urlFields.length > 0 ) {
 var testInput = document.createElement('input');
 testInput.setAttribute('type', 'date');
 if( testInput.type !== 'date') {
-
 	/* add placeholder & pattern to all date fields */
 	var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
 	for(var i=0; i<dateFields.length; i++) {
@@ -703,7 +698,6 @@ if( testInput.type !== 'date') {
 		}
 	}
 }
-
 })();</script>
 <script type='text/javascript'>
 /* <![CDATA[ */
@@ -728,3 +722,4 @@ var mc4wp_forms_config = [];
 <![endif]-->
 </body></html>
 @stop
+

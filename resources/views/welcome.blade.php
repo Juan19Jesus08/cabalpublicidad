@@ -187,9 +187,9 @@ Skip to content</a>
 		</div>
       <div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-visitor-menu" class="nav navbar-nav">
 
-<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a title="Contact Us" href="http://www.demos.themecycle.com/educationpress/contact-us/">Inicio</a></li>
-<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a title="Contact Us" href="http://www.demos.themecycle.com/educationpress/contact-us/">Cursos</a></li>
-<li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a title="Events" href="http://www.demos.themecycle.com/educationpress/all-events/">Acerca de Nosotros</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a title="Contact Us" href="/principal/index/">Inicio</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a title="Contact Us" href="/principal/cursos/">Cursos</a></li>
+<li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a title="Events" href="/principal/acerca_de/">Acerca de Nosotros</a></li>
 
 <li class="pull-right"><a class="woo-menu-cart" href="http://www.demos.themecycle.com/educationpress/store/cart/" title="View your cart"><i class="lnr lnr-cart"></i> <span>0</span></a></li></ul></div>    </nav>
 </div>

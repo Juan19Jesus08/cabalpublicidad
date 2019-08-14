@@ -14,3 +14,20 @@
 Route::get('/', function () {
     return view('/principal/index');
 });
+
+
+Route::get('/cursos', function () {
+    return view('/principal/cursos');
+});
+
+Route::get('/registrar', function () {
+    return view('/principal/registrar');
+});
+
+Route::get('/login', function () {
+    return view('/principal/iniciar_sesion');
+});
+
+Route::get('/acerca_de', function () {
+    return view('/principal/acerca_de');
+});
