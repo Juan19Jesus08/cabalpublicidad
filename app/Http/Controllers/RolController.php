@@ -13,7 +13,7 @@ class RolController extends Controller
 		$data=DB::select('select * from rol');
 		//print_r ($data);
 		//exit();
-		return view('/Rol/Rol',compact('data'))->withData($data);
+		return view('/principal/rol',compact('data'))->withData($data);
 		//return ('/Rol/Rol')->withData($data);
 		//return view('rol',compact('rol'));
 

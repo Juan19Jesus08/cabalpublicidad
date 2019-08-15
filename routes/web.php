@@ -42,4 +42,4 @@ Route::get('/registrar', function () {
 
 
 
-Route::get('rol','RolController@index');
+Route::get('/rol','RolController@index');
