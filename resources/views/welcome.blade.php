@@ -191,7 +191,7 @@ Skip to content</a>
 <li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a title="Contact Us" href="/cursos/">Cursos</a></li>
 <li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a title="Events" href="/acerca_de/">Acerca de Nosotros</a></li>
 
-<li class="pull-right"><a class="woo-menu-cart" href="http://www.demos.themecycle.com/educationpress/store/cart/" title="View your cart"><i class="lnr lnr-cart"></i> <span>0</span></a></li></ul></div>    </nav>
+
 </div>
     <!-- #site-navigation  #end--> 
     
