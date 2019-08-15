@@ -7,8 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Usuario extends Model
 {
     protected $table='usuario';
+    public $timestamps = false;
+   
 
-    protected $fillable = [
+    /*protected $fillable = [
         'email','nombre','password'
         ];
 
@@ -25,5 +27,5 @@ class Usuario extends Model
         public function cursos_completados()
         {
             return $this->hasMany('App\Cursos_Completados');
-        }
+        }*/
 }

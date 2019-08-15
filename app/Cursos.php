@@ -7,7 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Cursos extends Model
 {
     protected $table='cursos';
-    protected $fillable = [
+    
+    public $incrementing=true;
+    protected  $primaryKey = 'id_curso';
+    /*protected $fillable = [
         'id_curso','nombre','descripcion','precio','fecha_creacion'
         ];
 
@@ -24,5 +27,5 @@ class Cursos extends Model
         public function clases()
         {
             return $this->hasMany('App\Clases');
-        }
+        }*/
 }

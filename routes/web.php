@@ -39,3 +39,7 @@ Route::get('/iniciar_sesion', function () {
 Route::get('/registrar', function () {
     return view('/principal/registrar');
 });
+
+
+
+Route::get('rol','RolController@index');
