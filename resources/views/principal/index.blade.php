@@ -176,15 +176,15 @@ color:#262c38;
                     
                     <div class="course_rel">
                                         	<div class="course_rating col-xs-12 col-sm-6">
-                        	 									<i class="glyphicons glyphicon-star"></i>
+                        	 									<i class="glyphicons glyphicon-star-empty"></i>
 								
-                                									<i class="glyphicons glyphicon-star"></i>
+                                									<i class="glyphicons glyphicon-star-empty"></i>
 								
-                                									<i class="glyphicons glyphicon-star"></i>
+                                									<i class="glyphicons glyphicon-star-empty"></i>
 								
-                                									<i class="glyphicons glyphicon-star"></i>
+                                									<i class="glyphicons glyphicon-star-empty"></i>
 								
-                                									<i class="glyphicons glyphicon-star"></i>
+                                									<i class="glyphicons glyphicon-star-empty"></i>
 								
                                                         </div><!-- course_rating #end  -->
                                                                          <p class="enroll col-xs-12 col-sm-6 pull-right">2 Enrolled </p>
