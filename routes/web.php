@@ -43,4 +43,4 @@ Route::get('/registrar', function () {
 
 
 Route::get('/','RolController@index');
-//Route::get('/','CategoriaController@index');
+Route::get('/rol','CategoriaController@mostrar_categorias');

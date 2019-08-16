@@ -192,9 +192,16 @@ Skip to content</a>
 
 <ul role="menu" class=" dropdown-menu">
 
-<!--foreach($category as $items)-->
-	<li id="menu-item-871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871"><a title="All Courses" href="/cursos/">Curso con categoria: </a></li>
-	<!--endforeach-->
+<?php use \App\Http\Controllers\CategoriaController;
+$array=CategoriaController::mostrar_categorias();
+
+foreach( $array as $item);
+{
+
+//echo '	<li id="menu-item-871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871"><a title="All Courses" href="/cursos/">Curso con categoria:'. $item->cate.'</a></li>';
+}
+
+  ?>
 </ul>
 
 </li>
