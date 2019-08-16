@@ -118,237 +118,52 @@ color:#262c38;
                             	<h2 class="text-center head-border-default">Cursos mas populares</h2>
                                  <!-- course start-->
 				                
-                <div class="col-xs-12 col-sm-4 zoom">
-                	<div class="course">
-                	<a href="http://www.demos.themecycle.com/educationpress/courses/building-a-chat-system-in-ajax-php/" class="img-thumb ">
-                     					                     					<div class="course-thumbnail course-featured-media course-featured-media-587 "><figure>				<img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/web7-360x270.jpg" class="course-media-img" alt="Building a Chat System in AJAX &amp; PHP" />
-				</figure></div>                    </a>
-                                      
-                    <div class="course_space">
-                                         <div class="price">Free                                        <span></span></div>
-                                         <h3><a href="http://www.demos.themecycle.com/educationpress/courses/building-a-chat-system-in-ajax-php/" rel="bookmark">
-					Building a Chat System in AJAX &amp; PHP </a></h3>
-                    <p class="meta">
-                    by: <a href="http://www.demos.themecycle.com/educationpress/instructor/cherrywalker/">Cherry Walker</a>					                     in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/web-development/" rel="tag">Web Development</a>                                          </p>
-                   			<div class="course-summary course-summary-587 ">
-				<p>Sed semper semper sapien. Integer interdum dui ut porta euismod. Phasellus sed tristique elit....</p>			</div>
-			                   
-                    
-                 	</div> <!--course space #end -->
-                    
-                    <div class="course_rel">
-                                        	<div class="course_rating col-xs-12 col-sm-6">
-                        	 									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                                        </div><!-- course_rating #end  -->
-                                                                         <p class="enroll col-xs-12 col-sm-6 pull-right">11 Enrolled </p>
-                                             	</div><!--course_rel #end -->
-                    
-                    </div>  <!--course space #end -->
-                </div> <!-- col course #end -->
-                	                
-                
-                <div class="col-xs-12 col-sm-4 zoom">
-                	<div class="course">
-                	<a href="http://www.demos.themecycle.com/educationpress/courses/javascript-essentials/" class="img-thumb ">
-                     					                     					<div class="course-thumbnail course-featured-media course-featured-media-601 "><figure>				<img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/web8-360x270.jpg" class="course-media-img" alt="Javascript Essentials" />
-				</figure></div>                    </a>
-                                      
-                    <div class="course_space">
-                                         <div class="price">&#x24;77                                        <span></span></div>
-                                         <h3><a href="http://www.demos.themecycle.com/educationpress/courses/javascript-essentials/" rel="bookmark">
-					Javascript Essentials </a></h3>
-                    <p class="meta">
-                    by: <a href="http://www.demos.themecycle.com/educationpress/instructor/jamesbond/">James Bond</a>					                     in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/web-development/" rel="tag">Web Development</a>                                          </p>
-                   			<div class="course-summary course-summary-601 ">
-				<p>Nunc elementum at tellus vel ultrices. Morbi at euismod orci. Curabitur tempor maximus purus,...</p>			</div>
-			                   
-                    
-                 	</div> <!--course space #end -->
-                    
-                    <div class="course_rel">
-                                        	<div class="course_rating col-xs-12 col-sm-6">
-                        	 									<i class="glyphicons glyphicon-star-empty"></i>
-								
-                                									<i class="glyphicons glyphicon-star-empty"></i>
-								
-                                									<i class="glyphicons glyphicon-star-empty"></i>
-								
-                                									<i class="glyphicons glyphicon-star-empty"></i>
-								
-                                									<i class="glyphicons glyphicon-star-empty"></i>
-								
-                                                        </div><!-- course_rating #end  -->
-                                                                         <p class="enroll col-xs-12 col-sm-6 pull-right">2 Enrolled </p>
-                                             	</div><!--course_rel #end -->
-                    
-                    </div>  <!--course space #end -->
-                </div> <!-- col course #end -->
-                	                
-                
-                <div class="col-xs-12 col-sm-4 zoom">
-                	<div class="course">
-                	<a href="http://www.demos.themecycle.com/educationpress/courses/learn-and-understand-nodejs/" class="img-thumb ">
-                     					                     					<div class="course-thumbnail course-featured-media course-featured-media-501 "><figure>				<img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/web2-360x270.jpg" class="course-media-img" alt="Learn and Understand NodeJS" />
-				</figure></div>                    </a>
-                                      
-                    <div class="course_space">
-                                         <div class="price">&#x24;80                                        <span></span></div>
-                                         <h3><a href="http://www.demos.themecycle.com/educationpress/courses/learn-and-understand-nodejs/" rel="bookmark">
-					Learn and Understand NodeJS </a></h3>
-                    <p class="meta">
-                    by: <a href="http://www.demos.themecycle.com/educationpress/instructor/emmawilson/">Emma Wilson</a>,<a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a>					                     in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/web-development/" rel="tag">Web Development</a>                                          </p>
-                   			<div class="course-summary course-summary-501 ">
-				<p>Nunc elementum at tellus vel ultrices. Morbi at euismod orci. Curabitur tempor maximus purus,...</p>			</div>
-			                   
-                    
-                 	</div> <!--course space #end -->
-                    
-                    <div class="course_rel">
-                                        	<div class="course_rating col-xs-12 col-sm-6">
-                        	 									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                                        </div><!-- course_rating #end  -->
-                                                                         <p class="enroll col-xs-12 col-sm-6 pull-right">3 Enrolled </p>
-                                             	</div><!--course_rel #end -->
-                    
-                    </div>  <!--course space #end -->
-                </div> <!-- col course #end -->
-                							<div class="clearfix"></div>
-					                 
-                
-                <div class="col-xs-12 col-sm-4 zoom">
-                	<div class="course">
-                	<a href="http://www.demos.themecycle.com/educationpress/courses/javascript-understanding-the-weird-parts/" class="img-thumb ">
-                     					<span class="sale_tag">Sale</span>                     					<div class="course-thumbnail course-featured-media course-featured-media-284 "><figure>				<img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/js-360x270.jpg" class="course-media-img" alt="JavaScript: Understanding the Weird Parts" />
-				</figure></div>                    </a>
-                                      
-                    <div class="course_space">
-                                         <div class="price">&#x24;55                                        <s>&#x24;65</s>
-                                        <span></span></div>
-                                         <h3><a href="http://www.demos.themecycle.com/educationpress/courses/javascript-understanding-the-weird-parts/" rel="bookmark">
-					JavaScript: Understanding the Weird Parts </a></h3>
-                    <p class="meta">
-                    by: <a href="http://www.demos.themecycle.com/educationpress/instructor/jamesbond/">James Bond</a>,<a href="http://www.demos.themecycle.com/educationpress/instructor/stevedown/">Steve Down</a>					                     in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/web-development/" rel="tag">Web Development</a>                                          </p>
-                   			<div class="course-summary course-summary-284 ">
-				Vestibulum, risus eget semper congue, erat lacus lobortis magna, ut bibendum sapien mi eget...			</div>
-			                   
-                    
-                 	</div> <!--course space #end -->
-                    
-                    <div class="course_rel">
-                                        	<div class="course_rating col-xs-12 col-sm-6">
-                        	 									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                                        </div><!-- course_rating #end  -->
-                                                                         <p class="enroll col-xs-12 col-sm-6 pull-right">3 Enrolled </p>
-                                             	</div><!--course_rel #end -->
-                    
-                    </div>  <!--course space #end -->
-                </div> <!-- col course #end -->
-                	                
-                
-                <div class="col-xs-12 col-sm-4 zoom">
-                	<div class="course">
-                	<a href="http://www.demos.themecycle.com/educationpress/courses/belajar-mengenal-hurup-arab/" class="img-thumb ">
-                     					                     					<div class="course-thumbnail course-featured-media course-featured-media-548 "><figure>				<img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/31.jpg" class="course-media-img" alt="Belajar mengenal hurup Arab" />
-				</figure></div>                    </a>
-                                      
-                    <div class="course_space">
-                                         <div class="price">&#x24;0                                        <span></span></div>
-                                         <h3><a href="http://www.demos.themecycle.com/educationpress/courses/belajar-mengenal-hurup-arab/" rel="bookmark">
-					Belajar mengenal hurup Arab </a></h3>
-                    <p class="meta">
-                    by: <a href="http://www.demos.themecycle.com/educationpress/instructor/temo.rocky@gmail.com/">ahmad tayyem</a>,<a href="http://www.demos.themecycle.com/educationpress/instructor/faccodanilo/">Danilo Facco</a>,<a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a>					                     in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/multi-language/" rel="tag">Multi Language</a>                                          </p>
-                   			<div class="course-summary course-summary-548 ">
-				<p>Bagi anda yang belum bisa membaca dan menulis hurup arab, kami akan membantu anda </p>
-<p> </p>
-<p><a href="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2017/04/IMG_0332.mov">IMG_0332</a></p>			</div>
-			                   
-                    
-                 	</div> <!--course space #end -->
-                    
-                    <div class="course_rel">
-                                        	<div class="course_rating col-xs-12 col-sm-6">
-                        	 									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                                        </div><!-- course_rating #end  -->
-                                                                         <p class="enroll col-xs-12 col-sm-6 pull-right">2 Enrolled </p>
-                                             	</div><!--course_rel #end -->
-                    
-                    </div>  <!--course space #end -->
-                </div> <!-- col course #end -->
-                	                
-                
-                <div class="col-xs-12 col-sm-4 zoom">
-                	<div class="course">
-                	<a href="http://www.demos.themecycle.com/educationpress/courses/strength-training-for-ice-hockey/" class="img-thumb ">
-                     					<span class="sale_tag">Sale</span>                     					<div class="course-thumbnail course-featured-media course-featured-media-453 "><figure>				<img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/19-360x270.jpg" class="course-media-img" alt="Strength Training for Ice Hockey" />
-				</figure></div>                    </a>
-                                      
-                    <div class="course_space">
-                                         <div class="price">&#x24;79                                        <s>&#x24;120</s>
-                                        <span></span></div>
-                                         <h3><a href="http://www.demos.themecycle.com/educationpress/courses/strength-training-for-ice-hockey/" rel="bookmark">
-					Strength Training for Ice Hockey </a></h3>
-                    <p class="meta">
-                    by: <a href="http://www.demos.themecycle.com/educationpress/instructor/abhishek/">Abasdfhui kjshdf</a>,<a href="http://www.demos.themecycle.com/educationpress/instructor/cherrywalker/">Cherry Walker</a>,<a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a>					                     in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/sports/" rel="tag">Sports</a>                                          </p>
-                   			<div class="course-summary course-summary-453 ">
-				<p>Suspendisse non rutrum velit. Nunc luctus lacinia erat a efficitur. Ut tincidunt sem et nibh...</p>			</div>
-			                   
-                    
-                 	</div> <!--course space #end -->
-                    
-                    <div class="course_rel">
-                                        	<div class="course_rating col-xs-12 col-sm-6">
-                        	 									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star-empty"></i>
-								                        </div><!-- course_rating #end  -->
-                                                                         <p class="enroll col-xs-12 col-sm-6 pull-right">3 Enrolled </p>
-                                             	</div><!--course_rel #end -->
-                    
-                    </div>  <!--course space #end -->
-                </div> <!-- col course #end -->
-                							<div class="clearfix"></div>
+   @foreach($videos_populares as $items)
+
+
+<div class="col-xs-12 col-sm-4 zoom">
+                   <div class="course">
+
+                   <a href="http://www.demos.themecycle.com/educationpress/courses/building-a-chat-system-in-ajax-php/" class="img-thumb ">
+                                    	                                       <div class="course-thumbnail course-featured-media course-featured-media-587 "><figure>             <img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/web7-360x270.jpg" class="course-media-img" alt="Building a Chat System in AJAX &amp; PHP" />
+                </figure></div>                    </a>
+                                    
+                   <div class="course_space">
+                                        <div class="price"> {{$items->precio}}                                     <span></span></div>
+                                        <h3><a href="http://www.demos.themecycle.com/educationpress/courses/building-a-chat-system-in-ajax-php/" rel="bookmark">
+                    {{$items->nombre}}
+ </a></h3>
+                   <p class="meta">
+                   by: <a href="http://www.demos.themecycle.com/educationpress/instructor/cherrywalker/">Cherry Walker</a>              	                    in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/web-development/" rel="tag">Web Development</a>                                          </p>
+                           <div class="course-summary course-summary-587 ">
+                <p>{{$items->descripcion}}
+</p>            </div>
+         	                 
+                  
+                   </div> <!--course space #end -->
+                  
+                   <div class="course_rel">
+                                           <div class="course_rating col-xs-12 col-sm-6">
+                        	                                   <i class="glyphicons glyphicon-star"></i>
+                                
+                                                                   <i class="glyphicons glyphicon-star"></i>
+                                
+                                                                   <i class="glyphicons glyphicon-star"></i>
+                                
+                                                                   <i class="glyphicons glyphicon-star"></i>
+                                
+                                                                   <i class="glyphicons glyphicon-star"></i>
+                                
+                                                       </div><!-- course_rating #end  -->
+                                                                        <p class="enroll col-xs-12 col-sm-6 pull-right">  {{$items->vendidos}}
+Cursando </p>
+                                               </div><!--course_rel #end -->
+                  
+                   </div>  <!--course space #end -->
+               </div> <!-- col course #end -->
+
+@endforeach
+							<div class="clearfix"></div>
 					                 
                                                 
                  <!-- course start End-->

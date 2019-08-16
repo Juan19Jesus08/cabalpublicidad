@@ -1,3 +1,5 @@
+@extends('welcome')
+@section('contenido')
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,3 +36,4 @@
 	</table>
 </body>
 </html>
+@stop

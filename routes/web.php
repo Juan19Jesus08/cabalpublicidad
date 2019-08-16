@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('/principal/index');
-});
+});*/
 
 
 Route::get('/cursos', function () {
@@ -42,4 +42,4 @@ Route::get('/registrar', function () {
 
 
 
-Route::get('/rol','RolController@index');
+Route::get('/','RolController@index');
