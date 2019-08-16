@@ -111,9 +111,7 @@ Skip to content</a>
 	<div class="container">
     	<div class="row">
             <p>
-            <a href="http://www.demos.themecycle.com/educationpress/">Home</a><i class="fa fa-angle-right"></i>
-            <a href="http://www.demos.themecycle.com/educationpress/courses">All Courses</a><i class="fa fa-angle-right"></i>
-            <a href="http://www.demos.themecycle.com/educationpress/course_category/food-recipe/" rel="tag">Food Recipe</a><i class="fa fa-angle-right"></i>Escultura Dental            </p>
+            </p>
         </div> <!--row #end  -->
     </div>
 </div>
@@ -127,9 +125,7 @@ Skip to content</a>
                 	
                      <div class="courses-info">
                      	<h1>Escultura Dental</h1>
-                        <p class="excerpt">Trecho breve do curso</p>
-                        
-                         <p class="meta">Instructed by: <a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a> . in: <a href="http://www.demos.themecycle.com/educationpress/course_category/food-recipe/" rel="tag">Food Recipe</a></p>
+                       
                      </div><!--courses-info #end  -->
                 	
                                     	 <a class="img-thumb " href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/">
@@ -138,15 +134,7 @@ Skip to content</a>
                         <div class="course-thumbnail course-featured-media course-featured-media-2558 "><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2018/03/protocoloacrilico-perfil-instagram-150.png" class="course-media-img" alt="Escultura Dental" /></div>                        </figure>
                         
                                     	 </a>
-                                        <div class="courses-info">
-                                         <ul class="social-icons">
-                                        <li><a href="http://www.facebook.com/sharer%2Fsharer.php%3Fs%3D100%26p%5Burl%5D%3Dhttp%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses%2Fescultura-dental%2F%26p%5Bimages%5D%5B0%5D%3D%26p%5Btitle%5D%3DEscultura+Dental%26p%5Bsummary%5D%3DTrecho+breve+do+curso" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-                    				
-                    <li><a href="http://twitter.com/home?status=Escultura+Dental%20http%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses%2Fescultura-dental%2F"  target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://plus.google.com/share?url=http://www.demos.themecycle.com/educationpress/courses/escultura-dental/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href="mailto:?subject%3DEscultura+Dental%26body%3DTrecho+breve+do+curso" target="_top"><i class="fa fa-envelope"></i></a></li>
-                    </ul>
-                                        </div>
+                                      
 					
                                             
                   
