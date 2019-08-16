@@ -1,16 +1,12 @@
+@extends('welcome')
+@section('contenido')
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<base href="http://www.demos.themecycle.com/educationpress/">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="http://www.demos.themecycle.com/educationpress/xmlrpc.php">
-<title>Escultura Dental &#8211; EducationPress</title>
+<title>Curso Revit nivel básico &#8211; EducationPress</title>
 <meta name='robots' content='noindex,follow' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="EducationPress &raquo; Feed" href="http://www.demos.themecycle.com/educationpress/feed/" />
-<link rel="alternate" type="application/rss+xml" title="EducationPress &raquo; Comments Feed" href="http://www.demos.themecycle.com/educationpress/comments/feed/" />
                 <!-- favicon -->
                 <link rel="shortcut icon" href="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/favicon.png"/>
                 		<script type="text/javascript">
@@ -31,69 +27,27 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='stylesheet' id='educationpress-bootstrap-checkbox-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/build.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='siteorigin-panels-front-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/siteorigin-panels/css/front.css?ver=2.4.19' type='text/css' media='all' />
-<link rel='stylesheet' id='contact-form-7-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.5.1' type='text/css' media='all' />
-<link rel='stylesheet' id='font_awesome-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/css/font-awesome.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='front_general-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/css/front_general.css?ver=1.3.4.3' type='text/css' media='all' />
-<link rel='stylesheet' id='front_enrollment_process-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/css/front-enrollment-process.css?ver=1.3.4.3' type='text/css' media='all' />
-<link rel='stylesheet' id='flexslider-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/flexslider.css?ver=1.7.2' type='text/css' media='all' />
-<link rel='stylesheet' id='colorbox-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/css/colorbox.css?ver=3.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='jquery-ui-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/css/jquery-ui.min.css?ver=3.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='mp-select2-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/select2/select2.css?ver=3.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='mp-base-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/css/marketpress.css?ver=3.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='mp-theme-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/themes/default.css?ver=3.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='rich-reviews-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/plugins/rich-reviews/css/rich-reviews.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='mmenu-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/jquery.mmenu.all.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='bootstrap-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/bootstrap.min.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/font-awesome.min.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='simple-line-icons-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/simple-line-icons.css?ver=4.6.14' type='text/css' media='all' />
 <link rel='stylesheet' id='educationpress-globalcss-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/global.css?ver=1.4.1' type='text/css' media='all' />
-<link rel='stylesheet' id='educationpress-style-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/style.css?ver=1.4.1' type='text/css' media='all' />
-<link rel='stylesheet' id='animate-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/animate.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='fancybox-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/fancybox/css/fancybox.css?ver=4.6.14' type='text/css' media='all' />
-<link rel='stylesheet' id='educationpress-parent-custom-css'  href='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/css/custom.css?ver=1.4.1' type='text/css' media='all' />
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var cp_vars = {"admin_ajax_url":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-admin\/admin-ajax.php","message_all_fields_are_required":"All fields are required.","message_username_minimum_length":"Username must be at least 4 characters in length","message_username_exists":"Username already exists or invalid. Please choose another one.","message_email_exists":"E-mail already exists or invalid. Please choose another one.","message_emails_dont_match":"E-mails mismatch.","message_passwords_dont_match":"Passwords mismatch.","message_password_minimum_length":"Password must be at least 6 characters in length.","minimum_password_lenght":"6","message_login_error":"Username and\/or password is not valid.","message_passcode_invalid":"Passcode is not valid.","message_tos_invalid":"You must agree to the Terms of Service in order to signup.","debug":"0"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/js/front-enrollment-process.js?ver=1.3.4.3'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var front_vars = {"withdraw_alert":"Please confirm that you want to withdraw from the course. If you withdraw, you will no longer be able to see your records for this course.","units_archive_url":"http:\/\/www.demos.themecycle.com\/educationpress\/courses\/escultura-dental\/units\/"};
+var front_vars = {"withdraw_alert":"Please confirm that you want to withdraw from the course. If you withdraw, you will no longer be able to see your records for this course.","units_archive_url":"http:\/\/www.demos.themecycle.com\/educationpress\/courses\/curso-revit-nivel-basico\/units\/"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/js/coursepress-front.js?ver=1.3.4.3'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/js/coursepress-calendar.js?ver=1.3.4.3'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/js/coursepress-front-elements.js?ver=1.3.4.3'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/ajaxq.min.js?ver=3.1.1'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/jquery.colorbox-min.js?ver=3.1.1'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/jquery.validate.min.js?ver=3.1.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var mp_cart_i18n = {"ajaxurl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-admin\/admin-ajax.php","ajax_loader":"<span class=\"mp_ajax_loader\"><img src=\"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/plugins\/marketpress\/ui\/images\/ajax-loader.gif\" alt=\"\"> Adding...<\/span>","cart_updated_error_limit":"Cart update notice: this item has a limit per order or you have reached the stock limit.","is_cart_page":""};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/mp-cart.js?ver=3.1.1'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/jquery/ui/tooltip.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/hoverintent.min.js?ver=3.1.1'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/select2/select2.min.js?ver=3.1.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var mp_i18n = {"ajaxurl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-admin\/admin-ajax.php","loadingImage":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/plugins\/marketpress\/ui\/images\/loading.gif","productsURL":"http:\/\/www.demos.themecycle.com\/educationpress\/store\/products\/","productCats":[]};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/marketpress/ui/js/frontend.js?ver=3.1.1'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/rich-reviews/js/rich-reviews.min.js?ver=4.6.14'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/js/jquery.mmenu.min.all.js?ver=4.6.14'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/js/bootstrap.min.js?ver=4.6.14'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/js/bootstrap-tabcollapse.js?ver=4.6.14'></script>
 <script type='text/javascript'>
 jQuery( document ).ready(function() { jQuery('#tab_list').tabCollapse(); })
 </script>
@@ -102,28 +56,15 @@ jQuery( document ).ready(function() { jQuery('#tab_list').tabCollapse(); })
 var educationpress_vars = {"appTaxTag":"course_category","ajaxurl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-admin\/admin-ajax.php","ajax_url":"\/educationpress\/wp-admin\/admin-ajax.php","nonce":"41b2ef1c2c","loadgif":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/themes\/EducationPress\/images\/heart-load.gif","already_unliked_message":"You have already deleted this course from wishlist.","unliked_message":"Deleted","error_message":"Sorry, there was a problem processing your request."};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/js/functions.js?ver=4.6.14'></script>
 <!--[if lt IE 9]>
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/js/html5shiv.min.js?ver=3.7.2'></script>
 <![endif]-->
 <!--[if lt IE 9]>
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/js/respond.min.js?ver=3.7.2'></script>
 <![endif]-->
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/fancybox/js/jquery.fancybox.js?ver=4.6.14'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/fancybox/js/custom.fancybox.js?ver=4.6.14'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/js/wow.min.js?ver=4.6.14'></script>
 <script type='text/javascript'>
 new WOW().init();
 </script>
-<link rel='https://api.w.org/' href='http://www.demos.themecycle.com/educationpress/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.demos.themecycle.com/educationpress/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.demos.themecycle.com/educationpress/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Learn and Understand NodeJS' href='http://www.demos.themecycle.com/educationpress/courses/learn-and-understand-nodejs/' />
-<meta name="generator" content="WordPress 4.6.14" />
-<link rel="canonical" href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/" />
-<link rel="alternate" type="application/json+oembed" href="http://www.demos.themecycle.com/educationpress/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses%2Fescultura-dental%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://www.demos.themecycle.com/educationpress/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses%2Fescultura-dental%2F&#038;format=xml" />
-				<meta name="generator" content="CoursePress Pro 1.3.4.3"/>
 						<script type="text/javascript">
 			    var moreText = "Read More";
 			    var lessText = "Show Less";
@@ -146,95 +87,11 @@ color:#262c38;
 								.footer-widget .wpcf7-form .wpcf7-submit,
 								.navbar li.pull-right a.woo-menu-cart span, #wp-submit{background-color:#ff5722;}.btn-orange:hover,a.btn-orange:hover, .btn-blue:hover, .manage-course:hover, button:hover, input[type="button"]:hover, input[type="submit"]:hover,.woocommerce button.button:hover, .woocommerce input.button:hover, .footer-widget .wpcf7-form .wpcf7-submit:hover, #wp-submit:hover{background-color:#0583e4;}.pagination a.page-numbers{color:#99a6bb;}.pagination a.page-numbers{border-top:1px solid #e4e8ee;border-bottom:1px solid #e4e8ee;border-left:1px solid #e4e8ee;border-right:1px solid #e4e8ee;}.pagination a:hover.page-numbers{color:#ffffff;}.pagination a:hover.page-numbers, .pagination span.current{border-top:1px solid #ff5722;border-bottom:1px solid #ff5722;border-left:1px solid #ff5722;border-right:1px solid #ff5722;}.pagination a:hover.page-numbers, .pagination span.current{background-color:#ff5722;}.site-footer{background-color:#262c38;}.site-footer h1,.site-footer h2,.site-footer h3,.site-footer h4,.site-footer h5,.site-footer h6,.site-footer .h1,.site-footer .h2,.site-footer .h3,.site-footer .h4,.site-footer .h5,.site-footer .h6{color:#ffffff;}.site-footer, .site-footer p, .site-footer ul li{color:#657184;}.site-footer a, .site-footer p a, .site-footer li a{color:#657184;}.site-footer a:hover, .site-footer p a:hover, .site-footer li a:hover{color:#ffffff;}.site-footer a:active, .site-footer p a:active, .site-footer li a:active{color:#657184;}</style></head>
 
-<body class="single single-course postid-2558 course-escultura-dental">
+<body class="single single-course postid-1453 course-curso-revit-nivel-basico">
 <div id="page" class="hfeed site">
 <a class="skip-link screen-reader-text" href="#content">
 Skip to content</a>
 
-<header id="masthead" class="site-header ">
-  
-   <!-- header_meta #start -->
-  <div class="header_meta">
-    <div class="container">
-    <div class="row">
-           <p class="site-description col-xs-12 col-sm-6" >
-       The Most Complete Education Solution      </p>
-          
-      <nav class="meta-login">
-        <ul>
-                  <li class="call"><i class="lnr lnr-smartphone"></i>Call Us  +731 234 5678</li>
-           
-                               <li><a href="http://www.demos.themecycle.com/educationpress/courses-signup/">Signup</a></li>
-             <li><a href="http://www.demos.themecycle.com/educationpress/student-login/">Login</a></li>
-              		                  </ul>
-      </nav>
-      
-      </div> <!--row #end--> 
-    </div><!--container #end--> 
-  </div><!-- Header Meta #end -->
-  <!-- header_meta #end -->
-  
-  <div class="container">
-     <div class="row">
-     <!-- #site-branding #start -->
-     <div class="site-branding col-xs-12 col-sm-3">
-          <a href="http://www.demos.themecycle.com/educationpress/" rel="home"><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/logo.png" class="brand" alt="EducationPress" /> </a>
-         
-
-    </div>
-     <!-- #site-branding #end -->
-    
-    
-     <!-- #site-navigation #start --> 
-     <div class="col-xs-12  col-sm-9">
-<nav id="site-navigation" class="main-navigation navbar navbar-default">
-    	<div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-		</div>
-      <div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-visitor-menu" class="nav navbar-nav"><li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-145 dropdown"><a title="Home" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Home <span class="caret"></span></a>
-<ul role="menu" class=" dropdown-menu">
-	<li id="menu-item-749" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-749"><a title="Home Page 1" href="http://www.demos.themecycle.com/educationpress/">Home Page 1</a></li>
-	<li id="menu-item-725" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-725"><a title="Home Page 2" href="http://www.demos.themecycle.com/educationpress/home-page-2/">Home Page 2</a></li>
-	<li id="menu-item-726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-726"><a title="Home Page 3" href="http://www.demos.themecycle.com/educationpress/home-page-3/">Home Page 3</a></li>
-	<li id="menu-item-1410" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1410"><a title="Home 1 Sticky Header" href="http://www.demos.themecycle.com/educationpress/?sticky-header=yes">Home 1 Sticky Header</a></li>
-	<li id="menu-item-1411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1411"><a title="Home 2 Sticky Header" href="http://www.demos.themecycle.com/educationpress/home-page-2/?sticky-header=yes">Home 2 Sticky Header</a></li>
-</ul>
-</li>
-<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-148 dropdown"><a title="Courses" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Courses <span class="caret"></span></a>
-<ul role="menu" class=" dropdown-menu">
-	<li id="menu-item-871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871"><a title="All Courses" href="http://www.demos.themecycle.com/educationpress/all-courses/">All Courses</a></li>
-	<li id="menu-item-870" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-870"><a title="Courses Grid 2 Column" href="http://www.demos.themecycle.com/educationpress/courses-grid-2-column/">Courses Grid 2 Column</a></li>
-	<li id="menu-item-869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-869"><a title="Courses Grid 3 Column" href="http://www.demos.themecycle.com/educationpress/courses-grid-3-column/">Courses Grid 3 Column</a></li>
-	<li id="menu-item-868" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-868"><a title="Courses List Mode" href="http://www.demos.themecycle.com/educationpress/courses-list-mode/">Courses List Mode</a></li>
-	<li id="menu-item-876" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-876"><a title="Course Detail With Tabs" href="http://www.demos.themecycle.com/educationpress/courses/javascript-understanding-the-weird-parts/?tab=yes">Course Detail With Tabs</a></li>
-	<li id="menu-item-877" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-877"><a title="Course Detail Without Tabs" href="http://www.demos.themecycle.com/educationpress/courses/javascript-understanding-the-weird-parts/?tab=no">Course Detail Without Tabs</a></li>
-</ul>
-</li>
-<li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a title="Events" href="http://www.demos.themecycle.com/educationpress/all-events/">Events</a></li>
-<li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-153 dropdown"><a title="Pages" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Pages <span class="caret"></span></a>
-<ul role="menu" class=" dropdown-menu">
-	<li id="menu-item-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146"><a title="About Us" href="http://www.demos.themecycle.com/educationpress/about-us/">About Us</a></li>
-	<li id="menu-item-806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-806"><a title="Our Instructors" href="http://www.demos.themecycle.com/educationpress/our-instructors/">Our Instructors</a></li>
-	<li id="menu-item-661" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-661"><a title="Gallery" href="http://www.demos.themecycle.com/educationpress/gallery/">Gallery</a></li>
-	<li id="menu-item-709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-709"><a title="Plans and Pricing" href="http://www.demos.themecycle.com/educationpress/plans-and-pricing/">Plans and Pricing</a></li>
-	<li id="menu-item-152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152"><a title="Shortcodes" href="http://www.demos.themecycle.com/educationpress/shortcodes/">Shortcodes</a></li>
-	<li id="menu-item-708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-708"><a title="FAQ" href="http://www.demos.themecycle.com/educationpress/frequently-asked-questions/">FAQ</a></li>
-</ul>
-</li>
-<li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-155"><a title="Blog" href="http://www.demos.themecycle.com/educationpress/blog/">Blog</a></li>
-<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a title="Contact Us" href="http://www.demos.themecycle.com/educationpress/contact-us/">Contact Us</a></li>
-<li class="pull-right"><a class="woo-menu-cart" href="http://www.demos.themecycle.com/educationpress/store/cart/" title="View your cart"><i class="lnr lnr-cart"></i> <span>0</span></a></li></ul></div>    </nav>
-</div>
-    <!-- #site-navigation  #end--> 
-    
-    </div>   <!--row #end--> 
-  </div>  <!--container #end--> 
-</header> <!-- header #masthead -->
 
 
 <!-- #site-navigation #start --> 
@@ -247,7 +104,7 @@ Skip to content</a>
             <p>
             <a href="http://www.demos.themecycle.com/educationpress/">Home</a><i class="fa fa-angle-right"></i>
             <a href="http://www.demos.themecycle.com/educationpress/courses">All Courses</a><i class="fa fa-angle-right"></i>
-            <a href="http://www.demos.themecycle.com/educationpress/course_category/food-recipe/" rel="tag">Food Recipe</a><i class="fa fa-angle-right"></i>Escultura Dental            </p>
+            <a href="http://www.demos.themecycle.com/educationpress/course_category/web-development/" rel="tag">Web Development</a><i class="fa fa-angle-right"></i>Curso Revit nivel básico            </p>
         </div> <!--row #end  -->
     </div>
 </div>
@@ -260,25 +117,26 @@ Skip to content</a>
 			<main id="main" class="site-main col-xs-12 col-sm-8 pull-left" >
                 	
                      <div class="courses-info">
-                     	<h1>Escultura Dental</h1>
-                        <p class="excerpt">Trecho breve do curso</p>
+                     	<h1>Curso Revit nivel básico</h1>
+                        <p class="excerpt">ESto es un curso de pruebas</p>
                         
-                         <p class="meta">Instructed by: <a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a> . in: <a href="http://www.demos.themecycle.com/educationpress/course_category/food-recipe/" rel="tag">Food Recipe</a></p>
+                         <p class="meta">Instructed by: <a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a> . in: <a href="http://www.demos.themecycle.com/educationpress/course_category/web-development/" rel="tag">Web Development</a></p>
                      </div><!--courses-info #end  -->
                 	
-                                    	 <a class="img-thumb " href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/">
+                                        	<div class="img-thumb">
                                         
                         <figure>
-                        <div class="course-thumbnail course-featured-media course-featured-media-2558 "><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2018/03/protocoloacrilico-perfil-instagram-150.png" class="course-media-img" alt="Escultura Dental" /></div>                        </figure>
+                        <div class="video_player course-featured-media course-featured-media-1453 ">
+										<iframe width="640" height="360" src="https://www.youtube.com/embed/ht9KUu6eSm8?feature=oembed"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>									</div>                        </figure>
                         
-                                    	 </a>
+                                        </div>
                                         <div class="courses-info">
                                          <ul class="social-icons">
-                                        <li><a href="http://www.facebook.com/sharer%2Fsharer.php%3Fs%3D100%26p%5Burl%5D%3Dhttp%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses%2Fescultura-dental%2F%26p%5Bimages%5D%5B0%5D%3D%26p%5Btitle%5D%3DEscultura+Dental%26p%5Bsummary%5D%3DTrecho+breve+do+curso" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                                        <li><a href="http://www.facebook.com/sharer%2Fsharer.php%3Fs%3D100%26p%5Burl%5D%3Dhttp%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses%2Fcurso-revit-nivel-basico%2F%26p%5Bimages%5D%5B0%5D%3D%26p%5Btitle%5D%3DCurso+Revit+nivel+b%C3%A1sico%26p%5Bsummary%5D%3DESto+es+un+curso+de+pruebas" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
                     				
-                    <li><a href="http://twitter.com/home?status=Escultura+Dental%20http%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses%2Fescultura-dental%2F"  target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://plus.google.com/share?url=http://www.demos.themecycle.com/educationpress/courses/escultura-dental/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href="mailto:?subject%3DEscultura+Dental%26body%3DTrecho+breve+do+curso" target="_top"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="http://twitter.com/home?status=Curso+Revit+nivel+b%C3%A1sico%20http%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses%2Fcurso-revit-nivel-basico%2F"  target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://www.demos.themecycle.com/educationpress/courses/curso-revit-nivel-basico/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="mailto:?subject%3DCurso+Revit+nivel+b%C3%A1sico%26body%3DESto+es+un+curso+de+pruebas" target="_top"><i class="fa fa-envelope"></i></a></li>
                     </ul>
                                         </div>
 					
@@ -305,24 +163,29 @@ Skip to content</a>
 					in  active">
                     	<h3>
 							Course Description                        </h3>
-                        <p>Descrição do Curso</p>
+                        <p style="margin: 0px 0px 1.4em;padding: 0px;color: #3c3c3c;font-family: DINPro-Regular;font-size: 15px;letter-spacing: 0.150000005960464px;line-height: 16.5px;background-color: #e4f7f4">El Curso gratis de Introducción a Revit Architecture te permite hacer un acercamiento a la filosofía de trabajo BIM, Building Information Modeling o Modelado de la Información para la Edificación.</p>
+<p style="margin: 0px 0px 1.4em;padding: 0px;color: #3c3c3c;font-family: DINPro-Regular;font-size: 15px;letter-spacing: 0.150000005960464px;line-height: 16.5px;background-color: #e4f7f4"><span style="margin: 0px;padding: 0px;font-family: DINPro-Black;line-height: 1">Te proponemos un Curso de Revit On-line GRATIS</span> en el que podrás asistir a master-class cuándo quieras y desde dónde quieras -ordenador, tablet o teléfono móvil- en una plataforma e-learning diseñada y optimizada para BIM, y resolver tus dudas a través de nuestro foro o por mensajería interna.</p>
+<div id="attachment_5699" class="wp-caption alignleft" style="margin: 0px 1.2em 8px -1.2em;padding: 0px;width: 110px;color: #3c3c3c;font-family: DINPro-Regular;font-size: 15px;letter-spacing: 0.150000005960464px;line-height: 16.5px;background-color: #e4f7f4"><a style="margin: 0px;padding: 0px;color: #000000;text-decoration: none;background-color: transparent" href="https://www.espaciobim.com/metodologia-cursos-online-de-revit/" target="_blank"><img class="alignleft size-medium wp-image-42" style="margin-top: 0px;margin-right: 0px;margin-bottom: 0px;padding: 0px;border: 0px" title="Descubre una metodología innovadora en nuestros Cursos Online de Revit" src="https://www.espaciobim.com/images/Cursos-online-de-revit.jpg" alt="Metodlogía Cursos Online de Revit" width="440" /></a></p>
+<p class="wp-caption-text" style="margin: 0.65em 0px;padding: 0px;text-align: center;font-size: 12px !important"><a style="margin: 0px;padding: 0px;color: #000000;background-color: transparent" href="https://www.espaciobim.com/metodologia-cursos-online-de-revit/" target="_blank">CLICA</a>, y descubre una metodología innovadora.</p>
+</div>
+<p style="margin: 0px 0px 1.4em;padding: 0px;color: #3c3c3c;font-family: DINPro-Regular;font-size: 15px;letter-spacing: 0.150000005960464px;line-height: 16.5px;background-color: #e4f7f4">Y si continuas formándote con nosotros descubrirás una metodología innovadora basada en dinámicas de juego; Participarás en un proyecto global junto a otros técnicos; Contarás con la ayuda de un arquitecto experto en modelado de la información a través de videoconferencias semanales, foro por bloques de contenido y mensajería interna; Y te mostraremos tu progreso en BIM a través de nuestro sistema de evaluación y feed-back, para que consigas la <span style="margin: 0px;padding: 0px;font-family: DINPro-Black;line-height: 1">Certificación Oficial de Autodesk®</span>.</p>
+<p style="margin: 0px 0px 1.4em 15px;padding: 0px;color: #3c3c3c;font-family: DINPro-Regular;font-size: 15px;letter-spacing: 0.150000005960464px;line-height: 16.5px;background-color: #e4f7f4">Iñaki Huarte, CEO en <a style="margin: 0px;padding: 0px;color: #000000;background-color: transparent" href="http://www.ouiplay.es/portfolio/gamificacion-para-curso-online-de-espacio-bim/" target="_blank" rel="nofollow">Ouiplay</a>, sobre la metodología de nuestros Cursos Online de Revit: “<em style="margin: 0px;padding: 0px">Hemos creado una metodología basada en la gamificación -integración de dinámicas de juego en entornos no lúdicos- con el fin de potenciar la motivación y el compromiso en el aprendizaje, y hacerlo más atractivo. El alumno es protagonista de una historia de ficción que lo atrapa.</em>“</p>
                     </div> <!--courses-info #end  -->
                 
           		
                 	<div id="stucture" class="courses-info clearfix  tab-pane fade ">
 
 
-<h3>Curriculum</h3><div class="course-structure-block course-structure-block-2558"><ul class="tree">
+<h3>Curriculum</h3><div class="course-structure-block course-structure-block-1453"><ul class="tree">
 						<li>
 							<ul>
 																		<li>
                                         												<label  class="course_structure_unit_label ">
-																								<span class="tree-unit-left"><a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/untitled-21/?try">Módulo - 1</a></span>
+																								<span class="tree-unit-left">Unidad 1</span>
 												<span class="tree-unit-right">
 
-																											<span>4:00 min</span>
+																											<span>2:00 min</span>
 													
-																											<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/untitled-21/?try" class="preview_option">Free</a>
 																									</span>
 											</label>
 
@@ -331,69 +194,7 @@ Skip to content</a>
 																																													<label >
 																
 																<span class="tree-page-left">
-																	<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/untitled-21/page/1/?try">Aula 1</a> 
-																</span>
-																<span class="tree-page-right">
-
-																																			<span>1:00 min</span>
-																	
-																																			<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/untitled-21/page/1?try" class="preview_option">Free</a>
-																	
-																</span>
-                                                              
-                                                                
-															</label>
-															   <ul class="sub-mode">
-                                                                                                                                <li>
-                                                                                                                               <label >
-																
-																<span class="tree-page-left">
-                                                                                                                                                                                                                                                                              	<i class="fa fa-play-circle"></i>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            																	Corte do primeiro central superior																</span>
-                                                              
-                                                                
-															</label>
-                                                                </li>
-                                                                                                                            
-                                                                </ul>
-															
- 														</li>
-																											<li class="course_structure_page_li ">
-																																													<label >
-																
-																<span class="tree-page-left">
-																	<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/untitled-21/page/2/?try">aula 2</a> 
-																</span>
-																<span class="tree-page-right">
-
-																																			<span>1:00 min</span>
-																	
-																																			<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/untitled-21/page/2?try" class="preview_option">Free</a>
-																	
-																</span>
-                                                              
-                                                                
-															</label>
-															   <ul class="sub-mode">
-                                                                                                                                <li>
-                                                                                                                               <label >
-																
-																<span class="tree-page-left">
-                                                                                                                                                                                                                                                                              	<i class="fa fa-play-circle"></i>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            																	Corte do Segundo central superior																</span>
-                                                              
-                                                                
-															</label>
-                                                                </li>
-                                                                                                                            
-                                                                </ul>
-															
- 														</li>
-																											<li class="course_structure_page_li ">
-																																													<label >
-																
-																<span class="tree-page-left">
-																	<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/untitled-21/page/3/?try">الاختبار الثاني</a> 
+																	Untitled Page 
 																</span>
 																<span class="tree-page-right">
 
@@ -409,8 +210,8 @@ Skip to content</a>
                                                                                                                                <label >
 																
 																<span class="tree-page-left">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="fa fa-check-circle-o"></i>
-                                                                                                                                        																	السوال الأول																</span>
+                                                                                                                                                                                                                                                                              	<i class="fa fa-play-circle"></i>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            																	Video Introduccion																</span>
                                                               
                                                                 
 															</label>
@@ -419,8 +220,18 @@ Skip to content</a>
                                                                                                                                <label >
 																
 																<span class="tree-page-left">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="fa fa-check-circle-o"></i>
-                                                                                                                                        																	ةبيىسسوىب																</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="fa fa-upload"></i>
+                                                                                                                                                                                                            																	Adjuntar archivo introduccion																</span>
+                                                              
+                                                                
+															</label>
+                                                                </li>
+                                                                                                                                <li>
+                                                                                                                               <label >
+																
+																<span class="tree-page-left">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="fa fa-upload"></i>
+                                                                                                                                                                                                            																	yuuifyui																</span>
                                                               
                                                                 
 															</label>
@@ -435,12 +246,11 @@ Skip to content</a>
 										</li>
 																			<li>
                                         												<label  class="course_structure_unit_label ">
-																								<span class="tree-unit-left"><a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/modulo-2/?try">Módulo - 2</a></span>
+																								<span class="tree-unit-left">Unidad 2</span>
 												<span class="tree-unit-right">
 
 																											<span>N/A</span>
 													
-																											<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/modulo-2/?try" class="preview_option">Free</a>
 																									</span>
 											</label>
 
@@ -449,19 +259,73 @@ Skip to content</a>
 																																													<label >
 																
 																<span class="tree-page-left">
-																	<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/modulo-2/page/1/?try">Aula 1</a> 
+																	Untitled Page 
 																</span>
 																<span class="tree-page-right">
 
-																																			<span></span>
+																																			<span>N/A</span>
 																	
-																																			<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/modulo-2/page/1?try" class="preview_option">Free</a>
 																	
 																</span>
                                                               
                                                                 
 															</label>
 															   <ul class="sub-mode">
+                                                                                                                                <li>
+                                                                                                                               <label >
+																
+																<span class="tree-page-left">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <i class="fa fa-check-square-o"></i>
+                                                                                                                                                                                                                                                                                																	Eleccion multiple																</span>
+                                                              
+                                                                
+															</label>
+                                                                </li>
+                                                                                                                            
+                                                                </ul>
+															
+ 														</li>
+													
+											</ul>
+                                            
+										</li>
+																			<li>
+                                        												<label  class="course_structure_unit_label ">
+																								<span class="tree-unit-left">Unidad 3</span>
+												<span class="tree-unit-right">
+
+																											<span>N/A</span>
+													
+																									</span>
+											</label>
+
+											<ul>
+																										<li class="course_structure_page_li ">
+																																													<label >
+																
+																<span class="tree-page-left">
+																	Untitled Page 
+																</span>
+																<span class="tree-page-right">
+
+																																			<span>N/A</span>
+																	
+																	
+																</span>
+                                                              
+                                                                
+															</label>
+															   <ul class="sub-mode">
+                                                                                                                                <li>
+                                                                                                                               <label >
+																
+																<span class="tree-page-left">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="fa fa-check-circle-o"></i>
+                                                                                                                                        																	Eleccion simple																</span>
+                                                              
+                                                                
+															</label>
+                                                                </li>
                                                                                                                             
                                                                 </ul>
 															
@@ -513,7 +377,7 @@ Skip to content</a>
             <h3>Reviews</h3>
             <div class="col-xs-12 col-sm-3 average-rating" itemscope itemtype="http://schema.org/Product">
             <span itemprop="name" style="display:none">
-            Escultura Dental            </span>
+            Curso Revit nivel básico            </span>
               <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
             	<p>Average Rating</p>
                 <p class="total-rating" itemprop="ratingValue">0</p>
@@ -659,14 +523,16 @@ Skip to content</a>
 					                 	<div id="secondary" class="widget-area col-xs-12 col-sm-4  pull-right" role="complementary">	
                     	                    	<div class="co-join-info">
                                                    	
-                            <p class="co-price">Price:  <span>Free</span>
+                            <p class="co-price">Price:  <span>&#x24;100</span>
+							                            <s>&#x24;100</s>
 							 
                            
                             </p>
                             
                             <div class="btns clearfix">
+                                                        <span class="apply-button apply-button-enrollment-finished btn apply-button-enrollment-closed btn-orange btn-medium">Comprar</span>
                                                         
-                            <span class="apply-button apply-button-finished btn apply-button-enrollment-closed btn-orange btn-medium" >Not available</span>                                                                                                                <a href="#" class="fav " onclick="return false;"><i class="fa fa-heart-o"></i> <span>0</span></a>
+                                                                                                                                           
                                                         </div>
                             
                             
@@ -680,28 +546,31 @@ Skip to content</a>
 									 
                             </div>
                                                         
-                            <p class="enroll col-xs-12 col-sm-6 pull-right">0 Enrolled</p>
+                            <p class="enroll col-xs-12 col-sm-6 pull-right">2 Enrolled</p>
                             </div> <!-- course rat #end -->
                             
                             <ul>
-                            	                            	<li><span>Lectures:</span> 2 </li>
+                            	                            	<li><span>Lectures:</span> 3 </li>
                                                                                                 <li><span>Enroll Dates:</span> 			
 							Enroll Anytime										
 			 </li>
                                                                 
                                 <li><span>Course Dates:</span> 			
-							March&nbsp;29,&nbsp;2018 - August&nbsp;16,&nbsp;2019			
+							January&nbsp;20,&nbsp;2017 - No End Date			
 			 </li>
                                 
                                 <li><span>Enrollment:</span> 			
-							Anyone			
+							Students are added by instructors.			
 			 </li>
-                                                                <li><span>Language:</span> Portugues </li>
-                                                                                                <li><span>Duration:</span> 00:04:00 (HH:MM:SS) </li>
+                                                                <li><span>Language:</span> Español </li>
+                                                                                                <li><span>Duration:</span> 00:02:00 (HH:MM:SS) </li>
                                                               
 								                                <li><span>Includes:</span> Certificate of Completion </li>
                                                                 
-                                                            </ul>
+                                                                <li><span>Class Size:</span>  				
+									6 (4 places left)				
+				</li>
+                                                             </ul>
                             
                               
                         </div><!-- co-join-info #end -->
@@ -709,103 +578,7 @@ Skip to content</a>
                         						
                         
                         
-                        <aside id="educationpress_similar_courses_widget-2" class="widget widget_courses"><h3 class="widget-title">Similar Courses</h3> <ul>
-                                            <li class="clearfix">
-                            <div class="course-thumbnail course-featured-media course-featured-media-1528 thumb"><img src="http://www.campustwist.com/wp-content/uploads/2014/11/gpat-logo.png" class="course-media-img" alt="GPAT Exam" /></div> 
-                            <div class="simi-co">
-                            <h5><a href="http://www.demos.themecycle.com/educationpress/courses/gpat-exam/">GPAT Exam</a></h5>
-                            <p class="meta"><a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a></p>
-                            <p><span class="simi-price">Free</span> 
-                            <span class="rating">
-                            										<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-									                            </span></p>
-                            </div>
-                         </li>
-                                                <li class="clearfix">
-                            <div class="course-thumbnail course-featured-media course-featured-media-2149 thumb"><img src="https://www.youtube.com/watch?v=RThNFhOK23w" class="course-media-img" alt="kurs testowy" /></div> 
-                            <div class="simi-co">
-                            <h5><a href="http://www.demos.themecycle.com/educationpress/courses/kurs-testowy/">kurs testowy</a></h5>
-                            <p class="meta"><a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a></p>
-                            <p><span class="simi-price">Free</span> 
-                            <span class="rating">
-                            										<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-									                            </span></p>
-                            </div>
-                         </li>
-                                                <li class="clearfix">
-                            <div class="course-thumbnail course-featured-media course-featured-media-453 thumb"><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/19-360x270.jpg" class="course-media-img" alt="Strength Training for Ice Hockey" /></div> 
-                            <div class="simi-co">
-                            <h5><a href="http://www.demos.themecycle.com/educationpress/courses/strength-training-for-ice-hockey/">Strength Training for Ice Hockey</a></h5>
-                            <p class="meta"><a href="http://www.demos.themecycle.com/educationpress/instructor/abhishek/">Abasdfhui kjshdf</a>,<a href="http://www.demos.themecycle.com/educationpress/instructor/cherrywalker/">Cherry Walker</a>,<a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a></p>
-                            <p><span class="simi-price">&#x24;79</span> 
-                            <span class="rating">
-                            										<i class="glyphicons glyphicon-star"></i>
-									
-																			<i class="glyphicons glyphicon-star"></i>
-									
-																			<i class="glyphicons glyphicon-star"></i>
-									
-																			<i class="glyphicons glyphicon-star"></i>
-									
-																			<i class="glyphicons glyphicon-star-empty"></i>
-									                            </span></p>
-                            </div>
-                         </li>
-                                                <li class="clearfix">
-                            <div class="course-thumbnail course-featured-media course-featured-media-248 thumb"><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/8-1-360x270.jpg" class="course-media-img" alt="Pianoforall - Incredible New Way To Learn Piano &amp; Keyboard" /></div> 
-                            <div class="simi-co">
-                            <h5><a href="http://www.demos.themecycle.com/educationpress/courses/pianoforall-incredible-new-way-to-learn-piano-keyboard/">Pianoforall &#8211; Incredible New Way To Learn Piano &amp; Keyboard</a></h5>
-                            <p class="meta"><a href="http://www.demos.themecycle.com/educationpress/instructor/cherrywalker/">Cherry Walker</a>,<a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a></p>
-                            <p><span class="simi-price">&#x24;40</span> 
-                            <span class="rating">
-                            										<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-									                            </span></p>
-                            </div>
-                         </li>
-                                                <li class="clearfix">
-                            <div class="course-thumbnail course-featured-media course-featured-media-1795 thumb"><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/8-1.jpg" class="course-media-img" alt="test-iy" /></div> 
-                            <div class="simi-co">
-                            <h5><a href="http://www.demos.themecycle.com/educationpress/courses/test-iy-2/">test-iy</a></h5>
-                            <p class="meta"><a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a></p>
-                            <p><span class="simi-price">&#x24;850</span> 
-                            <span class="rating">
-                            										<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-									                            </span></p>
-                            </div>
-                         </li>
-                                                <li class="clearfix">
-                            <div class="course-thumbnail course-featured-media course-featured-media-264 thumb"><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/16-360x270.jpg" class="course-media-img" alt="The Web Developer Bootcamp" /></div> 
-                            <div class="simi-co">
-                            <h5><a href="http://www.demos.themecycle.com/educationpress/courses/the-web-developer-bootcamp/">The Web Developer Bootcamp</a></h5>
-                            <p class="meta"><a href="http://www.demos.themecycle.com/educationpress/instructor/cherrywalker/">Cherry Walker</a></p>
-                            <p><span class="simi-price">Free</span> 
-                            <span class="rating">
-                            										<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-									                            </span></p>
-                            </div>
-                         </li>
-                                             </ul>
-                </aside> 					</div>
+                         					</div>
                 <!-- sidebar #end -->                
              </div> <!-- row -->
          </div> <!-- container -->
@@ -814,143 +587,7 @@ Skip to content</a>
 
 </div>
 <!-- #content -->
- <div class="signup-newsletter 
-">
-	<div class="container">
-    	<div class="row">
-            <div class="col-xs-12 col-sm-6">
-             <span class="i-email-subscribe">
-				<i class="icon-envelope-letter icons"></i>
-			</span>
-                          <h3>Signup for Newsletter</h3>
-                                       <p>Lorem Ipsum is simply dummy text of the printing content and typesetting industry.</p>
-                           </div>
-             
-			            <div class="col-xs-12 col-sm-6">
-            <script type="text/javascript">(function() {
-	if (!window.mc4wp) {
-		window.mc4wp = {
-			listeners: [],
-			forms    : {
-				on: function (event, callback) {
-					window.mc4wp.listeners.push({
-						event   : event,
-						callback: callback
-					});
-				}
-			}
-		}
-	}
-})();
-</script><!-- MailChimp for WordPress v4.0.9 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-55 form-inline" method="post" data-id="55" data-name="Sign up Form" ><div class="mc4wp-form-fields"><input type="email" name="EMAIL" class="form-control" placeholder="Your email address" required />
-<button type="submit" value="Sign up" class="btn btn-orange btn-medium">Signup <i class="lnr lnr-arrow-right"></i></button><div style="display: none;"><input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></div><input type="hidden" name="_mc4wp_timestamp" value="1565995046" /><input type="hidden" name="_mc4wp_form_id" value="55" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /></div><div class="mc4wp-response"></div></form><!-- / MailChimp for WordPress Plugin -->            </div>
-                        
-        </div> 
-    </div>
-</div> <!-- #signup_newsletter End -->
-
-<footer id="colophon" class="site-footer">
-  <div class="container">
-     <div class="row">
-     				<div class="col-xs-12 col-sm-3 footer-widget">
-				<aside id="text-2" class="widget widget_text"><h6 class="widget-title">About EducationPress</h6>			<div class="textwidget"><p>Lorem ipsum dolor sit amet, consectet
-ur adipiscing Nunc varius sed dolor 
-sed sagittis will be helpful.</p>
-<p>Morbi quis eros ornare, rhoncus lorem
-efficitur erat. Morbi est at.</p></div>
-		</aside>			</div>
-						<div class="col-xs-12 col-sm-3 footer-widget">
-				<aside id="educationpress_recent_posts_widget-3" class="widget recent_posts_widget"><h6 class="widget-title">Recent Posts</h6> <ul>
-                                            <li class="clearfix">
-                            <img width="150" height="150" src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/8-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="8" /> 
-                            <div class="simi-co">
-                            <h5><a href="http://www.demos.themecycle.com/educationpress/sketch-3-from-a-to-z-become-an-app-designer/">Sketch 3 from A to Z: Become an App Designer</a></h5>
-                            <p class="meta"><a href="http://www.demos.themecycle.com/educationpress/category/web-development/" rel="category tag">Web Development</a></p>
-                            </div>
-                         </li>
-                                                <li class="clearfix">
-                            <img width="150" height="150" src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/5-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="5" /> 
-                            <div class="simi-co">
-                            <h5><a href="http://www.demos.themecycle.com/educationpress/the-design-of-html5/">The Design of HTML5</a></h5>
-                            <p class="meta"><a href="http://www.demos.themecycle.com/educationpress/category/html5-and-css3/" rel="category tag">HTML5 and CSS3</a>, <a href="http://www.demos.themecycle.com/educationpress/category/online-courses/" rel="category tag">Online Courses</a></p>
-                            </div>
-                         </li>
-                                             </ul>
-                </aside>			</div>
-						<div class="col-xs-12 col-sm-3 footer-widget">
-				<aside id="educationpress_courses_widget-6" class="widget widget_courses"><h6 class="widget-title">Recent Courses</h6> <ul>
-                                             <li class="clearfix">
-                           
-                            <div class="course-thumbnail course-featured-media course-featured-media-2558 thumb"><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2018/03/protocoloacrilico-perfil-instagram-150-360x270.png" class="course-media-img" alt="Escultura Dental" /></div> 
-                            <div class="simi-co">
-                            <h5><a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/">Escultura Dental</a></h5>
-                            <p class="meta"><a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a></p>
-                            <p><span class="simi-price">Free</span> 
-                            <span class="rating">
-                            										<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-									                            </span></p>
-                            </div>
-                         </li>
-                                                <li class="clearfix">
-                           
-                            <div class="course-thumbnail course-featured-media course-featured-media-501 thumb"><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/web2-360x270.jpg" class="course-media-img" alt="Learn and Understand NodeJS" /></div> 
-                            <div class="simi-co">
-                            <h5><a href="http://www.demos.themecycle.com/educationpress/courses/learn-and-understand-nodejs/">Learn and Understand NodeJS</a></h5>
-                            <p class="meta"><a href="http://www.demos.themecycle.com/educationpress/instructor/emmawilson/">Emma Wilson</a>,<a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a></p>
-                            <p><span class="simi-price">&#x24;80</span> 
-                            <span class="rating">
-                            										<i class="glyphicons glyphicon-star"></i>
-									
-																			<i class="glyphicons glyphicon-star"></i>
-									
-																			<i class="glyphicons glyphicon-star"></i>
-									
-																			<i class="glyphicons glyphicon-star"></i>
-									
-																			<i class="glyphicons glyphicon-star"></i>
-									
-									                            </span></p>
-                            </div>
-                         </li>
-                                             </ul>
-                </aside>			</div>
-						<div class="col-xs-12 col-sm-3 footer-widget">
-				<aside id="text-3" class="widget widget_text"><h6 class="widget-title">Quick Contact</h6>			<div class="textwidget"><div role="form" class="wpcf7" id="wpcf7-f57-o1" lang="en-US" dir="ltr">
-<div class="screen-reader-response"></div>
-<form action="/educationpress/courses/escultura-dental/#wpcf7-f57-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="57" />
-<input type="hidden" name="_wpcf7_version" value="4.5.1" />
-<input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f57-o1" />
-<input type="hidden" name="_wpnonce" value="e79565ec43" />
-</div>
-<p><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your email address" /></span> </p>
-<p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Type your message"></textarea></span> </p>
-<div class="quicksubmit"><input type="submit" value="&rarr;" class="wpcf7-form-control wpcf7-submit" /></div>
-<div class="wpcf7-response-output wpcf7-display-none"></div></form></div></div>
-		</aside>			</div>
-			        
-    </div>
-  </div><!--container #end  -->
-  
-  
-  <div class="container">
-  	<div class="row">
-        <div class="copyright">
-                <p class="copy col-xs-12 col-sm-6">
-        &copy; Copyright 2016 All rights reserved by EducationPress        </p>
-                      <p class="develop col-xs-12 col-sm-4 text-right">
-        Developed by <a href="http://themecycle.com" target="_blank">ThemeCycle</a>        </p>
-               </div>
-    </div>
-  </div>
-  
-</footer>
+ 
 <!-- #colophon -->
 </div>
 <!-- #page -->
@@ -1004,10 +641,6 @@ if( testInput.type !== 'date') {
 var _wpcf7 = {"loaderUrl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5.1'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/js/jquery.knob.js?ver=1.3.4.3'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/themes/EducationPress/assets/js/jquery.flexslider-min.js?ver=1.7.2'></script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/wp-embed.min.js?ver=4.6.14'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var mc4wp_forms_config = [];
@@ -1018,3 +651,4 @@ var mc4wp_forms_config = [];
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.0.9'></script>
 <![endif]-->
 </body></html>
+@stop
