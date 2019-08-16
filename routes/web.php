@@ -43,3 +43,4 @@ Route::get('/registrar', function () {
 
 
 Route::get('/','RolController@index');
+Route::get('welcome','CategoriaController@index');
