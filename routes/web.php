@@ -15,6 +15,9 @@
     return view('/principal/index');
 });*/
 
+Route::get('/rol', function () {
+    return view('/principal/rol');
+});
 
 Route::get('/cursos', function () {
     return view('/principal/cursos');
