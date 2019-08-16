@@ -168,351 +168,52 @@ Skip to content</a>
             
 			<div id="products" class="list-group"> 
      		<div class="row"> 
-                          			                              <div class="col-xs-12 col-sm-4 zoom courses  with-sidebar three-column grid-group-item">
-                	<div class="course clist">
-                                    	<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/" class="img-thumb ">
-                                                                                                   <div class="course-thumbnail course-featured-media course-featured-media-2558 "><figure>				<img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2018/03/protocoloacrilico-perfil-instagram-150-360x270.png" class="course-media-img" alt="Escultura Dental" />
-				</figure></div>                                        </a>
-                                        <div class="course_space">
-                                         <div class="price">Free                                        <span></span></div>
-                                        <h3><a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/">Escultura Dental</a></h3>
-                    <p class="meta">
-					by: <a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a>					                      in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/food-recipe/" rel="tag">Food Recipe</a>                                          </p>
+             <?php 
+             
+             $valor= $_GET['categoria'];
+             $registros_de_videos = DB::select("SELECT cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join categoria on cursos.id_categoria=categoria.id_categoria where categoria.descripcion='$valor' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc");
+             print_r($registros_de_videos);
+              
+
+
+
+            echo '<div class="col-xs-12 col-sm-4 zoom courses  with-sidebar three-column grid-group-item">'.
+             '<div class="course clist">'.
+                     '	<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/" class="img-thumb ">'.
+            '<div class="course-thumbnail course-featured-media course-featured-media-2558 "><figure>'.				'<img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2018/03/protocoloacrilico-perfil-instagram-150-360x270.png" class="course-media-img" alt="Escultura Dental" />'.
+				'</figure></div>'.                                        '</a>'.
+                                        '<div class="course_space">'.
+                                         '<div class="price">Free'.                                        '<span></span></div>'.
+                                        '<h3><a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/">Escultura Dental</a></h3>'.
+                    '<p class="meta">'.
+					'by: <a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a>					                      in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/food-recipe/" rel="tag">Food Recipe</a>                                          </p>'.
                      
-                    <p class="desc">			
-				Trecho breve do curso			
-			</p>
+                    '<p class="desc">'.			
+				'Trecho breve do curso'.			
+			'</p>'.
                     
                     
-                	</div> <!--course #end -->
+                	'</div> <!--course'.
                     	
-                        <div class="course_rel">
-                                            	<div class="course_rating col-xs-12 col-sm-6">
+                        '<div class="course_rel">'.
+                                            	'<div class="course_rating col-xs-12 col-sm-6">'.
                         	 
-                            									<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
+                            									'<i class="glyphicons glyphicon-star-empty"></i>'.
+																	'<i class="glyphicons glyphicon-star-empty"></i>'.
+																	'<i class="glyphicons glyphicon-star-empty"></i>'.
+																	'<i class="glyphicons glyphicon-star-empty"></i>'.
+																	'<i class="glyphicons glyphicon-star-empty"></i>'.
 								                            
-                        </div>
-                                                                        <p class="enroll col-xs-12 col-sm-6 pull-right">0 Enrolled</p>
+                       ' </div>'.
+                                                                       ' <p class="enroll col-xs-12 col-sm-6 pull-right">0 Enrolled</p>
                                              	</div>
                     
-                    </div>  <!--course space #end -->
-                </div> <!-- course #end -->
-                                              <div class="col-xs-12 col-sm-4 zoom courses  with-sidebar three-column grid-group-item">
-                	<div class="course clist">
-                                    	<a href="http://www.demos.themecycle.com/educationpress/courses/learn-and-understand-nodejs/" class="img-thumb ">
-                                                                                                   <div class="course-thumbnail course-featured-media course-featured-media-501 "><figure>				<img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/web2-360x270.jpg" class="course-media-img" alt="Learn and Understand NodeJS" />
-				</figure></div>                                        </a>
-                                        <div class="course_space">
-                                         <div class="price">&#x24;80                                        <span></span></div>
-                                        <h3><a href="http://www.demos.themecycle.com/educationpress/courses/learn-and-understand-nodejs/">Learn and Understand NodeJS</a></h3>
-                    <p class="meta">
-					by: <a href="http://www.demos.themecycle.com/educationpress/instructor/emmawilson/">Emma Wilson</a>,<a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a>					                      in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/web-development/" rel="tag">Web Development</a>                                          </p>
-                     
-                    <p class="desc">			
-				Nunc elementum at tellus vel ultrices. Morbi at euismod orci. Curabitur tempor maximus purus,...			
-			</p>
-                    
-                    
-                	</div> <!--course #end -->
-                    	
-                        <div class="course_rel">
-                                            	<div class="course_rating col-xs-12 col-sm-6">
-                        	 
-                            									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                									<i class="glyphicons glyphicon-star"></i>
-								
-                                                            
-                        </div>
-                                                                        <p class="enroll col-xs-12 col-sm-6 pull-right">3 Enrolled</p>
-                                             	</div>
-                    
-                    </div>  <!--course space #end -->
-                </div> <!-- course #end -->
-                                              <div class="col-xs-12 col-sm-4 zoom courses  with-sidebar three-column grid-group-item">
-                	<div class="course clist">
-                                    	<a href="http://www.demos.themecycle.com/educationpress/courses/101-seven-simple-and-delicious-drinks/" class="img-thumb ">
-                                                                                                   <div class="course-thumbnail course-featured-media course-featured-media-329 "><figure>				<img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/6-1-360x270.jpg" class="course-media-img" alt="101: Seven Simple and Delicious Drinks" />
-				</figure></div>                                        </a>
-                                        <div class="course_space">
-                                         <div class="price">Free                                        <span></span></div>
-                                        <h3><a href="http://www.demos.themecycle.com/educationpress/courses/101-seven-simple-and-delicious-drinks/">101: Seven Simple and Delicious Drinks</a></h3>
-                    <p class="meta">
-					by: <a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a>					                      in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/food-recipe/" rel="tag">Food Recipe</a>                                          </p>
-                     
-                    <p class="desc">			
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eleifend pretium est ac...			
-			</p>
-                    
-                    
-                	</div> <!--course #end -->
-                    	
-                        <div class="course_rel">
-                                            	<div class="course_rating col-xs-12 col-sm-6">
-                        	 
-                            									<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-								                            
-                        </div>
-                                                                        <p class="enroll col-xs-12 col-sm-6 pull-right">2 Enrolled</p>
-                                             	</div>
-                    
-                    </div>  <!--course space #end -->
-                </div> <!-- course #end -->
-                                              <div class="col-xs-12 col-sm-4 zoom courses  with-sidebar three-column grid-group-item">
-                	<div class="course clist">
-                                        	<div class="img-thumb">
-                                                                                                   <div class="course-thumbnail course-featured-media course-featured-media-1528 "><figure>				<img src="http://www.campustwist.com/wp-content/uploads/2014/11/gpat-logo.png" class="course-media-img" alt="GPAT Exam" />
-				</figure></div>                                        </div>
-                                        <div class="course_space">
-                                         <div class="price">Free                                        <span></span></div>
-                                        <h3><a href="http://www.demos.themecycle.com/educationpress/courses/gpat-exam/">GPAT Exam</a></h3>
-                    <p class="meta">
-					by: <a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a>					                      in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/pharmacy/" rel="tag">Pharmacy</a>                                          </p>
-                     
-                    <p class="desc">			
-				GPAT
-GRADUATE PHARMACY APTITUDE TEST (GPAT) is a national level entrance exam conducted by All...			
-			</p>
-                    
-                    
-                	</div> <!--course #end -->
-                    	
-                        <div class="course_rel">
-                                            	<div class="course_rating col-xs-12 col-sm-6">
-                        	 
-                            									<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-								                            
-                        </div>
-                                                                        <p class="enroll col-xs-12 col-sm-6 pull-right">19 Enrolled</p>
-                                             	</div>
-                    
-                    </div>  <!--course space #end -->
-                </div> <!-- course #end -->
-                                              <div class="col-xs-12 col-sm-4 zoom courses  with-sidebar three-column grid-group-item">
-                	<div class="course clist">
-                                    	<a href="http://www.demos.themecycle.com/educationpress/courses/english-literature-analysis/" class="img-thumb ">
-                                                                                                   <div class="course-thumbnail course-featured-media course-featured-media-2656 "><figure>				<img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/11-1.jpg" class="course-media-img" alt="English Literature Analysis" />
-				</figure></div>                                        </a>
-                                        <div class="course_space">
-                                         <div class="price">Free                                        <span></span></div>
-                                        <h3><a href="http://www.demos.themecycle.com/educationpress/courses/english-literature-analysis/">English Literature Analysis</a></h3>
-                    <p class="meta">
-					by: <a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a>					                      in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/grammar/" rel="tag">Grammar</a>, <a href="http://www.demos.themecycle.com/educationpress/course_category/sofia-uni/" rel="tag">Sofia Uni</a>, <a href="http://www.demos.themecycle.com/educationpress/course_category/test-categor/" rel="tag">Test Category</a>                                          </p>
-                     
-                    <p class="desc">			
-							
-			</p>
-                    
-                    
-                	</div> <!--course #end -->
-                    	
-                        <div class="course_rel">
-                                            	<div class="course_rating col-xs-12 col-sm-6">
-                        	 
-                            									<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-								                            
-                        </div>
-                                                                        <p class="enroll col-xs-12 col-sm-6 pull-right">8 Enrolled</p>
-                                             	</div>
-                    
-                    </div>  <!--course space #end -->
-                </div> <!-- course #end -->
-                                              <div class="col-xs-12 col-sm-4 zoom courses  with-sidebar three-column grid-group-item">
-                	<div class="course clist">
-                                    	<a href="http://www.demos.themecycle.com/educationpress/courses/learn-and-understand-angularjs/" class="img-thumb ">
-                                                                                                   <div class="course-thumbnail course-featured-media course-featured-media-483 "><figure>				<img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/web1-360x270.jpg" class="course-media-img" alt="Learn and Understand AngularJS" />
-				</figure></div>                                        </a>
-                                        <div class="course_space">
-                                         <div class="price">Free                                        <span></span></div>
-                                        <h3><a href="http://www.demos.themecycle.com/educationpress/courses/learn-and-understand-angularjs/">Learn and Understand AngularJS</a></h3>
-                    <p class="meta">
-					by: <a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a>					                      in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/web-development/" rel="tag">Web Development</a>                                          </p>
-                     
-                    <p class="desc">			
-				Phasellus sed lectus vehicula, tempor quam eu, scelerisque ipsum. Aenean non molestie massa. In...			
-			</p>
-                    
-                    
-                	</div> <!--course #end -->
-                    	
-                        <div class="course_rel">
-                                            	<div class="course_rating col-xs-12 col-sm-6">
-                        	 
-                            									<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-								                            
-                        </div>
-                                                                        <p class="enroll col-xs-12 col-sm-6 pull-right">54 Enrolled</p>
-                                             	</div>
-                    
-                    </div>  <!--course space #end -->
-                </div> <!-- course #end -->
-                                              <div class="col-xs-12 col-sm-4 zoom courses  with-sidebar three-column grid-group-item">
-                	<div class="course clist">
-                                        	<div class="img-thumb">
-                                                                                                   <div class="video_player course-featured-media course-featured-media-5 ">
-					<figure>					<iframe width="640" height="480" src="https://www.youtube.com/embed/kCt1bmSASCI?feature=oembed"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					</figure>				</div>                                        </div>
-                                        <div class="course_space">
-                                         <div class="price">&#x24;50                                        <span></span></div>
-                                        <h3><a href="http://www.demos.themecycle.com/educationpress/courses/how-to-juggle-3-balls-and-do-20-tricks/">How to Juggle 3 Balls and do 20+ tricks.</a></h3>
-                    <p class="meta">
-					by: <a href="http://www.demos.themecycle.com/educationpress/instructor/aditya.septianto/">aditya rikky</a>,<a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a>,<a href="http://www.demos.themecycle.com/educationpress/instructor/Joneslee/">Jones Lee</a>					                      in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/sports/" rel="tag">Sports</a>                                          </p>
-                     
-                    <p class="desc">			
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius enim hendrerit tincidunt...			
-			</p>
-                    
-                    
-                	</div> <!--course #end -->
-                    	
-                        <div class="course_rel">
-                                            	<div class="course_rating col-xs-12 col-sm-6">
-                        	 
-                            									<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-								                            
-                        </div>
-                                                                        <p class="enroll col-xs-12 col-sm-6 pull-right">5 Enrolled</p>
-                                             	</div>
-                    
-                    </div>  <!--course space #end -->
-                </div> <!-- course #end -->
-                                              <div class="col-xs-12 col-sm-4 zoom courses  with-sidebar three-column grid-group-item">
-                	<div class="course clist">
-                                        	<div class="img-thumb">
-                                                                                                   <div class="course-thumbnail course-featured-media course-featured-media-2603 "><figure>				<img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/27.jpg" class="course-media-img" alt="Un Superbe Cours" />
-				</figure></div>                                        </div>
-                                        <div class="course_space">
-                                         <div class="price">&#x24;150                                        <span></span></div>
-                                        <h3><a href="http://www.demos.themecycle.com/educationpress/courses/un-superbe-cours/">Un Superbe Cours</a></h3>
-                    <p class="meta">
-					by: <a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a>					                      in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/tenses/" rel="tag">Tenses</a>                                          </p>
-                     
-                    <p class="desc">			
-				Hello :)			
-			</p>
-                    
-                    
-                	</div> <!--course #end -->
-                    	
-                        <div class="course_rel">
-                                            	<div class="course_rating col-xs-12 col-sm-6">
-                        	 
-                            									<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-								                            
-                        </div>
-                                                                        <p class="enroll col-xs-12 col-sm-6 pull-right">0 Enrolled</p>
-                                             	</div>
-                    
-                    </div>  <!--course space #end -->
-                </div> <!-- course #end -->
-                                              <div class="col-xs-12 col-sm-4 zoom courses  with-sidebar three-column grid-group-item">
-                	<div class="course clist">
-                                        	<div class="img-thumb">
-                                                           <span class="sale_tag">Sale</span>                                        <div class="video_player course-featured-media course-featured-media-1453 ">
-					<figure>					<iframe width="640" height="360" src="https://www.youtube.com/embed/ht9KUu6eSm8?feature=oembed"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					</figure>				</div>                                        </div>
-                                        <div class="course_space">
-                                         <div class="price">&#x24;100                                        <s>&#x24;100</s>
-                                        <span></span></div>
-                                        <h3><a href="http://www.demos.themecycle.com/educationpress/courses/curso-revit-nivel-basico/">Curso Revit nivel básico</a></h3>
-                    <p class="meta">
-					by: <a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a>					                      in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/web-development/" rel="tag">Web Development</a>                                          </p>
-                     
-                    <p class="desc">			
-				ESto es un curso de pruebas			
-			</p>
-                    
-                    
-                	</div> <!--course #end -->
-                    	
-                        <div class="course_rel">
-                                            	<div class="course_rating col-xs-12 col-sm-6">
-                        	 
-                            									<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-								                            
-                        </div>
-                                                                        <p class="enroll col-xs-12 col-sm-6 pull-right">2 Enrolled</p>
-                                             	</div>
-                    
-                    </div>  <!--course space #end -->
-                </div> <!-- course #end -->
-                                              <div class="col-xs-12 col-sm-4 zoom courses  with-sidebar three-column grid-group-item">
-                	<div class="course clist">
-                                    	<a href="http://www.demos.themecycle.com/educationpress/courses/nnnnnnnnnnnnnn/" class="img-thumb ">
-                                                                                                   <div class="course-thumbnail course-featured-media course-featured-media-1267 "><figure>				<img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/26.jpg" class="course-media-img" alt="nnnnnnnnnnnnnn" />
-				</figure></div>                                        </a>
-                                        <div class="course_space">
-                                         <div class="price">Free                                        <span></span></div>
-                                        <h3><a href="http://www.demos.themecycle.com/educationpress/courses/nnnnnnnnnnnnnn/">nnnnnnnnnnnnnn</a></h3>
-                    <p class="meta">
-					by: <a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a>					                      in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/sports/" rel="tag">Sports</a>                                          </p>
-                     
-                    <p class="desc">			
-				bnnnnnnnnnnnnnnnnnnnn			
-			</p>
-                    
-                    
-                	</div> <!--course #end -->
-                    	
-                        <div class="course_rel">
-                                            	<div class="course_rating col-xs-12 col-sm-6">
-                        	 
-                            									<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-																	<i class="glyphicons glyphicon-star-empty"></i>
-								                            
-                        </div>
-                                                                        <p class="enroll col-xs-12 col-sm-6 pull-right">8 Enrolled</p>
-                                             	</div>
-                    
-                    </div>  <!--course space #end -->
-                </div> <!-- course #end -->
-                
-			<div class='pagination'><span class='page-numbers current'>1</span>
-<a class='page-numbers' href='http://www.demos.themecycle.com/educationpress/courses-grid-3-column/page/2/'>2</a>
-<a class='page-numbers' href='http://www.demos.themecycle.com/educationpress/courses-grid-3-column/page/3/'>3</a>
-<span class="page-numbers dots">&hellip;</span>
-<a class='page-numbers' href='http://www.demos.themecycle.com/educationpress/courses-grid-3-column/page/5/'>5</a>
-<a class="next page-numbers" href="http://www.demos.themecycle.com/educationpress/courses-grid-3-column/page/2/"><i class="fa fa-angle-right"></i></a></div>
-		               
+                    </div>  
+                </div>';
+    	    
+
+             ?>
+                       
         </div> <!-- row #end -->
      </div>    
         </main>   <!-- main -->
