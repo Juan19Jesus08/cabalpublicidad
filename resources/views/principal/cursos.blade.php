@@ -183,8 +183,8 @@ Skip to content</a>
                                   echo'<div class="course-thumbnail course-featured-media course-featured-media-2558 "><figure>';				echo'<img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2018/03/protocoloacrilico-perfil-instagram-150-360x270.png" class="course-media-img" alt="Escultura Dental" />';
                              echo '</figure></div>';                                        echo'</a>';
                                                      echo '<div class="course_space">';
-                                                      echo '<div class="price">$'.$item->precio;                                        echo '<span></span></div>';
-                                                     echo '<h3><a href="/cursos?clases='.$item->nombre.'">'.$item->nombre.'</a></h3>';
+                                                      echo '<div class="price"> MXN $'.$item->precio;                                        echo '<span></span></div>';
+                                                     echo '<h3><a href="/clases?clase_de='.$item->nombre.'">'.$item->nombre.'</a></h3>';
                                  echo '<p class="meta">';
                                  echo 'by: <h3>Daniel</h3> </p>';
                                   
