@@ -8,16 +8,17 @@ use DB;
 class CategoriaController extends Controller
 {
     
-	public function index()
+	/*public function index()
 	{
 		
 		$category=DB::select('SELECT categoria.descripcion as cate FROM categoria');
       
-        
-		return view('welcome',compact('category'));
+        print_r ($category);
+		exit();
+		//return view('welcome',compact('category'));
 		//return ('/Rol/Rol')->withData($data);
 		//return view('rol',compact('rol'));
 
-	}
+	}*/
     
 }

@@ -192,9 +192,9 @@ Skip to content</a>
 
 <ul role="menu" class=" dropdown-menu">
 
-@foreach($category as $items)
-	<li id="menu-item-871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871"><a title="All Courses" href="/cursos/">Curso con categoria: {{$items->cate}}</a></li>
-	@endforeach
+<!--foreach($category as $items)-->
+	<li id="menu-item-871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871"><a title="All Courses" href="/cursos/">Curso con categoria: </a></li>
+	<!--endforeach-->
 </ul>
 
 </li>
