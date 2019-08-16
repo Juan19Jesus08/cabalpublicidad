@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Curso Revit nivel básico &#8211; EducationPress</title>
+<title>Escultura Dental &#8211; EducationPress</title>
 <meta name='robots' content='noindex,follow' />
                 <!-- favicon -->
                 <link rel="shortcut icon" href="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/favicon.png"/>
@@ -35,7 +35,7 @@ var cp_vars = {"admin_ajax_url":"http:\/\/www.demos.themecycle.com\/educationpre
 </script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var front_vars = {"withdraw_alert":"Please confirm that you want to withdraw from the course. If you withdraw, you will no longer be able to see your records for this course.","units_archive_url":"http:\/\/www.demos.themecycle.com\/educationpress\/courses\/curso-revit-nivel-basico\/units\/"};
+var front_vars = {"withdraw_alert":"Please confirm that you want to withdraw from the course. If you withdraw, you will no longer be able to see your records for this course.","units_archive_url":"http:\/\/www.demos.themecycle.com\/educationpress\/courses\/escultura-dental\/units\/"};
 /* ]]> */
 </script>
 <script type='text/javascript'>
@@ -65,6 +65,15 @@ var educationpress_vars = {"appTaxTag":"course_category","ajaxurl":"http:\/\/www
 <script type='text/javascript'>
 new WOW().init();
 </script>
+<link rel='https://api.w.org/' href='http://www.demos.themecycle.com/educationpress/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.demos.themecycle.com/educationpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.demos.themecycle.com/educationpress/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Learn and Understand NodeJS' href='http://www.demos.themecycle.com/educationpress/courses/learn-and-understand-nodejs/' />
+<meta name="generator" content="WordPress 4.6.14" />
+<link rel="canonical" href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/" />
+<link rel="alternate" type="application/json+oembed" href="http://www.demos.themecycle.com/educationpress/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses%2Fescultura-dental%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.demos.themecycle.com/educationpress/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses%2Fescultura-dental%2F&#038;format=xml" />
+				<meta name="generator" content="CoursePress Pro 1.3.4.3"/>
 						<script type="text/javascript">
 			    var moreText = "Read More";
 			    var lessText = "Show Less";
@@ -87,7 +96,7 @@ color:#262c38;
 								.footer-widget .wpcf7-form .wpcf7-submit,
 								.navbar li.pull-right a.woo-menu-cart span, #wp-submit{background-color:#ff5722;}.btn-orange:hover,a.btn-orange:hover, .btn-blue:hover, .manage-course:hover, button:hover, input[type="button"]:hover, input[type="submit"]:hover,.woocommerce button.button:hover, .woocommerce input.button:hover, .footer-widget .wpcf7-form .wpcf7-submit:hover, #wp-submit:hover{background-color:#0583e4;}.pagination a.page-numbers{color:#99a6bb;}.pagination a.page-numbers{border-top:1px solid #e4e8ee;border-bottom:1px solid #e4e8ee;border-left:1px solid #e4e8ee;border-right:1px solid #e4e8ee;}.pagination a:hover.page-numbers{color:#ffffff;}.pagination a:hover.page-numbers, .pagination span.current{border-top:1px solid #ff5722;border-bottom:1px solid #ff5722;border-left:1px solid #ff5722;border-right:1px solid #ff5722;}.pagination a:hover.page-numbers, .pagination span.current{background-color:#ff5722;}.site-footer{background-color:#262c38;}.site-footer h1,.site-footer h2,.site-footer h3,.site-footer h4,.site-footer h5,.site-footer h6,.site-footer .h1,.site-footer .h2,.site-footer .h3,.site-footer .h4,.site-footer .h5,.site-footer .h6{color:#ffffff;}.site-footer, .site-footer p, .site-footer ul li{color:#657184;}.site-footer a, .site-footer p a, .site-footer li a{color:#657184;}.site-footer a:hover, .site-footer p a:hover, .site-footer li a:hover{color:#ffffff;}.site-footer a:active, .site-footer p a:active, .site-footer li a:active{color:#657184;}</style></head>
 
-<body class="single single-course postid-1453 course-curso-revit-nivel-basico">
+<body class="single single-course postid-2558 course-escultura-dental">
 <div id="page" class="hfeed site">
 <a class="skip-link screen-reader-text" href="#content">
 Skip to content</a>
@@ -104,7 +113,7 @@ Skip to content</a>
             <p>
             <a href="http://www.demos.themecycle.com/educationpress/">Home</a><i class="fa fa-angle-right"></i>
             <a href="http://www.demos.themecycle.com/educationpress/courses">All Courses</a><i class="fa fa-angle-right"></i>
-            <a href="http://www.demos.themecycle.com/educationpress/course_category/web-development/" rel="tag">Web Development</a><i class="fa fa-angle-right"></i>Curso Revit nivel básico            </p>
+            <a href="http://www.demos.themecycle.com/educationpress/course_category/food-recipe/" rel="tag">Food Recipe</a><i class="fa fa-angle-right"></i>Escultura Dental            </p>
         </div> <!--row #end  -->
     </div>
 </div>
@@ -117,26 +126,25 @@ Skip to content</a>
 			<main id="main" class="site-main col-xs-12 col-sm-8 pull-left" >
                 	
                      <div class="courses-info">
-                     	<h1>Curso Revit nivel básico</h1>
-                        <p class="excerpt">ESto es un curso de pruebas</p>
+                     	<h1>Escultura Dental</h1>
+                        <p class="excerpt">Trecho breve do curso</p>
                         
-                         <p class="meta">Instructed by: <a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a> . in: <a href="http://www.demos.themecycle.com/educationpress/course_category/web-development/" rel="tag">Web Development</a></p>
+                         <p class="meta">Instructed by: <a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a> . in: <a href="http://www.demos.themecycle.com/educationpress/course_category/food-recipe/" rel="tag">Food Recipe</a></p>
                      </div><!--courses-info #end  -->
                 	
-                                        	<div class="img-thumb">
+                                    	 <a class="img-thumb " href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/">
                                         
                         <figure>
-                        <div class="video_player course-featured-media course-featured-media-1453 ">
-										<iframe width="640" height="360" src="https://www.youtube.com/embed/ht9KUu6eSm8?feature=oembed"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>									</div>                        </figure>
+                        <div class="course-thumbnail course-featured-media course-featured-media-2558 "><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2018/03/protocoloacrilico-perfil-instagram-150.png" class="course-media-img" alt="Escultura Dental" /></div>                        </figure>
                         
-                                        </div>
+                                    	 </a>
                                         <div class="courses-info">
                                          <ul class="social-icons">
-                                        <li><a href="http://www.facebook.com/sharer%2Fsharer.php%3Fs%3D100%26p%5Burl%5D%3Dhttp%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses%2Fcurso-revit-nivel-basico%2F%26p%5Bimages%5D%5B0%5D%3D%26p%5Btitle%5D%3DCurso+Revit+nivel+b%C3%A1sico%26p%5Bsummary%5D%3DESto+es+un+curso+de+pruebas" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                                        <li><a href="http://www.facebook.com/sharer%2Fsharer.php%3Fs%3D100%26p%5Burl%5D%3Dhttp%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses%2Fescultura-dental%2F%26p%5Bimages%5D%5B0%5D%3D%26p%5Btitle%5D%3DEscultura+Dental%26p%5Bsummary%5D%3DTrecho+breve+do+curso" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
                     				
-                    <li><a href="http://twitter.com/home?status=Curso+Revit+nivel+b%C3%A1sico%20http%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses%2Fcurso-revit-nivel-basico%2F"  target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://plus.google.com/share?url=http://www.demos.themecycle.com/educationpress/courses/curso-revit-nivel-basico/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href="mailto:?subject%3DCurso+Revit+nivel+b%C3%A1sico%26body%3DESto+es+un+curso+de+pruebas" target="_top"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="http://twitter.com/home?status=Escultura+Dental%20http%3A%2F%2Fwww.demos.themecycle.com%2Feducationpress%2Fcourses%2Fescultura-dental%2F"  target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://plus.google.com/share?url=http://www.demos.themecycle.com/educationpress/courses/escultura-dental/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="mailto:?subject%3DEscultura+Dental%26body%3DTrecho+breve+do+curso" target="_top"><i class="fa fa-envelope"></i></a></li>
                     </ul>
                                         </div>
 					
@@ -163,29 +171,24 @@ Skip to content</a>
 					in  active">
                     	<h3>
 							Course Description                        </h3>
-                        <p style="margin: 0px 0px 1.4em;padding: 0px;color: #3c3c3c;font-family: DINPro-Regular;font-size: 15px;letter-spacing: 0.150000005960464px;line-height: 16.5px;background-color: #e4f7f4">El Curso gratis de Introducción a Revit Architecture te permite hacer un acercamiento a la filosofía de trabajo BIM, Building Information Modeling o Modelado de la Información para la Edificación.</p>
-<p style="margin: 0px 0px 1.4em;padding: 0px;color: #3c3c3c;font-family: DINPro-Regular;font-size: 15px;letter-spacing: 0.150000005960464px;line-height: 16.5px;background-color: #e4f7f4"><span style="margin: 0px;padding: 0px;font-family: DINPro-Black;line-height: 1">Te proponemos un Curso de Revit On-line GRATIS</span> en el que podrás asistir a master-class cuándo quieras y desde dónde quieras -ordenador, tablet o teléfono móvil- en una plataforma e-learning diseñada y optimizada para BIM, y resolver tus dudas a través de nuestro foro o por mensajería interna.</p>
-<div id="attachment_5699" class="wp-caption alignleft" style="margin: 0px 1.2em 8px -1.2em;padding: 0px;width: 110px;color: #3c3c3c;font-family: DINPro-Regular;font-size: 15px;letter-spacing: 0.150000005960464px;line-height: 16.5px;background-color: #e4f7f4"><a style="margin: 0px;padding: 0px;color: #000000;text-decoration: none;background-color: transparent" href="https://www.espaciobim.com/metodologia-cursos-online-de-revit/" target="_blank"><img class="alignleft size-medium wp-image-42" style="margin-top: 0px;margin-right: 0px;margin-bottom: 0px;padding: 0px;border: 0px" title="Descubre una metodología innovadora en nuestros Cursos Online de Revit" src="https://www.espaciobim.com/images/Cursos-online-de-revit.jpg" alt="Metodlogía Cursos Online de Revit" width="440" /></a></p>
-<p class="wp-caption-text" style="margin: 0.65em 0px;padding: 0px;text-align: center;font-size: 12px !important"><a style="margin: 0px;padding: 0px;color: #000000;background-color: transparent" href="https://www.espaciobim.com/metodologia-cursos-online-de-revit/" target="_blank">CLICA</a>, y descubre una metodología innovadora.</p>
-</div>
-<p style="margin: 0px 0px 1.4em;padding: 0px;color: #3c3c3c;font-family: DINPro-Regular;font-size: 15px;letter-spacing: 0.150000005960464px;line-height: 16.5px;background-color: #e4f7f4">Y si continuas formándote con nosotros descubrirás una metodología innovadora basada en dinámicas de juego; Participarás en un proyecto global junto a otros técnicos; Contarás con la ayuda de un arquitecto experto en modelado de la información a través de videoconferencias semanales, foro por bloques de contenido y mensajería interna; Y te mostraremos tu progreso en BIM a través de nuestro sistema de evaluación y feed-back, para que consigas la <span style="margin: 0px;padding: 0px;font-family: DINPro-Black;line-height: 1">Certificación Oficial de Autodesk®</span>.</p>
-<p style="margin: 0px 0px 1.4em 15px;padding: 0px;color: #3c3c3c;font-family: DINPro-Regular;font-size: 15px;letter-spacing: 0.150000005960464px;line-height: 16.5px;background-color: #e4f7f4">Iñaki Huarte, CEO en <a style="margin: 0px;padding: 0px;color: #000000;background-color: transparent" href="http://www.ouiplay.es/portfolio/gamificacion-para-curso-online-de-espacio-bim/" target="_blank" rel="nofollow">Ouiplay</a>, sobre la metodología de nuestros Cursos Online de Revit: “<em style="margin: 0px;padding: 0px">Hemos creado una metodología basada en la gamificación -integración de dinámicas de juego en entornos no lúdicos- con el fin de potenciar la motivación y el compromiso en el aprendizaje, y hacerlo más atractivo. El alumno es protagonista de una historia de ficción que lo atrapa.</em>“</p>
+                        <p>Descrição do Curso</p>
                     </div> <!--courses-info #end  -->
                 
           		
                 	<div id="stucture" class="courses-info clearfix  tab-pane fade ">
 
 
-<h3>Curriculum</h3><div class="course-structure-block course-structure-block-1453"><ul class="tree">
+<h3>Curriculum</h3><div class="course-structure-block course-structure-block-2558"><ul class="tree">
 						<li>
 							<ul>
 																		<li>
                                         												<label  class="course_structure_unit_label ">
-																								<span class="tree-unit-left">Unidad 1</span>
+																								<span class="tree-unit-left"><a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/untitled-21/?try">Módulo - 1</a></span>
 												<span class="tree-unit-right">
 
-																											<span>2:00 min</span>
+																											<span>4:00 min</span>
 													
+																											<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/untitled-21/?try" class="preview_option">Free</a>
 																									</span>
 											</label>
 
@@ -194,7 +197,69 @@ Skip to content</a>
 																																													<label >
 																
 																<span class="tree-page-left">
-																	Untitled Page 
+																	<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/untitled-21/page/1/?try">Aula 1</a> 
+																</span>
+																<span class="tree-page-right">
+
+																																			<span>1:00 min</span>
+																	
+																																			<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/untitled-21/page/1?try" class="preview_option">Free</a>
+																	
+																</span>
+                                                              
+                                                                
+															</label>
+															   <ul class="sub-mode">
+                                                                                                                                <li>
+                                                                                                                               <label >
+																
+																<span class="tree-page-left">
+                                                                                                                                                                                                                                                                              	<i class="fa fa-play-circle"></i>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            																	Corte do primeiro central superior																</span>
+                                                              
+                                                                
+															</label>
+                                                                </li>
+                                                                                                                            
+                                                                </ul>
+															
+ 														</li>
+																											<li class="course_structure_page_li ">
+																																													<label >
+																
+																<span class="tree-page-left">
+																	<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/untitled-21/page/2/?try">aula 2</a> 
+																</span>
+																<span class="tree-page-right">
+
+																																			<span>1:00 min</span>
+																	
+																																			<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/untitled-21/page/2?try" class="preview_option">Free</a>
+																	
+																</span>
+                                                              
+                                                                
+															</label>
+															   <ul class="sub-mode">
+                                                                                                                                <li>
+                                                                                                                               <label >
+																
+																<span class="tree-page-left">
+                                                                                                                                                                                                                                                                              	<i class="fa fa-play-circle"></i>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            																	Corte do Segundo central superior																</span>
+                                                              
+                                                                
+															</label>
+                                                                </li>
+                                                                                                                            
+                                                                </ul>
+															
+ 														</li>
+																											<li class="course_structure_page_li ">
+																																													<label >
+																
+																<span class="tree-page-left">
+																	<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/untitled-21/page/3/?try">الاختبار الثاني</a> 
 																</span>
 																<span class="tree-page-right">
 
@@ -210,122 +275,59 @@ Skip to content</a>
                                                                                                                                <label >
 																
 																<span class="tree-page-left">
-                                                                                                                                                                                                                                                                              	<i class="fa fa-play-circle"></i>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            																	Video Introduccion																</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="fa fa-check-circle-o"></i>
+                                                                                                                                        																	السوال الأول																</span>
                                                               
                                                                 
 															</label>
                                                                 </li>
-                                                                                                                                <li>
-                                                                                                                               <label >
-																
-																<span class="tree-page-left">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="fa fa-upload"></i>
-                                                                                                                                                                                                            																	Adjuntar archivo introduccion																</span>
-                                                              
-                                                                
-															</label>
-                                                                </li>
-                                                                                                                                <li>
-                                                                                                                               <label >
-																
-																<span class="tree-page-left">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="fa fa-upload"></i>
-                                                                                                                                                                                                            																	yuuifyui																</span>
-                                                              
-                                                                
-															</label>
-                                                                </li>
-                                                                                                                            
-                                                                </ul>
-															
- 														</li>
-													
-											</ul>
-                                            
-										</li>
-																			<li>
-                                        												<label  class="course_structure_unit_label ">
-																								<span class="tree-unit-left">Unidad 2</span>
-												<span class="tree-unit-right">
-
-																											<span>N/A</span>
-													
-																									</span>
-											</label>
-
-											<ul>
-																										<li class="course_structure_page_li ">
-																																													<label >
-																
-																<span class="tree-page-left">
-																	Untitled Page 
-																</span>
-																<span class="tree-page-right">
-
-																																			<span>N/A</span>
-																	
-																	
-																</span>
-                                                              
-                                                                
-															</label>
-															   <ul class="sub-mode">
-                                                                                                                                <li>
-                                                                                                                               <label >
-																
-																<span class="tree-page-left">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <i class="fa fa-check-square-o"></i>
-                                                                                                                                                                                                                                                                                																	Eleccion multiple																</span>
-                                                              
-                                                                
-															</label>
-                                                                </li>
-                                                                                                                            
-                                                                </ul>
-															
- 														</li>
-													
-											</ul>
-                                            
-										</li>
-																			<li>
-                                        												<label  class="course_structure_unit_label ">
-																								<span class="tree-unit-left">Unidad 3</span>
-												<span class="tree-unit-right">
-
-																											<span>N/A</span>
-													
-																									</span>
-											</label>
-
-											<ul>
-																										<li class="course_structure_page_li ">
-																																													<label >
-																
-																<span class="tree-page-left">
-																	Untitled Page 
-																</span>
-																<span class="tree-page-right">
-
-																																			<span>N/A</span>
-																	
-																	
-																</span>
-                                                              
-                                                                
-															</label>
-															   <ul class="sub-mode">
                                                                                                                                 <li>
                                                                                                                                <label >
 																
 																<span class="tree-page-left">
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <i class="fa fa-check-circle-o"></i>
-                                                                                                                                        																	Eleccion simple																</span>
+                                                                                                                                        																	ةبيىسسوىب																</span>
                                                               
                                                                 
 															</label>
                                                                 </li>
+                                                                                                                            
+                                                                </ul>
+															
+ 														</li>
+													
+											</ul>
+                                            
+										</li>
+																			<li>
+                                        												<label  class="course_structure_unit_label ">
+																								<span class="tree-unit-left"><a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/modulo-2/?try">Módulo - 2</a></span>
+												<span class="tree-unit-right">
+
+																											<span>N/A</span>
+													
+																											<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/modulo-2/?try" class="preview_option">Free</a>
+																									</span>
+											</label>
+
+											<ul>
+																										<li class="course_structure_page_li ">
+																																													<label >
+																
+																<span class="tree-page-left">
+																	<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/modulo-2/page/1/?try">Aula 1</a> 
+																</span>
+																<span class="tree-page-right">
+
+																																			<span></span>
+																	
+																																			<a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/units/modulo-2/page/1?try" class="preview_option">Free</a>
+																	
+																</span>
+                                                              
+                                                                
+															</label>
+															   <ul class="sub-mode">
                                                                                                                             
                                                                 </ul>
 															
@@ -377,7 +379,7 @@ Skip to content</a>
             <h3>Reviews</h3>
             <div class="col-xs-12 col-sm-3 average-rating" itemscope itemtype="http://schema.org/Product">
             <span itemprop="name" style="display:none">
-            Curso Revit nivel básico            </span>
+            Escultura Dental            </span>
               <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
             	<p>Average Rating</p>
                 <p class="total-rating" itemprop="ratingValue">0</p>
@@ -523,16 +525,14 @@ Skip to content</a>
 					                 	<div id="secondary" class="widget-area col-xs-12 col-sm-4  pull-right" role="complementary">	
                     	                    	<div class="co-join-info">
                                                    	
-                            <p class="co-price">Price:  <span>&#x24;100</span>
-							                            <s>&#x24;100</s>
+                            <p class="co-price">Price:  <span>Free</span>
 							 
                            
                             </p>
                             
                             <div class="btns clearfix">
-                                                        <span class="apply-button apply-button-enrollment-finished btn apply-button-enrollment-closed btn-orange btn-medium">Comprar</span>
                                                         
-                                                                                                                                           
+                            <span class="apply-button apply-button-finished btn apply-button-enrollment-closed btn-orange btn-medium" >Comprar</span>                                
                                                         </div>
                             
                             
@@ -546,31 +546,28 @@ Skip to content</a>
 									 
                             </div>
                                                         
-                            <p class="enroll col-xs-12 col-sm-6 pull-right">2 Enrolled</p>
+                            <p class="enroll col-xs-12 col-sm-6 pull-right">0 Enrolled</p>
                             </div> <!-- course rat #end -->
                             
                             <ul>
-                            	                            	<li><span>Lectures:</span> 3 </li>
+                            	                            	<li><span>Lectures:</span> 2 </li>
                                                                                                 <li><span>Enroll Dates:</span> 			
 							Enroll Anytime										
 			 </li>
                                                                 
                                 <li><span>Course Dates:</span> 			
-							January&nbsp;20,&nbsp;2017 - No End Date			
+							March&nbsp;29,&nbsp;2018 - August&nbsp;16,&nbsp;2019			
 			 </li>
                                 
                                 <li><span>Enrollment:</span> 			
-							Students are added by instructors.			
+							Anyone			
 			 </li>
-                                                                <li><span>Language:</span> Español </li>
-                                                                                                <li><span>Duration:</span> 00:02:00 (HH:MM:SS) </li>
+                                                                <li><span>Language:</span> Portugues </li>
+                                                                                                <li><span>Duration:</span> 00:04:00 (HH:MM:SS) </li>
                                                               
 								                                <li><span>Includes:</span> Certificate of Completion </li>
                                                                 
-                                                                <li><span>Class Size:</span>  				
-									6 (4 places left)				
-				</li>
-                                                             </ul>
+                                                            </ul>
                             
                               
                         </div><!-- co-join-info #end -->
@@ -587,7 +584,7 @@ Skip to content</a>
 
 </div>
 <!-- #content -->
- 
+
 <!-- #colophon -->
 </div>
 <!-- #page -->
@@ -646,7 +643,6 @@ var _wpcf7 = {"loaderUrl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp
 var mc4wp_forms_config = [];
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.min.js?ver=4.0.9'></script>
 <!--[if lte IE 9]>
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.0.9'></script>
 <![endif]-->
