@@ -4,19 +4,30 @@
 	<title></title>
 </head>
 <body>
-	<?php print_r($data);?>
+	<?php print_r($videos_populares);
+	echo"</br>";
+	echo"</br>";
+	echo"</br>";
+	print_r($videos_recientes);
+	?>
 		<table border="1">
 		<thead>
 		<tr>
-			<th>id_rol</th>
-			<th>rol</th>
+			<th>nombre</th>
+			<th>descripcion</th>
+            <th>calificacion</th>
+            <th>vendidos</th>
+            <th>precio</th>
 		</tr>
 		</thead>
 		<tbody>
-			@foreach($data as $items)
+			@foreach($videos_populares as $items)
 			<tr>
-				<td>{{$items->id_rol}}</td>
+				<td>{{$items->nombre}}</td>
 				<td>{{$items->descripcion}}</td>
+                <td>{{$items->calificacion_curso}}</td>
+                <td>{{$items->vendidos}}</td>
+                <td>{{$items->precio}}</td>
 			</tr>
 			@endforeach
 		</tbody>
