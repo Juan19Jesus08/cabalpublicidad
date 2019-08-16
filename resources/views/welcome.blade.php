@@ -198,7 +198,7 @@ $array=CategoriaController::mostrar_categorias();
 foreach( $array as $item)
 {
 
-echo '	<li id="menu-item-871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871"><a title="All Courses" href="/cursos/">Curso con categoria:'. $item->cate.'</a></li>';
+echo '	<li id="menu-item-871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871"><a title="All Courses" href="/cursos/">'. $item->cate.'</a></li>';
 }
 
   ?>
