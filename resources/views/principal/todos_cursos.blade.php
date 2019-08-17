@@ -170,18 +170,17 @@ Skip to content</a>
      		<div class="row"> 
              <?php 
              
-             $valor= $_GET['categoria'];
-             $registros_de_videos = DB::select("SELECT clases.url,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join categoria on cursos.id_categoria=categoria.id_categoria inner join clases on clases.id_curso=cursos.id_curso where categoria.descripcion='$valor' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
+            
 
               
-             foreach($registros_de_videos as $item)
+             foreach($videos as $item)
              {
                  
                  echo '<div class="col-xs-12 col-sm-4 zoom courses  with-sidebar three-column grid-group-item">';
                  echo '<div class="course clist">';
-                                  
+                                 
                                   echo'<div class="course-thumbnail course-featured-media course-featured-media-2558 "><figure>';				echo'<iframe width="420" height="200" src="'.$item->url.'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-                             echo '</figure></div>';                                        
+                             echo '</figure></div>';                                       
                                                      echo '<div class="course_space">';
                                                       echo '<div class="price"> MXN $'.$item->precio;                                        echo '<span></span></div>';
                                                      echo '<h3><a href="/clases?clase_de='.$item->nombre.'">'.$item->nombre.'</a></h3>';

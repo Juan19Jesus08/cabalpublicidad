@@ -118,23 +118,23 @@ color:#262c38;
                             	<h2 class="text-center head-border-default">Cursos mas populares</h2>
                                  <!-- course start-->
 				                
-   @foreach($videos_populares as $items)
+								 @foreach($videos_populares as $items)
 
 
 <div class="col-xs-12 col-sm-4 zoom">
                    <div class="course">
 
-                   <a href="http://www.demos.themecycle.com/educationpress/courses/building-a-chat-system-in-ajax-php/" class="img-thumb ">
-                                    	                                       <div class="course-thumbnail course-featured-media course-featured-media-587 "><figure>             <img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/web7-360x270.jpg" class="course-media-img" alt="Building a Chat System in AJAX &amp; PHP" />
-                </figure></div>                    </a>
+                   
+         <div class="course-thumbnail course-featured-media course-featured-media-587 "><figure> <iframe width="420" height="200" src="<?php echo $items->url; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>           
+                </figure></div>                    
                                     
                    <div class="course_space">
-                                        <div class="price"> {{$items->precio}}                                     <span></span></div>
-                                        <h3><a href="http://www.demos.themecycle.com/educationpress/courses/building-a-chat-system-in-ajax-php/" rel="bookmark">
+                                        <div class="price"> MXN ${{$items->precio}}                                     <span></span></div>
+                                        <h3><a href="/clases?clase_de=<?php echo $items->nombre; ?> " rel="bookmark">
                     {{$items->nombre}}
  </a></h3>
                    <p class="meta">
-                   by: <a href="http://www.demos.themecycle.com/educationpress/instructor/cherrywalker/">Cherry Walker</a>              	                    in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/web-development/" rel="tag">Web Development</a>                                          </p>
+                   by: <h1>Daniel</h1>              	                 </p>
                            <div class="course-summary course-summary-587 ">
                 <p>{{$items->descripcion}}
 </p>            </div>
@@ -169,7 +169,7 @@ Cursando </p>
                  <!-- course start End-->
                 
                                 <div class="btn-group text-center col-xs-12">
-                <a href="/cursos" class="btn btn-orange btn-medium">Ir a todos los cursos<i class="lnr lnr-arrow-right"></i></a>
+                <a href="/todos" class="btn btn-orange btn-medium">Ir a todos los cursos<i class="lnr lnr-arrow-right"></i></a>
                 </div>
                                  
                </div>   <!-- #course_list #end  -->
@@ -219,23 +219,23 @@ printer took a galley of type.</p>
                             	<h2 class="text-center head-border-default">Cursos recientes</h2>
                                  <!-- course start-->
 				                
-								 @foreach($videos_recientes as $items)
+                                 @foreach($videos_recientes as $items)
 
 
 <div class="col-xs-12 col-sm-4 zoom">
                    <div class="course">
 
-                   <a href="http://www.demos.themecycle.com/educationpress/courses/building-a-chat-system-in-ajax-php/" class="img-thumb ">
-                                    	                                       <div class="course-thumbnail course-featured-media course-featured-media-587 "><figure>             <img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/web7-360x270.jpg" class="course-media-img" alt="Building a Chat System in AJAX &amp; PHP" />
-                </figure></div>                    </a>
+                   
+         <div class="course-thumbnail course-featured-media course-featured-media-587 "><figure> <iframe width="420" height="200" src="<?php echo $items->url; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>           
+                </figure></div>                    
                                     
                    <div class="course_space">
-                                        <div class="price"> {{$items->precio}}                                     <span></span></div>
-                                        <h3><a href="http://www.demos.themecycle.com/educationpress/courses/building-a-chat-system-in-ajax-php/" rel="bookmark">
+                                        <div class="price"> MXN ${{$items->precio}}                                     <span></span></div>
+                                        <h3><a href="/clases?clase_de=<?php echo $items->nombre; ?> " rel="bookmark">
                     {{$items->nombre}}
  </a></h3>
                    <p class="meta">
-                   by: <a href="http://www.demos.themecycle.com/educationpress/instructor/cherrywalker/">Cherry Walker</a>              	                    in:   <a href="http://www.demos.themecycle.com/educationpress/course_category/web-development/" rel="tag">Web Development</a>                                          </p>
+                   by: <h1>Daniel</h1>              	                 </p>
                            <div class="course-summary course-summary-587 ">
                 <p>{{$items->descripcion}}
 </p>            </div>
@@ -263,8 +263,7 @@ Cursando </p>
                    </div>  <!--course space #end -->
                </div> <!-- col course #end -->
 
-@endforeach
-							<div class="clearfix"></div>
+@endforeach						<div class="clearfix"></div>
 					                 
                                                 
                  <!-- course start End-->
@@ -274,7 +273,7 @@ Cursando </p>
                  <!-- course start End-->
                 
                                 <div class="btn-group text-center col-xs-12">
-                <a href="http://www.demos.themecycle.com/educationpress/courses" class="btn btn-orange btn-medium">Browse all Courses<i class="lnr lnr-arrow-right"></i></a>
+                <a href="/todos" class="btn btn-orange btn-medium">Ir a todos los cursos<i class="lnr lnr-arrow-right"></i></a>
                 </div>
                                  
                </div>   <!-- #course_list #end  -->
