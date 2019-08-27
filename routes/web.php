@@ -12,8 +12,10 @@
 */
 Route::get('/Admin_categoria','CategoriaController@categoria_mostrar');
 
-Route::delete('/Admin_categoria_borrar/{id}','CategoriaController@eliminar')->name('Admin_categoria_borrar');
-
+//Route::delete('/Admin_categoria_borrar/{id}','CategoriaController@eliminar')->name('Admin_categoria_borrar');
+Route::get('/Admin_categoria_borrar', function () {
+    return view('/Admin/Categoria/delete');
+});
 
 Route::get('/Admin_categoria_nuevo', function () {
     return view('/Admin/Categoria/insert');
