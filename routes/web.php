@@ -11,10 +11,17 @@
 |
 */
 
-Route::get('/admin_index', function () {
-    return view('/Admin/index');
+Route::get('/Admin_categoria', function () {
+    return view('/Admin/Categoria/index');
+});
+Route::get('/Admin_categoria_nuevo', function () {
+    return view('/Admin/Categoria/insert');
 });
 
+Route::get('/Admin_categoria_editar', function () {
+    return view('/Admin/Categoria/edit');
+});
+//////////////////////////////////////////////////////////////////////////////
 Route::get('/rol', function () {
     return view('/principal/rol');
 });
