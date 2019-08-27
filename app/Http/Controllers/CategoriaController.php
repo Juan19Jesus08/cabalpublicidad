@@ -27,8 +27,20 @@ class CategoriaController extends Controller
    	 $category=DB::select('SELECT categoria.descripcion as cate FROM categoria');
  	 
     	return $category;
+	}
+	
+
+	public function categoria_mostrar()
+	{
+		$categorias=DB::select('SELECT * FROM categoria');
+		return view('/Admin/Categoria/index',compact('categorias'));
     }
 
+	public function eliminar($id)
+    {
+        DB::delete("DELETE FROM categoria WHERE id_categoria='$id'");
+ 		return view('/Admin/Categoria/index'); 
+    }
 
     
 }
