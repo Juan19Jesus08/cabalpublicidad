@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('/admin_index', function () {
+    return view('/Admin/index');
+});
+
 Route::get('/rol', function () {
     return view('/principal/rol');
 });
@@ -49,3 +53,4 @@ Route::get('/registrar', function () {
 
 Route::get('/','RolController@index');
 Route::get('/todos','CursosController@cursos');
+
