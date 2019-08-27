@@ -27,7 +27,7 @@
                   
                    <td>
                     
-                   <a class="btn btn-danger btn-xs" href="{{ route('/Admin_categoria/' )}}" >Eliminar</a>
+                   <a class="btn btn-danger btn-xs" href="{{ route('Admin_categoria')}}" >Eliminar</a>
 
 
                    </td>

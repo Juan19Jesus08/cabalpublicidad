@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/Admin_categoria','CategoriaController@categoria_mostrar');
+Route::get('/Admin_categoria','CategoriaController@categoria_mostrar')->name('Admin_categoria');
 
 Route::delete('/Admin_categoria_borrar/{id}','CategoriaController@eliminar');
 
