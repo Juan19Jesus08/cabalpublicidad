@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Escultura Dental &#8211; EducationPress</title>
+<title>CabalPublicidad</title>
 <meta name='robots' content='noindex,follow' />
                 <!-- favicon -->
                 <link rel="shortcut icon" href="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/favicon.png"/>

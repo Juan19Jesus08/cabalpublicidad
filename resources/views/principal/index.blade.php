@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>EducationPress &#8211; The Most Complete Education Solution</title>
+<title>CabalPublicidad</title>
                 <!-- favicon -->
                 <link rel="shortcut icon" href="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/favicon.png"/>
                 		<script type="text/javascript">
