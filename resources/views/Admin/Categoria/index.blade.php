@@ -28,7 +28,7 @@
                    <td>
                     
                    <a class="btn btn-danger btn-xs" href="{{ route('Admin_categoria_borrar',['id' => $categoria->id_categoria])}}" >Eliminar</a>
-
+                  
                    </td>
 
 
