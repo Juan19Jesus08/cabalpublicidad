@@ -1,5 +1,6 @@
 @extends('welcome')
 @section('contenido')
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -109,7 +110,7 @@ Skip to content</a>
     <div class="col-xs-12 col-sm-6 login-form">  	
   <h3>Login</h3>            
 										<p class="form-info-"></p>
-                                        {{ Form::open(array('action' => 'UsuarioController@Login', 'method' => 'post','class'=>'student-settings','id'=>'student-settings','name'=>'loginform')) }}
+                                        {{ Form::open(array('action' => 'CategoriaController@categoria_mostrar', 'method' => 'post','class'=>'student-settings','id'=>'student-settings','name'=>'loginform')) }}
 										<!--<form name="loginform" id="student-settings" class="student-settings" method="post">-->
 						
 						<label>

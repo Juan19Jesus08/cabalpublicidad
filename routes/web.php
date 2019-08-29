@@ -11,7 +11,7 @@
 |
 */
 /*     RUTAS PARA ADMIN CATEGORIA*/
-Route::get('/Admin_categoria','CategoriaController@categoria_mostrar');
+Route::post('/Admin_categoria','CategoriaController@categoria_mostrar')->middleware('admin:1')->name('Admin_categoria');
 
 Route::get('/Admin_categoria_borrar','CategoriaController@categoria_eliminar');
 Route::post('/Admin_categoria_borrar','CategoriaController@eliminar');
