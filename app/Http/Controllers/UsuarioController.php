@@ -6,11 +6,20 @@ use Illuminate\Http\Request;
 use DB;
 class UsuarioController extends Controller
 {
+	public function __construct(){
+		$this->middleware('auth');
+	  }	
+
     public function usuario_mostrar()
 	{
 		$usuarios=DB::select('SELECT usuario.email,usuario.nombre,usuario.password,rol.descripcion FROM usuario inner join rol on usuario.id_rol=rol.id_rol');
 		return view('/Admin/Usuario/index',compact('usuarios'));
     }
+
+	public function usuario_eliminar()
+		{
+			return view('/Admin/Usuario/delete');
+		}
 
 	public function eliminar(Request $input)
     {
@@ -26,7 +35,12 @@ class UsuarioController extends Controller
 	
 	}
 	
-	
+	public function usuario_nuevo()
+		{
+			return view('/Admin/Usuario/insert');
+		}
+
+
 	public function insertar(Request $input)
 	{
 	$nombre = $input['nombre_show'];
@@ -41,6 +55,10 @@ class UsuarioController extends Controller
 
 	}
 
+	public function usuario_editar()
+		{
+			return view('/Admin/Usuario/edit');
+		}
 
 	public function actualizar(Request $input)
 	{

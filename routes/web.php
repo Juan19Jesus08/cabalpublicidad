@@ -13,79 +13,50 @@
 /*     RUTAS PARA ADMIN CATEGORIA*/
 Route::get('/Admin_categoria','CategoriaController@categoria_mostrar');
 
-//Route::delete('/Admin_categoria_borrar/{id}','CategoriaController@eliminar')->name('Admin_categoria_borrar');
-;
-
-//Route::get('/Admin_categoria_borrar','CategoriaController@eliminar');
-
-Route::get('/Admin_categoria_borrar', function () {
-    return view('/Admin/Categoria/delete');
-});
+Route::get('/Admin_categoria_borrar','CategoriaController@categoria_eliminar');
 Route::post('/Admin_categoria_borrar','CategoriaController@eliminar');
 
-Route::get('/Admin_categoria_nuevo', function () {
-    return view('/Admin/Categoria/insert');
-});
+Route::get('/Admin_categoria_nuevo','CategoriaController@categoria_nuevo');
 Route::post('/Admin_categoria_nuevo','CategoriaController@insertar');
 
-Route::get('/Admin_categoria_editar', function () {
-    return view('/Admin/Categoria/edit');
-});
+Route::get('/Admin_categoria_editar','CategoriaController@categoria_editar');
 Route::post('/Admin_categoria_editar','CategoriaController@actualizar');
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /*     RUTAS PARA ADMIN USUARIO*/
 Route::get('/Admin_usuario','UsuarioController@usuario_mostrar');
 
-Route::get('/Admin_usuario_borrar', function () {
-    return view('/Admin/Usuario/delete');
-});
+Route::get('/Admin_usuario_borrar','UsuarioController@usuario_eliminar');
 Route::post('/Admin_usuario_borrar','UsuarioController@eliminar');
 
-Route::get('/Admin_usuario_nuevo', function () {
-    return view('/Admin/Usuario/insert');
-});
+Route::get('/Admin_usuario_nuevo','UsuarioController@usuario_nuevo');
 Route::post('/Admin_usuario_nuevo','UsuarioController@insertar');
 
-Route::get('/Admin_usuario_editar', function () {
-    return view('/Admin/Usuario/edit');
-});
+Route::get('/Admin_usuario_editar','UsuarioController@usuario_editar');
 Route::post('/Admin_usuario_editar','UsuarioController@actualizar');
 //////////////////////////////////////////////////////////////////////////////////////
 /*     RUTAS PARA ADMIN CLASES*/
 Route::get('/Admin_clases','ClasesController@clases_mostrar');
 
-Route::get('/Admin_clases_borrar', function () {
-    return view('/Admin/Clases/delete');
-});
+Route::get('/Admin_clases_borrar','ClasesController@clases_eliminar');
 Route::post('/Admin_clases_borrar','ClasesController@eliminar');
 
-Route::get('/Admin_clases_nuevo', function () {
-    return view('/Admin/Clases/insert');
-});
+Route::get('/Admin_clases_nuevo','ClasesController@clases_nuevo');
 Route::post('/Admin_clases_nuevo','ClasesController@insertar');
 
-Route::get('/Admin_clases_editar', function () {
-    return view('/Admin/Clases/edit');
-});
+Route::get('/Admin_clases_editar','ClasesController@clases_editar');
 Route::post('/Admin_clases_editar','ClasesController@actualizar');
 
 ////////////////////////////////////////////////////////////////////////////////
 /*     RUTAS PARA ADMIN CURSOS*/
 Route::get('/Admin_cursos','CursosController@cursos_mostrar');
 
-Route::get('/Admin_cursos_borrar', function () {
-    return view('/Admin/Cursos/delete');
-});
+Route::get('/Admin_cursos_borrar','CursosController@cursos_eliminar');
 Route::post('/Admin_cursos_borrar','CursosController@eliminar');
 
-Route::get('/Admin_cursos_nuevo', function () {
-    return view('/Admin/Cursos/insert');
-});
+Route::get('/Admin_cursos_nuevo','CursosController@cursos_nuevo');
 Route::post('/Admin_cursos_nuevo','CursosController@insertar');
 
-Route::get('/Admin_cursos_editar', function () {
-    return view('/Admin/Cursos/edit');
-});
+Route::get('/Admin_cursos_editar','CursosController@cursos_editar');
 Route::post('/Admin_cursos_editar','CursosController@actualizar');
 //////////////////////////////////////////////////////////////////////////////
 

@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 use DB;
 class CursosController extends Controller
 {
+	public function __construct(){
+		$this->middleware('auth');
+	  }
+
     public function cursos()
 	{
 		//$data = Rol::all();
@@ -26,6 +30,12 @@ class CursosController extends Controller
 		return view('/Admin/Cursos/index',compact('cursos'));
     }
 
+
+	public function cursos_eliminar()
+		{
+			return view('/Admin/Cursos/delete');
+		}
+
 	public function eliminar(Request $input)
     {
 		$categoria = $input['curso_show'];
@@ -40,7 +50,11 @@ class CursosController extends Controller
 	
 		}
 	
-	
+		public function cursos_nuevo()
+		{
+			return view('/Admin/Cursos/insert');
+		}
+
 	public function insertar(Request $input)
 	{
 	$nombre = $input['nombre_show'];
@@ -54,6 +68,10 @@ class CursosController extends Controller
 
 	}
 
+	public function cursos_editar()
+		{
+			return view('/Admin/Cursos/edit');
+		}
 
 	public function actualizar(Request $input)
 	{

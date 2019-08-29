@@ -6,11 +6,20 @@ use Illuminate\Http\Request;
 use DB;
 class ClasesController extends Controller
 {
+	public function __construct(){
+		$this->middleware('auth');
+	  }	
+	  
     public function clases_mostrar()
 	{
 		$clases=DB::select('SELECT clases.id_clase,clases.nombre,clases.url,clases.descripcion,clases.duracion,cursos.nombre as curso FROM clases inner join cursos on cursos.id_curso=clases.id_curso');
 		return view('/Admin/Clases/index',compact('clases'));
     }
+
+	public function clases_eliminar()
+		{
+			return view('/Admin/Clases/delete');
+		}
 
 	public function eliminar(Request $input)
     {
@@ -26,6 +35,11 @@ class ClasesController extends Controller
 	
 		}
 	
+
+		public function clases_nuevo()
+		{
+			return view('/Admin/Clases/insert');
+		}
 	
 	public function insertar(Request $input)
 	{
@@ -42,6 +56,10 @@ class ClasesController extends Controller
 
 	}
 
+	public function clases_editar()
+		{
+			return view('/Admin/Clases/edit');
+		}
 
 	public function actualizar(Request $input)
 	{

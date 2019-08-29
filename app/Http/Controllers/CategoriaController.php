@@ -7,7 +7,9 @@ use DB;
 
 class CategoriaController extends Controller
 {
-    
+    public function __construct(){
+		$this->middleware('auth');
+	  }	
 	public function index()
 	{
 		
@@ -35,6 +37,11 @@ class CategoriaController extends Controller
 		$categorias=DB::select('SELECT * FROM categoria');
 		return view('/Admin/Categoria/index',compact('categorias'));
     }
+	
+	public function categoria_eliminar()
+	{
+		return view('/Admin/Categoria/delete');
+	}
 
 	public function eliminar(Request $input)
     {
@@ -51,6 +58,11 @@ class CategoriaController extends Controller
 		}
 	
 	
+		public function categoria_nuevo()
+		{
+			return view('/Admin/Categoria/insert');
+		}
+
 	public function insertar(Request $input)
 	{
     $categoria = $input['categoria_show'];
@@ -60,6 +72,12 @@ class CategoriaController extends Controller
     return redirect()->action('CategoriaController@categoria_mostrar')->withInput();
 
 	}
+
+
+	public function categoria_editar()
+		{
+			return view('/Admin/Categoria/edit');
+		}
 
 
 	public function actualizar(Request $input)
