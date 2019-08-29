@@ -100,3 +100,5 @@ Route::get('/todos','CursosController@cursos');
 
 Route::get('/mis_cursos','AdquirirController@mostrar_comentarios');
 Route::post('/mis_cursos','AdquirirController@añadir_comentario');
+
+Route::get('/rol','RolController@procedimiento_almacenado');
