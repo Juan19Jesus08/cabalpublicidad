@@ -103,30 +103,26 @@ Route::get('/cursos', function () {
     return view('/principal/cursos');
 });
 
-Route::get('/registrar', function () {
-    return view('/principal/registrar');
-});
-Route::post('/registrar','UsuarioController@Registrar');
 
-Route::get('/login', function () {
+/*Ruta para el login*/
+Route::get('/iniciar_sesion', function () {
     return view('/principal/iniciar_sesion');
     
 });
-Route::post('/login','UsuarioController@Login');
+Route::post('/iniciar_sesion','UsuarioController@Login');
+///////////////////////////////////////////
 
 Route::get('/acerca_de', function () {
     return view('/principal/acerca_de');
 });
 
-Route::get('/iniciar_sesion', function () {
-    return view('/principal/iniciar_sesion');
-});
 
+/*Ruta para el registrarse*/
 Route::get('/registrar', function () {
     return view('/principal/registrar');
 });
-
-
+Route::post('/registrar','UsuarioController@Registrar');
+///////////////////////////////////////////
 
 Route::get('/','RolController@index');
 Route::get('/todos','CursosController@cursos');
