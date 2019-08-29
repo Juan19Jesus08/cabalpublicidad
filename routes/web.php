@@ -127,3 +127,5 @@ Route::post('/registrar','UsuarioController@Registrar');
 Route::get('/','RolController@index');
 Route::get('/todos','CursosController@cursos');
 
+Route::get('/mis_cursos','AdquirirController@mostrar_comentarios');
+Route::post('/mis_cursos','AdquirirController@añadir_comentario');

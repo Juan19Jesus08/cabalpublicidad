@@ -366,69 +366,29 @@ Skip to content</a>
         <section class="courses-review clearfix">
             <h3>Reviews</h3>
             <div class="col-xs-12 col-sm-3 average-rating" itemscope itemtype="http://schema.org/Product">
-            <span itemprop="name" style="display:none">
-            Escultura Dental            </span>
-              <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-            	<p>Average Rating</p>
-                <p class="total-rating" itemprop="ratingValue">0</p>
-                <span>
-			                                <i class="glyphicons glyphicon-star-empty"></i>
-                                                            <i class="glyphicons glyphicon-star-empty"></i>
-                                                            <i class="glyphicons glyphicon-star-empty"></i>
-                                                            <i class="glyphicons glyphicon-star-empty"></i>
-                                                            <i class="glyphicons glyphicon-star-empty"></i>
-                                                    </span>
-                <p itemprop="reviewCount">0 ratings</p>
-                <div style="display:none">
-					<span itemprop="bestRating">5</span>
-					<span itemprop="worstRating">1</span>
-				</div>
-               </div>
-            </div>
-            <div class="col-xs-12 col-sm-7">
-            	<p>Details</p>
-                  <!-- 5 start-->   
-                <div class="stars-rating">
-                  <span>5 Stars</span>
-                 <div class="progress active">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="1" aria-valuemax="100" style="width:0%"></div>
-                </div> 
-                  <span>0</span>		
-                </div><!-- 5 start #end-->
-                 <!-- 4 start-->   
-                <div class="stars-rating">
-                  <span>4 Stars</span>
-                 <div class="progress active">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="1" aria-valuemax="100" style="width:0%"></div>
-                </div> 
-                  <span>0</span>		
-                </div><!-- 4 start #end-->
-                <!-- 3 start-->   
-                <div class="stars-rating">
-                  <span>3 Stars</span>
-                 <div class="progress active">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="1" aria-valuemax="100" style="width:0%"></div>
-                </div> 
-                  <span>0</span>		
-                </div><!-- 3 start #end-->
-                
-                <!-- 2 start-->   
-                <div class="stars-rating">
-                  <span>2 Stars</span>
-                 <div class="progress active">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="1" aria-valuemax="100" style="width:0%"></div>
-                </div> 
-                  <span>0</span>		
-                </div><!-- 2 start #end-->
-                
-                 <!-- 1 start-->   
-                <div class="stars-rating">
-                  <span>1 Stars</span>
-                 <div class="progress active">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="1" aria-valuemax="100" style="width:0%"></div>
-                </div> 
-                  <span>0</span>		
-                </div><!-- 1 start #end-->
+            
+			<table  id="table_id" "border = 0" >
+           <thead>
+           <tr>
+               <th>Usuario</th>
+               <th>Comentarios</th>
+              
+           </tr>
+           </thead>
+           <tbody>
+           @foreach($comentarios as $comentario)
+               <tr>
+                  
+                   <td>{{ $comentario->email}}</td>
+                   <td>{{ $comentario->comentario}}</td>
+                  
+                  
+                 
+
+               </tr>
+           @endforeach
+           </tbody>
+       </table >
                 
                 </div>
         </section> <!--  courses-review #end -->
@@ -437,72 +397,40 @@ Skip to content</a>
         	         	
         </ul>
         <h3>ADD A REVIEW</h3>
-         <span id="state"></span> 		<form action="" method="post" enctype="multipart/form-data" class="rr_review_form">
-			<input type="hidden" name="submitted" value="Y" />
-			<input type="hidden" name="rRating" id="rRating" value="0" />
+         <span id="state"></span> 		
+		 
+		 {{ Form::open(array('action' => 'AdquirirController@añadir_comentario', 'method' => 'post','class'=>'rr_review_form')) }}
+			
 			<table class="form_table">
 			
-	<tr class="rr_form_row">
-		<td class="rr_form_heading rr_required" >
-			Name		</td>
-		<td class="rr_form_input">
-			<span class="form-err"></span>
-			<input class="rr_small_input" type="text" name="rName" value=""  />
-		</td>
-	</tr>
+	
 
 	<tr class="rr_form_row">
 		<td class="rr_form_heading rr_required" >
 			Email		</td>
 		<td class="rr_form_input">
 			<span class="form-err"></span>
-			<input class="rr_small_input" type="text" name="rEmail" value=""  />
+			{{ Form::email('email_show', '', array('id' => 'email_show',  'placeholder' => 'Email')) }}
 		</td>
 	</tr>
 
-	<tr class="rr_form_row">
-		<td class="rr_form_heading rr_required" >
-			Review Title		</td>
-		<td class="rr_form_input">
-			<span class="form-err"></span>
-			<input class="rr_small_input" type="text" name="rTitle" value=""  />
-		</td>
-	</tr>
-
-<tr class="rr_form_row">
-	<td class="rr_form_heading rr_required">Rating</td>
-	<td class="rr_form_input">
-		<span class="form-err"></span>
-		<div class="rr_stars_container">
-			<span class="rr_star glyphicon glyphicon-star-empty" id="rr_star_1"></span>
-			<span class="rr_star glyphicon glyphicon-star-empty" id="rr_star_2"></span>
-			<span class="rr_star glyphicon glyphicon-star-empty" id="rr_star_3"></span>
-			<span class="rr_star glyphicon glyphicon-star-empty" id="rr_star_4"></span>
-			<span class="rr_star glyphicon glyphicon-star-empty" id="rr_star_5"></span>
-		</div>
-	</td>
-</tr>
-
-	<style>
-		.stars, .rr_star {
-			color: #ffaf00;
-		}
-	</style>
 		<tr class="rr_form_row">
 		<td class="rr_form_heading rr_required">
-			Review Content		</td>
+			Comentario		</td>
 		<td class="rr_form_input">
 			<span class="form-err"></span>
-			<textarea class="rr_large_input" name="rText" rows="10"></textarea>
+			{{ Form::text('comentario_show', '', array('id' => 'comentario_show',  'placeholder' => ' Comentario')) }}
 		</td>
 	</tr>
 
 				<tr class="rr_form_row">
 					<td></td>
-					<td class="rr_form_input"><input id="submitReview" type="submit" value="Submit"/></td>
+					<td class="rr_form_input">
+					{!! Form::submit( 'Añadir Comentario', ['class' => 'btn btn-info btn-block', 'name' => 'submitbutton', 'value' => 'login'])!!}
+						 
 				</tr>
 			</table>
-		</form>
+			{{ Form::close() }}
 		     </div> <!-- course info #end-->
                     				                    </div>
                     
