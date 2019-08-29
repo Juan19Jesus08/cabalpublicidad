@@ -20,4 +20,57 @@ class CursosController extends Controller
 
 	} 
 
+	public function cursos_mostrar()
+	{
+		$cursos=DB::select('SELECT cursos.id_curso,cursos.nombre,cursos.descripcion,cursos.precio,categoria.descripcion as cate,cursos.fecha_creacion FROM cursos inner join categoria on cursos.id_categoria=categoria.id_categoria');
+		return view('/Admin/Cursos/index',compact('cursos'));
+    }
+
+	public function eliminar(Request $input)
+    {
+		$categoria = $input['curso_show'];
+		$id=$input['id_show'];
+		//echo $categoria."   and   ".$id;
+	
+		
+		$query=DB::delete("DELETE FROM cursos WHERE id_curso='$id'");
+	
+	
+		return redirect()->action('CursosController@cursos_mostrar')->withInput();
+	
+		}
+	
+	
+	public function insertar(Request $input)
+	{
+	$nombre = $input['nombre_show'];
+	$descripcion = $input['descripcion_show'];
+	$precio = $input['precio_show'];
+	$categoria = $input['categoria_show'];
+	$fecha = $input['fecha_show'];
+
+	$query=DB::insert('insert into cursos (id_curso,nombre,descripcion,precio,id_categoria,fecha_creacion) values (?, ?, ?, ?, ?, ?)', [null, $nombre,$descripcion,$precio,$categoria,$fecha]);
+    return redirect()->action('CursosController@cursos_mostrar')->withInput();
+
+	}
+
+
+	public function actualizar(Request $input)
+	{
+		$id = $input['id_show'];
+		$nombre = $input['nombre_show'];
+		$descripcion = $input['descripcion_show'];
+		$precio = $input['precio_show'];
+		$categoria = $input['categoria_show'];
+		$fecha = $input['fecha_show'];
+
+		echo $nombre."   ".$descripcion."   ".$precio."   ".$categoria."   ".$fecha."  ".$id;
+
+	$query=DB::update("update  cursos set nombre='$nombre',descripcion='$descripcion',precio=$precio,id_categoria=$categoria,fecha_creacion='$fecha' where id_curso=?",[$id]);
+
+
+	return redirect()->action('CursosController@cursos_mostrar')->withInput();
+
+	}
+
 }

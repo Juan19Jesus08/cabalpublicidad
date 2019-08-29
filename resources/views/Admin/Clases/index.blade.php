@@ -2,7 +2,7 @@
 @section('contenido')
 <html>
 <head>
-   <title>Lista de Categorias</title>
+   <title>Lista de Clases</title>
 
 </head>
 
@@ -11,27 +11,35 @@
 <div class="container">
    <br><br><br><br><br><br>
    <div class="row">
-   <a class="btn btn-danger btn-xs" href="/Admin_categoria_nuevo " >Ingresar con A</a> 
+   <a class="btn btn-danger btn-xs" href="/Admin_clases_nuevo " >Ingresar con A</a> 
        <table  id="table_id"class="table table-condensed table-striped table-bordered" >
            <thead>
            <tr>
-               <th>Categoria</th>
+               <th>Nombre</th>
+               <th>URL</th>
+               <th>Descripcion</th>
+               <th>Duracion</th>
+               <th>Curso</th>
                <th>Acciones</th>
               
            </tr>
            </thead>
            <tbody>
-           @foreach($categorias as $categoria)
+           @foreach($clases as $clase)
                <tr>
                   
-                   <td>{{ $categoria->descripcion }}</td>
+                   <td>{{ $clase->nombre}}</td>
+                   <td>{{ $clase->url}}</td>
+                   <td>{{ $clase->descripcion}}</td>
+                   <td>{{ $clase->duracion}}</td>
+                   <td>{{ $clase->curso}}</td>
                   
                    <td>
                     
                    
-                   <a class="btn btn-danger btn-xs" href="/Admin_categoria_borrar?id_categoria=<?php echo $categoria->id_categoria; ?> " >Eliminar  con A</a>
-                   <a class="btn btn-danger btn-xs" href="/Admin_categoria_editar?id_categoria=<?php echo $categoria->id_categoria; ?> " >Editar  con A</a>
-                   <button class="btn btn-danger btn-xs" onclick=' window.location = "/Admin_categoria_borrar?id_categoria=<?php echo $categoria->id_categoria; ?> "'>Eliminar</button>
+                   <a class="btn btn-danger btn-xs" href="/Admin_clases_borrar?id_clase=<?php echo $clase->id_clase; ?> " >Eliminar  con A</a>
+                   <a class="btn btn-danger btn-xs" href="/Admin_clases_editar?id_clase=<?php echo $clase->id_clase; ?> " >Editar  con A</a>
+                  
                    </td>
 
                </tr>

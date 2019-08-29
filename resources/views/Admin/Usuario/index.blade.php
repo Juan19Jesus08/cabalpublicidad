@@ -2,7 +2,7 @@
 @section('contenido')
 <html>
 <head>
-   <title>Lista de Categorias</title>
+   <title>Lista de Usuarios</title>
 
 </head>
 
@@ -11,27 +11,34 @@
 <div class="container">
    <br><br><br><br><br><br>
    <div class="row">
-   <a class="btn btn-danger btn-xs" href="/Admin_categoria_nuevo " >Ingresar con A</a> 
+   <a class="btn btn-danger btn-xs" href="/Admin_usuario_nuevo " >Ingresar con A</a> 
        <table  id="table_id"class="table table-condensed table-striped table-bordered" >
            <thead>
            <tr>
-               <th>Categoria</th>
+               <th>Email</th>
+               <th>Nombre</th>
+               <th>Contraseña</th>
+               <th>Rol</th>
                <th>Acciones</th>
               
            </tr>
            </thead>
            <tbody>
-           @foreach($categorias as $categoria)
+           @foreach($usuarios as $usuario)
                <tr>
                   
-                   <td>{{ $categoria->descripcion }}</td>
+                   <td>{{ $usuario->email}}</td>
+                   <td>{{ $usuario->nombre}}</td>
+                   <td>{{ $usuario->password}}</td>
+                   <td>{{ $usuario->descripcion}}</td>
+                  
                   
                    <td>
                     
                    
-                   <a class="btn btn-danger btn-xs" href="/Admin_categoria_borrar?id_categoria=<?php echo $categoria->id_categoria; ?> " >Eliminar  con A</a>
-                   <a class="btn btn-danger btn-xs" href="/Admin_categoria_editar?id_categoria=<?php echo $categoria->id_categoria; ?> " >Editar  con A</a>
-                   <button class="btn btn-danger btn-xs" onclick=' window.location = "/Admin_categoria_borrar?id_categoria=<?php echo $categoria->id_categoria; ?> "'>Eliminar</button>
+                   <a class="btn btn-danger btn-xs" href="/Admin_usuario_borrar?email=<?php echo $usuario->email; ?> " >Eliminar  con A</a>
+                   <a class="btn btn-danger btn-xs" href="/Admin_usuario_editar?email=<?php echo $usuario->email; ?> " >Editar  con A</a>
+                  
                    </td>
 
                </tr>

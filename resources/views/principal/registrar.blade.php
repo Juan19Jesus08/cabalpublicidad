@@ -115,51 +115,40 @@ Skip to content</a>
 
 							
 							<form id="student-settings" name="student-settings" method="post" class="student-settings">
-
+                            {{ Form::open(array('action' => 'UsuarioController@Registrar', 'method' => 'post','class'=>'student-settings','id'=>'student-settings','name'=>'student-settings')) }}
 								
-								<input type="hidden" name="course_id" value=" "/>
-								<input type="hidden" name="redirect_url" value=""/>
+								
 
 								<label>
-									First Name:
-									<input type="text" name="first_name" value=""/>
+									Nombre de usuario
+									{{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Nombre de usuario')) }}
 								</label>
 
 								
-								<label>
-									Last Name:
-									<input type="text" name="last_name" value=""/>
-								</label>
+								
 
 								
 								<label>
-									Username:
-									<input type="text" name="username" value=""/>
+									Email
+									{{ Form::email('email_show', '', array('id' => 'email_show',  'placeholder' => 'Email')) }}
 								</label>
+
+								
+								
 
 								
 								<label>
-									E-mail:
-									<input type="text" name="email" value=""/>
+									Password
+									{{ Form::password('contrasenia_show', array('id' => 'contrasenia_show', 'placeholder' => 'Contraseña')) }}
 								</label>
 
 								
-								<label>
-									Password:
-									<input type="password" name="password" value=""/>
-								</label>
-
 								
-								<label class="right">
-									Confirm Password:
-									<input type="password" name="password_confirmation" value=""/>
-								</label>
-								<br clear="both"/><br/>
 
 								
 								
 								<label class="full">
-									Already have an account? <a href="http://www.demos.themecycle.com/educationpress/student-login/">Login to your account</a>!								</label>
+									Already have an account? <a href="/iniciar_sesion/">Login to your account</a>!								</label>
 
 								<label class="full-right">
 									<input type="submit" name="student-settings-submit" class="apply-button-enrolled" value="Create an Account"/>
@@ -186,9 +175,8 @@ Skip to content</a>
             value="" name="s"
             title="Search for:" />
                  </label>
-    <input type="submit" class="search-submit"
-        value="Search" />
-</form></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+				 {!! Form::submit( 'Registrarse', ['class' => 'btn btn-info btn-block', 'name' => 'submitbutton', 'value' => 'login'])!!}
+						 {{ Form::close() }}</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
 					<li>
 				<a href="http://www.demos.themecycle.com/educationpress/the-design-of-html5/">The Design of HTML5</a>
 						</li>

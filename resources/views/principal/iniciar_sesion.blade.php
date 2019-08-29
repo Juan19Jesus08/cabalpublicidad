@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CabalPublicidad</title>
+<title>EducationPress</title>
 <meta name='robots' content='noindex,follow' />
                 <!-- favicon -->
                 <link rel="shortcut icon" href="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/favicon.png"/>
@@ -109,16 +109,19 @@ Skip to content</a>
     <div class="col-xs-12 col-sm-6 login-form">  	
   <h3>Login</h3>            
 										<p class="form-info-"></p>
-										<form name="loginform" id="student-settings" class="student-settings" method="post">
+                                        {{ Form::open(array('action' => 'UsuarioController@Login', 'method' => 'post','class'=>'student-settings','id'=>'student-settings','name'=>'loginform')) }}
+										<!--<form name="loginform" id="student-settings" class="student-settings" method="post">-->
 						
 						<label>
-							Username:
-							<input type="text" name="log" value=""/>
+							Nombre de Usuario:
+                            {{ Form::email('email_show', '', array('id' => 'email_show',  'placeholder' => 'Email')) }}
+							<!--<input type="text" name="log" value=""/>-->
 						</label>
 
 						<label>
-							Password:
-							<input type="password" name="pwd" value=""/>
+							Contraseña:
+                            {{ Form::password('contrasenia_show', array('id' => 'contrasenia_show', 'placeholder' => 'Contraseña')) }}
+							<!--<input type="password" name="pwd" value=""/>-->
 						</label>
 
 						
@@ -128,15 +131,13 @@ Skip to content</a>
 						<label class="half-left">
 							<a href="http://www.demos.themecycle.com/educationpress/wp-login.php?action=lostpassword">Forgot Password?</a>
 						</label>
-						<label class="half-right">
-							<input type="submit" name="wp-submit" id="wp-submit" class="apply-button-enrolled" value="Log In"><br>
-						</label>
 						<br clear="all"/>
 
 						<input name="redirect_to" value="http://www.demos.themecycle.com/educationpress/courses-dashboard/" type="hidden">
 						<input name="testcookie" value="1" type="hidden">
 						<input name="course_signup_login" value="1" type="hidden">
-											</form>
+                        {!! Form::submit( 'Login', ['class' => 'btn btn-info btn-block', 'name' => 'submitbutton', 'value' => 'login'])!!}
+						 {{ Form::close() }}
 
 										 </div>	
  

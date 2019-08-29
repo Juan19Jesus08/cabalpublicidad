@@ -36,11 +36,45 @@ class CategoriaController extends Controller
 		return view('/Admin/Categoria/index',compact('categorias'));
     }
 
-	public function eliminar($id)
+	public function eliminar(Request $input)
     {
-        DB::delete("DELETE FROM categoria WHERE id_categoria='$id'");
- 		return view('/Admin/Categoria/index'); 
-    }
+		$categoria = $input['categoria_show'];
+		$id=$input['id_show'];
+		echo $categoria."   and   ".$id;
+	
+		
+		$query=DB::delete("DELETE FROM categoria WHERE id_categoria='$id'");
+	
+	
+		return redirect()->action('CategoriaController@categoria_mostrar')->withInput();
+	
+		}
+	
+	
+	public function insertar(Request $input)
+	{
+    $categoria = $input['categoria_show'];
+	echo $categoria;
+	
+	$query=DB::insert('insert into categoria (id_categoria,descripcion) values (?, ?)', [null, $categoria]);
+    return redirect()->action('CategoriaController@categoria_mostrar')->withInput();
+
+	}
+
+
+	public function actualizar(Request $input)
+	{
+	$categoria = $input['categoria_show'];
+	$id=$input['id_show'];
+	echo $categoria."   and   ".$id;
+
+	
+	$query=DB::update("update  categoria set descripcion='$categoria' where id_categoria=?",[$id]);
+
+
+	return redirect()->action('CategoriaController@categoria_mostrar')->withInput();
+
+	}
 
     
 }

@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
     <title>Admin</title>
     <!-- Custom CSS -->
+    
     <link href="/Admin_files/assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="/Admin_files/dist/css/style.min.css" rel="stylesheet">
@@ -144,11 +145,11 @@
                             </div>
                             <!-- End User Profile-->
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Usuario</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Admin_usuario" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Usuario</span></a></li>
                         <!-- User Profile-->
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Clases</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="pages-profile.html" aria-expanded="false"><i class="mdi mdi-account-network"></i><span class="hide-menu">Cursos</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="table-basic.html" aria-expanded="false"><i class="mdi mdi-border-all"></i><span class="hide-menu">Categoria</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Admin_clases" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Clases</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Admin_cursos" aria-expanded="false"><i class="mdi mdi-account-network"></i><span class="hide-menu">Cursos</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/Admin_categoria" aria-expanded="false"><i class="mdi mdi-border-all"></i><span class="hide-menu">Categoria</span></a></li>
 
                        </ul>
                     
