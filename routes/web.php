@@ -98,11 +98,13 @@ Route::post('/registrar','UsuarioController@Registrar');
 Route::get('/','RolController@index');
 Route::get('/todos','CursosController@cursos');
 
-Route::get('/mi','AdquirirController@mostrar_comentarios');
-Route::post('/mi','AdquirirController@añadir_comentario');
+Route::get('/mis_clases','AdquirirController@mostrar_comentarios');
+Route::post('/miis_clases','AdquirirController@añadir_comentario');
 
 /*rutas para el cliente*/
 Route::get('/perfil','Cursos_CompletadosController@perfil')->middleware('cliente:2')->name('perfil');
+
+Route::get('/mis_cursos','Cursos_CompletadosController@mostrar_cursos');
 //////////////////
 
 Route::get('/rol','RolController@procedimiento_almacenado');

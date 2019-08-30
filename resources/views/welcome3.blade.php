@@ -191,19 +191,19 @@ Skip to content</a>
 		</div>
       <div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-visitor-menu" class="nav navbar-nav">
 
-<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a title="Contact Us" href="/mis_cursos">Inicio</a></li>
-<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-148 dropdown"><a title="Courses" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Mis Cursos <span class="caret"></span></a>
+      <li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a title="Contact Us" href="/">Inicio</a></li>
+<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-148 dropdown"><a title="Courses" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true"> Cursos <span class="caret"></span></a>
 
 <ul role="menu" class=" dropdown-menu">
 
-<?php use \App\Http\Controllers\Cursos_CompletadosController;
-$array=Cursos_CompletadosController::mostrar_cursos();
+<?php use \App\Http\Controllers\CategoriaController;
+$array=CategoriaController::mostrar_categorias();
 
 foreach( $array as $item)
 {
 
   echo '    <li id="menu-item-871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871">
-  <a title="All Courses" href="/cursos?categoria='.$item->nombre.'">'. $item->nombre.'</a></li>';
+  <a title="All Courses" href="/cursos?categoria='.$item->cate.'">'. $item->cate.'</a></li>';
   
 }
 
@@ -211,6 +211,8 @@ foreach( $array as $item)
 </ul>
 
 </li>
+<li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a title="Events" href="/acerca_de/">Acerca de Nosotros</a></li>
+ <li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a title="Events" href="/mis_cursos/">Mis cursos</a></li>
 
 
 
