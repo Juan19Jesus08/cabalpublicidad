@@ -6,7 +6,7 @@ use DB;
 use Closure;
 
 
-class Admin
+class Cliente
 {
     /**
      * Handle an incoming request.
@@ -34,12 +34,12 @@ class Admin
                 $id= $item->id_rol;
 
             }
-            if($id==1)
+            if($id==2)
             {
                 return $next($request);
             }
             else{
-                return redirect('/perfil');     
+                return redirect('/Admin_categoria');     
             }
             
         }

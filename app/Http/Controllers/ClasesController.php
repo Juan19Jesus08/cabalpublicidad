@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 use DB;
 class ClasesController extends Controller
 {
-	public function __construct(){
+	/*public function __construct(){
 		$this->middleware('auth');
-	  }	
-	  
+	  }*/	
+
     public function clases_mostrar()
 	{
 		$clases=DB::select('SELECT clases.id_clase,clases.nombre,clases.url,clases.descripcion,clases.duracion,cursos.nombre as curso FROM clases inner join cursos on cursos.id_curso=clases.id_curso');
@@ -49,9 +49,9 @@ class ClasesController extends Controller
 	$curso = $input['curso_show'];
     $duracion='00:00:00';
     echo $nombre."   ".$url."   ".$descripcion."   ".$curso."   ".$duracion;
-   
+    $url_video="http://www.youtube.com/embed/".$url;
     
-	$query=DB::insert('insert into clases (id_clase,nombre,url,descripcion,duracion,id_curso) values (?, ?, ?, ?, ?, ?)', [null, $nombre,$url,$descripcion,$duracion,$curso]);
+	$query=DB::insert('insert into clases (id_clase,nombre,url,descripcion,duracion,id_curso) values (?, ?, ?, ?, ?, ?)', [null, $nombre,$url_video,$descripcion,$duracion,$curso]);
     return redirect()->action('ClasesController@clases_mostrar')->withInput();
 
 	}

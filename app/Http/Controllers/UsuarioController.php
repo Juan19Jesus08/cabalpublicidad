@@ -4,11 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use Illuminate\Support\Facades\Session;
 class UsuarioController extends Controller
 {
-	public function __construct(){
-		$this->middleware('auth');
-	  }	
+	
 
     public function usuario_mostrar()
 	{
@@ -98,5 +97,12 @@ class UsuarioController extends Controller
 	$query=DB::insert('insert into usuario (email,nombre,password,id_rol) values (?, ?, ?, ?)', [$email, $nombre,$password,$rol]);
     echo "se registro el usuario";
 
+	}
+
+	public function Logout()
+	{
+		
+		Session::flush();
+		return redirect('/');
 	}
 }

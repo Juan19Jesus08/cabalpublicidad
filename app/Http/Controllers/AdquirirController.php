@@ -13,7 +13,7 @@ class AdquirirController extends Controller
       
         //print_r ($category);
 		//exit();
-		return view('/principal/clases_registrado',compact('comentarios'));
+		return view('/cliente_principal/clases_registrado',compact('comentarios'));
 		//return ('/Rol/Rol')->withData($data);
 		//return view('rol',compact('rol'));
 

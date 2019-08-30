@@ -110,7 +110,7 @@
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Userdd">
                                        
-                                        <a class="dropdown-item" href="/"><i class="fa fa-power-off m-r-5 m-l-5"></i> Cerrar Sesion</a>
+                                        <a class="dropdown-item" href="/cerrar_sesion"><i class="fa fa-power-off m-r-5 m-l-5"></i> Cerrar Sesion</a>
                                     </div>
                                 </div>
                             </div>

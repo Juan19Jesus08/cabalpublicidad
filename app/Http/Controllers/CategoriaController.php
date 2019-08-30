@@ -7,10 +7,7 @@ use DB;
 
 class CategoriaController extends Controller
 {
-    public function __construct(){
-		$this->middleware('auth',['only'=>'categoria_eliminar','categoria_nuevo','categoria_editar']);
-		
-	  }	
+   
 	public function index()
 	{
 		
