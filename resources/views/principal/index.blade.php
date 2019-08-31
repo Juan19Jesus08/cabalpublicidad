@@ -125,7 +125,7 @@ color:#262c38;
                    <div class="course">
 
                    
-         <div class="course-thumbnail course-featured-media course-featured-media-587 "><figure> <iframe width="420" height="200" src="<?php echo $items->url; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>           
+         <div class="course-thumbnail course-featured-media course-featured-media-587 "><figure> <iframe width="420" height="200" src="<?php echo $items->url."?fs=1&controls=0&rel=0&start=0&end=60&version=3"; ?>" ></iframe>           
                 </figure></div>                    
                                     
                    <div class="course_space">

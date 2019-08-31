@@ -70,6 +70,7 @@ Route::get('/clases', function () {
 
 
 
+
 Route::get('/cursos', function () {
     return view('/principal/cursos');
 });

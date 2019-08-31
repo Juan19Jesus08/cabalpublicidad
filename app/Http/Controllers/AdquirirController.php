@@ -31,4 +31,6 @@ class AdquirirController extends Controller
     return redirect()->action('AdquirirController@mostrar_comentarios')->withInput();
 
 	}
+
+	
 }
