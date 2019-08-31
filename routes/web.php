@@ -99,14 +99,27 @@ Route::post('/registrar','UsuarioController@Registrar');
 Route::get('/','RolController@index');
 Route::get('/todos','CursosController@cursos');
 
-Route::get('/mis_clases','AdquirirController@mostrar_comentarios');
-Route::post('/miis_clases','AdquirirController@añadir_comentario');
+
+
 
 /*rutas para el cliente*/
+//////////////
 Route::get('/perfil','Cursos_CompletadosController@perfil')->middleware('cliente:2')->name('perfil');
 
 Route::get('/mis_cursos','Cursos_CompletadosController@mostrar_cursos');
 //////////////////
+Route::post('/mis_clases','AdquirirController@añadir_comentario');
+
+Route::get('/mis_clases', function () {
+    return view('/cliente_principal/clases_registrado');
+});
+////////////////////////////////
+Route::post('/mi_clase','AdquirirController@añadir_comentario');
+
+Route::get('/mi_clase', function () {
+    return view('/cliente_principal/clases_registrado2');
+});
+/*Fin de rutas para cliente*/
 
 Route::get('/rol','RolController@procedimiento_almacenado');
 Route::get('/cerrar_sesion','UsuarioController@Logout');

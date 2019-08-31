@@ -180,6 +180,9 @@
     <!-- All Jquery -->
     <!-- ============================================================== -->
     <script src="/Admin_files/assets/libs/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
     <!-- Bootstrap tether Core JavaScript -->
     <script src="/Admin_files/assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="/Admin_files/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>

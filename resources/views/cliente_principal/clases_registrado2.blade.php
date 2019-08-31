@@ -111,17 +111,18 @@ Skip to content</a>
                      <div class="courses-info">
  <!-- inicio del bloque de php--> 
 <?php 
-$valor= $_GET['clase_de'];
-$clase=  DB::select("SELECT clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
+$valor= $_GET['curso_de'];
+$valor2=$_GET['clase_de'];
+$clase=  DB::select("SELECT clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' and clases.nombre='$valor2' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
 foreach($clase as $item)
 {      
      echo '               	<h1>'.$item->nombre.'</h1>
                         
                      </div>';
                 	
-                                    	 
+                                    	
                                         
-                                         echo'<iframe width="600" height="600" src="'.$item->url."?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0".'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                                         echo'<iframe width="600" height="600" src="'.$item->url."?disablekb=1&modestbranding=1&rel=0&showinfo=1&controls=1".'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                         
                                     	echo ' </a>
                                         <div class="courses-info">
@@ -165,7 +166,7 @@ foreach($clase as $item)
 <h3>Contenido del curso</h3><div class="course-structure-block course-structure-block-501"><ul class="tree">
 				<!-- inicio del bloque de php clases del curso-->
 <?php	
-    $curso= $_GET['clase_de'];
+    $curso= $_GET['curso_de'];
     $cursos=DB::select("SELECT cursos.id_curso FROM cursos where cursos.nombre='$curso'" );
 	foreach($cursos as $item)
 	{
@@ -216,7 +217,7 @@ foreach($clase as $item)
         
         
                                  <?php
-     $valor= $_GET['clase_de'];
+     $valor= $_GET['curso_de'];
      $comentarios = DB::select("select * from adquirir inner join cursos on adquirir.id_curso=cursos.id_curso where cursos.nombre='$valor' ");
      foreach($comentarios as $item)
      {
@@ -247,7 +248,7 @@ echo '<ul class="review-list clearfix">
 <h3>Añadir un comentario</h3>
 <span id="state"></span> 	
 <?php  
-     $valor= $_GET['clase_de'];
+     $valor= $_GET['curso_de'];
      
 ?>	
 		 
@@ -294,8 +295,9 @@ echo '<ul class="review-list clearfix">
                 <!-- sidebar start-->
 					                 <!--INCICIO DE BLOQUE DE PHP2 -->                
 <?php
- $valor= $_GET['clase_de'];
- $clase=  DB::select("SELECT clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
+ $valor= $_GET['curso_de'];
+ $valor2=$_GET['clase_de'];
+ $clase=  DB::select("SELECT clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' and clases.nombre='$valor2' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
  foreach($clase as $item)
  { 					            
                                echo' <div id="secondary" class="widget-area col-xs-12 col-sm-4  pull-right" role="complementary">	

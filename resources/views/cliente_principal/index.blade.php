@@ -125,7 +125,7 @@ color:#262c38;
                    <div class="course">
 
                    
-         <div class="course-thumbnail course-featured-media course-featured-media-587 "><figure> <iframe width="420" height="200" src="<?php echo $items->url; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>           
+         <div class="course-thumbnail course-featured-media course-featured-media-587 "><figure> <iframe width="420" height="200" src="<?php echo $items->url."?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0"; ?>" ></iframe>           
                 </figure></div>                    
                                     
                    <div class="course_space">
@@ -180,28 +180,23 @@ Cursando </p>
         			<div class="container">
                 	<div class="row">
                     		
-                                            	<h2 class="text-center head-border-default">Why should you choose EducationPress</h2> 
+                                            	<h2 class="text-center head-border-default">RAZONES PARA ELEGIR CABAL PUBLICIDAD</h2> 
                                                   
 							                         <div class="col-xs-12 col-sm-4 wow bounceInLeft">
                               	<span class="sow-icon-linearicons" data-sow-icon="&#xe84b;" ></span>                             
-                                                      	<h3>Superfast Support</h3>
-                                                                                       <p>Lorem Ipsum is simply dummy text of the printing 
-and typesetting industry. When an unknown 
-printer took a galley of type.</p>
+                                                      	<h3>Apoyo super rapido</h3>
+                                                                                       <p>En cabal publicidad puedes mejorar tus habilidades.
+.</p>
                                                       </div>
                                                    <div class="col-xs-12 col-sm-4 wow  bounceInUp ">
                               	<span class="sow-icon-linearicons" data-sow-icon="&#xe83d;" ></span>                             
-                                                      	<h3>Learn on any Device</h3>
-                                                                                       <p>Lorem Ipsum is simply dummy text of the printing 
-and typesetting industry. When an unknown 
-printer took a galley of type.</p>
+                                                      	<h3>Aprendes a tu ritmo</h3>
+                                                                                       <p>En Cabal Publicidad puedes seguir tu curso cada vez que puedas.</p>
                                                       </div>
                                                    <div class="col-xs-12 col-sm-4 wow  bounceInRight">
                               	<span class="sow-icon-linearicons" data-sow-icon="&#xe822;" ></span>                             
-                                                      	<h3>Certification Courses</h3>
-                                                                                       <p>Lorem Ipsum is simply dummy text of the printing 
-and typesetting industry. When an unknown 
-printer took a galley of type.</p>
+                                                      	<h3>Cada curso tiene su propia certificacion</h3>
+                                                                                       <p>En cabal publicidad al terminar las clases de los curso podras descargar tu certificado de finalizacion del curso.</p>
                                                       </div>
                                                   
                         
@@ -226,7 +221,7 @@ printer took a galley of type.</p>
                    <div class="course">
 
                    
-         <div class="course-thumbnail course-featured-media course-featured-media-587 "><figure> <iframe width="420" height="200" src="<?php echo $items->url; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>           
+         <div class="course-thumbnail course-featured-media course-featured-media-587 "><figure> <iframe width="420" height="200" src="<?php echo $items->url."?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0"; ?>" ></iframe>           
                 </figure></div>                    
                                     
                    <div class="course_space">

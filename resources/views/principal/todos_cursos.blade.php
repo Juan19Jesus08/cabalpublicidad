@@ -147,22 +147,7 @@ Skip to content</a>
                 
          <div class="well well-sm row">
          
-                <div class="col-xs-12 col-sm-5 sorting">
-                	<form name="ads_sort_form" method="get" action="http://www.demos.themecycle.com/educationpress/courses-grid-3-column/" >
-<label>Sort by:</label>
-    <select name="c_sort" id="c_sort" onchange="submit_sort_form();">
-            <option value="popular" >Popularity</option>
-                        <option value="ratings" >Ratings</option>
-                        <option value="new_first"  selected="selected" >Newest</option>
-            <option value="old_first" >Oldest</option>
-            <option value="alphabet_az" >Name (A-Z)</option>
-            <option value="alphabet_za" >Name (Z-A)</option>
-            <option value="plow_high" >Price Low To High</option>
-            <option value="phigh_low" >Price High To Low</option>
-	</select> 
-    
-</form>
-                </div>
+               
          
             </div>
             
@@ -179,7 +164,7 @@ Skip to content</a>
                  echo '<div class="col-xs-12 col-sm-4 zoom courses  with-sidebar three-column grid-group-item">';
                  echo '<div class="course clist">';
                                  
-                                  echo'<div class="course-thumbnail course-featured-media course-featured-media-2558 "><figure>';				echo'<iframe width="420" height="200" src="'.$item->url.'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                                  echo'<div class="course-thumbnail course-featured-media course-featured-media-2558 "><figure>';				echo'<iframe width="420" height="200" src="'.$item->url."?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0".'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                              echo '</figure></div>';                                       
                                                      echo '<div class="course_space">';
                                                       echo '<div class="price"> MXN $'.$item->precio;                                        echo '<span></span></div>';
@@ -222,26 +207,7 @@ Skip to content</a>
 
  
 <div id="secondary" class="widget-area col-xs-12 col-sm-4 pull-right col-sm-3" role="complementary">
-	<aside id="educationpress_course_search_widget-4" class="widget widget_search"><h3 class="widget-title">Search Course</h3> 
-                
-            <form role="search" method="get" class="search-form search-course" action="http://www.demos.themecycle.com/educationpress/">
-                <label>
-                    <span class="screen-reader-text">Search for:</span>
-                    <input type="search" class="search-field" 
-                        placeholder="Search Course"
-                        value="" name="s"
-                        title="Search for:" />
-                         <input type="hidden" value="course" name="post_type" id="post_type" />
-                </label>
-              
-               
-                <button class="btn btn-orange btn-medium course-submit" type="submit">
-                <i class="lnr lnr-magnifier"></i>
-                 </button>
-            </form>
-                
-              
-			</aside>
+	
  
 			 </div> <!-- row -->
          </div> <!-- container -->

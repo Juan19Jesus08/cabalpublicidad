@@ -187,7 +187,7 @@ Skip to content</a>
 		</div>
       <div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-visitor-menu" class="nav navbar-nav">
 
-<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a title="Contact Us" href="/">Inicio</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a  href="/">Inicio</a></li>
 <li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-148 dropdown"><a title="Courses" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Cursos <span class="caret"></span></a>
 
 <ul role="menu" class=" dropdown-menu">
@@ -325,9 +325,8 @@ efficitur erat. Morbi est at.</p></div>
   	<div class="row">
         <div class="copyright">
                 <p class="copy col-xs-12 col-sm-6">
-        &copy; Copyright 2016 All rights reserved by EducationPress        </p>
-                      <p class="develop col-xs-12 col-sm-4 text-right">
-        Developed by <a href="http://themecycle.com" target="_blank">ThemeCycle</a>        </p>
+        &copy;  Derechos de autor 2019 Cabal Publicidad.         </p>
+                     
                </div>
     </div>
   </div>

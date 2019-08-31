@@ -6,31 +6,32 @@ use Illuminate\Http\Request;
 use DB;
 class AdquirirController extends Controller
 {
-    public function mostrar_comentarios()
-	{
-		
-		$comentarios=DB::select('SELECT * FROM adquirir');
-      
-        //print_r ($category);
-		//exit();
-		return view('/cliente_principal/clases_registrado',compact('comentarios'));
-		//return ('/Rol/Rol')->withData($data);
-		//return view('rol',compact('rol'));
-
-    }
+   
 
     public function añadir_comentario(Request $input)
 	{
 	$email = $input['email_show'];
     $comentario = $input['comentario_show'];
-    
+	$curso=$input['curso_show'];
 	
-   
-    
-	$query=DB::insert('insert into adquirir (email,id_curso,fecha_de_adquisicion,avance,certificado,comentario,calificacion) values (?, ?, ?, ?, ?, ?, ?)', [$email, 2,null,null,null,$comentario,null]);
-    return redirect()->action('AdquirirController@mostrar_comentarios')->withInput();
+	
+	$cursos=DB::select("SELECT cursos.id_curso FROM cursos where cursos.nombre='$curso'" );
+	foreach($cursos as $item)
+	{
+		$id_curso=$item->id_curso;
+	}
+	
+	$adquirir=DB::select("SELECT * FROM adquirir where adquirir.email='$email' and adquirir.id_curso=$id_curso" );
+	print_r($adquirir);
+	//$query=DB::insert('insert into adquirir (email,id_curso,fecha_de_adquisicion,avance,certificado,comentario,calificacion) values (?, ?, ?, ?, ?, ?, ?)', [$email, 2,null,null,null,$comentario,null]);
+	$query=DB::update("update  adquirir set comentario='$comentario' where id_curso=? and email=? ",[$id_curso,$email]);
+	return redirect("/mis_clases?clase_de=$curso");
+	
+	
 
 	}
+
+	
 
 	
 }
