@@ -102,15 +102,18 @@
                         <li>
                             <!-- User Profile-->
                             <div class="user-profile d-flex no-block dropdown m-t-20">
-                                <div class="user-pic"><img src="../../assets/images/users/1.jpg" alt="users" class="rounded-circle" width="40" /></div>
+                               
                                 <div class="user-content hide-menu m-l-10">
                                     <a href="javascript:void(0)" class="" id="Userdd" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <h5 class="m-b-0 user-name font-medium">Steave Jobs <i class="fa fa-angle-down"></i></h5>
-                                        <span class="op-5 user-email">varun@gmail.com</span>
+                                         <a class="dropdown-item" href="/cerrar_sesion"><i class="fa fa-power-off m-r-5 m-l-5"></i> Cerrar Sesion</a>
+                                        <span class="op-5 user-email"><?php use Illuminate\Support\Facades\Session; 
+              echo (Session::get('email'));
+              
+             ?></span>
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Userdd">
                                        
-                                        <a class="dropdown-item" href="/cerrar_sesion"><i class="fa fa-power-off m-r-5 m-l-5"></i> Cerrar Sesion</a>
+                                       
                                     </div>
                                 </div>
                             </div>
