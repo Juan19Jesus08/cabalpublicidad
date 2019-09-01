@@ -58,7 +58,7 @@
         </button>
       </div>
       <div class="modal-body">
-      {{ Form::open(array('action' => 'CursosController@eliminar', 'method' => 'post','id'=>'student-settings','name'=>'loginform')) }}
+      {{ Form::open(array('action' => 'UsuarioController@eliminar', 'method' => 'post','id'=>'student-settings','name'=>'loginform')) }}
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">¿Seguro que desea eliminar el registro?</label>
           </div>
@@ -185,8 +185,8 @@ $(document).ready(function() {
                 {"data": 1},
                 {"data": 2},
                 {"data": 3},
-                {"data": 4},
-                {"data": 5,'orderable': false, 'searchable': false}
+             
+                {"data": 4,'orderable': false, 'searchable': false}
             ],
 
             "dom": "<'row'<'col-sm-7 col-md-4'l><'col-sm-6 col-md-3'f>>" +

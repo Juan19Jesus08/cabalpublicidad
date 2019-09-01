@@ -24,10 +24,10 @@ class UsuarioController extends Controller
 	public function eliminar(Request $input)
     {
 		
-		$id=$input['email_show'];
-		//echo $categoria."   and   ".$id;
+		$id=$input['id_show'];
 	
-		
+	
+	
 		$query=DB::delete("DELETE FROM usuario WHERE email='$id'");
 	
 	
@@ -90,11 +90,12 @@ class UsuarioController extends Controller
 	$nombre = $input['nombre_show'];
 	$email = $input['email_show'];
 	$password = $input['contrasenia_show'];
+	$encryptedPassword = bcrypt($password);
 	$rol = 2;
     
    
     
-	$query=DB::insert('insert into usuario (email,nombre,password,id_rol) values (?, ?, ?, ?)', [$email, $nombre,$password,$rol]);
+	$query=DB::insert('insert into usuario (email,nombre,password,id_rol) values (?, ?, ?, ?)', [$email, $nombre,$encryptedPassword,$rol]);
     echo "se registro el usuario";
 
 	}
