@@ -20,35 +20,21 @@ class Cliente
         
      
         $correo=Session::get('email');
-        $pass=Session::get('contrasenia');
         
         
-        $query = "select * from usuario where email='$correo' and password='$pass'";
+        
+        $query = "select * from usuario where email='$correo' ";
         $data=DB::select($query);
        
-        $cantidad= sizeof($data);
-        if($cantidad>0)
-        {
-            foreach($data as $item)
-            {
-                $id= $item->id_rol;
-
-            }
-            if($id==2)
+        
+            if($data[0]->id_rol==2)
             {
                 return $next($request);
             }
             else{
                 return redirect('/Admin_categoria');     
             }
-            
-        }
-        else
-        {
-            
-            return redirect('/iniciar_sesion');
-        }
-    
+      
    
         
     }

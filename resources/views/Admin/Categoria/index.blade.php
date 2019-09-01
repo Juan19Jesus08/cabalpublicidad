@@ -28,7 +28,8 @@
                <tr>
                    <td>{{ $categoria->descripcion }}</td>
                    <td>
-                   <a class="btn btn-danger btn-xs" href="/Admin_categoria_borrar?id_categoria=<?php echo $categoria->id_categoria; ?> " >Eliminar</a>
+                   <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-id="<?php echo $categoria->id_categoria;?>"  data-categoria="<?php echo $categoria->descripcion;?>">Eliminar</button>
+                   
                    <a class="btn btn-primary btn-xs" href="/Admin_categoria_editar?id_categoria=<?php echo $categoria->id_categoria; ?> " >Editar</a>
                    </td>
 
@@ -40,7 +41,7 @@
 </div>
 
 
-<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-id="22" data-categoria="sexo">Eliminar</button>
+
 <!--model eliminar -->
 <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">

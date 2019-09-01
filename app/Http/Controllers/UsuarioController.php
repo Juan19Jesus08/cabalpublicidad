@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Hash;
 class UsuarioController extends Controller
 {
 	
@@ -45,11 +46,10 @@ class UsuarioController extends Controller
 	$nombre = $input['nombre_show'];
 	$email = $input['email_show'];
 	$password = $input['contrasenia_show'];
-	$rol = $input['rol_show'];
+	$encryptedPassword = bcrypt($password);
+	
     
-   
-    
-	$query=DB::insert('insert into usuario (email,nombre,password,id_rol) values (?, ?, ?, ?)', [$email, $nombre,$password,$rol]);
+	$query=DB::insert('insert into usuario (email,nombre,password,id_rol) values (?, ?, ?, ?)', [$email, $nombre,$encryptedPassword,$rol]);
     return redirect()->action('UsuarioController@usuario_mostrar')->withInput();
 
 	}

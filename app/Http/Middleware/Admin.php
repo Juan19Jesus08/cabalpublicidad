@@ -17,39 +17,22 @@ class Admin
      */
     public function handle($request, Closure $next,$rol)
     {
-        
-     
+          
         $correo=Session::get('email');
-        $pass=Session::get('contrasenia');
+       
         
         
-        $query = "select * from usuario where email='$correo' and password='$pass'";
+        $query = "select * from usuario where email='$correo'";
         $data=DB::select($query);
        
-        $cantidad= sizeof($data);
-        if($cantidad>0)
-        {
-            foreach($data as $item)
-            {
-                $id= $item->id_rol;
-
-            }
-            if($id==1)
+       
+            if($data[0]->id_rol==1)
             {
                 return $next($request);
             }
             else{
                 return redirect('/perfil');     
-            }
-            
-        }
-        else
-        {
-            
-            return redirect('/iniciar_sesion');
-        }
-    
-   
+            }   
         
     }
 }

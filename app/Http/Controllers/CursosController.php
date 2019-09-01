@@ -25,6 +25,7 @@ class CursosController extends Controller
 	public function cursos_mostrar()
 	{
 		$cursos=DB::select('SELECT cursos.id_curso,cursos.nombre,cursos.descripcion,cursos.precio,categoria.descripcion as cate,cursos.fecha_creacion FROM cursos inner join categoria on cursos.id_categoria=categoria.id_categoria');
+		
 		return view('/Admin/Cursos/index',compact('cursos'));
     }
 

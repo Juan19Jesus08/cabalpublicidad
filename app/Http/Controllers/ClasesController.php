@@ -23,7 +23,7 @@ class ClasesController extends Controller
 
 	public function eliminar(Request $input)
     {
-		$categoria = $input['curso_show'];
+		
 		$id=$input['id_show'];
 		//echo $categoria."   and   ".$id;
 	
