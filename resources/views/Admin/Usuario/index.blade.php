@@ -36,6 +36,7 @@
                    <td>{{ $usuario->descripcion}}</td>
                    <td>
                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-id="<?php echo $usuario->email;?>"  data-categoria="<?php echo $usuario->nombre;?>">Eliminar</button>
+                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editModal"  data-rol="<?php echo $usuario->id_rol;?>" data-password="<?php echo $usuario->password;?>" data-nombre="<?php echo $usuario->nombre;?>" data-id="<?php echo $usuario->email;?>">Editar</button>
                    </td>
 
                </tr>
@@ -45,6 +46,59 @@
        </div>
 </div>
 
+
+<!-- model editar -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog"  aria-labelledby="editModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="editModalLabel">Editar Registro</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+    <?php
+           $query = "select * from rol ";
+
+       $data=DB::select($query);
+
+       ?>
+     {{ Form::open(array('action' => 'UsuarioController@actualizar', 'method' => 'post','id'=>'student-settings','name'=>'loginform')) }}
+        <div class="form-group">
+          <label for="recipient-name" class="col-form-label">Nombre:</label>
+          {{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Nombre')) }}
+          {{ Form::hidden('email_show', '', array('id' => 'email_show',  'placeholder' => 'Email')) }}
+        </div>
+        <div class="form-group">
+          <label for="recipient-name" class="col-form-label">Contraseña:</label>
+          {{ Form::text('contrasenia_show', '', array('id' => 'contrasenia_show',  'placeholder' => 'Contraseña')) }}
+        
+           
+        </div>
+
+        
+
+        <div class="form-group">
+           <label for="recipient-name" class="col-form-label">Rol:</label>
+           <select class="form-control" name="rol_show" id="idmodelo">
+           <option value="-1" disabled selected>Elige un Rol</option>
+           @foreach ($data as $item)
+           <option value="{{ $item->id_rol }}" > {{ $item->descripcion }} </option>
+           @endforeach    </select>
+         </div>
+
+         
+
+        <div class="modal-footer">
+      {!! Form::submit( 'Actualizar', ['class' => 'btn btn-primary', 'name' => 'submitbutton', 'value' => 'login'])!!}
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+      {{ Form::close() }}
+    </div>
+  </div>
+</div>
+</div>
 
 
 <!--model eliminar -->
@@ -132,6 +186,7 @@
 
 
 
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
@@ -141,14 +196,23 @@
 
 <script type="text/javascript">
 
-$('#deleteModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget)
-  var id = button.data('id')
-  var categoria=button.data('categoria')
-  var modal = $(this)
-  modal.find('.col-form-label').text('¿Esta seguro que desea eliminar el registro: ' +categoria+'?')
-  document.forms[0].id_show.value=id
+$('#editModal').on('show.bs.modal', function (event) {
+var button = $(event.relatedTarget)
+var email = button.data('id')
+var nombre=button.data('nombre')
+var password=button.data('password');
+var rol=button.data('rol');
+alert(email+"    "+nombre+"    "+password+"    "+rol);
+
+var modal = $(this)
+modal.find('#email_show').val(email)
+modal.find('#nombre_show').val(nombre)
+modal.find('#contrasenia_show').val(password)
+modal.find('#idmodelo').val(rol)
+
+
 });
+
 
 $(document).ready(function() {
   var oTable = $('#table_id').dataTable( {
@@ -200,6 +264,17 @@ $(document).ready(function() {
     table.columns.adjust().draw();
   } );*/
 } );
+
+</script>
+<script type="text/javascript">
+$('#deleteModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget)
+  var id = button.data('id')
+  var categoria=button.data('categoria')
+  var modal = $(this)
+  modal.find('.col-form-label').text('¿Esta seguro que desea eliminar el registro: ' +categoria+'?')
+  document.forms[0].id_show.value=id
+});
 
 </script>
 

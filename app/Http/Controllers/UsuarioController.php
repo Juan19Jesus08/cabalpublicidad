@@ -12,7 +12,7 @@ class UsuarioController extends Controller
 
     public function usuario_mostrar()
 	{
-		$usuarios=DB::select('SELECT usuario.email,usuario.nombre,usuario.password,rol.descripcion FROM usuario inner join rol on usuario.id_rol=rol.id_rol');
+		$usuarios=DB::select('SELECT usuario.email,usuario.nombre,usuario.password,rol.descripcion,rol.id_rol FROM usuario inner join rol on usuario.id_rol=rol.id_rol order by rol.id_rol asc ');
 		return view('/Admin/Usuario/index',compact('usuarios'));
     }
 
@@ -47,7 +47,7 @@ class UsuarioController extends Controller
 	$email = $input['email_show'];
 	$password = $input['contrasenia_show'];
 	$encryptedPassword = bcrypt($password);
-	
+	$rol=$input['rol_show'];
     
 	$query=DB::insert('insert into usuario (email,nombre,password,id_rol) values (?, ?, ?, ?)', [$email, $nombre,$encryptedPassword,$rol]);
     return redirect()->action('UsuarioController@usuario_mostrar')->withInput();
@@ -61,15 +61,32 @@ class UsuarioController extends Controller
 
 	public function actualizar(Request $input)
 	{
-		$email = $input['id_show'];
+		$email = $input['email_show'];
         $nombre = $input['nombre_show'];
         $password = $input['contrasenia_show'];
 		$rol = $input['rol_show'];
+
 	
-	$query=DB::update("update  usuario set email='$email',nombre='$nombre',password='$password',id_rol=$rol where email=?",[$email]);
+		$query=DB::select("SELECT usuario.password FROM usuario WHERE email='$email'");
+
+		
+		if($query[0]->password==$password)
+		{
+			$query2=DB::update("update  usuario set email='$email',nombre='$nombre',id_rol=$rol where email=?",[$email]);
+			return redirect()->action('UsuarioController@usuario_mostrar')->withInput();
+		}
+		else{
+			$encryptedPassword = bcrypt($password);
+			$query2=DB::update("update  usuario set email='$email',nombre='$nombre',password='$encryptedPassword',id_rol=$rol where email=?",[$email]);
+			return redirect()->action('UsuarioController@usuario_mostrar')->withInput();
+		}
+	
+
+	
+	
 
 
-	return redirect()->action('UsuarioController@usuario_mostrar')->withInput();
+	
 
     }
     

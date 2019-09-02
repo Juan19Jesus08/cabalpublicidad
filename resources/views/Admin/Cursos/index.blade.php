@@ -37,6 +37,7 @@
                    <td>{{ $curso->fecha_creacion}}</td>
                    <td>
                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-id="<?php echo $curso->id_curso;?>"  data-categoria="<?php echo $curso->nombre;?>">Eliminar</button>
+                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editModal" data-fecha="<?php echo $curso->fecha_creacion;?>" data-precio="<?php echo $curso->precio;?>" data-categoria="<?php echo $curso->id_categoria;?>" data-descripcion="<?php echo $curso->descripcion;?>" data-curso="<?php echo $curso->nombre;?>" data-id="<?php echo $curso->id_curso;?>">Editar</button>
                    </td>
 
                </tr>
@@ -111,7 +112,7 @@
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Categoria:</label>
             <select class="form-control" name="categoria_show">
-            <option value="" disabled selected>Elige una categoria</option>
+            <option value="" disabled selected>Elige un Curso</option>
             @foreach ($data as $item)
             <?echo $item->id_categoria; ?>
             <option value="{{ $item->id_categoria }}" > {{ $item->descripcion }} </option>
@@ -132,6 +133,64 @@
   </div>
 </div>
 
+<!-- model editar -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog"  aria-labelledby="editModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="editModalLabel">Editar Registro</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+    <?php
+           $query = "select * from categoria ";
+
+       $data=DB::select($query);
+
+       ?>
+     {{ Form::open(array('action' => 'CursosController@actualizar', 'method' => 'post','id'=>'student-settings','name'=>'loginform')) }}
+        <div class="form-group">
+          <label for="recipient-name" class="col-form-label">Clase:</label>
+          {{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Nombre')) }}
+           {{ Form::hidden('id_show', '', array('id' => 'id_show',  'placeholder' => 'Id')) }}
+        </div>
+        <div class="form-group">
+          <label for="recipient-name" class="col-form-label">Descripcion:</label>
+          {{ Form::text('descripcion_show', '', array('id' => 'descripcion_show',  'placeholder' => 'Descripcion')) }}
+           
+        </div>
+
+        <div class="form-group">
+          <label for="recipient-name" class="col-form-label">Precio:</label>
+          {{ Form::text('precio_show', '', array('id' => 'precio_show',  'placeholder' => 'Precio')) }}
+           
+        </div>
+
+        <div class="form-group">
+           <label for="recipient-name" class="col-form-label">Categoria:</label>
+           <select class="form-control" name="categoria_show" id="idmodelo">
+           <option value="-1" disabled selected>Elige una Categoria</option>
+           @foreach ($data as $item)
+           <option value="{{ $item->id_categoria }}" > {{ $item->descripcion }} </option>
+           @endforeach    </select>
+         </div>
+
+         <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Fecha de Creacion:</label>
+            {{ Form::date('fecha_show', '', array('id' => 'fecha_show',  'placeholder' => 'Fecha de creacion')) }}
+          </div>
+
+        <div class="modal-footer">
+      {!! Form::submit( 'Actualizar', ['class' => 'btn btn-primary', 'name' => 'submitbutton', 'value' => 'login'])!!}
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+      {{ Form::close() }}
+    </div>
+  </div>
+</div>
+</div>
 
 
 
@@ -145,13 +204,23 @@
 
 <script type="text/javascript">
 
-$('#deleteModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget)
-  var id = button.data('id')
-  var categoria=button.data('categoria')
-  var modal = $(this)
-  modal.find('.col-form-label').text('¿Esta seguro que desea eliminar el registro: ' +categoria+'?')
-  document.forms[0].id_show.value=id
+$('#editModal').on('show.bs.modal', function (event) {
+var button = $(event.relatedTarget)
+var id = button.data('id')
+var curso=button.data('curso')
+var descripcion=button.data('descripcion');
+var precio=button.data('precio');
+var categoria=button.data('categoria');
+var fecha=button.data('fecha');
+
+var modal = $(this)
+modal.find('#id_show').val(id)
+modal.find('#nombre_show').val(curso)
+modal.find('#descripcion_show').val(descripcion)
+modal.find('#precio_show').val(precio)
+modal.find('#idmodelo').val(categoria)
+modal.find('#fecha_show').val(fecha)
+
 });
 
 $(document).ready(function() {
@@ -205,6 +274,16 @@ $(document).ready(function() {
   } );*/
 } );
 
+</script>
+<script type="text/javascript">
+$('#deleteModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget)
+  var id = button.data('id')
+  var categoria=button.data('categoria')
+  var modal = $(this)
+  modal.find('.col-form-label').text('¿Esta seguro que desea eliminar el registro: ' +categoria+'?')
+  document.forms[0].id_show.value=id
+});
 </script>
 
 </body>

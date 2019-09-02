@@ -82,8 +82,9 @@ class CategoriaController extends Controller
 	{
 	$categoria = $input['categoria_show'];
 	$id=$input['id_show'];
-	echo $categoria."   and   ".$id;
+	//echo $categoria."   and   ".$id;
 
+	
 	
 	$query=DB::update("update  categoria set descripcion='$categoria' where id_categoria=?",[$id]);
 
