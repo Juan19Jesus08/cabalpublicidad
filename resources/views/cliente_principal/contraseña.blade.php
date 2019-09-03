@@ -13,7 +13,9 @@
     <link rel='stylesheet' href='/css/load-styles.css?ver=4.6.14' type='text/css' media='all' />    
 <link rel='stylesheet' id='educationpress-bootstrap-checkbox-css'  href='/css/build.css?ver=4.6.14' type='text/css' media='all' />
 <link rel='stylesheet' id='educationpress-custom-forgot-css'  href='/css/forgot-password.css?ver=4.6.14' type='text/css' media='all' />
+
 <style id='educationpress-custom-forgot-inline-css' type='text/css'>
+
 
 	  
       
@@ -42,7 +44,19 @@
         
         <?php use Illuminate\Support\Facades\Session; 
              $email= Session::get('email');
-                       
+             $valor= $_GET['mensaje'];
+
+             if($valor=="")
+             {
+                echo '<div class="alert alert-info" role="alert">'
+                .$valor.'
+                </div>';
+             }else{
+                echo '<div class="alert alert-danger" role="alert">
+                '.$valor.'
+                </div>';
+             }
+            
              ?>
 
 {{ Form::open(array('action' => 'UsuarioController@Actualizar_contraseña', 'method' => 'post','id'=>'lostpasswordform','name'=>'lostpasswordform')) }}

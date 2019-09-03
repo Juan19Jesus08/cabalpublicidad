@@ -224,7 +224,7 @@ foreach( $array as $item)
   <a title="All Courses" href="/mi_nombre">Cambiar nombre de usuario</a></li>
   
   <li id="menu-item-871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871">
-  <a title="All Courses" href="/mi_password">Cambiar contraseña</a></li>
+  <a title="All Courses" href="/mi_password?mensaje=''">Cambiar contraseña</a></li>
   
 
 

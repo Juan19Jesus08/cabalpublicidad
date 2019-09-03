@@ -155,13 +155,13 @@ class UsuarioController extends Controller
 			return redirect('/perfil');
 			}
 			else{
-				$message= ' no es igual al a la de confirmar';
-				return redirect('/mi_password');
+				
+				return redirect('/mi_password/?mensaje=La nueva contraseña no es igual a la de confirmar');
 			}
 		}
 		else{
 			$message ='no es igual';
-			return redirect('/mi_password');
+			return redirect('/mi_password/?mensaje=La contraseña no es igual a la del correo');
 		}
 	}
 }
