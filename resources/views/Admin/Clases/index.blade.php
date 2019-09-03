@@ -19,7 +19,7 @@
           <thead>
           <tr>
           <th>Nombre</th>
-              <th>URL</th>
+              <th>Id del Video</th>
               <th>Descripcion</th>
               <th>Duracion</th>
               <th>Curso</th>
@@ -100,8 +100,8 @@
            {{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Nombre')) }}
          </div>
          <div class="form-group">
-           <label for="recipient-name" class="col-form-label">Url:</label>
-           {{ Form::text('url_show', '', array('id' => 'url_show',  'placeholder' => 'URL')) }}
+           <label for="recipient-name" class="col-form-label">Id del video:</label>
+           {{ Form::text('url_show', '', array('id' => 'url_show',  'placeholder' => 'Id del Video')) }}
          </div>
          <div class="form-group">
            <label for="recipient-name" class="col-form-label">Descripcion:</label>
@@ -152,8 +152,8 @@
            {{ Form::hidden('id_show', '', array('id' => 'id_show',  'placeholder' => 'Id')) }}
         </div>
         <div class="form-group">
-          <label for="recipient-name" class="col-form-label">Url:</label>
-           {{ Form::text('url_show', '', array('id' => 'url_show',  'placeholder' => 'URL')) }}
+          <label for="recipient-name" class="col-form-label">Id del video:</label>
+           {{ Form::text('url_show', '', array('id' => 'url_show',  'placeholder' => 'Id del video')) }}
            
         </div>
 

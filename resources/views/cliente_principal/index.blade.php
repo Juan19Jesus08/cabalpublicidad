@@ -125,7 +125,7 @@ color:#262c38;
                    <div class="course">
 
                    
-         <div class="course-thumbnail course-featured-media course-featured-media-587 "><figure> <iframe width="420" height="200" src="<?php echo $items->url."?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0"; ?>" ></iframe>           
+         <div class="course-thumbnail course-featured-media course-featured-media-587 "><figure> <iframe width="420" height="200" src="<?php echo 'https://www.youtube.com/embed/'.$items->url."?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0"; ?>" ></iframe>           
                 </figure></div>                    
                                     
                    <div class="course_space">
@@ -221,7 +221,7 @@ Cursando </p>
                    <div class="course">
 
                    
-         <div class="course-thumbnail course-featured-media course-featured-media-587 "><figure> <iframe width="420" height="200" src="<?php echo $items->url."?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0"; ?>" ></iframe>           
+         <div class="course-thumbnail course-featured-media course-featured-media-587 "><figure> <iframe width="420" height="200" src="<?php echo 'https://www.youtube.com/embed/'.$items->url."?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0"; ?>" ></iframe>           
                 </figure></div>                    
                                     
                    <div class="course_space">

@@ -164,7 +164,7 @@ Skip to content</a>
                  echo '<div class="col-xs-12 col-sm-4 zoom courses  with-sidebar three-column grid-group-item">';
                  echo '<div class="course clist">';
                                  
-                                  echo'<div class="course-thumbnail course-featured-media course-featured-media-2558 "><figure>';				echo'<iframe width="420" height="200" src="'.$item->url."?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0".'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                                  echo'<div class="course-thumbnail course-featured-media course-featured-media-2558 "><figure>';				echo'<iframe width="420" height="200" src="'.'https://www.youtube.com/embed/'.$item->url."?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0".'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                              echo '</figure></div>';                                       
                                                      echo '<div class="course_space">';
                                                       echo '<div class="price"> MXN $'.$item->precio;                                        echo '<span></span></div>';
