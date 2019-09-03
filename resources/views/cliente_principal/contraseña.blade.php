@@ -77,7 +77,7 @@
        
 	</p>
     <br />
-    {!! Form::submit( 'Actualizar nombre de usuario', ['class' => 'button button-primary button-large', 'name' => 'submitbutton', 'value' => 'login'])!!}
+    {!! Form::submit( 'Actualizar contraseña', ['class' => 'button button-primary button-large', 'name' => 'submitbutton', 'value' => 'login'])!!}
     {{ Form::close() }}
 
 <p id="nav">
