@@ -113,6 +113,8 @@ Route::post('/mis_clases','AdquirirController@añadir_comentario');
 Route::get('/mis_clases', function () {
     return view('/cliente_principal/clases_registrado');
 });
+
+
 ////////////////////////////////
 Route::post('/mi_clase','AdquirirController@añadir_comentario');
 
@@ -131,3 +133,13 @@ Route::get('/mi_contraseña', function () {
     return view('/principal/obtener_contraseña');
 });
 Route::post('/mi_contraseña','EmailController@obtener_contraseña');
+
+Route::get('/mi_nombre', function () {
+    return view('/cliente_principal/nombre_usuario');
+});
+Route::post('/mi_nombre','UsuarioController@Actualizar_nombre');
+
+Route::get('/mi_password', function () {
+    return view('/cliente_principal/contraseña');
+});
+Route::post('/mi_password','UsuarioController@Actualizar_contraseña');

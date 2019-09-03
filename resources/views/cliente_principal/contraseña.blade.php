@@ -39,24 +39,37 @@
 	<body class="login login-action-lostpassword wp-core-ui  locale-en-us">
 		<div id="login">
 		<h1><a href="http://www.demos.themecycle.com/educationpress" title="EducationPress" tabindex="-1">EducationPress</a></h1>
-	<p class="message">Por favor ingrese su  correo electrónico. Recibirá  una nueva contraseña por correo electrónico..</p>
+        
+        <?php use Illuminate\Support\Facades\Session; 
+             $email= Session::get('email');
+                       
+             ?>
 
-
-    {{ Form::open(array('action' => 'EmailController@obtener_contraseña', 'method' => 'post','id'=>'lostpasswordform','name'=>'lostpasswordform')) }}
+{{ Form::open(array('action' => 'UsuarioController@Actualizar_contraseña', 'method' => 'post','id'=>'lostpasswordform','name'=>'lostpasswordform')) }}
 	<p>
-		<label for="user_login" > Email<br />
-        {{ Form::email('email_show', '', array('id' => 'email_show','class'=>'input',  'placeholder' => 'Email')) }}
+		<label for="user_login" > Contraseña actual<br />
+        {{ Form::password('contrasenia_show', array('id' => 'contrasenia_show', )) }}
+        {{ Form::hidden('email_show', $email) }}
+        <br />
 		</label>
+        <label for="user_login" > Contraseña nueva<br />
+        {{ Form::password('new_show', array('id' => 'new_show', )) }}
+        <br />
+		</label>
+        <label for="user_login" > Confirmar contraseña nueva<br />
+        {{ Form::password('confirm_show', array('id' => 'confirm_show',)) }}
+        
+		</label>
+       
 	</p>
-		
-    {!! Form::submit( 'Nueva Contraseña', ['class' => 'button button-primary button-large', 'name' => 'submitbutton', 'value' => 'login'])!!}
+    <br />
+    {!! Form::submit( 'Actualizar nombre de usuario', ['class' => 'button button-primary button-large', 'name' => 'submitbutton', 'value' => 'login'])!!}
     {{ Form::close() }}
 
 <p id="nav">
-<a href="/iniciar_sesion">Iniciar sesion</a>
- | <a href="/registrar">Registrarse</a></p>
 
-	<p id="backtoblog"><a href="/">&larr; Cabal Publicidad</a></p>
+
+	<p id="backtoblog"><a href="/perfil">&larr; Mi Perfil</a></p>
 	
 	</div>
 

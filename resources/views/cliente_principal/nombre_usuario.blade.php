@@ -39,24 +39,41 @@
 	<body class="login login-action-lostpassword wp-core-ui  locale-en-us">
 		<div id="login">
 		<h1><a href="http://www.demos.themecycle.com/educationpress" title="EducationPress" tabindex="-1">EducationPress</a></h1>
-	<p class="message">Por favor ingrese su  correo electrónico. Recibirá  una nueva contraseña por correo electrónico..</p>
+        <?php use Illuminate\Support\Facades\Session; 
+             $email= Session::get('email');
+
+             $query = "SELECT * from usuario where usuario.email='$email'";
+
+    $data=DB::select($query);
+   
+    foreach($data as $item)
+    {
+       
+        $nombre=$item->nombre;
+        
+        
+        //$categoria=$item->cate;
+        //$id_cate=$item->id_categoria;
+    }
+              
+             ?>
 
 
-    {{ Form::open(array('action' => 'EmailController@obtener_contraseña', 'method' => 'post','id'=>'lostpasswordform','name'=>'lostpasswordform')) }}
+    {{ Form::open(array('action' => 'UsuarioController@Actualizar_nombre', 'method' => 'post','id'=>'lostpasswordform','name'=>'lostpasswordform')) }}
 	<p>
-		<label for="user_login" > Email<br />
-        {{ Form::email('email_show', '', array('id' => 'email_show','class'=>'input',  'placeholder' => 'Email')) }}
+		<label for="user_login" > Nombre de usuario<br />
+        {{ Form::text('nombre_show', $nombre) }}
+        {{ Form::hidden('email_show', $email) }}
 		</label>
 	</p>
 		
-    {!! Form::submit( 'Nueva Contraseña', ['class' => 'button button-primary button-large', 'name' => 'submitbutton', 'value' => 'login'])!!}
+    {!! Form::submit( 'Actualizar nombre de usuario', ['class' => 'button button-primary button-large', 'name' => 'submitbutton', 'value' => 'login'])!!}
     {{ Form::close() }}
 
 <p id="nav">
-<a href="/iniciar_sesion">Iniciar sesion</a>
- | <a href="/registrar">Registrarse</a></p>
 
-	<p id="backtoblog"><a href="/">&larr; Cabal Publicidad</a></p>
+
+	<p id="backtoblog"><a href="/perfil">&larr; Mi Perfil</a></p>
 	
 	</div>
 

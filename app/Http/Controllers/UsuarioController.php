@@ -123,4 +123,45 @@ class UsuarioController extends Controller
 		Session::flush();
 		return redirect('/');
 	}
+	
+
+	 function Actualizar_nombre(Request $input){
+		$nombre = $input['nombre_show'];
+		$email = $input['email_show'];
+
+		$query2=DB::update("update  usuario set nombre='$nombre' where email=?",[$email]);
+		return redirect('/perfil');
+	 }
+
+	 function Actualizar_contraseña(Request $input){
+	
+		$email = $input['email_show'];
+		$contraseña = $input['contrasenia_show'];
+		$contraseña_nueva=$input['new_show'];
+		$confirmar_contraseña=$input['confirm_show'];
+		$message = '';
+
+		echo $email."   ".$contraseña."   ".$contraseña_nueva."   ".$confirmar_contraseña;
+		$query2 = "select usuario.password,usuario.email from usuario where email='$email'";
+		$data2=DB::select($query2);
+
+		
+		if (Hash::check($contraseña, $data2[0]->password)) {
+			echo 'es igual al usuario';
+			if($contraseña_nueva==$confirmar_contraseña)
+			{
+				$encryptedPassword = bcrypt($confirmar_contraseña);
+			$query2=DB::update("update  usuario set password='$encryptedPassword' where email=?",[$email]);
+			return redirect('/perfil');
+			}
+			else{
+				$message= ' no es igual al a la de confirmar';
+				return redirect('/mi_password');
+			}
+		}
+		else{
+			$message ='no es igual';
+			return redirect('/mi_password');
+		}
+	}
 }

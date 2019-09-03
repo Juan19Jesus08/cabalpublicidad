@@ -29,11 +29,13 @@ $transport = (new \Swift_SmtpTransport($smtpAddress,$port,$encryption))
 $mailer = new \Swift_Mailer($transport);
        // Prepare content
        $view = View::make('email_template', [
-           'message' => '<h1>A Juan le gusta la espesa y pegajosa miel de la peach ;) po!</h1>',
-           'message2'=>$password,
+           'message' => ' Estimado '.$nombre,
+           'message2'=>'En Cabal Publicidad cuidamos tu seguridad, por tal motivo, te estamos enviando la contraseña que nos solicitaste',
+           'message3'=>'Nombre de usuario :'.$nombre,
+           'message4'=>'Nueva Contraseña :'.$password,
+           'message5'=>'Es recomendable cambiar las contraseñas continuamente para obtener la más alta seguridad en nuestro sitio.'
 
        ]);
-
 
        $html = $view->render();
       
@@ -47,6 +49,7 @@ $message->setFrom([$yourEmail => 'Cabal Publicidad'])->setTo([$email => $nombre]
        }
 
        return "Something went wrong :(";
+       
    }
 
    public function obtener_contraseña(Request $input)
@@ -74,6 +77,7 @@ $message->setFrom([$yourEmail => 'Cabal Publicidad'])->setTo([$email => $nombre]
                 $encryptedPassword = bcrypt($password);
                 $query2=DB::update("update  usuario set password='$encryptedPassword' where email=?",[$email]);
             $this->email($email, $nombre, $password);
+            return redirect('/iniciar_sesion');
         }
         else{
             return redirect('/mi_contraseña');
