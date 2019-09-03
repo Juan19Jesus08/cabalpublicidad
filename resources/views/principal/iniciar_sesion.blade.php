@@ -127,10 +127,10 @@ Skip to content</a>
 
 						
 						<label class="full">
-							Don't have an account? <a href="http://www.demos.themecycle.com/educationpress/courses-signup/">Create an Account</a> now!						</label>
+							No tengo una cuenta? <a href="/registrar">Crear una cuenta</a> Ahora!						</label>
 
 						<label class="half-left">
-							<a href="http://www.demos.themecycle.com/educationpress/wp-login.php?action=lostpassword">Forgot Password?</a>
+							<a href="/mi_contraseña">Olvide mi contraseña?</a>
 						</label>
 						<br clear="all"/>
 

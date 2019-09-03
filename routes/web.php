@@ -123,3 +123,11 @@ Route::get('/mi_clase', function () {
 
 Route::get('/rol','RolController@procedimiento_almacenado');
 Route::get('/cerrar_sesion','UsuarioController@Logout');
+
+Route::get('/email','EmailController@email');
+
+
+Route::get('/mi_contraseña', function () {
+    return view('/principal/obtener_contraseña');
+});
+Route::post('/mi_contraseña','EmailController@obtener_contraseña');
