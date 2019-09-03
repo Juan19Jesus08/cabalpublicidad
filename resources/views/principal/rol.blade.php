@@ -9,5 +9,6 @@
     
      }
      echo $vTime;
+     print_r( $duration);
 
 ?>
