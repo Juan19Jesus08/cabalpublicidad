@@ -56,12 +56,13 @@ $message->setFrom([$yourEmail => 'Cabal Publicidad'])->setTo([$email => $nombre]
 
         $query = "select * from usuario where email='$email'";
         $data=DB::select($query);
-        $nombre=$data[0]->nombre;
+       
         
         $cantidad= sizeof($data);
       
         if($cantidad>0)
         {
+            $nombre=$data[0]->nombre;
             $length=10;
             $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
             $charactersLength = strlen($characters);
@@ -72,7 +73,7 @@ $message->setFrom([$yourEmail => 'Cabal Publicidad'])->setTo([$email => $nombre]
             
                 $encryptedPassword = bcrypt($password);
                 $query2=DB::update("update  usuario set password='$encryptedPassword' where email=?",[$email]);
-            $this->email($email,$nombre,$password);
+            $this->email($email, $nombre, $password);
         }
         else{
             return redirect('/mi_contraseña');
