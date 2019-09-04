@@ -47,12 +47,29 @@ class ClasesController extends Controller
 	$url = $input['url_show'];
 	$descripcion = $input['descripcion_show'];
 	$curso = $input['curso_show'];
-    $duracion='00:00:00';
-    echo $nombre."   ".$url."   ".$descripcion."   ".$curso."   ".$duracion;
-    $url_video="http://www.youtube.com/embed/".$url;
+	
+	$apikey='AIzaSyBU1lZtClzanCeW37ILQ2UB70X-VatLSps';
+    $videoID=$url;
+   $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=$videoID&key=$apikey");
+   $duration = json_decode($dur, true);
+     foreach ($duration['items'] as $vidTime) 
+     { 
+         $vTime= $vidTime['contentDetails']['duration'];
     
-	$query=DB::insert('insert into clases (id_clase,nombre,url,descripcion,duracion,id_curso) values (?, ?, ?, ?, ?, ?)', [null, $nombre,$url_video,$descripcion,$duracion,$curso]);
-    return redirect()->action('ClasesController@clases_mostrar')->withInput();
+     }
+     //echo $vTime;
+     $resultado="";
+     $resultado =  str_replace("H", ":", $vTime);
+     $resultado =  str_replace("M", ":", $resultado);
+     $resultado=substr($resultado, 0, -1);
+     $resultado=substr($resultado,  2 );
+    
+    
+    
+	$query=DB::insert('insert into clases (id_clase,nombre,url,descripcion,duracion,id_curso) values (?, ?, ?, ?, ?, ?)', [null, $nombre,$url,$descripcion,$resultado,$curso]);
+	return redirect()->action('ClasesController@clases_mostrar')->withInput();
+	
+		
 
 	}
 
@@ -69,13 +86,26 @@ class ClasesController extends Controller
 		
 		$curso = $input['curso_show'];
 
-		echo $id."\n".$nombre."\n".$url."\n".$descripcion."\n".$curso ;
+		$apikey='AIzaSyBU1lZtClzanCeW37ILQ2UB70X-VatLSps';
+    $videoID=$url;
+   $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=$videoID&key=$apikey");
+   $duration = json_decode($dur, true);
+     foreach ($duration['items'] as $vidTime) 
+     { 
+         $vTime= $vidTime['contentDetails']['duration'];
+    
+     }
+     //echo $vTime;
+     $resultado="";
+     $resultado =  str_replace("H", ":", $vTime);
+     $resultado =  str_replace("M", ":", $resultado);
+     $resultado=substr($resultado, 0, -1);
+     $resultado=substr($resultado,  2 );
 
 		
 
-	$query=DB::update("update  clases set nombre='$nombre',url='$url',descripcion='$descripcion',id_curso=$curso where id_clase=?",[$id]);
-
-
+	$query=DB::update("update  clases set nombre='$nombre',url='$url',descripcion='$descripcion',duracion='$resultado',id_curso=$curso where id_clase=?",[$id]);
+	
 	return redirect()->action('ClasesController@clases_mostrar')->withInput();
 
 	}
