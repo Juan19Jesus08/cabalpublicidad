@@ -368,17 +368,23 @@ if($cantidad>0)
 {
 	echo '<div>
 
-<img src="/images/trofeo.png" alt="trofeo" style="width:200px;height:200px;">
-			
-			 
-			 
-			 <a class="btn btn-success" href="/ " >Certificado</a>
-			 
-                   
+<img src="/images/trofeo.png" alt="trofeo" style="width:200px;height:200px;">';
+	    
+echo'<form action="/imprimir" method="POST">
+<input type="hidden" name="email_show" id="email_show" value="{{ $email }}">
+<input type="hidden" name="curso_show" id="curso_show" value="{{ $valor }}">
+<button class="btn btn-success" type="submit">Certificado</button>
+
+</form>
 </div>';
+
 }
 
+
 ?>
+
+
+
 <!-- Fin del bloque de PHP2 -->                        						
 
                 <!-- sidebar #end -->                

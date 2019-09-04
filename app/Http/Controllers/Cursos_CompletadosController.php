@@ -28,7 +28,27 @@ class Cursos_CompletadosController extends Controller
     }
     
    
-		
-       
+    public function imprimir(Request $input)
+	{
+        $email = $input['email_show'];
+        $nombre_curso= $input['curso_show'];
+        echo $email."    ".$nombre_curso;
+
+        $nombres=DB::select("SELECT * from usuario where usuario.email='$email' ");
+        $adquirir=DB::select("SELECT * from adquirir where adquirir.email='$email' ");
+         $fecha=$adquirir[0]->fecha_finalizacion;
+         $nombre_usuario=$nombres[0]->nombre;
+        //mis_clases?clase_de=curso de laravel
+        
+        
+        $pdf = \PDF::loadView('/cliente_principal/pdf', compact('nombre_usuario','fecha','nombre_curso'));
+        return $pdf->download('certificado_de_finalizacion.pdf');
+
+    }
+  
+  
+
+  
+  
 	
 }

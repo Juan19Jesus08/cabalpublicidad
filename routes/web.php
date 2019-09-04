@@ -143,3 +143,6 @@ Route::get('/mi_password', function () {
     return view('/cliente_principal/contraseña');
 });
 Route::post('/mi_password','UsuarioController@Actualizar_contraseña');
+
+
+Route::post('/imprimir','Cursos_CompletadosController@imprimir');

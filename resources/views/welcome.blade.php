@@ -168,7 +168,7 @@ Skip to content</a>
     <div class="row">
      <!-- #site-branding #start -->
      <div class="site-branding col-xs-12 col-sm-3">
-          <a href="/" rel="home"><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/logo.png" class="brand" alt="EducationPress" /> </a>
+          <a href="/" rel="home"><img src="/images/cabal.jpg" class="brand" alt="EducationPress" /> </a>
          
 
     </div>
