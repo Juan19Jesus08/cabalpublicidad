@@ -1,6 +1,6 @@
 <?php
     $apikey='AIzaSyBU1lZtClzanCeW37ILQ2UB70X-VatLSps';
-    $videoID='CfMztVaXKgw';
+    $videoID='sVK33SiqG6g';
    $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=$videoID&key=$apikey");
    $duration = json_decode($dur, true);
      foreach ($duration['items'] as $vidTime) 
