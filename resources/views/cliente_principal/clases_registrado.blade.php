@@ -108,14 +108,15 @@ Skip to content</a>
            
 			<main id="main" class="site-main col-xs-12 col-sm-8 pull-left" >
                 	
-                     <div class="courses-info">
+                     
  <!-- inicio del bloque de php--> 
 <?php 
 $valor= $_GET['clase_de'];
 $clase=  DB::select("SELECT clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
 foreach($clase as $item)
 {      
-     echo '               	<h1>'.$item->nombre.'</h1>
+	 echo '               <div class="courses-info">	<h1>'.$item->nombre.'</h1>
+	 						
                         
                      </div>';
                 	
@@ -343,13 +344,41 @@ echo '<ul class="review-list clearfix">
                                 <li><span>Incluye:</span> 			
 							Certificado de Finalizacion			
 			 </li>
-                     
+			 <li>
+			
                                                              </ul>
                             
                               
                         </div>';
                             }
     ?>                    
+
+<?php 
+use Illuminate\Support\Facades\Session; 
+$email=(Session::get('email'));
+$valor= $_GET['clase_de'];
+$curso=  DB::select("SELECT * FROM cursos where cursos.nombre='$valor' ");
+$id_curso=$curso[0]->id_curso;
+
+
+$avance= DB::select("SELECT * FROM adquirir where adquirir.email='$email' and adquirir.certificado=1 and adquirir.id_curso=$id_curso ");
+$cantidad= sizeof($avance);
+
+if($cantidad>0)
+{
+	echo '<div>
+
+<img src="/images/trofeo.png" alt="trofeo" style="width:200px;height:200px;">
+			
+			 
+			 
+			 <a class="btn btn-success" href="/ " >Certificado</a>
+			 
+                   
+</div>';
+}
+
+?>
 <!-- Fin del bloque de PHP2 -->                        						
 
                 <!-- sidebar #end -->                

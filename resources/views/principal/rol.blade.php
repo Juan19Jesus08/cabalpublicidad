@@ -16,7 +16,7 @@
      $resultado=substr($resultado,  2 );
 
 
-    echo "La cadena resultante es: " . $resultado;
-     //print_r( $duration);
+    //echo "La cadena resultante es: " . $resultado;
+     print_r( $duration);
 
 ?>
