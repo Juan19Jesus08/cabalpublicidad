@@ -1,22 +1,32 @@
-<?php
-    $apikey='AIzaSyBU1lZtClzanCeW37ILQ2UB70X-VatLSps';
-    $videoID='sVK33SiqG6g';
-   $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=$videoID&key=$apikey");
-   $duration = json_decode($dur, true);
-     foreach ($duration['items'] as $vidTime) 
-     { 
-         $vTime= $vidTime['contentDetails']['duration'];
-    
-     }
-     //echo $vTime;
-     $resultado="";
-     $resultado =  str_replace("H", ":", $vTime);
-     $resultado =  str_replace("M", ":", $resultado);
-     $resultado=substr($resultado, 0, -1);
-     $resultado=substr($resultado,  2 );
+<script src="https://www.youtube.com/player_api"></script>
+<div id="video-youtube"></div>
+<div class="controls">
+  
+</div>
+
+<script type="text/javascript">
+var player;
+
+function onYouTubePlayerAPIReady() {
+    player = new YT.Player('video-youtube', {
+      height: '315',
+      width: '560',
+      videoId: 'kqEfoD9XYHQ',
+      events: {
+        'onReady': onAutoPlay,
+        'onStateChange': onFinish
+      }
+    });
+}
+
+function onAutoPlay(event) {
+    event.target.playVideo();
+}
+function onFinish(event) {        
+    if(event.data === 0) {            
+        alert("Fin");
+    }
+}
 
 
-    //echo "La cadena resultante es: " . $resultado;
-     print_r( $duration);
-
-?>
+</script>
