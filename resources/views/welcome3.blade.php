@@ -191,7 +191,7 @@ Skip to content</a>
 		</div>
       <div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-visitor-menu" class="nav navbar-nav">
 
-      <li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a  href="/">Inicio</a></li>
+      <li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a  href="/perfil">Inicio</a></li>
 <li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-148 dropdown"><a title="Courses" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true"> Cursos <span class="caret"></span></a>
 
 <ul role="menu" class=" dropdown-menu">

@@ -145,7 +145,7 @@ Route::get('/mi_password', function () {
 Route::post('/mi_password','UsuarioController@Actualizar_contraseña');
 
 
-Route::get('/imprimir', function () {
-    return view('/cliente_principal/pdf');
-});
-Route::post('/imprimir','Cursos_CompletadosController@imprimir');
+
+//Route::post('/imprimir','Cursos_CompletadosController@imprimir');
+
+Route::name('print')->post('/imprimir', 'Cursos_CompletadosController@imprimir');
