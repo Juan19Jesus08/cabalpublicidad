@@ -55,24 +55,25 @@ class Cursos_CompletadosController extends Controller
             $nombres=DB::select("SELECT * from usuario where usuario.email='$email' ");
             $adquirir=DB::select("SELECT * from adquirir where adquirir.email='$email' ");
              $fecha=$adquirir[0]->fecha_finalizacion;
-             $nombre_usuario=$nombres[0]->nombre;
-             $nombre_curso=$cursos[0]->nombre;
+             $nombre=$nombres[0]->nombre;
+             $curso=$cursos[0]->nombre;
             //mis_clases?clase_de=curso de laravel
             
-            echo $nombre_usuario."   ".$fecha."   ".$nombre_curso;
-            
-            $pdf = \PDF::loadView('/cliente_principal/pdf', compact('nombre_usuario','fecha','nombre_curso'));
+          
+            $pdf = \PDF::loadView('/cliente_principal/pdf', compact('nombre','fecha','curso'));
             
             return $pdf->download('certificado_de_finalizacion.pdf');
         }
-        else{
-            
-            return redirect('/mis_clases?clase_de=$nombre_curso');   
-        }
-
+       
        
 
     }
+
+    
+
+
+
+
   
   
 

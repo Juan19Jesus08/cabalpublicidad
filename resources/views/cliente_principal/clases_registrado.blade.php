@@ -369,6 +369,7 @@ if($cantidad>0)
 
 	<img src="/images/trofeo.png" alt="trofeo" style="width:200px;height:200px;">
 	<a class="btn btn-success "  href="/imprimir?email_show='.$email.'&curso_show='.$id_curso.'">Certificado</a>
+	
 	</div>';
 	
 	
