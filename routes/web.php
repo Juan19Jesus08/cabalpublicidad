@@ -145,4 +145,4 @@ Route::post('/mi_contraseña','EmailController@obtener_contraseña');
 
 //Route::post('/imprimir','Cursos_CompletadosController@imprimir');
 
-Route::name('print')->post('/imprimir', 'Cursos_CompletadosController@imprimir');
+Route::name('print')->get('/imprimir', 'Cursos_CompletadosController@imprimir');
