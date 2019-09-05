@@ -35,7 +35,7 @@ class Admin
                     return $next($request);
                 }
                 else{
-                    return redirect('/perfil');     
+                    return redirect('/');     
                 }   
             
         }

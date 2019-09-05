@@ -96,7 +96,7 @@ Route::get('/registrar', function () {
 Route::post('/registrar','UsuarioController@Registrar');
 ///////////////////////////////////////////
 
-Route::get('/','RolController@index');
+Route::get('/','RolController@index')->middleware('cliente:2')->name('index');
 Route::get('/todos','CursosController@cursos');
 
 
@@ -104,7 +104,7 @@ Route::get('/todos','CursosController@cursos');
 
 /*rutas para el cliente*/
 //////////////
-Route::get('/perfil','Cursos_CompletadosController@perfil')->middleware('cliente:2')->name('perfil');
+
 
 Route::get('/mis_cursos','Cursos_CompletadosController@mostrar_cursos');
 //////////////////
@@ -138,6 +138,7 @@ Route::get('/mi_nombre', function () {
     return view('/cliente_principal/nombre_usuario');
 });
 Route::post('/mi_nombre','UsuarioController@Actualizar_nombre');
+
 
 Route::get('/mi_password', function () {
     return view('/cliente_principal/contraseña');
