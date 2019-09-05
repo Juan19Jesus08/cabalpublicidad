@@ -1,4 +1,4 @@
-@extends('welcome3')
+@extends('welcome')
 @section('contenido')
 <!DOCTYPE html>
 <html lang="en-US">

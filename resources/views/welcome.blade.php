@@ -1,3 +1,9 @@
+<?php use Illuminate\Support\Facades\Session; 
+              $email= Session::get('email');
+             echo  $cont= strlen($email);
+             
+              
+             ?>
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -153,9 +159,16 @@ Skip to content</a>
       <nav class="meta-login">
         <ul>
                  
-           
-                               <li><a href="/registrar/">Registrarse</a></li>
+        @if($cont==0)
+        <li><a href="/registrar/">Registrarse</a></li>
              <li><a href="/iniciar_sesion/">Iniciar sesion</a></li>
+            @else
+            <li>{{$email}}</li>
+             <li><a href="/cerrar_sesion/">Cerrar sesion</a></li>
+        @endif
+
+
+                               
               		                  </ul>
       </nav>
       
@@ -209,7 +222,26 @@ foreach( $array as $item)
 </li>
 
 <li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a title="Events" href="/acerca_de/">Acerca de Nosotros</a></li>
+@if($cont>0)
+<li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a title="Events" href="/mis_cursos/">Mis cursos</a></li>
 
+<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-148 dropdown"><a title="Courses" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Actualizar Perfil <span class="caret"></span></a>
+
+<ul role="menu" class=" dropdown-menu">
+
+
+
+  <li id="menu-item-871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871">
+ <a title="All Courses" href="/mi_nombre">Cambiar nombre de usuario</a></li>
+ 
+ <li id="menu-item-871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-871">
+ <a title="All Courses" href="/mi_password?mensaje=''">Cambiar contraseña</a></li>
+ 
+
+
+ 
+</ul>
+@endif
 
 </div>
     <!-- #site-navigation  #end--> 
