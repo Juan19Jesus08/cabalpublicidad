@@ -113,16 +113,16 @@ Skip to content</a>
 <?php 
 $valor= $_GET['curso_de'];
 $valor2=$_GET['clase_de'];
-$clase=  DB::select("SELECT clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' and clases.nombre='$valor2' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
+$clase=  DB::select("SELECT clases.nombre as clase,clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' and clases.nombre='$valor2' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
 foreach($clase as $item)
 {      
-     echo '               	 <div class="courses-info"> <h1>'.$item->nombre.'</h1>
+     echo '               	 <div class="courses-info"> <h1 id="curso">'.$item->nombre.'</h1> <h1 id="clase">'.$item->clase.'</h1>
                         
                      </div>';
                 	
                                     	
                                         
-                                         echo'<iframe  id="video-youtube" width="600" height="600" src="'.'https://www.youtube.com/embed/'.$item->url."?disablekb=1&modestbranding=1&rel=0&showinfo=1&controls=1".'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                                         echo'<iframe  id="player" width="600" height="600" src="'.'https://www.youtube.com/embed/'.$item->url."?disablekb=1&modestbranding=1&rel=0&showinfo=1&controls=1&enablejsapi=1".'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                         
                                     	echo ' </a>
                                         <div class="courses-info">
@@ -417,30 +417,29 @@ if( testInput.type !== 'date') {
 var _wpcf7 = {"loaderUrl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
 /* ]]> */
 </script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var mc4wp_forms_config = [];
-/* ]]> */
-</script>
 <script type="text/javascript">
 var player;
 
-function onYouTubePlayerAPIReady() {
-   player = new YT.Player('video-youtube', {
-     events: {
-       'onReady': onAutoPlay,
-       'onStateChange': onFinish
-     }
-   });
-}
+var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          events: {
+            'onReady': onAutoPlay,
+            'onStateChange': onFinish
+          }
+        });
+      }
 
 function onAutoPlay(event) {
-   event.target.playVideo();
+    event.target.playVideo();
 }
-function onFinish(event) {       
-   if(event.data === 0) {           
-       alert("Fin");
-   }
+function onFinish(event) {        
+    if(event.data === 0) {            
+        alert("Fin");
+		alert(document.getElementById("clase").innerHTML); 
+		alert(document.getElementById("curso").innerHTML); 
+		alert(document.getElementById("email").innerHTML); 
+    }
 }
 
 

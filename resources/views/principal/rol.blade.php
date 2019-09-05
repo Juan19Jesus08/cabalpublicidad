@@ -1,23 +1,23 @@
+
 <script src="https://www.youtube.com/player_api"></script>
-<div id="video-youtube"></div>
+<!--<div id="player"></div>-->
+<iframe id="player" type="text/html" width="640" height="360"
+  src="http://www.youtube.com/embed/M_gT23X1RgI?enablejsapi=1"
+  frameborder="0"></iframe>
 <div class="controls">
-  
-</div>
 
 <script type="text/javascript">
 var player;
 
-function onYouTubePlayerAPIReady() {
-    player = new YT.Player('video-youtube', {
-      height: '315',
-      width: '560',
-      videoId: 'kqEfoD9XYHQ',
-      events: {
-        'onReady': onAutoPlay,
-        'onStateChange': onFinish
+var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          events: {
+            'onReady': onAutoPlay,
+            'onStateChange': onFinish
+          }
+        });
       }
-    });
-}
 
 function onAutoPlay(event) {
     event.target.playVideo();
