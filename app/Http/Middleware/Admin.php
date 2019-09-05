@@ -20,19 +20,27 @@ class Admin
           
         $correo=Session::get('email');
        
+        if($correo=’’)
+        {
+            return redirect('/');     
+        }
+        else{
+
+            $query = "select * from usuario where email='$correo'";
+            $data=DB::select($query);
+           
+           
+                if($data[0]->id_rol==1)
+                {
+                    return $next($request);
+                }
+                else{
+                    return redirect('/perfil');     
+                }   
+            
+        }
+
         
-        
-        $query = "select * from usuario where email='$correo'";
-        $data=DB::select($query);
        
-       
-            if($data[0]->id_rol==1)
-            {
-                return $next($request);
-            }
-            else{
-                return redirect('/perfil');     
-            }   
-        
     }
 }

@@ -83,7 +83,7 @@
 <p id="nav">
 
 
-	<p id="backtoblog"><a href="/perfil">&larr; Mi Perfil</a></p>
+	<p id="backtoblog"><a href="/">&larr; Mi Perfil</a></p>
 	
 	</div>
 
