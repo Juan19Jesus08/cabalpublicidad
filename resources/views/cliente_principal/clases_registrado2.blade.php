@@ -122,7 +122,7 @@ foreach($clase as $item)
                 	
                                     	
                                         
-                                         echo'<iframe width="600" height="600" src="'.'https://www.youtube.com/embed/'.$item->url."?disablekb=1&modestbranding=1&rel=0&showinfo=1&controls=1".'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                                         echo'<iframe  id="video-youtube" width="600" height="600" src="'.'https://www.youtube.com/embed/'.$item->url."?disablekb=1&modestbranding=1&rel=0&showinfo=1&controls=1".'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                         
                                     	echo ' </a>
                                         <div class="courses-info">
@@ -411,6 +411,7 @@ if( testInput.type !== 'date') {
 }
 
 })();</script>
+<script src="https://www.youtube.com/player_api"></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var _wpcf7 = {"loaderUrl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
@@ -421,6 +422,30 @@ var _wpcf7 = {"loaderUrl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp
 var mc4wp_forms_config = [];
 /* ]]> */
 </script>
+<script type="text/javascript">
+var player;
+
+function onYouTubePlayerAPIReady() {
+   player = new YT.Player('video-youtube', {
+     events: {
+       'onReady': onAutoPlay,
+       'onStateChange': onFinish
+     }
+   });
+}
+
+function onAutoPlay(event) {
+   event.target.playVideo();
+}
+function onFinish(event) {       
+   if(event.data === 0) {           
+       alert("Fin");
+   }
+}
+
+
+</script>
+
 <!--[if lte IE 9]>
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.0.9'></script>
 <![endif]-->
