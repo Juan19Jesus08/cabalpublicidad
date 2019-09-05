@@ -96,7 +96,7 @@ Route::get('/registrar', function () {
 Route::post('/registrar','UsuarioController@Registrar');
 ///////////////////////////////////////////
 
-Route::get('/','RolController@index')->middleware('cliente:2')->name('index');
+Route::get('/','RolController@index');//->middleware('cliente:2')->name('index');
 Route::get('/todos','CursosController@cursos');
 
 
