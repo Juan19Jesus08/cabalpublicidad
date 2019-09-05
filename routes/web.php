@@ -106,21 +106,27 @@ Route::get('/todos','CursosController@cursos');
 //////////////
 
 
-Route::get('/mis_cursos','Cursos_CompletadosController@mostrar_cursos');
+Route::get('/mis_cursos','Cursos_CompletadosController@mostrar_cursos')->middleware('cliente:2')->name('mis_cursos');
 //////////////////
 Route::post('/mis_clases','AdquirirController@añadir_comentario');
 
-Route::get('/mis_clases', function () {
-    return view('/cliente_principal/clases_registrado');
-});
 
+Route::get('/mis_clases','Cursos_CompletadosController@mis_clases')->middleware('cliente:2')->name('mis_clases');
 
 ////////////////////////////////
 Route::post('/mi_clase','AdquirirController@añadir_comentario');
 
-Route::get('/mi_clase', function () {
-    return view('/cliente_principal/clases_registrado2');
-});
+
+Route::get('/mi_clase','Cursos_CompletadosController@mi_clase')->middleware('cliente:2')->name('mi_clase');
+///////////////////////////////////
+
+
+Route::get('/mi_nombre','Cursos_CompletadosController@mi_nombre')->middleware('cliente:2')->name('mi_nombre');
+Route::post('/mi_nombre','UsuarioController@Actualizar_nombre');
+
+
+Route::get('/mi_password','Cursos_CompletadosController@mi_password')->middleware('cliente:2')->name('mi_password');
+Route::post('/mi_password','UsuarioController@Actualizar_contraseña');
 /*Fin de rutas para cliente*/
 
 Route::get('/rol','RolController@procedimiento_almacenado');
@@ -134,16 +140,6 @@ Route::get('/mi_contraseña', function () {
 });
 Route::post('/mi_contraseña','EmailController@obtener_contraseña');
 
-Route::get('/mi_nombre', function () {
-    return view('/cliente_principal/nombre_usuario');
-});
-Route::post('/mi_nombre','UsuarioController@Actualizar_nombre');
-
-
-Route::get('/mi_password', function () {
-    return view('/cliente_principal/contraseña');
-});
-Route::post('/mi_password','UsuarioController@Actualizar_contraseña');
 
 
 
