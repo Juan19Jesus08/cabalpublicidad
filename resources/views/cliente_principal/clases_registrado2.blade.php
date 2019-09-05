@@ -436,9 +436,26 @@ function onAutoPlay(event) {
 function onFinish(event) {        
     if(event.data === 0) {            
         alert("Fin");
-		alert(document.getElementById("clase").innerHTML); 
-		alert(document.getElementById("curso").innerHTML); 
-		alert(document.getElementById("email").innerHTML); 
+	  var clase=document.getElementById("clase").innerHTML; 
+
+	  var curso=document.getElementById("curso").innerHTML; 
+		var email=document.getElementById("email").innerHTML;
+
+		$.ajax({
+
+			type:'POST',
+
+			route: 'terminacion_clase.Cursos_Completados.terminacion_clase',
+
+			data:{clase:clase, curso:curso, email:email},
+
+			success:function(data){
+
+			
+
+			}
+
+		});
     }
 }
 

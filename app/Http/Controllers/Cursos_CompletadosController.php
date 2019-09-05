@@ -69,7 +69,21 @@ class Cursos_CompletadosController extends Controller
 
     }
 
-    
+    public function terminacion_clase(Request $request)
+
+    {
+
+        $curso = $request->curso;
+        $clase = $request->clase;
+        $email = $request->email;
+
+        echo $curso."   ".$clase."   ".$email;
+die();
+
+        return response()->json(['success'=>'Got Simple Ajax Request.']);
+
+    }
+   
 
 
 
