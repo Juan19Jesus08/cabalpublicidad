@@ -364,25 +364,27 @@ $id_curso=$curso[0]->id_curso;
 $avance= DB::select("SELECT * FROM adquirir where adquirir.email='$email' and adquirir.certificado=1 and adquirir.id_curso=$id_curso ");
 $cantidad= sizeof($avance);
 
-if($cantidad>0)
-{
-	echo '<div>
 
-<img src="/images/trofeo.png" alt="trofeo" style="width:200px;height:200px;">';
-	    
-echo'<form action="/imprimir" method="POST">
-<input type="hidden" name="email_show" id="email_show" value="{{ $email }}">
-<input type="hidden" name="curso_show" id="curso_show" value="{{ $valor }}">
-<button class="btn btn-success" type="submit">Certificado</button>
-
-</form>
-</div>';
-
-}
 
 
 ?>
 
+@if($cantidad>0)
+
+	<div>
+
+<img src="/images/trofeo.png" alt="trofeo" style="width:200px;height:200px;">
+	    
+{{ Form::open(array('action' => 'Cursos_CompletadosController@imprimir', 'method' => 'post','id'=>'student-settings','name'=>'loginform')) }}
+							
+{{ Form::hidden('email_show', $email) }}
+{{ Form::hidden('curso_show', $valor) }}
+{!! Form::submit( 'Certificado', ['class' => 'btn btn-success', 'name' => 'submitbutton', 'value' => 'login'])!!}
+{{ Form::close() }}
+</div>
+
+
+@endif
 
 
 <!-- Fin del bloque de PHP2 -->                        						
