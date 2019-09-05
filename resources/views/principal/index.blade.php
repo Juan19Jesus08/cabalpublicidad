@@ -6,7 +6,7 @@
 
 
 
-@if($email='')
+@if($email=='')
     @extends('welcome')
 @else
    @extends("welcome3")

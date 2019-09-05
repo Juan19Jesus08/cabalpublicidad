@@ -20,7 +20,7 @@ class Admin
           
         $correo=Session::get('email');
        
-        if($correo='')
+        if($correo==null)
         {
             return redirect('/');     
         }
