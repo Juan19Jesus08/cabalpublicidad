@@ -1,16 +1,15 @@
 <?php use Illuminate\Support\Facades\Session; 
-              $email= (Session::get('email'));
+              $email= Session::get('email');
+             echo  $cont= strlen($email);
               
              ?>
 
 
-
-
-@if($email=='')
-    @extends('welcome')
-@else
-   @extends("welcome3")
-@endif
+@if($cont==0)
+            @extends('welcome3')
+            @else
+            @extends('welcome')
+        @endif
 @section('contenido')
 <!DOCTYPE html>
 <html lang="en-US">
