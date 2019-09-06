@@ -110,7 +110,7 @@ Skip to content</a>
           <?php use Illuminate\Support\Facades\Session; 
               $email= Session::get('email');
              
-              echo '<input id="email" name="email" type="hidden" value="'.$email.'">';
+              echo '<input id="email2" name="email2" type="hidden" value="'.$email.'">';
              ?>
 			 
                     
@@ -453,16 +453,16 @@ function onFinish(event) {
     if(event.data === 0) {    
 		 // var clase=h1.data("clase"); 
 		 // var curso=h1.data("curso"); 
-          var email= document.getElementById("#email").value;
+          var email= document.getElementById("email2").value;
 
-		  //var clase=document.getElementById("#clase").value;
-		  //var curso=document.getElementById("#curso").value;
-   
-		  alert(clase);
-	alert(curso);
-	alert(email);
+		  var clase=document.getElementById("clase").value;
+		  var curso=document.getElementById("curso").value;
+		 // alert(email);
+		 // alert(clase);
+		///alert(curso);
+	
 		
-		//location.href="/terminacion_clase?email_show="+email+"&curso_show="+curso+"&clase_show="+clase;
+		location.href="/terminacion_clase?email_show="+email+"&curso_show="+curso+"&clase_show="+clase;
 	 
 
 		//x(clase,curso,email);
