@@ -163,7 +163,7 @@ Skip to content</a>
         <li><a href="/registrar/">Registrarse</a></li>
              <li><a href="/iniciar_sesion/">Iniciar sesion</a></li>
             @else
-            <li id="email">{{$email}}</li>
+            <li >{{$email}}</li>
              <li><a href="/cerrar_sesion/">Cerrar sesion</a></li>
         @endif
 

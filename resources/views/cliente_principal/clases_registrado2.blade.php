@@ -107,7 +107,12 @@ Skip to content</a>
         	<div class="row">
            
 			<main id="main" class="site-main col-xs-12 col-sm-8 pull-left" >
-                	
+          <?php use Illuminate\Support\Facades\Session; 
+              $email= Session::get('email');
+             
+              echo '<input id="email" name="email" type="hidden" value="'.$email.'">';
+             ?>
+			 
                     
  <!-- inicio del bloque de php--> 
 <?php 
@@ -116,7 +121,9 @@ $valor2=$_GET['clase_de'];
 $clase=  DB::select("SELECT clases.nombre as clase,clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' and clases.nombre='$valor2' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
 foreach($clase as $item)
 {      
-     echo '               	 <div class="courses-info"> <h1 id="curso">'.$item->nombre.'</h1> <h1 id="clase">'.$item->clase.'</h1>
+	echo '<input id="curso" name="curso" type="hidden" value="'.$item->nombre.'">';
+	echo '<input id="clase" name="clase" type="hidden" value="'.$item->clase.'">';
+     echo '           	 <div class="courses-info"> <h1 >'.$item->nombre.'</h1> <h1 >'.$item->clase.'</h1>
                         
                      </div>';
                 	
@@ -444,12 +451,18 @@ function onAutoPlay(event) {
 }
 function onFinish(event) {        
     if(event.data === 0) {    
-		var clase=document.getElementById("clase").innerHTML; 
+		 // var clase=h1.data("clase"); 
+		 // var curso=h1.data("curso"); 
+          var email= document.getElementById("#email").value;
 
-var curso=document.getElementById("curso").innerHTML; 
-  var email=document.getElementById("email").innerHTML;        
-        //alert("Fin");
-		location.href="/terminacion_clase?email_show="+email+"&curso_show="+curso+"&clase_show="+clase;
+		  //var clase=document.getElementById("#clase").value;
+		  //var curso=document.getElementById("#curso").value;
+   
+		  alert(clase);
+	alert(curso);
+	alert(email);
+		
+		//location.href="/terminacion_clase?email_show="+email+"&curso_show="+curso+"&clase_show="+clase;
 	 
 
 		//x(clase,curso,email);
