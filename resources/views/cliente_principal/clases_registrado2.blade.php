@@ -186,7 +186,7 @@ foreach($clase as $item)
 																																													<label >
 																
 																<span class="tree-page-left">
-																	<a href="/mi_clase?curso_de='.$curso.'&clase_de='.$item->nombre.'">'.$item->nombre.' </a> 
+																	<a href="/mi_clase?curso_de='.$curso.'&clase_de='.$item->nombre.'&mensaje=">'.$item->nombre.' </a> 
 																</span>
 																<span class="tree-page-right">
 
@@ -297,6 +297,8 @@ echo '<ul class="review-list clearfix">
 <?php
  $valor= $_GET['curso_de'];
  $valor2=$_GET['clase_de'];
+ $mensaje=$_GET['mensaje'];
+
  $clase=  DB::select("SELECT clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' and clases.nombre='$valor2' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
  foreach($clase as $item)
  { 					            
@@ -344,13 +346,20 @@ echo '<ul class="review-list clearfix">
                                 
                                 <li><span>Incluye:</span> 			
 							Certificado de Finalizacion			
-			 </li>
+			 </li>';
                      
-                                                             </ul>
+                                                            
                             
                               
-                        </div>';
-                            }
+                        
+							}
+							if($mensaje!=null)
+							{
+								echo'<li><span></span>'.
+								$mensaje.'			
+								 </li>';
+							}
+							echo ' </ul></div>';
     ?>                    
 <!-- Fin del bloque de PHP2 -->                        						
 
@@ -434,14 +443,17 @@ function onAutoPlay(event) {
     event.target.playVideo();
 }
 function onFinish(event) {        
-    if(event.data === 0) {            
-        alert("Fin");
-	  var clase=document.getElementById("clase").innerHTML; 
+    if(event.data === 0) {    
+		var clase=document.getElementById("clase").innerHTML; 
 
-	  var curso=document.getElementById("curso").innerHTML; 
-		var email=document.getElementById("email").innerHTML;
+var curso=document.getElementById("curso").innerHTML; 
+  var email=document.getElementById("email").innerHTML;        
+        //alert("Fin");
+		location.href="/terminacion_clase?email_show="+email+"&curso_show="+curso+"&clase_show="+clase;
+	 
 
-		x(clase,curso,email);
+		//x(clase,curso,email);
+		
     }
 
 }
@@ -473,7 +485,7 @@ function x(clase,curso,email)
 	$.ajax({
 contentType: "application/json; charset=utf-8", type: 'POST', 
 url:"{{ route('terminacion_clase') }}",
-     data: JSON.stringify({ curso: curso, clase:clase, email:email }),
+     data: JSON.stringify({ 'curso': curso, 'clase':clase, 'email':email }),
      success: function (data) {
  alert(data); console.log(data);
 },

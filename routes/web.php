@@ -156,4 +156,4 @@ Route::name('print')->get('/imprimir', 'Cursos_CompletadosController@imprimir');
         return response ()->json ( $data );
 });*/
 
-Route::post('/terminacion_clase','Cursos_CompletadosController@terminacion_clase')->name('terminacion_clase');
+Route::get('/terminacion_clase','Cursos_CompletadosController@terminacion_clase')->name('terminacion_clase');

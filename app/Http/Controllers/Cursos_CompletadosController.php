@@ -69,19 +69,42 @@ class Cursos_CompletadosController extends Controller
 
     }
 
-    public function terminacion_clase($curso, $clase, $email)
+    public function terminacion_clase()
 
     {
+        $email= $_GET['email_show'];
+        $curso=$_GET['curso_show'];
+        $clase=$_GET['clase_show'];
         
+        $mensaje="";
+        $cursos=DB::select("SELECT * from cursos where cursos.nombre='$curso'");
+        $clases=DB::select("SELECT * from clases where clases.nombre='$clase'");
 
-        $cursos = $curso;
-        $clases = $clase;
-        $email2 = $email;
+        $id_curso=$cursos[0]->id_curso;
+        $id_clase=$clases[0]->id_clase;
 
-        echo $cursos."   ".$clases."   ".$email2;
+        $comprobar=DB::select("SELECT * from cursos_completados where cursos_completados.email='$email' and cursos_completados.id_curso=$id_curso and cursos_completados.id_clase=$id_clase");
+        if(empty($comprobar)) {
+           
+            $query=DB::insert('insert into cursos_completados (id_clase,id_curso,email) values (?, ?, ?)', [$id_clase, $id_curso,$email]);
+            $mensaje="Felicidades acabas de terminar una clase del curso!!"; 
+           
+            if($query)
+            {
+                $query2=DB::select("call comprobar_avance($id_curso,'$email')");
+               
+            }
+            
+
+            }
+            else{
+                $mensaje="Esta clase ya la habias terminado";
+            }
+        print_r($comprobar);
+   // echo $mensaje;
+   
+        return redirect('/mi_clase?curso_de='.$curso.'&clase_de='.$clase.'&mensaje='.$mensaje);   
         
-        $hola="Hola bebe";
-        return response()->json($hola);
 
     }
    

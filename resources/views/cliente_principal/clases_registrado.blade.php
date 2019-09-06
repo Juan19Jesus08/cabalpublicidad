@@ -186,7 +186,7 @@ foreach($clase as $item)
 																																													<label >
 																
 																<span class="tree-page-left">
-																	<a href="/mi_clase?curso_de='.$curso.'&clase_de='.$item->nombre.'">'.$item->nombre.' </a> 
+																	<a href="/mi_clase?curso_de='.$curso.'&clase_de='.$item->nombre.'&mensaje=">'.$item->nombre.' </a> 
 																</span>
 																<span class="tree-page-right">
 
