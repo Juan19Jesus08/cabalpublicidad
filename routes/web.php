@@ -146,4 +146,14 @@ Route::post('/mi_contraseña','EmailController@obtener_contraseña');
 //Route::post('/imprimir','Cursos_CompletadosController@imprimir');
 
 Route::name('print')->get('/imprimir', 'Cursos_CompletadosController@imprimir');
-Route::post('/terminacion_clase', 'Cursos_CompletadosController@terminacion_clase');
+/*Route::post('/terminacion_clase', function(Request $request){
+    $curso = $request->curso;
+        $clase = $request->clase;
+        $email = $request->email;
+
+        echo $curso."   ".$clase."   ".$email;
+        $data=1;
+        return response ()->json ( $data );
+});*/
+
+Route::post('/terminacion_clase','Cursos_CompletadosController@terminacion_clase')->name('terminacion_clase');

@@ -441,22 +441,47 @@ function onFinish(event) {
 	  var curso=document.getElementById("curso").innerHTML; 
 		var email=document.getElementById("email").innerHTML;
 
-		$.ajax({
+		x(clase,curso,email);
+    }
 
-			type:'POST',
+}
 
-			route: 'terminacion_clase.Cursos_Completados.terminacion_clase',
-
-			data:{clase:clase, curso:curso, email:email},
+function x(clase,curso,email)
+{
+	alert(clase);
+	alert(curso);
+	alert(email);
+	/*$.ajax({
+		contentType: "application/json; charset=utf-8", 
+		type: 'post',
+		url:"{{ route('terminacion_clase') }}",
+		data: JSON.stringify( {clase: clase, curso: curso, email:email}),
 
 			success:function(data){
+					alert("hola entre al ajax perru");
+					alert (data);
 
-			
 
-			}
-
-		});
+			},
+			error: function (request, status, error) {
+        alert(request.responseText);
     }
+
+
+	});*/
+
+	$.ajax({
+contentType: "application/json; charset=utf-8", type: 'POST', 
+url:"{{ route('terminacion_clase') }}",
+     data: JSON.stringify({ curso: curso, clase:clase, email:email }),
+     success: function (data) {
+ alert(data); console.log(data);
+},
+			error: function (request, status, error) {
+        alert(request.responseText);
+    }
+});
+
 }
 
 

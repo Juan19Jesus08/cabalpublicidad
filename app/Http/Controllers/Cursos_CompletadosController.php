@@ -69,18 +69,19 @@ class Cursos_CompletadosController extends Controller
 
     }
 
-    public function terminacion_clase(Request $request)
+    public function terminacion_clase($curso, $clase, $email)
 
     {
+        
 
-        $curso = $request->curso;
-        $clase = $request->clase;
-        $email = $request->email;
+        $cursos = $curso;
+        $clases = $clase;
+        $email2 = $email;
 
-        echo $curso."   ".$clase."   ".$email;
-die();
-
-        return response()->json(['success'=>'Got Simple Ajax Request.']);
+        echo $cursos."   ".$clases."   ".$email2;
+        
+        $hola="Hola bebe";
+        return response()->json($hola);
 
     }
    
