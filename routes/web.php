@@ -90,10 +90,12 @@ Route::get('/acerca_de', function () {
 
 
 /*Ruta para el registrarse*/
-Route::get('/registrar', function () {
-    return view('/principal/registrar');
-});
-Route::post('/registrar','UsuarioController@Registrar');
+Route::get('/registrar', 'UsuarioController@ajaxRequest');
+Route::post('/registrar','UsuarioController@ajaxRequestPost');
+
+Route::get('/rol', 'RolController@ajaxRequest');
+
+Route::post('/rol', 'RolController@ajaxRequestPost');
 ///////////////////////////////////////////
 
 Route::get('/','RolController@index');//->middleware('cliente:2')->name('index');
@@ -129,7 +131,7 @@ Route::get('/mi_password','Cursos_CompletadosController@mi_password')->middlewar
 Route::post('/mi_password','UsuarioController@Actualizar_contraseña');
 /*Fin de rutas para cliente*/
 
-Route::get('/rol','RolController@procedimiento_almacenado');
+
 Route::get('/cerrar_sesion','UsuarioController@Logout');
 
 //Route::get('/mi_contraseña','EmailController@email');
@@ -157,3 +159,7 @@ Route::name('print')->get('/imprimir', 'Cursos_CompletadosController@imprimir');
 });*/
 
 Route::get('/terminacion_clase','Cursos_CompletadosController@terminacion_clase')->name('terminacion_clase');
+
+Route::get('/rol', 'RolController@ajaxRequest');
+
+Route::post('/rol', 'RolController@ajaxRequestPost');

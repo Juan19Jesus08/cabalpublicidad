@@ -102,18 +102,24 @@ class UsuarioController extends Controller
     die();
     }
     
-    public function Registrar(Request $input)
+    public function Registrar2(Request $input)
 	{
 	$nombre = $input['nombre_show'];
 	$email = $input['email_show'];
 	$password = $input['contrasenia_show'];
+	$password2 = $input['confirm_show'];
 	$encryptedPassword = bcrypt($password);
 	$rol = 2;
-    
+	 if($password==$password2)
+	 {
+		$query=DB::insert('insert into usuario (email,nombre,password,id_rol) values (?, ?, ?, ?)', [$email, $nombre,$encryptedPassword,$rol]);
+	 }else{
+		 echo 'la contraseña es diferente';
+	 }
    
     
-	$query=DB::insert('insert into usuario (email,nombre,password,id_rol) values (?, ?, ?, ?)', [$email, $nombre,$encryptedPassword,$rol]);
-    echo "se registro el usuario";
+	
+    
 
 	}
 
@@ -164,4 +170,39 @@ class UsuarioController extends Controller
 			return redirect('/mi_password/?mensaje=La contraseña no es igual a la del correo');
 		}
 	}
+
+	public function ajaxRequest()
+
+    {
+
+        return view('/principal/registrar');
+
+    }
+
+   
+
+    /**
+
+     * Create a new controller instance.
+
+     *
+
+     * @return void
+
+     */
+
+    public function ajaxRequestPost(Request $request)
+
+    {
+		
+        $input = $request->email;
+
+        return response()->json(['success'=>$input]);
+
+    }
+
+
+
+
+	
 }

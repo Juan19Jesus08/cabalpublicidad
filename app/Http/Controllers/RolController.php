@@ -39,12 +39,42 @@ class RolController extends Controller
 	}*/
 
 
-	public function procedimiento_almacenado()
+	/*public function procedimiento_almacenado()
 	{
 		$id=2;
 		$email="14030619@itcelaya.edu.mx";
 		$cursos=DB::select("call comprobar_avance($id,'$email')");
 		return view ('/principal/rol',compact('cursos'));
-	}
+	}*/
+
+	public function ajaxRequest()
+
+    {
+
+        return view('/principal/rol');
+
+    }
+
+   
+
+    /**
+
+     * Create a new controller instance.
+
+     *
+
+     * @return void
+
+     */
+
+    public function ajaxRequestPost(Request $request)
+
+    {
+		
+        $input = $request->email;
+
+        return response()->json(['success'=>$input]);
+
+    }
 
 }

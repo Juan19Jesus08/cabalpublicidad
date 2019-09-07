@@ -72,8 +72,8 @@
         </div>
         <div class="form-group">
           <label for="recipient-name" class="col-form-label">Contraseña:</label>
-          {{ Form::text('contrasenia_show', '', array('id' => 'contrasenia_show',  'placeholder' => 'Contraseña' ,'required' => 'required')) }}
-        
+          {{ Form::password('contrasenia_show', array('id' => 'contrasenia_show',  'placeholder' => 'Contraseña' ,'required' => 'required')) }}
+
            
         </div>
 
