@@ -38,7 +38,7 @@
 
                 <label>Name:</label>
 
-                <input type="text" name="name" class="form-control" placeholder="Name" required="">
+                <input type="text" name="name" class="form-control" placeholder="Name" required>
 
             </div>
 
@@ -48,7 +48,7 @@
 
                 <label>Password:</label>
 
-                <input type="password" name="password" class="form-control" placeholder="Password" required="">
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
 
             </div>
 
@@ -58,7 +58,7 @@
 
                 <strong>Email:</strong>
 
-                <input type="email" name="email" class="form-control" placeholder="Email" required="">
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
 
             </div>
 

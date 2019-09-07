@@ -102,26 +102,7 @@ class UsuarioController extends Controller
     die();
     }
     
-    public function Registrar2(Request $input)
-	{
-	$nombre = $input['nombre_show'];
-	$email = $input['email_show'];
-	$password = $input['contrasenia_show'];
-	$password2 = $input['confirm_show'];
-	$encryptedPassword = bcrypt($password);
-	$rol = 2;
-	 if($password==$password2)
-	 {
-		$query=DB::insert('insert into usuario (email,nombre,password,id_rol) values (?, ?, ?, ?)', [$email, $nombre,$encryptedPassword,$rol]);
-	 }else{
-		 echo 'la contraseña es diferente';
-	 }
    
-    
-	
-    
-
-	}
 
 	public function Logout()
 	{
@@ -171,38 +152,52 @@ class UsuarioController extends Controller
 		}
 	}
 
-	public function ajaxRequest()
+	public function mostrar_registrar()
 
     {
+		$message="";
+        return view('/principal/registrar',compact('message'));
 
-        return view('/principal/registrar');
+	}
 
-    }
-
-   
-
-    /**
-
-     * Create a new controller instance.
-
-     *
-
-     * @return void
-
-     */
-
-    public function ajaxRequestPost(Request $request)
+	public function mostrar_iniciar_sesion()
 
     {
-		
-        $input = $request->email;
+		$message="";
+        return view('/principal/iniciar_sesion',compact('message'));
 
-        return response()->json(['success'=>$input]);
-
-    }
-
-
-
-
+	}
 	
+	
+	public function Registrar(Request $input)
+	{
+		$mensaje="";
+		$nombre = $input['nombre_show'];
+		$email = $input['email_show'];
+		$password = $input['contrasenia_show'];
+		$password2 = $input['confirm_show'];
+		$encryptedPassword = bcrypt($password);
+		$rol = 2;
+
+		$usuarios=DB::select("SELECT * FROM usuario where usuario.email='$email' ");
+		if (empty($usuarios))
+		{
+			if($password==$password2)
+			{$message="Te registraste  exitosamente";
+				
+				$query=DB::insert('insert into usuario (email,nombre,password,id_rol) values (?, ?, ?, ?)', [$email, $nombre,$encryptedPassword,$rol]);
+				return view('/principal/iniciar_sesion',compact('message'));
+			}
+			else{
+				$message="La contraseñas no son las mismas";
+				return view('/principal/registrar',compact('message'));
+			}
+		}
+		else{
+			$message="Este usuario ya esta registrado";
+			return view('/principal/registrar',compact('message'));
+		}
+	
+	}
+   
 }

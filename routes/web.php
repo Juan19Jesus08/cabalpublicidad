@@ -77,10 +77,7 @@ Route::get('/cursos', function () {
 
 
 /*Ruta para el login*/
-Route::get('/iniciar_sesion', function () {
-    return view('/principal/iniciar_sesion');
-    
-});
+Route::get('/iniciar_sesion', 'UsuarioController@mostrar_iniciar_sesion');
 Route::post('/iniciar_sesion','LoguinController@Login');
 ///////////////////////////////////////////
 
@@ -90,8 +87,9 @@ Route::get('/acerca_de', function () {
 
 
 /*Ruta para el registrarse*/
-Route::get('/registrar', 'UsuarioController@ajaxRequest');
-Route::post('/registrar','UsuarioController@ajaxRequestPost');
+Route::get('/registrar', 'UsuarioController@mostrar_registrar');
+Route::post('/registro','UsuarioController@Registrar');
+
 
 Route::get('/rol', 'RolController@ajaxRequest');
 

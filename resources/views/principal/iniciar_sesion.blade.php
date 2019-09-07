@@ -107,7 +107,11 @@ Skip to content</a>
         	<div class="row">
                <main id="main" class="site-main col-xs-12 col-sm-8" >
     <div class="col-xs-12 col-sm-6 login-form">  	
-  <h3>Login</h3>            
+  <h3>Login</h3>      
+  @if(strlen ($message)>0)
+{{$message}}
+
+  @endif      
 										<p class="form-info-"></p>
                                         {{ Form::open(array('action' => 'LoguinController@Login', 'method' => 'post','class'=>'student-settings','id'=>'student-settings','name'=>'loginform')) }}
 										<!--<form name="loginform" id="student-settings" class="student-settings" method="post">-->

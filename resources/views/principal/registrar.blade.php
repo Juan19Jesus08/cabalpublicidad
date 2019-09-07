@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="{{ csrf_token() }}" />
 <title>CabalPublicidad</title>
                 <!-- favicon -->
                 <link rel="shortcut icon" href="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/favicon.png"/>
@@ -109,14 +110,16 @@ Skip to content</a>
   
   <div class="col-xs-12 col-sm-10 register-form">   
   <h3>Registrarse</h3> 
+  @if(strlen ($message)>0)
+{{$message}}
+
+  @endif
 
 														
 							<p class="form-info-">All fields are required.</p>
 
-							
-							
-							
-							<form class="student-settings">
+					
+							{{ Form::open(array('action' => 'UsuarioController@Registrar', 'method' => 'post','class'=>'student-settings','id'=>'student-settings','name'=>'student-settings')) }}
 								
 								
 
@@ -126,7 +129,7 @@ Skip to content</a>
                					 </label>
 									<br/>
 									
-									<input type="email" name="email"    placeholder="Email" required>
+									{{ Form::email('email_show', '', array('id' => 'email_show',  'placeholder' => 'Email','required' => 'required')) }}
 								<br/>
 								
 								<label>
@@ -134,7 +137,7 @@ Skip to content</a>
 								</label>
 								<br/>
 								
-								<input type="text" name="nombre"  placeholder="Nombre de usuario" required>
+								{{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Nombre de usuario','required' => 'required')) }}
 								<br/>
 								
 								<label>
@@ -143,7 +146,7 @@ Skip to content</a>
 								</label>
 								<br/>
 								
-								<input type="password" name="contrasenia"    placeholder="Contraseña" required>
+								{{ Form::password('contrasenia_show', array('id' => 'contrasenia_show', 'placeholder' => 'Contraseña','required' => 'required')) }}
 								<br/>
 
 								<label>
@@ -152,7 +155,7 @@ Skip to content</a>
 								</label>
 								<br/>
 								
-								<input type="password" name="confirm"   placeholder="Confirmar Contraseña" required >
+								{{ Form::password('confirm_show', array('id' => 'confirm_show', 'placeholder' => 'Confirmar Contraseña','required' => 'required')) }}
 						
 								<br clear="both"/><br/>
 
@@ -163,11 +166,12 @@ Skip to content</a>
 
 								<label class="full-right">
 								
-								<button class="apply-button-enrolled">Registrarse</button>
+								
+								{!! Form::submit( 'Registrarse', ['class' => 'btn btn-info btn-block', 'name' => 'submitbutton', 'value' => 'login'])!!}
 								</label>
 
 								
-								</form>
+								{{ Form::close() }}
 							<div class="clearfix" style="clear: both;"></div>
 
 														
@@ -245,7 +249,9 @@ Skip to content</a>
 			<!--ajax step content goes here-->
 		</div>
 	</div>
-</div><script type="text/javascript">(function() {function addEventListener(element,event,handler) {
+</div>
+
+<script type="text/javascript">(function() {function addEventListener(element,event,handler) {
 	if(element.addEventListener) {
 		element.addEventListener(event,handler, false);
 	} else if(element.attachEvent){
@@ -294,57 +300,6 @@ var mc4wp_forms_config = [];
 /* ]]> */
 </script>
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.min.js?ver=4.0.9'></script>
-<script type="text/javascript">
-
-   
-
-    $.ajaxSetup({
-
-        headers: {
-
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-
-        }
-
-    });
-
-   
-
-    $(".btn-submit").click(function(e){
-
-  
-
-        e.preventDefault();
-
-   
-
-    
-
-        var email = $("input[name=email]").val();
-
-   
-
-        $.ajax({
-
-           type:'POST',
-
-           url:'/registrar',
-
-           data:{ email:email},
-
-           success:function(data){
-
-              alert(data.success);
-
-           }
-
-        });
-
-  
-
-	});
-
-</script>
 
 
 
