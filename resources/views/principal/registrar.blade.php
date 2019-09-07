@@ -116,7 +116,7 @@ Skip to content</a>
   @endif
 
 														
-							<p class="form-info-">All fields are required.</p>
+							<p class="form-info-">Llenar todos los campos.</p>
 
 					
 							{{ Form::open(array('action' => 'UsuarioController@Registrar', 'method' => 'post','class'=>'student-settings','id'=>'student-settings','name'=>'student-settings')) }}
