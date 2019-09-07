@@ -20,7 +20,7 @@
           <tr>
           <th>Nombre</th>
               <th>Id del Video</th>
-              <th>Descripcion</th>
+             
               <th>Duracion</th>
               <th>Curso</th>
               <th>Acciones</th>
@@ -32,12 +32,12 @@
               <tr>
               <td>{{ $clase->nombre}}</td>
                   <td>{{ $clase->url}}</td>
-                  <td>{{ $clase->descripcion}}</td>
+                  
                   <td>{{ $clase->duracion}}</td>
                   <td>{{ $clase->curso}}</td>
                   <td>
                   <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-id="<?php echo $clase->id_clase;?>"  data-categoria="<?php echo $clase->nombre;?>">Eliminar</button>
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editModal" data-url="<?php echo $clase->url;?>" data-curso="<?php echo $clase->id_curso;?>" data-descripcion="<?php echo $clase->descripcion;?>" data-clase="<?php echo $clase->nombre;?>" data-id="<?php echo $clase->id_clase;?>">Editar</button>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editModal" data-url="<?php echo $clase->url;?>" data-curso="<?php echo $clase->id_curso;?>"  data-clase="<?php echo $clase->nombre;?>" data-id="<?php echo $clase->id_clase;?>">Editar</button>
                   </td>
 
               </tr>
@@ -97,19 +97,16 @@
      {{ Form::open(array('action' => 'ClasesController@insertar', 'method' => 'post','id'=>'student-settings','name'=>'loginform')) }}
          <div class="form-group">
            <label for="recipient-name" class="col-form-label">Nombre:</label>
-           {{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Nombre')) }}
+           {{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Nombre','required' => 'required')) }}
          </div>
          <div class="form-group">
            <label for="recipient-name" class="col-form-label">Id del video:</label>
-           {{ Form::text('url_show', '', array('id' => 'url_show',  'placeholder' => 'Id del Video')) }}
+           {{ Form::text('url_show', '', array('id' => 'url_show',  'placeholder' => 'Id del Video','required' => 'required')) }}
          </div>
-         <div class="form-group">
-           <label for="recipient-name" class="col-form-label">Descripcion:</label>
-           {{ Form::text('descripcion_show', '', array('id' => 'descripcion_show',  'placeholder' => 'Descripcion')) }}
-         </div>
+       
          <div class="form-group">
            <label for="recipient-name" class="col-form-label">Cursos:</label>
-           <select class="form-control" name="curso_show">
+           <select class="form-control" name="curso_show" required>
            <option value="" disabled selected>Elige un curso</option>
            @foreach ($data as $item)
            <option value="{{ $item->id_curso }}" > {{ $item->nombre }} </option>
@@ -148,24 +145,20 @@
       {{ Form::open(array('action' => 'ClasesController@actualizar', 'method' => 'post','id'=>'student-settings','name'=>'loginform')) }}
         <div class="form-group">
           <label for="recipient-name" class="col-form-label">Clase:</label>
-           {{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Clase')) }}
+           {{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Clase','required' => 'required')) }}
            {{ Form::hidden('id_show', '', array('id' => 'id_show',  'placeholder' => 'Id')) }}
         </div>
         <div class="form-group">
           <label for="recipient-name" class="col-form-label">Id del video:</label>
-           {{ Form::text('url_show', '', array('id' => 'url_show',  'placeholder' => 'Id del video')) }}
+           {{ Form::text('url_show', '', array('id' => 'url_show',  'placeholder' => 'Id del video' ,'required' => 'required')) }}
            
         </div>
 
-        <div class="form-group">
-          <label for="recipient-name" class="col-form-label">Descripcion:</label>
-           {{ Form::text('descripcion_show', '', array('id' => 'descripcion_show',  'placeholder' => 'Descripcion')) }}
-           
-        </div>
+       
 
         <div class="form-group">
            <label for="recipient-name" class="col-form-label">Cursos:</label>
-           <select class="form-control" name="curso_show" id="idmodelo">
+           <select class="form-control" name="curso_show" id="idmodelo" required>
            <option value="-1" disabled selected>Elige un curso</option>
            @foreach ($data as $item)
            <option value="{{ $item->id_curso }}" > {{ $item->nombre }} </option>
@@ -200,7 +193,7 @@ var button = $(event.relatedTarget)
 var id = button.data('id')
 var clase=button.data('clase')
 var url=button.data('url');
-var descripcion=button.data('descripcion');
+
 var curso=button.data('curso');
 
 
@@ -208,7 +201,7 @@ var modal = $(this)
 modal.find('#id_show').val(id)
 modal.find('#nombre_show').val(clase)
 modal.find('#url_show').val(url)
-modal.find('#descripcion_show').val(descripcion)
+
 modal.find('#idmodelo').val(curso)
 
 });
@@ -248,8 +241,8 @@ $(document).ready(function() {
                {"data": 1},
                {"data": 2},
                {"data": 3},
-               {"data": 4},
-               {"data": 5,'orderable': false, 'searchable': false}
+               
+               {"data": 4,'orderable': false, 'searchable': false}
            ],
 
            "dom": "<'row'<'col-sm-7 col-md-4'l><'col-sm-6 col-md-3'f>>" +

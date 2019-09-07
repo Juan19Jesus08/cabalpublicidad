@@ -67,12 +67,12 @@
      {{ Form::open(array('action' => 'UsuarioController@actualizar', 'method' => 'post','id'=>'student-settings','name'=>'loginform')) }}
         <div class="form-group">
           <label for="recipient-name" class="col-form-label">Nombre:</label>
-          {{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Nombre')) }}
+          {{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Nombre' ,'required' => 'required')) }}
           {{ Form::hidden('email_show', '', array('id' => 'email_show',  'placeholder' => 'Email')) }}
         </div>
         <div class="form-group">
           <label for="recipient-name" class="col-form-label">Contraseña:</label>
-          {{ Form::text('contrasenia_show', '', array('id' => 'contrasenia_show',  'placeholder' => 'Contraseña')) }}
+          {{ Form::text('contrasenia_show', '', array('id' => 'contrasenia_show',  'placeholder' => 'Contraseña' ,'required' => 'required')) }}
         
            
         </div>
@@ -81,7 +81,7 @@
 
         <div class="form-group">
            <label for="recipient-name" class="col-form-label">Rol:</label>
-           <select class="form-control" name="rol_show" id="idmodelo">
+           <select class="form-control" name="rol_show" id="idmodelo" required>
            <option value="-1" disabled selected>Elige un Rol</option>
            @foreach ($data as $item)
            <option value="{{ $item->id_rol }}" > {{ $item->descripcion }} </option>
@@ -151,19 +151,19 @@
 {{ Form::open(array('action' => 'UsuarioController@insertar', 'method' => 'post','id'=>'student-settings','name'=>'loginform')) }}
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Email:</label>
-            {{ Form::email('email_show', '', array('id' => 'email_show',  'placeholder' => 'Email')) }}
+            {{ Form::email('email_show', '', array('id' => 'email_show',  'placeholder' => 'Email' ,'required' => 'required')) }}
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Nombre:</label>
-            {{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Nombre')) }}
+            {{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Nombre' ,'required' => 'required')) }}
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Contraseña:</label>
-            {{ Form::password('contrasenia_show', array('id' => 'contrasenia_show', 'placeholder' => 'Contraseña')) }}
+            {{ Form::password('contrasenia_show', array('id' => 'contrasenia_show', 'placeholder' => 'Contraseña' ,'required' => 'required')) }}
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Rol:</label>
-            <select class="form-control" name="rol_show">
+            <select class="form-control" name="rol_show" required>
             <option value="" disabled selected>Elige un Rol</option>
             @foreach ($data as $item)
             <?echo $item->id_categoria; ?>

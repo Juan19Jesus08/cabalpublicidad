@@ -99,19 +99,19 @@
 {{ Form::open(array('action' => 'CursosController@insertar', 'method' => 'post','id'=>'student-settings','name'=>'loginform')) }}
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Nombre:</label>
-            {{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Nombre')) }}
+            {{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Nombre','required' => 'required')) }}
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Descripcion:</label>
-            {{ Form::text('descripcion_show', '', array('id' => 'descripcion_show',  'placeholder' => 'Descripcion')) }}
+            {{ Form::textarea('descripcion_show', '', array('id' => 'descripcion_show',  'placeholder' => 'Descripcion','required' => 'required')) }}
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Precio:</label>
-            {{ Form::text('precio_show', '', array('id' => 'precio_show',  'placeholder' => 'Precio')) }}
+            {{ Form::text('precio_show', '', array('id' => 'precio_show',  'placeholder' => 'Precio','required' => 'required')) }}
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Categoria:</label>
-            <select class="form-control" name="categoria_show">
+            <select class="form-control" name="categoria_show" required>
             <option value="" disabled selected>Elige un Curso</option>
             @foreach ($data as $item)
             <?echo $item->id_categoria; ?>
@@ -120,7 +120,7 @@
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Fecha de Creacion:</label>
-            {{ Form::date('fecha_show', '', array('id' => 'fecha_show',  'placeholder' => 'Fecha de creacion')) }}
+            {{ Form::date('fecha_show', '', array('id' => 'fecha_show',  'placeholder' => 'Fecha de creacion' ,'required' => 'required')) }}
           </div>
 
           <div class="modal-footer">
@@ -153,24 +153,24 @@
      {{ Form::open(array('action' => 'CursosController@actualizar', 'method' => 'post','id'=>'student-settings','name'=>'loginform')) }}
         <div class="form-group">
           <label for="recipient-name" class="col-form-label">Clase:</label>
-          {{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Nombre')) }}
+          {{ Form::text('nombre_show', '', array('id' => 'nombre_show',  'placeholder' => 'Nombre' ,'required' => 'required')) }}
            {{ Form::hidden('id_show', '', array('id' => 'id_show',  'placeholder' => 'Id')) }}
         </div>
         <div class="form-group">
           <label for="recipient-name" class="col-form-label">Descripcion:</label>
-          {{ Form::text('descripcion_show', '', array('id' => 'descripcion_show',  'placeholder' => 'Descripcion')) }}
+          {{ Form::textarea('descripcion_show', '', array('id' => 'descripcion_show',  'placeholder' => 'Descripcion' ,'required' => 'required')) }}
            
         </div>
 
         <div class="form-group">
           <label for="recipient-name" class="col-form-label">Precio:</label>
-          {{ Form::text('precio_show', '', array('id' => 'precio_show',  'placeholder' => 'Precio')) }}
+          {{ Form::text('precio_show', '', array('id' => 'precio_show',  'placeholder' => 'Precio','required' => 'required')) }}
            
         </div>
 
         <div class="form-group">
            <label for="recipient-name" class="col-form-label">Categoria:</label>
-           <select class="form-control" name="categoria_show" id="idmodelo">
+           <select class="form-control" name="categoria_show" id="idmodelo" required>
            <option value="-1" disabled selected>Elige una Categoria</option>
            @foreach ($data as $item)
            <option value="{{ $item->id_categoria }}" > {{ $item->descripcion }} </option>
@@ -179,7 +179,7 @@
 
          <div class="form-group">
             <label for="recipient-name" class="col-form-label">Fecha de Creacion:</label>
-            {{ Form::date('fecha_show', '', array('id' => 'fecha_show',  'placeholder' => 'Fecha de creacion')) }}
+            {{ Form::date('fecha_show', '', array('id' => 'fecha_show',  'placeholder' => 'Fecha de creacion' ,'required' => 'required')) }}
           </div>
 
         <div class="modal-footer">

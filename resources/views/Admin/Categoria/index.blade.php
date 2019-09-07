@@ -53,7 +53,7 @@
        {{ Form::open(array('action' => 'CategoriaController@actualizar', 'method' => 'post','id'=>'student-settings','name'=>'loginform')) }}
          <div class="form-group">
            <label for="recipient-name" class="col-form-label">Categoria:</label>
-            {{ Form::text('categoria_show', '', array('id' => 'categoria',  'placeholder' => 'Categoria')) }}
+            {{ Form::text('categoria_show', '', array('id' => 'categoria',  'placeholder' => 'Categoria' ,'required' => 'required')) }}
              {{ Form::hidden('id_show') }}
          </div>
          <div class="modal-footer">
@@ -111,7 +111,7 @@
         {{ Form::open(array('action' => 'CategoriaController@insertar', 'method' => 'post','id'=>'student-settings','name'=>'loginform')) }}
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Categoria:</label>
-             {{ Form::text('categoria_show', '', array('id' => 'categoria_show',  'placeholder' => 'Categoria')) }}
+             {{ Form::text('categoria_show', '', array('id' => 'categoria_show',  'placeholder' => 'Categoria' ,'required' => 'required')) }}
           </div>
           <div class="modal-footer">
         {!! Form::submit( 'Insertar', ['class' => 'btn btn-primary', 'name' => 'submitbutton', 'value' => 'login'])!!}

@@ -47,7 +47,7 @@ class ClasesController extends Controller
 	{
 	$nombre = $input['nombre_show'];
 	$url = $input['url_show'];
-	$descripcion = $input['descripcion_show'];
+	
 	$curso = $input['curso_show'];
 	
 	$resultado='';
@@ -84,7 +84,7 @@ class ClasesController extends Controller
     
     
     
-	$query=DB::insert('insert into clases (id_clase,nombre,url,descripcion,duracion,id_curso) values (?, ?, ?, ?, ?, ?)', [null, $nombre,$url,$descripcion,$resultado,$curso]);
+	$query=DB::insert('insert into clases (id_clase,nombre,url,duracion,id_curso) values ( ?, ?, ?, ?, ?)', [null, $nombre,$url,$resultado,$curso]);
 	return redirect()->action('ClasesController@clases_mostrar')->withInput();
 	
 		
@@ -101,7 +101,7 @@ class ClasesController extends Controller
 		$id=$input['id_show'];
         $nombre = $input['nombre_show'];
         $url = $input['url_show'];
-		$descripcion = $input['descripcion_show'];
+		
 		
 		$curso = $input['curso_show'];
 		$resultado='';
@@ -139,7 +139,7 @@ class ClasesController extends Controller
 
 		
 
-	$query=DB::update("update  clases set nombre='$nombre',url='$url',descripcion='$descripcion',duracion='$resultado',id_curso=$curso where id_clase=?",[$id]);
+	$query=DB::update("update  clases set nombre='$nombre',url='$url',duracion='$resultado',id_curso=$curso where id_clase=?",[$id]);
 	
 	return redirect()->action('ClasesController@clases_mostrar')->withInput();
 
