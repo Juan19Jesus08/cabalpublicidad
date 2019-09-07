@@ -136,7 +136,12 @@ color:#262c38;
                    <p class="meta">
                    by: <h1>Daniel</h1>              	                 </p>
                            <div class="course-summary course-summary-587 ">
-                <p>{{$items->descripcion}}
+                <p>@if(strlen ($items->descripcion)>90)
+{{substr($items->descripcion,0,90).'...'}}
+@else
+{{$items->descripcion}}
+  @endif
+
 </p>            </div>
          	                 
                   
@@ -232,7 +237,12 @@ Cursando </p>
                    <p class="meta">
                    by: <h1>Daniel</h1>              	                 </p>
                            <div class="course-summary course-summary-587 ">
-                <p>{{$items->descripcion}}
+                <p>@if(strlen ($items->descripcion)>90)
+{{substr($items->descripcion,0,90).'...'}}
+@else
+{{$items->descripcion}}
+  @endif
+
 </p>            </div>
          	                 
                   
