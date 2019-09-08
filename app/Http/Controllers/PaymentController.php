@@ -21,8 +21,6 @@ use Session;
 use URL;
 use DB;
 
-$id_curso;
-$email;
 
 class PaymentController extends Controller
 {
@@ -183,7 +181,8 @@ class PaymentController extends Controller
             $query=DB::insert('insert into adquirir (email,id_curso,fecha_de_adquisicion,avance,certificado,comentario,calificacion,fecha_finalizacion) values ( ?, ?, ?, ?, ?,?,?,?)', [$correo, $id,$fecha,0,0,null,0,null]);        
             
             \Session::put('success', 'Payment success');
-            Session::flush();
+            //Session::forget('email');
+            Session::forget('id_curso');
             return Redirect::to('/mis_cursos');
 
         }
