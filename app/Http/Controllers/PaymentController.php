@@ -60,8 +60,9 @@ class PaymentController extends Controller
         $query=DB::select("SELECT * FROM adquirir WHERE adquirir.email='$request->email' and adquirir.id_curso=$request->nombre");
         if (empty($query))
         {
+
             $request->nombre;
-            Session::put('email',$request->email);
+            //Session::put('email',$request->email);
             Session::put('id_curso',$request->nombre);
        
             $payer = new Payer();
@@ -176,7 +177,9 @@ class PaymentController extends Controller
 
         if ($result->getState() == 'approved') {
             $fecha = date('y-m-d');
-            $email=$correo=Session::get('email');
+
+             $email=Session::get('email');
+           
             $id=Session::get('id_curso');
  
 
