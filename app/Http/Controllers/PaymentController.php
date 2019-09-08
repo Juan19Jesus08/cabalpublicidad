@@ -53,10 +53,6 @@ class PaymentController extends Controller
 
     public function payWithpaypal(Request $request)
     {
-      
-        
-         
-         
        
         $query=DB::select("SELECT * FROM adquirir WHERE adquirir.email='$request->email' and adquirir.id_curso=$request->nombre");
         if (empty($query))

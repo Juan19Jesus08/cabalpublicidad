@@ -106,7 +106,15 @@ Skip to content</a>
         <div class="container">
         	<div class="row">
                <main id="main" class="site-main col-xs-12 col-sm-8" >
-    <div class="col-xs-12 col-sm-6 login-form">  	
+    <div class="col-xs-12 col-sm-6 login-form">
+	<?php 
+               $error=Session::get('error');
+               if(strlen ($error)>0)
+               {
+                 echo '<h1>'.$error.'</h1>';
+               }
+
+              ?>
   <h3>Login</h3>      
   @if(strlen ($message)>0)
 {{$message}}

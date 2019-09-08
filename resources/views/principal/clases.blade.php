@@ -615,12 +615,7 @@ echo '<ul class="review-list clearfix">
 		 
 		 ?>">
 
-		  <input class="w3-input w3-border" id="email" type="hidden" name="email" value="<?php use Illuminate\Support\Facades\Session; 
-              $email= Session::get('email');
-             echo  $email;
-             
-              
-             ?>">
+		 
 		 
     	  <button class="w3-btn w3-blue">Pay with PayPal</button>
     	</form>            

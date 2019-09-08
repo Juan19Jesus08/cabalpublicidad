@@ -67,93 +67,103 @@ class Paypal_LiveController extends Controller
     }*/
     public function payWithpaypal(Request $request)
     {
-        $query=DB::select("SELECT * FROM adquirir WHERE adquirir.email='$request->email' and adquirir.id_curso=$request->nombre");
-        if (empty($query))
+        $email=$correo=Session::get('email');
+        if(strlen ($email)>0)
         {
-            
-            $request->nombre;
-            Session::put('email',$request->email);
-            Session::put('id_curso',$request->nombre);
-
-        $payer = new Payer();
-        $payer->setPaymentMethod('paypal');
-
-        $item_1 = new Item();
-
-        $item_1->setName('Item 1') /** item name **/
-            ->setCurrency('MXN')
-            ->setQuantity(1)
-            ->setPrice($request->get('amount')); /** unit price **/
-
-        $item_list = new ItemList();
-        $item_list->setItems(array($item_1));
-
-        $amount = new Amount();
-        $amount->setCurrency('MXN')
-            ->setTotal($request->get('amount'));
-
-        $transaction = new Transaction();
-        $transaction->setAmount($amount)
-            ->setItemList($item_list)
-            ->setDescription('Your transaction description');
-
-        $redirect_urls = new RedirectUrls();
-        $redirect_urls->setReturnUrl(URL::to('status')) /** Specify return URL **/
-            ->setCancelUrl(URL::to('status'));
-
-        $payment = new Payment();
-        $payment->setIntent('Sale')
-            ->setPayer($payer)
-            ->setRedirectUrls($redirect_urls)
-            ->setTransactions(array($transaction));
-        /** dd($payment->create($this->_api_context));exit; **/
-        try {
-
-            $payment->create($this->_api_context);
-
-        } catch (\PayPal\Exception\PPConnectionException $ex) {
-
-            if (\Config::get('app.debug')) {
-
-                \Session::put('error', 'Connection timeout');
-                return Redirect::to('/');
-
-            } else {
-
-                \Session::put('error', 'Some error occur, sorry for inconvenient');
-                return Redirect::to('/');
-
+            $query=DB::select("SELECT * FROM adquirir WHERE adquirir.email='$email' and adquirir.id_curso=$request->nombre");
+            if (empty($query))
+            {
+                
+                $request->nombre;
+                Session::put('email',$request->email);
+                Session::put('id_curso',$request->nombre);
+    
+            $payer = new Payer();
+            $payer->setPaymentMethod('paypal');
+    
+            $item_1 = new Item();
+    
+            $item_1->setName('Item 1') /** item name **/
+                ->setCurrency('MXN')
+                ->setQuantity(1)
+                ->setPrice($request->get('amount')); /** unit price **/
+    
+            $item_list = new ItemList();
+            $item_list->setItems(array($item_1));
+    
+            $amount = new Amount();
+            $amount->setCurrency('MXN')
+                ->setTotal($request->get('amount'));
+    
+            $transaction = new Transaction();
+            $transaction->setAmount($amount)
+                ->setItemList($item_list)
+                ->setDescription('Your transaction description');
+    
+            $redirect_urls = new RedirectUrls();
+            $redirect_urls->setReturnUrl(URL::to('status')) /** Specify return URL **/
+                ->setCancelUrl(URL::to('status'));
+    
+            $payment = new Payment();
+            $payment->setIntent('Sale')
+                ->setPayer($payer)
+                ->setRedirectUrls($redirect_urls)
+                ->setTransactions(array($transaction));
+            /** dd($payment->create($this->_api_context));exit; **/
+            try {
+    
+                $payment->create($this->_api_context);
+    
+            } catch (\PayPal\Exception\PPConnectionException $ex) {
+    
+                if (\Config::get('app.debug')) {
+    
+                    \Session::put('error', 'Connection timeout');
+                    return Redirect::to('/');
+    
+                } else {
+    
+                    \Session::put('error', 'Some error occur, sorry for inconvenient');
+                    return Redirect::to('/');
+    
+                }
+    
             }
-
-        }
-
-        foreach ($payment->getLinks() as $link) {
-
-            if ($link->getRel() == 'approval_url') {
-
-                $redirect_url = $link->getHref();
-                break;
-
+    
+            foreach ($payment->getLinks() as $link) {
+    
+                if ($link->getRel() == 'approval_url') {
+    
+                    $redirect_url = $link->getHref();
+                    break;
+    
+                }
+    
             }
-
+    
+            /** add payment ID to session **/
+            Session::put('paypal_payment_id', $payment->getId());
+    
+            if (isset($redirect_url)) {
+    
+                /** redirect to paypal **/
+                return Redirect::away($redirect_url);
+    
+            }
+    
+            \Session::put('error', 'Unknown error occurred');
+            return Redirect::to('/');
+    
         }
-
-        /** add payment ID to session **/
-        Session::put('paypal_payment_id', $payment->getId());
-
-        if (isset($redirect_url)) {
-
-            /** redirect to paypal **/
-            return Redirect::away($redirect_url);
-
+        else{
+            Session::put('error','Este curso ya lo compraste!!');
+            return Redirect::to('/');
+            }
         }
-
-        \Session::put('error', 'Unknown error occurred');
-        return Redirect::to('/');
-
-    }
-        Session::put('error','Este curso ya lo compraste!!');
-        return Redirect::to('/');
+        Session::put('error','No has iniciado sesion!');
+            return Redirect::to('/inciciar_sesion');
+     
+       
     
 }
 
