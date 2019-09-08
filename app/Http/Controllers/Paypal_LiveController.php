@@ -191,11 +191,11 @@ class Paypal_LiveController extends Controller
         if ($result->getState() == 'approved') {
 
             $fecha = date('y-m-d');
-            $correo=Session::get('email');
+            $email=$correo=Session::get('email');
             $id=Session::get('id_curso');
  
 
-            $query=DB::insert('insert into adquirir (email,id_curso,fecha_de_adquisicion,avance,certificado,comentario,calificacion,fecha_finalizacion) values ( ?, ?, ?, ?, ?,?,?,?)', [$correo, $id,$fecha,0,0,null,0,null]);        
+            $query=DB::insert('insert into adquirir (email,id_curso,fecha_de_adquisicion,avance,certificado,comentario,calificacion,fecha_finalizacion) values ( ?, ?, ?, ?, ?,?,?,?)', [$email, $id,$fecha,0,0,null,0,null]);        
             
             \Session::put('success', 'Payment success');
             //Session::forget('email');
