@@ -162,8 +162,17 @@ Route::get('/rol', 'RolController@ajaxRequest');
 
 Route::post('/rol', 'RolController@ajaxRequestPost');
 
+/* RUTAS DE PAY PAL CON SANDBOX*/
 // route for processing payment
-Route::post('paypal', 'PaymentController@payWithpaypal');
+//Route::post('paypal', 'PaymentController@payWithpaypal');
 
 // route for check status of the payment
-Route::get('status', 'PaymentController@getPaymentStatus');
+//Route::get('status', 'PaymentController@getPaymentStatus');
+///////////////////////////////////////////////////////////////////////
+/*RUTAS DE PAY PAL CON LIVE*/
+
+// route for processing payment
+Route::post('paypal', 'Paypal_LiveController@payWithpaypal');
+
+// route for check status of the payment
+Route::get('status', 'Paypal_LiveController@getPaymentStatus');

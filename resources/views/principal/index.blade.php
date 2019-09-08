@@ -115,6 +115,14 @@ color:#262c38;
        		<div class="container">
             	<div class="row">
             	<div class="course_list">
+              <?php 
+               $error=Session::get('error');
+               if(strlen ($error)>0)
+               {
+                 echo '<h1>'.$error.'</h1>';
+               }
+
+              ?>
                             	<h2 class="text-center head-border-default">Cursos mas populares</h2>
                                  <!-- course start-->
 				                
