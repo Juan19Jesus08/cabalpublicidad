@@ -1,5 +1,5 @@
 <?php
-return [ 
+/*return [ 
     'client_id' => env('PAYPAL_CLIENT_ID',''),
     'secret' => env('PAYPAL_SECRET',''),
     'settings' => array(
@@ -9,12 +9,12 @@ return [
         'log.FileName' => storage_path() . '/logs/paypal.log',
         'log.LogLevel' => 'ERROR'
     ),
-];
+];*/
 
 
 
 
-/*return [ 
+return [ 
     'client_id' => env('PAYPAL_CLIENT_ID',''),
     'secret' => env('PAYPAL_SECRET',''),
     'settings' => array(
@@ -24,4 +24,4 @@ return [
         'log.FileName' => storage_path() . '/logs/paypal.log',
         'log.LogLevel' => 'ERROR'
     ),
-];*/
+];
