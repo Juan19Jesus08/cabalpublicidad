@@ -161,3 +161,9 @@ Route::get('/terminacion_clase','Cursos_CompletadosController@terminacion_clase'
 Route::get('/rol', 'RolController@ajaxRequest');
 
 Route::post('/rol', 'RolController@ajaxRequestPost');
+
+// route for processing payment
+Route::post('paypal', 'PaymentController@payWithpaypal');
+
+// route for check status of the payment
+Route::get('status', 'PaymentController@getPaymentStatus');

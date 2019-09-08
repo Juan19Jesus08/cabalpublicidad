@@ -591,7 +591,31 @@ echo '<ul class="review-list clearfix">
                 
                 <!-- sidebar start-->
 
-<!--INCICIO DE BLOQUE DE PHP2 -->                
+<!--INCICIO DE BLOQUE DE PHP2 -->    
+<form class="w3-container w3-display-middle w3-card-4 w3-padding-16" method="POST" id="payment-form"
+          action="{!! URL::to('paypal') !!}">
+    	 
+		  <input class="w3-input w3-border" id="amount" type="hidden" name="amount" value="<?php
+		  $valor= $_GET['clase_de'];
+		  $clase=  DB::select("SELECT clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
+		  foreach($clase as $item)
+		  { 
+			  echo $item->precio;
+		  } 
+		 
+		 ?>">
+		  <input class="w3-input w3-border" id="nombre" type="hidden" name="nombre" value="<?php
+		  $valor= $_GET['clase_de'];
+		  $clase=  DB::select("SELECT clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
+		  foreach($clase as $item)
+		  { 
+			  echo $item->nombre;
+		  } 
+		 
+		 ?>">
+		 
+    	  <button class="w3-btn w3-blue">Pay with PayPal</button>
+    	</form>            
 <?php
  $valor= $_GET['clase_de'];
  $clase=  DB::select("SELECT clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
@@ -607,8 +631,9 @@ echo '<ul class="review-list clearfix">
                             
                             <div class="btns clearfix">
                                                         
-                            <input type="hidden" id="_wpnonce" name="_wpnonce" value="946417170f" /><input type="hidden" name="_wp_http_referer" value="/educationpress/courses/learn-and-understand-nodejs/" /><form name="enrollment-process" method="post" action="http://www.demos.themecycle.com/educationpress/enrollment-process/"><button class="apply-button signup btn apply-button-enrollment-closed btn-orange btn-medium" data-link-old="http://www.demos.themecycle.com/educationpress/courses-signup/?course_id=501" data-course-id="501" >Comprar!</button><input type="hidden" id="_wpnonce" name="_wpnonce" value="946417170f" /><input type="hidden" name="_wp_http_referer" value="/educationpress/courses/learn-and-understand-nodejs/" /><input type="hidden" name="course_id" value="501" /></form>                                                                                                                
-                                                        </div>
+							<input type="hidden" id="_wpnonce" name="_wpnonce" value="946417170f" /><input type="hidden" name="_wp_http_referer" value="/educationpress/courses/learn-and-understand-nodejs/" />';  
+							                                                                                                         
+                                                       echo' </div>
                             
                             
                             <div class="course_rat clearfix">
