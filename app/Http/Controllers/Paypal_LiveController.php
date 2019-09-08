@@ -75,7 +75,7 @@ class Paypal_LiveController extends Controller
             {
                 
                 $request->nombre;
-                Session::put('email',$request->email);
+                
                 Session::put('id_curso',$request->nombre);
     
             $payer = new Payer();

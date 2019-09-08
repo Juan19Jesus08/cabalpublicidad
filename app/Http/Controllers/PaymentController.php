@@ -53,11 +53,13 @@ class PaymentController extends Controller
 
     public function payWithpaypal(Request $request)
     {
-       
+
+        $email=$correo=Session::get('email');
+        if(strlen ($email)>0)
+    {
         $query=DB::select("SELECT * FROM adquirir WHERE adquirir.email='$request->email' and adquirir.id_curso=$request->nombre");
         if (empty($query))
         {
-            
             $request->nombre;
             Session::put('email',$request->email);
             Session::put('id_curso',$request->nombre);
@@ -138,14 +140,18 @@ class PaymentController extends Controller
         \Session::put('error', 'Unknown error occurred');
         return Redirect::to('/');
 
-        }
-         
-        else
-        {
+           
+        } else{
+            Session::put('error','Este curso ya lo compraste!!');
             return Redirect::to('/');
+            }
         }
-
-    }
+        Session::put('error','No has iniciado sesion!');
+            return Redirect::to('/iniciar_sesion');
+     
+       
+    
+}
 
     public function getPaymentStatus()
     {
@@ -170,11 +176,11 @@ class PaymentController extends Controller
 
         if ($result->getState() == 'approved') {
             $fecha = date('y-m-d');
-            $correo=Session::get('email');
+            $email=$correo=Session::get('email');
             $id=Session::get('id_curso');
  
 
-            $query=DB::insert('insert into adquirir (email,id_curso,fecha_de_adquisicion,avance,certificado,comentario,calificacion,fecha_finalizacion) values ( ?, ?, ?, ?, ?,?,?,?)', [$correo, $id,$fecha,0,0,null,0,null]);        
+            $query=DB::insert('insert into adquirir (email,id_curso,fecha_de_adquisicion,avance,certificado,comentario,calificacion,fecha_finalizacion) values ( ?, ?, ?, ?, ?,?,?,?)', [$email, $id,$fecha,0,0,null,0,null]);        
             
             \Session::put('success', 'Payment success');
             //Session::forget('email');
