@@ -161,7 +161,7 @@ class Paypal_LiveController extends Controller
             }
         }
         Session::put('error','No has iniciado sesion!');
-            return Redirect::to('/inciciar_sesion');
+            return Redirect::to('/iniciar_sesion');
      
        
     
