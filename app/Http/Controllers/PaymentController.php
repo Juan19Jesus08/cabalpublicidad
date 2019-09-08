@@ -19,6 +19,10 @@ use PayPal\Rest\ApiContext;
 use Redirect;
 use Session;
 use URL;
+use DB;
+
+$id_curso;
+$email;
 
 class PaymentController extends Controller
 {
@@ -51,16 +55,26 @@ class PaymentController extends Controller
 
     public function payWithpaypal(Request $request)
     {
-        echo $request->amount;
-        echo $request->nombre;
-die();
-        $payer = new Payer();
+      
+        
+         
+         
+       
+        $query=DB::select("SELECT * FROM adquirir WHERE adquirir.email='$request->email' and adquirir.id_curso=$request->nombre");
+        if (empty($query))
+        {
+            
+            $request->nombre;
+            Session::put('email',$request->email);
+            Session::put('id_curso',$request->nombre);
+       
+            $payer = new Payer();
         $payer->setPaymentMethod('paypal');
 
         $item_1 = new Item();
 
-        $item_1->setName('Item 1') /** item name **/
-            ->setCurrency('USD')
+        $item_1->setName($request->get('nombre')) /** item name **/
+            ->setCurrency('MXN')
             ->setQuantity(1)
             ->setPrice($request->get('amount')); /** unit price **/
 
@@ -68,7 +82,7 @@ die();
         $item_list->setItems(array($item_1));
 
         $amount = new Amount();
-        $amount->setCurrency('USD')
+        $amount->setCurrency('MXN')
             ->setTotal($request->get('amount'));
 
         $transaction = new Transaction();
@@ -130,6 +144,13 @@ die();
         \Session::put('error', 'Unknown error occurred');
         return Redirect::to('/');
 
+        }
+         
+        else
+        {
+            return Redirect::to('/');
+        }
+
     }
 
     public function getPaymentStatus()
@@ -154,9 +175,16 @@ die();
         $result = $payment->execute($execution, $this->_api_context);
 
         if ($result->getState() == 'approved') {
+            $fecha = date('y-m-d');
+            $correo=Session::get('email');
+            $id=Session::get('id_curso');
+ 
 
+            $query=DB::insert('insert into adquirir (email,id_curso,fecha_de_adquisicion,avance,certificado,comentario,calificacion,fecha_finalizacion) values ( ?, ?, ?, ?, ?,?,?,?)', [$correo, $id,$fecha,0,0,null,0,null]);        
+            
             \Session::put('success', 'Payment success');
-            return Redirect::to('/');
+            Session::flush();
+            return Redirect::to('/mis_cursos');
 
         }
 

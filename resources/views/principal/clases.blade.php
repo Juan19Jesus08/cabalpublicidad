@@ -594,10 +594,10 @@ echo '<ul class="review-list clearfix">
 <!--INCICIO DE BLOQUE DE PHP2 -->    
 <form class="w3-container w3-display-middle w3-card-4 w3-padding-16" method="POST" id="payment-form"
           action="{!! URL::to('paypal') !!}">
-    	 
+		  {{ csrf_field() }}
 		  <input class="w3-input w3-border" id="amount" type="hidden" name="amount" value="<?php
 		  $valor= $_GET['clase_de'];
-		  $clase=  DB::select("SELECT clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
+		  $clase=  DB::select("SELECT cursos.id_curso as id_c,clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
 		  foreach($clase as $item)
 		  { 
 			  echo $item->precio;
@@ -606,13 +606,21 @@ echo '<ul class="review-list clearfix">
 		 ?>">
 		  <input class="w3-input w3-border" id="nombre" type="hidden" name="nombre" value="<?php
 		  $valor= $_GET['clase_de'];
-		  $clase=  DB::select("SELECT clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
+		  $clase=  DB::select("SELECT cursos.id_curso as id_c,clases.url,count(clases.id_clase)as cantidad_videos,CAST(sum(clases.duracion)as time)as duracion,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on cursos.id_curso=clases.id_curso where cursos.nombre='$valor' GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc ");
 		  foreach($clase as $item)
 		  { 
-			  echo $item->nombre;
+			  echo $item->id_c;
 		  } 
+		  
 		 
 		 ?>">
+
+		  <input class="w3-input w3-border" id="email" type="hidden" name="email" value="<?php use Illuminate\Support\Facades\Session; 
+              $email= Session::get('email');
+             echo  $email;
+             
+              
+             ?>">
 		 
     	  <button class="w3-btn w3-blue">Pay with PayPal</button>
     	</form>            
