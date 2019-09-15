@@ -33,8 +33,8 @@ class LoguinController extends Controller
             Session::put('contrasenia',$contrasenia);
             $correo=Session::get('email');
             $pass=Session::get('contrasenia');
-            echo '<br/>';
-            echo $correo."          ".$pass;
+            //echo '<br/>';
+            //echo $correo."          ".$pass;
             return redirect('/Admin_categoria');
 
 

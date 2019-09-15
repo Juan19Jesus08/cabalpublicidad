@@ -81,7 +81,7 @@ class CursosController extends Controller
 		$categoria = $input['categoria_show'];
 		$fecha = $input['fecha_show'];
 
-		echo $nombre."   ".$descripcion."   ".$precio."   ".$categoria."   ".$fecha."  ".$id;
+		//echo $nombre."   ".$descripcion."   ".$precio."   ".$categoria."   ".$fecha."  ".$id;
 
 	$query=DB::update("update  cursos set nombre='$nombre',descripcion='$descripcion',precio=$precio,id_categoria=$categoria,fecha_creacion='$fecha' where id_curso=?",[$id]);
 

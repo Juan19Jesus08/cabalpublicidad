@@ -128,13 +128,13 @@ class UsuarioController extends Controller
 		$confirmar_contraseña=$input['confirm_show'];
 		$message = '';
 
-		echo $email."   ".$contraseña."   ".$contraseña_nueva."   ".$confirmar_contraseña;
+		//echo $email."   ".$contraseña."   ".$contraseña_nueva."   ".$confirmar_contraseña;
 		$query2 = "select usuario.password,usuario.email from usuario where email='$email'";
 		$data2=DB::select($query2);
 
 		
 		if (Hash::check($contraseña, $data2[0]->password)) {
-			echo 'es igual al usuario';
+			//echo 'es igual al usuario';
 			if($contraseña_nueva==$confirmar_contraseña)
 			{
 				$encryptedPassword = bcrypt($confirmar_contraseña);

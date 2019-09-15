@@ -45,7 +45,7 @@ class CategoriaController extends Controller
     {
 		$categoria = $input['categoria_show'];
 		$id=$input['id_show'];
-		echo $categoria."   and   ".$id;
+		//echo $categoria."   and   ".$id;
 	
 		
 		$query=DB::delete("DELETE FROM categoria WHERE id_categoria='$id'");
@@ -64,7 +64,7 @@ class CategoriaController extends Controller
 	public function insertar(Request $input)
 	{
     $categoria = $input['categoria_show'];
-	echo $categoria;
+	//echo $categoria;
 	
 	$query=DB::insert('insert into categoria (id_categoria,descripcion) values (?, ?)', [null, $categoria]);
     return redirect()->action('CategoriaController@categoria_mostrar')->withInput();

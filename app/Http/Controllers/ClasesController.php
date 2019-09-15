@@ -62,10 +62,10 @@ class ClasesController extends Controller
 		
 		 }
 		 $this->duracion=substr($vTime,  2 );
-		 echo $vTime;
-		 echo '<br/>';
+		 //echo $vTime;
+		 //echo '<br/>';
 		//echo $resultado;
-		echo '<br/>';
+		//echo '<br/>';
 		$horas='00';
 		$minutos='00';
 		$segundos='00';
@@ -74,12 +74,12 @@ class ClasesController extends Controller
 			 $minutos=$this->tiempo('M');
 			 $segundos= $this->tiempo('S');
 
-		echo 'imprimo horas ->'.$horas ;
-		echo '<br/>';
-		echo 'imprimo minutos ->'.$minutos ;
-		echo '<br/>';
-		echo 'imprimo segundos ->'.$segundos ;
-		echo $resultado=$horas.':'.$minutos.':'.$segundos;
+		//echo 'imprimo horas ->'.$horas ;
+		//echo '<br/>';
+		//echo 'imprimo minutos ->'.$minutos ;
+		//echo '<br/>';
+		//echo 'imprimo segundos ->'.$segundos ;
+		//echo $resultado=$horas.':'.$minutos.':'.$segundos;
 		
     
     
@@ -116,24 +116,24 @@ class ClasesController extends Controller
 		
 		 }
 		 $this->duracion=substr($vTime,  2 );
-		 echo $vTime;
-		 echo '<br/>';
+		 //echo $vTime;
+		 //echo '<br/>';
 		//echo $resultado;
-		echo '<br/>';
-		$horas='00';
-		$minutos='00';
-		$segundos='00';
+		//echo '<br/>';
+		//$horas='00';
+		//$minutos='00';
+		//$segundos='00';
 
 			 $horas=$this->tiempo('H');
 			 $minutos=$this->tiempo('M');
 			 $segundos= $this->tiempo('S');
 
-		echo 'imprimo horas ->'.$horas ;
-		echo '<br/>';
-		echo 'imprimo minutos ->'.$minutos ;
-		echo '<br/>';
-		echo 'imprimo segundos ->'.$segundos ;
-		echo $resultado=$horas.':'.$minutos.':'.$segundos;
+		//echo 'imprimo horas ->'.$horas ;
+		//echo '<br/>';
+		//echo 'imprimo minutos ->'.$minutos ;
+		//echo '<br/>';
+		//echo 'imprimo segundos ->'.$segundos ;
+		//echo $resultado=$horas.':'.$minutos.':'.$segundos;
 		
 
 
@@ -155,8 +155,8 @@ class ClasesController extends Controller
             
             for($i; $i < strlen ($this->duracion); $i++)
             {
-                echo $this->duracion[$i];
-                echo '<br/>';
+                //echo $this->duracion[$i];
+                //echo '<br/>';
                 if($this->duracion[$i]!= $medida)
                 {
                 $horas = $horas.$this->duracion[$i];
