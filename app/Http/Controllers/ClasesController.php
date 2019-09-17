@@ -79,7 +79,7 @@ class ClasesController extends Controller
 		//echo 'imprimo minutos ->'.$minutos ;
 		//echo '<br/>';
 		//echo 'imprimo segundos ->'.$segundos ;
-		//echo $resultado=$horas.':'.$minutos.':'.$segundos;
+		 $resultado=$horas.':'.$minutos.':'.$segundos;
 		
     
     
@@ -133,7 +133,7 @@ class ClasesController extends Controller
 		//echo 'imprimo minutos ->'.$minutos ;
 		//echo '<br/>';
 		//echo 'imprimo segundos ->'.$segundos ;
-		//echo $resultado=$horas.':'.$minutos.':'.$segundos;
+		 $resultado=$horas.':'.$minutos.':'.$segundos;
 		
 
 
