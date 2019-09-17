@@ -62,16 +62,16 @@
 {{ Form::open(array('action' => 'UsuarioController@Actualizar_contraseña', 'method' => 'post','id'=>'lostpasswordform','name'=>'lostpasswordform')) }}
 	<p>
 		<label for="user_login" > Contraseña actual<br />
-        {{ Form::password('contrasenia_show', array('id' => 'contrasenia_show', )) }}
+        {{ Form::password('contrasenia_show', array('id' => 'contrasenia_show','required' => 'required' )) }}
         {{ Form::hidden('email_show', $email) }}
         <br />
 		</label>
         <label for="user_login" > Contraseña nueva<br />
-        {{ Form::password('new_show', array('id' => 'new_show', )) }}
+        {{ Form::password('new_show', array('id' => 'new_show', 'required' => 'required')) }}
         <br />
 		</label>
         <label for="user_login" > Confirmar contraseña nueva<br />
-        {{ Form::password('confirm_show', array('id' => 'confirm_show',)) }}
+        {{ Form::password('confirm_show', array('id' => 'confirm_show','required' => 'required')) }}
         
 		</label>
        

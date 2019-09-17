@@ -267,11 +267,9 @@ foreach( $array as $item)
   <div class="container">
      <div class="row">
      				<div class="col-xs-12 col-sm-3 footer-widget">
-				<aside id="text-2" class="widget widget_text"><h6 class="widget-title">About EducationPress</h6>			<div class="textwidget"><p>Lorem ipsum dolor sit amet, consectet
-ur adipiscing Nunc varius sed dolor 
-sed sagittis will be helpful.</p>
-<p>Morbi quis eros ornare, rhoncus lorem
-efficitur erat. Morbi est at.</p></div>
+				<aside id="text-2" class="widget widget_text"><h6 class="widget-title">Acerca  de CabalPublicidad</h6>			<div class="textwidget">
+        <p><a href="/acerca_de/" rel="category tag">¿Quienes somos?</a></p>
+</div>
 		</aside>			</div>
 						<div class="col-xs-12 col-sm-3 footer-widget">
 				<aside id="educationpress_recent_posts_widget-3" class="widget recent_posts_widget"><h6 class="widget-title">Recent Posts</h6> <ul>
