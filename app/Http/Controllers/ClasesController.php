@@ -52,7 +52,7 @@ class ClasesController extends Controller
 	
 	$resultado='';
 		
-		$apikey='AIzaSyBU1lZtClzanCeW37ILQ2UB70X-VatLSps';
+		$apikey='AIzaSyCtK_3Qs1e6hyq-l3PedrnrEDPcPpHmQF4';
 		$videoID=$url;
 	   $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=$videoID&key=$apikey");
 	   $duration = json_decode($dur, true);
@@ -106,7 +106,7 @@ class ClasesController extends Controller
 		$curso = $input['curso_show'];
 		$resultado='';
 		
-		$apikey='AIzaSyBU1lZtClzanCeW37ILQ2UB70X-VatLSps';
+		$apikey='AIzaSyCtK_3Qs1e6hyq-l3PedrnrEDPcPpHmQF4';
 		$videoID=$url;
 	   $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=$videoID&key=$apikey");
 	   $duration = json_decode($dur, true);

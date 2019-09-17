@@ -158,58 +158,49 @@ Skip to content</a>
              
              
               
-<div id="secondary" class="widget-area col-xs-12 col-sm-4" role="complementary">
-	<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://www.demos.themecycle.com/educationpress/">
-    <label>
-        <span class="screen-reader-text">Search for:</span>
-        <input type="search" class="search-field"
-            placeholder="Search …"
-            value="" name="s"
-            title="Search for:" />
-                 </label>
-    <input type="submit" class="search-submit"
-        value="Search" />
-</form></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
-					<li>
-				<a href="http://www.demos.themecycle.com/educationpress/the-design-of-html5/">The Design of HTML5</a>
-						</li>
-					<li>
-				<a href="http://www.demos.themecycle.com/educationpress/your-one-stop-solution-for-development-needs/">Your one stop Solution for Development Needs</a>
-						</li>
-					<li>
-				<a href="http://www.demos.themecycle.com/educationpress/audio-tutorial-for-wordpress/">Audio tutorial for WordPress</a>
-						</li>
-					<li>
-				<a href="http://www.demos.themecycle.com/educationpress/tricks-and-tips-for-adobe-photoshopcc-2015/">Tricks and Tips for Adobe Photoshopcc 2015</a>
-						</li>
-					<li>
-				<a href="http://www.demos.themecycle.com/educationpress/solvis-denial/">Post Quote Format</a>
-						</li>
+			 <div id="secondary" class="widget-area col-xs-12 col-sm-4" role="complementary">
+	<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Cursos Nuevos</h3>		<ul>
+			<?php		
+			$cursos=  DB::select("select * from cursos order by cursos.id_curso desc limit 6 ");
+			foreach($cursos as $item)
+			{  
+				echo'<li class="cat-item cat-item-14"><h5 >'.$item->nombre.'</h5>';
+			}
+						?>
 				</ul>
-		</aside>		<aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
-	<li class="cat-item cat-item-14"><a href="http://www.demos.themecycle.com/educationpress/category/html5-and-css3/" >HTML5 and CSS3</a>
-</li>
-	<li class="cat-item cat-item-13"><a href="http://www.demos.themecycle.com/educationpress/category/java-script-development/" >Java Script Development</a>
-</li>
-	<li class="cat-item cat-item-16"><a href="http://www.demos.themecycle.com/educationpress/category/music/" >Music</a>
-</li>
-	<li class="cat-item cat-item-26"><a href="http://www.demos.themecycle.com/educationpress/category/news/" >News</a>
-</li>
-	<li class="cat-item cat-item-1"><a href="http://www.demos.themecycle.com/educationpress/category/online-courses/" >Online Courses</a>
-</li>
-	<li class="cat-item cat-item-15"><a href="http://www.demos.themecycle.com/educationpress/category/web-development/" >Web Development</a>
-</li>
+		</aside>		<aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categorias Nuevas</h3>		<ul>
+		<?php
+		 $clase=  DB::select("select * from categoria order by categoria.id_categoria desc limit 6 ");
+		 foreach($clase as $item)
+		 {  
+
+	echo'<li class="cat-item cat-item-14"><h5 >'.$item->descripcion.'</h5>
+</li>';
+		 }
+?>
 		</ul>
-</aside><aside id="archives-2" class="widget widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
-			<li><a href='http://www.demos.themecycle.com/educationpress/2016/03/'>March 2016</a></li>
-		</ul>
-		</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='http://themecycle.com' rel='external nofollow' class='url'>Greg Christman</a></span> on <a href="http://www.demos.themecycle.com/educationpress/discussions/test/#comment-114">Test</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://themecycle.com' rel='external nofollow' class='url'>Greg Christman</a></span> on <a href="http://www.demos.themecycle.com/educationpress/discussions/what-is-the-difference-between-an-object-and-a-function/#comment-55">What is the difference between an object and a function</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://themecycle.com' rel='external nofollow' class='url'>Greg Christman</a></span> on <a href="http://www.demos.themecycle.com/educationpress/discussions/how-are-you/#comment-54">how are you?</a></li><li class="recentcomments"><span class="comment-author-link">Jasper Buijnsters</span> on <a href="http://www.demos.themecycle.com/educationpress/discussions/what-is-the-difference-between-an-object-and-a-function/#comment-52">What is the difference between an object and a function</a></li><li class="recentcomments"><span class="comment-author-link">Greg Christman</span> on <a href="http://www.demos.themecycle.com/educationpress/simplifying-our-pricing/#comment-50">Simplifying our pricing</a></li></ul></aside></div><!-- #secondary -->
+</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Comentarios</h3><ul id="recentcomments">
+
+<?php
+$comentarios=  DB::select("SELECT * from adquirir");
+foreach($comentarios as $item)
+{
+	$cont= strlen($item->comentario);
+	if($cont>0)
+	{
+		echo '<li class="recentcomments"><span class="comment-author-link"></span>'.$item->comentario.' </li>';
+
+	}
+}
+
+?></ul></aside></div><!-- #secondary -->
              </div> <!-- row -->
          </div> <!-- container -->
   </div><!-- #primary -->
  </div> <!-- page-spacer #end  --> 	 
 </div>
 <!-- #content -->
+
 
 <!-- #colophon -->
 </div>
@@ -224,7 +215,9 @@ Skip to content</a>
 			<!--ajax step content goes here-->
 		</div>
 	</div>
-</div><script type="text/javascript">(function() {function addEventListener(element,event,handler) {
+</div>
+
+<script type="text/javascript">(function() {function addEventListener(element,event,handler) {
 	if(element.addEventListener) {
 		element.addEventListener(event,handler, false);
 	} else if(element.attachEvent){
@@ -258,16 +251,26 @@ if( testInput.type !== 'date') {
 	}
 }
 
-})();<script type='text/javascript'>
+})();</script><script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
 /* <![CDATA[ */
 var _wpcf7 = {"loaderUrl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
 /* ]]> */
 </script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5.1'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/coursepress/js/jquery.knob.js?ver=1.3.4.3'></script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-includes/js/wp-embed.min.js?ver=4.6.15'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var mc4wp_forms_config = [];
 /* ]]> */
 </script>
+<script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.min.js?ver=4.0.9'></script>
+
+
+
+
+
 <!--[if lte IE 9]>
 <script type='text/javascript' src='http://www.demos.themecycle.com/educationpress/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.0.9'></script>
 <![endif]-->

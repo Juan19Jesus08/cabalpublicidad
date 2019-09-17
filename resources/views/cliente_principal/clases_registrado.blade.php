@@ -221,6 +221,9 @@ foreach($clase as $item)
      $comentarios = DB::select("select * from adquirir inner join cursos on adquirir.id_curso=cursos.id_curso where cursos.nombre='$valor' ");
      foreach($comentarios as $item)
      {
+		$cont= strlen($item->comentario);
+		if($cont>0)
+		{
 echo '<ul class="review-list clearfix">
         	  <div class="testimonial_group">     <li class="clearfix" itemtype="http://schema.org/Review" itemscope="">
     <img  src="http://0.gravatar.com/avatar/9e03a9384660c08351b606e5cd182d3e?s=150&#038;d=mm&#038;r=g" srcset="http://0.gravatar.com/avatar/9e03a9384660c08351b606e5cd182d3e?s=300&amp;d=mm&amp;r=g 2x" class="avatar avatar-150 photo author" height="150" width="150" />    <div class="review-right">
@@ -242,7 +245,8 @@ echo '<ul class="review-list clearfix">
     			</div>
 				<div class="clear"></div>
 				        	
-        </ul>';
+		</ul>';
+		}
      }
         ?>
 <h3>Añadir un comentario</h3>

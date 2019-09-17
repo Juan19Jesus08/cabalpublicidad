@@ -20,10 +20,10 @@
 	     
    
         #login h1 a, .login h1 a {
-            background: url(http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/logo.png) no-repeat center;
+            background: url(images/cabal.jpg) no-repeat center;
 			background-size:80% 80%;
 			width:auto;
-			height:70px;
+			height:110px;
             
         }
     

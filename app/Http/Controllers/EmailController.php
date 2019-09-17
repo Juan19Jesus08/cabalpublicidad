@@ -14,11 +14,11 @@ class EmailController extends Controller
 {
    public function email($email, $nombre, $password){
        // Configuration
-       $smtpAddress = 'smtp.live.com';
-       $port = 587;
-       $encryption = 'tls';
-       $yourEmail = 'septjose@hotmail.com';
-       $yourPassword = 'Erinbrauer';
+       $smtpAddress = 'smtp.gmail.com';
+       $port = 465;
+       $encryption = 'ssl';
+       $yourEmail = 'robertocabal1981@gmail.com';
+       $yourPassword = 'cuentagoogle1';
 
        // Prepare transport
 $transport = (new \Swift_SmtpTransport($smtpAddress,$port,$encryption))

@@ -115,9 +115,16 @@ class UsuarioController extends Controller
 	 function Actualizar_nombre(Request $input){
 		$nombre = $input['nombre_show'];
 		$email = $input['email_show'];
+		$cont= strlen($nombre);
+	if($cont>0)
+	{
 
 		$query2=DB::update("update  usuario set nombre='$nombre' where email=?",[$email]);
-		return redirect('/perfil');
+		return redirect('/');
+	}
+	else{
+		return redirect('/mi_nombre');
+	}
 	 }
 
 	 function Actualizar_contraseña(Request $input){
@@ -139,7 +146,7 @@ class UsuarioController extends Controller
 			{
 				$encryptedPassword = bcrypt($confirmar_contraseña);
 			$query2=DB::update("update  usuario set password='$encryptedPassword' where email=?",[$email]);
-			return redirect('/perfil');
+			return redirect('/');
 			}
 			else{
 				

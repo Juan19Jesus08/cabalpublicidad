@@ -1,6 +1,7 @@
 <?php use Illuminate\Support\Facades\Session; 
               $email= Session::get('email');
-             echo  $cont= strlen($email);
+            // echo  
+            $cont= strlen($email);
              
               
              ?>
@@ -181,7 +182,7 @@ Skip to content</a>
     <div class="row">
      <!-- #site-branding #start -->
      <div class="site-branding col-xs-12 col-sm-3">
-          <a href="/" rel="home"><img src="/images/cabal.jpg" class="brand" alt="EducationPress" /> </a>
+          <a href="/" rel="home"><img src="/images/cabal.jpg" class="brand" alt="Cabal" /> </a>
          
 
     </div>

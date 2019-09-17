@@ -1,5 +1,5 @@
 
-<img src="/images/cabal.jpg" alt="Flowers in Chania"> 
+<img src="/images/cabal.jpg" alt="Cabal"> 
 {{ $message }}
 <br/>
 <br/>
