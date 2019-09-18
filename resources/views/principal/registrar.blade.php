@@ -162,7 +162,7 @@ Skip to content</a>
 								
 								
 								<label class="full">
-                  Already have an account? <a href="/iniciar_sesion/">Login to your account</a>!                </label>
+                  Tengo una cuenta <a href="/iniciar_sesion/">Iniciar sesion</a>!                </label>
 
 								<label class="full-right">
 								

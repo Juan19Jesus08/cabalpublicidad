@@ -108,7 +108,7 @@ Skip to content</a>
                <main id="main" class="site-main col-xs-12 col-sm-8" >
     <div class="col-xs-12 col-sm-6 login-form">
 	<?php 
-               $error=Session::get('error');
+               $error=Session::get('error2');
                if(strlen ($error)>0)
                {
                  echo '<h1>'.$error.'</h1>';

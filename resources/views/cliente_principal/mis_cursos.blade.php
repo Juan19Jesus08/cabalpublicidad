@@ -142,7 +142,7 @@ Skip to content</a>
        <div class="container">
         	<div class="row">
 
-		<main id="main" class="site-main col-xs-12 col-sm-9 three-column"  >
+		<main id="main" class="site-main col-xs-12 col-sm-9 four-column"  >
                 
                 
          <div class="well well-sm row">
@@ -207,6 +207,17 @@ Skip to content</a>
 
  
 <div id="secondary" class="widget-area col-xs-12 col-sm-4 pull-right col-sm-3" role="complementary">
+<aside id="cp_widget_categories-2" class="widget cp_course_categories"><h3 class="widget-title">Categorias</h3>		<ul>
+<?php
+ $clase=  DB::select("select * from categoria  ");
+ foreach($clase as $item)
+ {  
+	echo'	<li>
+	<a title="All Courses" href="/cursos?categoria='.$item->descripcion.'">'. $item->descripcion.'</a>							</li>';
+ }
+					?>
+					</ul>
+		</aside>
 	
  
 			 </div> <!-- row -->

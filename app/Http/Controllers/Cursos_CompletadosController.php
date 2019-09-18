@@ -53,7 +53,7 @@ class Cursos_CompletadosController extends Controller
             
             $cursos=DB::select("SELECT * from cursos where cursos.id_curso=$id_curso ");
             $nombres=DB::select("SELECT * from usuario where usuario.email='$email' ");
-            $adquirir=DB::select("SELECT * from adquirir where adquirir.email='$email' ");
+            $adquirir=DB::select("SELECT * from adquirir where adquirir.email='$email' and adquirir.id_curso=$id_curso");
              $fecha=$adquirir[0]->fecha_finalizacion;
              $nombre=$nombres[0]->nombre;
              $curso=$cursos[0]->nombre;

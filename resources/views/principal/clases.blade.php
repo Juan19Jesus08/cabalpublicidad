@@ -622,7 +622,7 @@ echo '<ul class="review-list clearfix">
 
 		 
 		 
-    	  <button class="w3-btn w3-blue">Pay with PayPal</button>
+    	  <button class="w3-btn w3-blue">Pagar con  PayPal</button>
     	</form>            
 <?php
  $valor= $_GET['clase_de'];

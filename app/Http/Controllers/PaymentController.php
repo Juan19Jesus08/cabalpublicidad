@@ -56,14 +56,14 @@ class PaymentController extends Controller
 
         $email=$correo=Session::get('email');
         if(strlen ($email)>0)
-    {
-        $query=DB::select("SELECT * FROM adquirir WHERE adquirir.email='$request->email' and adquirir.id_curso=$request->nombre");
-        if (empty($query))
         {
-
-            $request->nombre;
-            //Session::put('email',$request->email);
-            Session::put('id_curso',$request->nombre);
+            $query=DB::select("SELECT * FROM adquirir WHERE adquirir.email='$email' and adquirir.id_curso=$request->nombre");
+            if (empty($query))
+            {
+                
+                $request->nombre;
+                
+                Session::put('id_curso',$request->nombre);
        
             $payer = new Payer();
         $payer->setPaymentMethod('paypal');
@@ -147,7 +147,7 @@ class PaymentController extends Controller
             return Redirect::to('/');
             }
         }
-        Session::put('error','No has iniciado sesion!');
+        Session::put('error2','No has iniciado sesion!');
             return Redirect::to('/iniciar_sesion');
      
        

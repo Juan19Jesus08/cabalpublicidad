@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Hash;
 use DB;
 
 class RolController extends Controller
@@ -25,7 +27,7 @@ class RolController extends Controller
 		$videos_populares=DB::select('SELECT clases.url,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso left join clases on clases.id_curso=cursos.id_curso GROUP BY cursos.id_curso ORDER BY(vendidos) desc limit 6 ');
         $videos_recientes=DB::select('SELECT clases.url,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on clases.id_curso=cursos.id_curso GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc limit 6  ');
 		
-        
+		Session::forget('error2');
 		return view('/principal/index',compact('videos_populares','videos_recientes'));
 		//return ('/Rol/Rol')->withData($data);
 		//return view('rol',compact('rol'));
