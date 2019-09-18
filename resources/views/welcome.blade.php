@@ -268,7 +268,8 @@ foreach( $array as $item)
      <div class="row">
      				<div class="col-xs-12 col-sm-3 footer-widget">
 				<aside id="text-2" class="widget widget_text"><h6 class="widget-title">Acerca  de CabalPublicidad</h6>			<div class="textwidget">
-        <p><a href="/acerca_de/" rel="category tag">¿Quienes somos?</a></p>
+        <p>
+        <a href="/acerca_de/" rel="category tag">¿Quienes somos?</a></p>
 </div>
 		</aside>			</div>
 						<div class="col-xs-12 col-sm-3 footer-widget">
