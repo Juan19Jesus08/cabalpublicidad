@@ -273,80 +273,55 @@ foreach( $array as $item)
 </div>
 		</aside>			</div>
 						<div class="col-xs-12 col-sm-3 footer-widget">
-				<aside id="educationpress_recent_posts_widget-3" class="widget recent_posts_widget"><h6 class="widget-title">Recent Posts</h6> <ul>
-                                            <li class="clearfix">
-                            <img width="150" height="150" src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/24-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="24" /> 
-                            <div class="simi-co">
-                            <h5><a href="http://www.demos.themecycle.com/educationpress/audio-editing-basics-with-reaper/">Audio Editing Basics with Reaper</a></h5>
-                            <p class="meta"><a href="http://www.demos.themecycle.com/educationpress/category/online-courses/" rel="category tag">Online Courses</a></p>
-                            </div>
-                         </li>
-                                                <li class="clearfix">
-                            <img width="150" height="150" src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/21-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="21" /> 
-                            <div class="simi-co">
-                            <h5><a href="http://www.demos.themecycle.com/educationpress/ceo-takes-to-the-fortune-global-forum-stage/">CEO takes to the Fortune Global Forum stage</a></h5>
-                            <p class="meta"><a href="http://www.demos.themecycle.com/educationpress/category/online-courses/" rel="category tag">Online Courses</a></p>
-                            </div>
-                         </li>
+				<aside id="educationpress_recent_posts_widget-3" class="widget recent_posts_widget"><h6 class="widget-title">Cursos Recientes</h6> <ul>
+                                           
+                                           <?php
+                                           $videos_recientes=DB::select('SELECT categoria.descripcion as cate,clases.url,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on clases.id_curso=cursos.id_curso inner join categoria on categoria.id_categoria=cursos.id_categoria GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc limit 2 ');
+                                           //print_r($videos_recientes);
+                            foreach($videos_recientes as $item)
+                            {
+                              echo '<li class="clearfix">
+                              <iframe width="150" height="150" src="https://www.youtube.com/embed/'.$item->url.'"?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0"; ?>" ></iframe>
+                              <div class="simi-co">
+                              <h5>'.$item->nombre.'</h5>
+                              <p class="meta">'.$item->cate.'s</p>
+                              </div>
+                           </li>';
+                            }
+                         
+                         ?>
                                              </ul>
                 </aside>			</div>
 						<div class="col-xs-12 col-sm-3 footer-widget">
-				<aside id="educationpress_courses_widget-6" class="widget widget_courses"><h6 class="widget-title">Recent Courses</h6> <ul>
-                                             <li class="clearfix">
+				<aside id="educationpress_courses_widget-6" class="widget widget_courses"><h6 class="widget-title">Cursos Populares</h6> <ul>
+                                            <?php
+                                             
+                                            $videos_populares=DB::select('SELECT categoria.descripcion as cate,clases.url,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso left join clases on clases.id_curso=cursos.id_curso inner join categoria on cursos.id_categoria=categoria.id_categoria GROUP BY cursos.id_curso ORDER BY(vendidos) desc limit 2 ');
+                                            foreach($videos_populares as $item)
+                                            {
+                                              echo '  <li class="clearfix">
                            
-                            <div class="course-thumbnail course-featured-media course-featured-media-2558 thumb"><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2018/03/protocoloacrilico-perfil-instagram-150-360x270.png" class="course-media-img" alt="Escultura Dental" /></div> 
-                            <div class="simi-co">
-                            <h5><a href="http://www.demos.themecycle.com/educationpress/courses/escultura-dental/">Escultura Dental</a></h5>
-                            <p class="meta"><a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a></p>
-                            <p><span class="simi-price">Free</span> 
-                            <span class="rating">
-                            										<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-																			<i class="glyphicons glyphicon-star-empty"></i>
-									                            </span></p>
-                            </div>
-                         </li>
-                                                <li class="clearfix">
-                           
-                            <div class="course-thumbnail course-featured-media course-featured-media-501 thumb"><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/web2-360x270.jpg" class="course-media-img" alt="Learn and Understand NodeJS" /></div> 
-                            <div class="simi-co">
-                            <h5><a href="http://www.demos.themecycle.com/educationpress/courses/learn-and-understand-nodejs/">Learn and Understand NodeJS</a></h5>
-                            <p class="meta"><a href="http://www.demos.themecycle.com/educationpress/instructor/emmawilson/">Emma Wilson</a>,<a href="http://www.demos.themecycle.com/educationpress/instructor/instructor/">Greg Christman</a></p>
-                            <p><span class="simi-price">&#x24;80</span> 
-                            <span class="rating">
-                            										<i class="glyphicons glyphicon-star"></i>
-									
-																			<i class="glyphicons glyphicon-star"></i>
-									
-																			<i class="glyphicons glyphicon-star"></i>
-									
-																			<i class="glyphicons glyphicon-star"></i>
-									
-																			<i class="glyphicons glyphicon-star"></i>
-									
-									                            </span></p>
-                            </div>
-                         </li>
-                                             </ul>
+                                              <div class="course-thumbnail course-featured-media course-featured-media-2558 thumb"><iframe width="150" height="150" src="https://www.youtube.com/embed/'.$item->url.'"?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0"; ?>" ></iframe></div> 
+                                              <div class="simi-co">
+                                              <h5>'.$item->nombre.'</h5>
+                                              <p class="meta">'.$item->cate.'</p>
+                                               
+                                              <span class="rating">
+                                                                  <i class="glyphicons glyphicon-star-empty"></i>
+                                                        <i class="glyphicons glyphicon-star-empty"></i>
+                                                        <i class="glyphicons glyphicon-star-empty"></i>
+                                                        <i class="glyphicons glyphicon-star-empty"></i>
+                                                        <i class="glyphicons glyphicon-star-empty"></i>
+                                                                </span></p>
+                                              </div>
+                                           </li>';
+                                            }
+                                         
+                                                
+                        ?>                     </ul>
                 </aside>			</div>
 						<div class="col-xs-12 col-sm-3 footer-widget">
-				<aside id="text-3" class="widget widget_text"><h6 class="widget-title">Quick Contact</h6>			<div class="textwidget"><div role="form" class="wpcf7" id="wpcf7-f57-o1" lang="en-US" dir="ltr">
-<div class="screen-reader-response"></div>
-<form action="/educationpress/#wpcf7-f57-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="57" />
-<input type="hidden" name="_wpcf7_version" value="4.5.1" />
-<input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f57-o1" />
-<input type="hidden" name="_wpnonce" value="e79565ec43" />
-</div>
-<p><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your email address" /></span> </p>
-<p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Type your message"></textarea></span> </p>
-<div class="quicksubmit"><input type="submit" value="&rarr;" class="wpcf7-form-control wpcf7-submit" /></div>
-<div class="wpcf7-response-output wpcf7-display-none"></div></form></div></div>
-		</aside>			</div>
+						</div>
 			        
     </div>
   </div><!--container #end  -->
