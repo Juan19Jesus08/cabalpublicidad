@@ -116,8 +116,10 @@ Skip to content</a>
 <li>Disfrutar  las clases de tu curso.</li>
 <li>Descargar tu certificado.</li>
 </ul></div>
-		</div></div><div class="panel-grid-cell" id="pgc-58-0-1" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-58-0-1-0" data-index="1"><h3 class="widget-title">Encuentra un curso y registrate!</h3>			<div class="textwidget"><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/find_course_img.jpg" alt="" />
-</br>
+		</div></div><div class="panel-grid-cell" id="pgc-58-0-1" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-58-0-1-0" data-index="1"><h3 class="widget-title">Encuentra un curso y registrate!</h3>			<div class="textwidget"><img src="/images/cursos_online.jpg" alt="" />
+<p>
+
+</p>
 <a class="btn btn-orange btn-large" href="/todos/">Ver todos los cursos <i class="lnr lnr-arrow-right"></i></a></div>
 		</div></div></div></div><div class="panel-grid" id="pg-58-1" ><div class="panel-grid-cell" id="pgc-58-1-0" ><div class="so-panel widget widget_aboutus-how-it-works panel-first-child panel-last-child" id="panel-58-1-0-0" data-index="2"><div class="so-widget-aboutus-how-it-works so-widget-aboutus-how-it-works-default-d75171398898"><section class="howitworks">
             <div class="container">
