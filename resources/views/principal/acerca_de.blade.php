@@ -159,56 +159,7 @@ Skip to content</a>
             	 </div> <!--row #end  -->
 	        </div><!-- container #end -->
  </section></div></div></div></div><div class="panel-grid" id="pg-58-2" ><div class="panel-row-style-container container panel-row-style" ><div class="panel-grid-cell" id="pgc-58-2-0" ><div class="so-panel widget widget_aboutus-meet-our-teachers panel-first-child" id="panel-58-2-0-0" data-index="3"><div class="so-widget-aboutus-meet-our-teachers so-widget-aboutus-meet-our-teachers-default-d75171398898"><section class="meet-teachers">
-            <div class="container">
-            	<div class="row">
-                		
-                    <h2 class="text-center head-border-default">Meet Our Teachers</h2>
-                            		
-                        <div class="col-xs-12 col-sm-2 teacher">
-                            <a href="http://www.demos.themecycle.com/educationpress/instructor/000000/"><img alt='' src='http://0.gravatar.com/avatar/6004fd6f029792fc9e42d70139579df0?s=300&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/6004fd6f029792fc9e42d70139579df0?s=600&amp;d=mm&amp;r=g 2x' class='avatar avatar-300 photo' height='300' width='300' /></a>
-                            <h4><a href="http://www.demos.themecycle.com/educationpress/instructor/000000/">0000 0000 </a></h4>
-                                                        <ul class="social-icons">
-                                                                                                                               </ul>
-                         </div> <!-- teacher #end -->
-                 	
-                        <div class="col-xs-12 col-sm-2 teacher">
-                            <a href="http://www.demos.themecycle.com/educationpress/instructor/abel/"><img alt='' src='http://1.gravatar.com/avatar/4af8c4d4a81edb28b2bdd43ee11fee66?s=300&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4af8c4d4a81edb28b2bdd43ee11fee66?s=600&amp;d=mm&amp;r=g 2x' class='avatar avatar-300 photo' height='300' width='300' /></a>
-                            <h4><a href="http://www.demos.themecycle.com/educationpress/instructor/abel/">Abelardo Jonas </a></h4>
-                                                        <ul class="social-icons">
-                                                                                                                               </ul>
-                         </div> <!-- teacher #end -->
-                 	
-                        <div class="col-xs-12 col-sm-2 teacher">
-                            <a href="http://www.demos.themecycle.com/educationpress/instructor/123342534534534543/"><img alt='' src='http://2.gravatar.com/avatar/87c9c3843f4fa3e6634feb0014e84032?s=300&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/87c9c3843f4fa3e6634feb0014e84032?s=600&amp;d=mm&amp;r=g 2x' class='avatar avatar-300 photo' height='300' width='300' /></a>
-                            <h4><a href="http://www.demos.themecycle.com/educationpress/instructor/123342534534534543/">123 123 </a></h4>
-                                                        <ul class="social-icons">
-                                                                                                                               </ul>
-                         </div> <!-- teacher #end -->
-                 	
-                        <div class="col-xs-12 col-sm-2 teacher">
-                            <a href="http://www.demos.themecycle.com/educationpress/instructor/aaaaa/"><img alt='' src='http://1.gravatar.com/avatar/11a2ac6a9d337b3054e6ebd0101b7961?s=300&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/11a2ac6a9d337b3054e6ebd0101b7961?s=600&amp;d=mm&amp;r=g 2x' class='avatar avatar-300 photo' height='300' width='300' /></a>
-                            <h4><a href="http://www.demos.themecycle.com/educationpress/instructor/aaaaa/">a fg </a></h4>
-                                                        <ul class="social-icons">
-                                                                                                                               </ul>
-                         </div> <!-- teacher #end -->
-                 	
-                        <div class="col-xs-12 col-sm-2 teacher">
-                            <a href="http://www.demos.themecycle.com/educationpress/instructor/abhishek/"><img alt='' src='http://1.gravatar.com/avatar/43a6e87855cba54fdaf0693e91bba902?s=300&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/43a6e87855cba54fdaf0693e91bba902?s=600&amp;d=mm&amp;r=g 2x' class='avatar avatar-300 photo' height='300' width='300' /></a>
-                            <h4><a href="http://www.demos.themecycle.com/educationpress/instructor/abhishek/">Abasdfhui kjshdf </a></h4>
-                                                        <ul class="social-icons">
-                                                                                                                               </ul>
-                         </div> <!-- teacher #end -->
-                 	
-                        <div class="col-xs-12 col-sm-2 teacher">
-                            <a href="http://www.demos.themecycle.com/educationpress/instructor/aaaaaaaaaaaa/"><img alt='' src='http://0.gravatar.com/avatar/6bf4850de13d1c8969123b375bdb7ea4?s=300&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/6bf4850de13d1c8969123b375bdb7ea4?s=600&amp;d=mm&amp;r=g 2x' class='avatar avatar-300 photo' height='300' width='300' /></a>
-                            <h4><a href="http://www.demos.themecycle.com/educationpress/instructor/aaaaaaaaaaaa/">aaa aaaaa </a></h4>
-                                                        <ul class="social-icons">
-                                                                                                                               </ul>
-                         </div> <!-- teacher #end -->
-                                 
-               </div> <!--row #end  -->
-         </div><!-- container #end -->
-    </section></div></div><div class="so-panel widget widget_aboutus-partnering-with-us panel-last-child" id="panel-58-2-0-1" data-index="4"><div class="so-widget-aboutus-partnering-with-us so-widget-aboutus-partnering-with-us-default-d75171398898"><section class="partnering-with-us">
+                </section></div></div><div class="so-panel widget widget_aboutus-partnering-with-us panel-last-child" id="panel-58-2-0-1" data-index="4"><div class="so-widget-aboutus-partnering-with-us so-widget-aboutus-partnering-with-us-default-d75171398898"><section class="partnering-with-us">
     	<div class="container">
         	<div class="row">
             	<h2 class="text-center head-border-default">Partnering With Us</h2>

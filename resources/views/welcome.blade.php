@@ -269,28 +269,38 @@ foreach( $array as $item)
      				<div class="col-xs-12 col-sm-3 footer-widget">
 				<aside id="text-2" class="widget widget_text"><h6 class="widget-title">Acerca  de CabalPublicidad</h6>			<div class="textwidget">
         <p>
+        <img src="/images/cabal.jpg" alt="cabal" width="150" height="150">
+        <br/>
         <a href="/acerca_de/" rel="category tag">¿Quienes somos?</a></p>
 </div>
 		</aside>			</div>
 						<div class="col-xs-12 col-sm-3 footer-widget">
-				<aside id="educationpress_recent_posts_widget-3" class="widget recent_posts_widget"><h6 class="widget-title">Cursos Recientes</h6> <ul>
-                                           
-                                           <?php
-                                           $videos_recientes=DB::select('SELECT categoria.descripcion as cate,clases.url,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on clases.id_curso=cursos.id_curso inner join categoria on categoria.id_categoria=cursos.id_categoria GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc limit 2 ');
-                                           //print_r($videos_recientes);
-                            foreach($videos_recientes as $item)
-                            {
-                              echo '<li class="clearfix">
-                              <iframe width="150" height="150" src="https://www.youtube.com/embed/'.$item->url.'"?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0"; ?>" ></iframe>
-                              <div class="simi-co">
-                              <h5>'.$item->nombre.'</h5>
-                              <p class="meta">'.$item->cate.'s</p>
-                              </div>
-                           </li>';
-                            }
-                         
-                         ?>
-                                             </ul>
+            <aside id="educationpress_courses_widget-6" class="widget widget_courses"><h6 class="widget-title">Cursos recientes</h6> <ul>
+                                            <?php
+                                             
+                                            $videos_populares=DB::select('SELECT categoria.descripcion as cate,clases.url,cursos.fecha_creacion,cursos.nombre,cursos.descripcion,cursos.precio,IFNULL(COUNT(adquirir.id_curso), 0)as vendidos,IFNULL(TRUNCATE(AVG(adquirir.calificacion),0),0) as calificacion FROM cursos LEFT JOIN adquirir ON cursos.id_curso = adquirir.id_curso inner join clases on clases.id_curso=cursos.id_curso inner join categoria on cursos.id_categoria=categoria.id_categoria GROUP BY cursos.id_curso ORDER BY(cursos.fecha_creacion) desc limit 2 ');
+                                            foreach($videos_populares as $item)
+                                            {
+                                              echo '  <li class="clearfix">
+                           
+                                              <div class="course-thumbnail course-featured-media course-featured-media-2558 thumb"><iframe width="150" height="150" src="https://www.youtube.com/embed/'.$item->url.'"?disablekb=1&start=0&end=60&modestbranding=1&rel=0&showinfo=1&controls=0"; ?>" ></iframe></div> 
+                                              <div class="simi-co">
+                                              <h5>'.$item->nombre.'</h5>
+                                              <p class="meta">'.$item->cate.'</p>
+                                               
+                                              <span class="rating">
+                                                                  <i class="glyphicons glyphicon-star-empty"></i>
+                                                        <i class="glyphicons glyphicon-star-empty"></i>
+                                                        <i class="glyphicons glyphicon-star-empty"></i>
+                                                        <i class="glyphicons glyphicon-star-empty"></i>
+                                                        <i class="glyphicons glyphicon-star-empty"></i>
+                                                                </span></p>
+                                              </div>
+                                           </li>';
+                                            }
+                                         
+                                                
+                        ?>                     </ul>
                 </aside>			</div>
 						<div class="col-xs-12 col-sm-3 footer-widget">
 				<aside id="educationpress_courses_widget-6" class="widget widget_courses"><h6 class="widget-title">Cursos Populares</h6> <ul>
