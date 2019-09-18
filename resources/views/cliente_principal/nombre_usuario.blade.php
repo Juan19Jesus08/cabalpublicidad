@@ -8,7 +8,7 @@
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Cabal Publicidad</title>
-	<link rel='dns-prefetch' href='//s.w.org' />
+	<link rel="shortcut icon" href="/images/cabal.jpg"/>
 
     <link rel='stylesheet' href='/css/load-styles.css?ver=4.6.14' type='text/css' media='all' />    
 <link rel='stylesheet' id='educationpress-bootstrap-checkbox-css'  href='/css/build.css?ver=4.6.14' type='text/css' media='all' />
