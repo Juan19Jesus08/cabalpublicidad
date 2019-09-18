@@ -107,73 +107,73 @@ Skip to content</a>
  <div id="primary">
                  <main id="main" class="site-main" >
                     
-                    <div id="pl-58"><div class="panel-grid" id="pg-58-0" ><div class="panel-row-style-container container panel-row-style" ><div class="panel-grid-cell" id="pgc-58-0-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-58-0-0-0" data-index="0"><h3 class="widget-title">We are Online Education</h3>			<div class="textwidget"><p>Aliquam erat volutpatuis finibus eroslacus cursus consequat leocongue nonum its sociis natoque penatibus etmagnis disparturient montes nascetur ridiculusi muse Fusce cursus dolorid tempus. Donec vitae nunc sitamet libero dapibus finibus our  justo ullamcorper in turpis aclacinia consectetur lacus.</p>
+                    <div id="pl-58"><div class="panel-grid" id="pg-58-0" ><div class="panel-row-style-container container panel-row-style" ><div class="panel-grid-cell" id="pgc-58-0-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-58-0-0-0" data-index="0"><h3 class="widget-title">Que es cabal Publicidad?</h3>			<div class="textwidget"><p>Cabal Publicidad es una plataforma de cursos en línea que  ayuda a nuestros estudiantes a lograr sus metas a través del conocimiento y experiencia de profesores.</p>
 
 <ul class="bullet">
-<li>Etiam utpurus aliquet fermentum libero suscipit fringilla duionec nenatis is orcinonlacus fringilla.</li>
-<li>Aliquam eratvolutp atuis finibus eros lacus cursus consequat leo congue our noncongue nonvenenatis fringilla.</li>
-<li>Pellentesque quiselit necjusto blandit molestie ullamet tellus ultricies gravida nisiet posuere risus.</li>
-<li>Etiam utpurus aliquet fermentum libero suscipit fringilla duionec nenatis is orcinonlacus fringilla.</li>
+<li>Eligir un curso .</li>
+<li>Registrarse e iniciar sesion.</li>
+<li>Comprar el curso con tu cuenta de Pay Pal.</li>
+<li>Disfrutar  las clases de tu curso.</li>
+<li>Descargar tu certificado.</li>
 </ul></div>
-		</div></div><div class="panel-grid-cell" id="pgc-58-0-1" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-58-0-1-0" data-index="1"><h3 class="widget-title">Find A Course and Sign Up Today!</h3>			<div class="textwidget"><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/find_course_img.jpg" alt="" />
-<p>Pellentesque quiselitnec justo blandit molestieullam etellus ultricies grvidanisi is etposuere risused id neque magna. Mauris dposuere telus.</p>
-<a class="btn btn-orange btn-large" href="#">View Online Courses <i class="lnr lnr-arrow-right"></i></a></div>
+		</div></div><div class="panel-grid-cell" id="pgc-58-0-1" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-58-0-1-0" data-index="1"><h3 class="widget-title">Encuentra un curso y registrate!</h3>			<div class="textwidget"><img src="http://www.demos.themecycle.com/educationpress/wp-content/uploads/2016/03/find_course_img.jpg" alt="" />
+</br>
+<a class="btn btn-orange btn-large" href="/todos/">Ver todos los cursos <i class="lnr lnr-arrow-right"></i></a></div>
 		</div></div></div></div><div class="panel-grid" id="pg-58-1" ><div class="panel-grid-cell" id="pgc-58-1-0" ><div class="so-panel widget widget_aboutus-how-it-works panel-first-child panel-last-child" id="panel-58-1-0-0" data-index="2"><div class="so-widget-aboutus-how-it-works so-widget-aboutus-how-it-works-default-d75171398898"><section class="howitworks">
             <div class="container">
                  <div class="row">  
-                                     	<h2 class="text-center head-border-default">How It Works?</h2>
+                                     	<h2 class="text-center head-border-default">Como Funciona?</h2>
                                         <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                                         <p class="text-center">Quisque varius vitae dolor eget pellentesque Integer ultricies velitleo vestibulum feugiat mauris sollicitudin porttitor finibus liqultrices metus.</p>
+                                         <p class="text-center"></p>
                                  		</div>
               
                     
                 <div class="work-steps">  
                 		                         <div class="col-xs-12 col-sm-4">
                         	<div class="steps" style="background-color: #e91e63;">
-                                                        <h3>Find Your Course</h3>
-                                                                                     <p>Lorem Ipsum is simply dummy text of the typesetting when an unknown printerand scrambled.</p>
-                                                        <span class="sow-icon-fontawesome" data-sow-icon="&#xf00e;" ></span>                            </div>
+                                                        <h3>Encuentra tu curso Favorito</h3>
+                                                                                     <p>Elige uno de todos nuestros cursos que son muy educativos y pagarlo con cuenta de Pay Pal.</p>
+                                                                                    </div>
                         </div> 
                                                  <div class="col-xs-12 col-sm-4">
                         	<div class="steps" style="background-color: #03a9f4;">
-                                                        <h3>Make Your Schedule</h3>
-                                                                                     <p>Lorem Ipsum is simply dummy text of the typesetting when an unknown printerand scrambled.</p>
-                                                        <span class="sow-icon-fontawesome" data-sow-icon="&#xf044;" ></span>                            </div>
+                                                        <h3>Aprendes a tu ritmo</h3>
+                                                                                     <p>Puedes seguir tu curso cada vez que puedas. </p>
+                                                                               </div>
                         </div> 
                                                  <div class="col-xs-12 col-sm-4">
                         	<div class="steps" style="background-color: #673ab7;">
-                                                        <h3>Start Learning</h3>
-                                                                                     <p>Lorem Ipsum is simply dummy text of the typesetting when an unknown printerand scrambled.</p>
-                                                        <span class="sow-icon-fontawesome" data-sow-icon="&#xf02d;" ></span>                            </div>
+                                                        <h3>Certificado</h3>
+                                                                                     <p>Al terminar todas tus clases del curso podras descargar tu certificado.</p>
+                                                                                  </div>
                         </div> 
                                                 
                  </div> <!-- work-steps #end -->    
                     
                   <div class="work-steps"> 
                     <div class="action text-center ">
-                    	                     	<span>Want to Start Learning Online Today?</span> 
-                                                                          <a href="http://www.demos.themecycle.com/educationpress/courses-signup/" class="btn btn-orange btn-large">Sign Up Today<i class="lnr lnr-arrow-right"></i></a>
+                    	                     	<span>Quiere comenzar a aprender en línea hoy?</span> 
+                                                                          <a href="/registrar/" class="btn btn-orange btn-large">Registrarse<i class="lnr lnr-arrow-right"></i></a>
                                              </div>
                   </div>   <!-- work-steps #end -->
                   
             	 </div> <!--row #end  -->
 	        </div><!-- container #end -->
- </section></div></div></div></div><div class="panel-grid" id="pg-58-2" ><div class="panel-row-style-container container panel-row-style" ><div class="panel-grid-cell" id="pgc-58-2-0" ><div class="so-panel widget widget_aboutus-meet-our-teachers panel-first-child" id="panel-58-2-0-0" data-index="3"><div class="so-widget-aboutus-meet-our-teachers so-widget-aboutus-meet-our-teachers-default-d75171398898"><section class="meet-teachers">
-                </section></div></div><div class="so-panel widget widget_aboutus-partnering-with-us panel-last-child" id="panel-58-2-0-1" data-index="4"><div class="so-widget-aboutus-partnering-with-us so-widget-aboutus-partnering-with-us-default-d75171398898"><section class="partnering-with-us">
+ </section></div></div></div></div><div class="panel-grid" id="pg-58-2" ><div class="panel-row-style-container container panel-row-style" ><div class="panel-grid-cell" id="pgc-58-2-0" ><div class="so-panel widget widget_aboutus-meet-our-teachers panel-first-child" id="panel-58-2-0-0" data-index="3"><div class="so-widget-aboutus-meet-our-teachers so-widget-aboutus-meet-our-teachers-default-d75171398898"></div></div><div class="so-panel widget widget_aboutus-partnering-with-us panel-last-child" id="panel-58-2-0-1" data-index="4"><div class="so-widget-aboutus-partnering-with-us so-widget-aboutus-partnering-with-us-default-d75171398898"><section class="partnering-with-us">
     	<div class="container">
         	<div class="row">
-            	<h2 class="text-center head-border-default">Partnering With Us</h2>
+            	<h2 class="text-center head-border-default">Como descargar mi certificado?</h2>
                         	<div class="col-sm-7 col-md-4">
-            	            	<h4>Acadamic partner</h4>
-                                                <p>Etiam ut purus aliquet fermentum libero suscipit its  fringilla duionec venenatis orcinon lacus fringilla ace laoreet est fermentum ullam molestie vulputate ours iaculis eterat at ullamcorper dictum risus.</p>
+            	            	<h4>Primer Paso</h4>
+                                                <p>Haber comprado un curso el cual se mostraran todas las clases que incluye.</p>
                             </div>
                    	<div class="col-sm-7 col-md-4">
-            	            	<h4>Community Partner</h4>
-                                                <p>Dictum idtex euismod bibendum auris idmetus oure ipsum enean placerat aliquet frgillasit amet nisiquis risus auctor posuerequis inerat Sed iaculis tortor its mpurus tincidunt eget placera.</p>
+            	            	<h4>Segundo Paso</h4>
+                                                <p>Debes terminar cada clase del curso, cada vez que se termine una clase del curso se obtendra un porcentaje del curso  .</p>
                             </div>
                    	<div class="col-sm-7 col-md-4">
-            	            	<h4>Advisory Board Members</h4>
-                                                <p>Etiam ut purus aliquet fermentum libero suscipit its  fringilla duionec venenatis orcinon lacus fringilla ace laoreet est fermentum ullam molestie vulputate ours iaculis eterat at ullamcorper dictum risus.</p>
+            	            	<h4>Tercer Paso</h4>
+                                                <p>Al terminar el 100% del porcentaje se mostrara un trofeo y un boton .</p>
                             </div>
            
             
