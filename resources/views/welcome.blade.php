@@ -84,12 +84,12 @@ var mp_cart_i18n = {"ajaxurl":"http:\/\/www.demos.themecycle.com\/educationpress
 /* ]]> */
 </script>
 <script type='text/javascript' src='/js/mp-cart.js?ver=3.1.1'></script>
-<script type='text/javascript' src='/js/jquery/ui/core.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='/js/jquery/ui/position.min.js?ver=1.11.4'></script>
-<script type='text/javascript' src='/js/jquery/ui/tooltip.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='/js/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='/js/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='/js/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='/js/tooltip.min.js?ver=1.11.4'></script>
 <script type='text/javascript' src='/js/hoverintent.min.js?ver=3.1.1'></script>
-<script type='text/javascript' src='/select2/select2.min.js?ver=3.1.1'></script>
+<script type='text/javascript' src='/js/select2.min.js?ver=3.1.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var mp_i18n = {"ajaxurl":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-admin\/admin-ajax.php","loadingImage":"http:\/\/www.demos.themecycle.com\/educationpress\/wp-content\/plugins\/marketpress\/ui\/images\/loading.gif","productsURL":"http:\/\/www.demos.themecycle.com\/educationpress\/store\/products\/","productCats":[]};

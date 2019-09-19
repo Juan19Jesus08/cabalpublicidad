@@ -12,7 +12,7 @@ class Cursos_CompletadosController extends Controller
  
     public function mi_password()
     {
-        return view('/cliente_principal/contraseña');
+        return view('/cliente_principal/contrasenia');
     }
 
     public function mi_nombre()
